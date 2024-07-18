@@ -1,7 +1,8 @@
 {
   "store.home": { 
     "blocks": [
-      "rich-text"
+      "flex-layout.row#text__one--home",
+      "slider-layout#text-test"
     ]
   }
 }
