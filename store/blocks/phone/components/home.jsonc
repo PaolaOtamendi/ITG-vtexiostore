@@ -1,0 +1,20 @@
+{
+    "flex-layout.row#phone_home-section": {
+        "title": "phone row view",
+        "children": [
+            "list-context.image-list#banner_movile"
+        ]
+    },
+
+    "list-context.image-list#banner_movile": {
+        "props": {
+            "images": [
+                {
+                    "image": "/arquivos/banner-mobile.png",
+                    "description": "banner image movile",
+                    "link": {"url": "#"}
+                }
+            ]
+        }
+    }
+}

@@ -2,41 +2,31 @@
   "flex-layout.row#text__one--home": {
     "title": "Text ro one home",
     "children": [
-      "flex-layout.col#text__one--home",
-      "flex-layout.col#text__two--home"
+      "flex-layout.col#text__one--home"
     ],
-    "props": {}
+    "props": {
+      "width": "100%"
+    }
   },
+
   "flex-layout.col#text__one--home":{
     "title": "Text col one home",
     "children": [
-      "rich-text"
+      "image#imagebanner-destkop"
     ],
     "props": {
-      "width": "20%",
+      "width": "100%",
       "blockClass": [
         "col__one--text"
       ]
     }
   },
-  "flex-layout.col#text__two--home":{
-    "title": "Text col two home",
-    "children": [
-      "rich-text"
-    ],
-    "props": {
-      "width": "80%",
-      "blockClass": [
-        "col__two--text"
-      ]
+
+    "image#imagebanner-destkop": {
+      "title": "Image smartwatch 1",
+      "props": {
+        "src": "/arquivos/banner-desktop.png",
+        "width": "100%"
+      }
     }
-  },
-  "rich-text": { 
-    "props": { 
-      "text": "Hola mundo desde vtex",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "font": "t-heading-1"
-    }
-  }
 }

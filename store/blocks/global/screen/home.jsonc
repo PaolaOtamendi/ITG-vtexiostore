@@ -2,8 +2,10 @@
   "store.home": { 
     "blocks": [
       "flex-layout.row#text__one--home",
-      "list-context.image-list#demo",
-      "slider-layout#text-test"
+      /*"list-context.image-list#demo",*/
+      /*"slider-layout#info-card-slider"*/
+      "flex-layout.row#global_home--slider",
+      "responsive-layout.phone#home__section"
     ]
   }
 }
