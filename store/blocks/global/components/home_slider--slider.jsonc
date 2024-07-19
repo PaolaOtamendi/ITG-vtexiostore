@@ -1,77 +1,100 @@
 {
-    "slider-layout#text-test": {
-      "title": "Slider home images full",
-      "props": {
-        "itemsPerPage": {
-          "desktop": 1,
-          "tablet": 1,
-          "phone": 1
-        },
-        "infinite": true,
-        "showNavigationArrows": "desktopOnly",
-        "blockClass": "carousel"
-      },
-      "children": ["flex-layout.row#test__one--slider-home", "image#example__2", "image#example__3"]
-    },
-    "rich-text#1": {
-      "title": "Text one",
-      "props": {
-        "text": "Test1"
-      }
-    },
-    "rich-text#2": {
-      "title": "Text two",
-      "props": {
-        "text": "Test2"
-      }
-    },
-    "rich-text#3": {
-      "title": "Text three",
-      "props": {
-        "text": "Test3"
-      }
-    },
-    "image#example__1": {
-      "title": "Image one",
-      "props": {
-        "src": "assets/img/image1Ex.png"
-      }
-    },
-    "image#example__2": {
-      "title": "Image two",
-      "props": {
-        "src": "assets/img/image2Ex.png"
-      }
-    },
-    "image#example__3": {
-      "title": "Image three",
-      "props": {
-        "src": "assets/img/image3Ex.png"
-      }
-    },
-    "flex-layout.row#test__one--slider-home": {
-      "title": "Slider row test one",
+  "flex-layout.row#global_home--slider": {
       "children": [
-        "flex-layout.col#test__one--slider-home",
-        "flex-layout.col#test__two--slider-home"
+          "slider-layout#second__slider"
       ]
-    },
-    "flex-layout.col#test__one--slider-home": {
-      "title": "Slider col test one",
-      "children": [
-        "image#example__1"
-      ],
+  },
+
+  "slider-layout#second__slider": {
       "props": {
-        "width": "50%"
-      }
-    },
-    "flex-layout.col#test__two--slider-home": {
-      "title": "Slider col test two",
+          "itemsPerPage": {
+              "desktop": 4,
+              "tablet": 3,
+              "phone": 1.5
+          },
+      "infinite": true,
+      "showNavigationArrows": "always",
+      "showPaginationDots": "always",
+      "blockClass": "custom-slider"
+      },
       "children": [
-        "rich-text#1"
-      ],
-      "props": {
-        "width": "50%"
-      }
+          "flex-layout.col#second__slider--container",
+          "flex-layout.col#second__slider--container",
+          "flex-layout.col#second__slider--container",
+          "flex-layout.col#second__slider--container"
+      ]
+  },
+
+  "flex-layout.col#second__slider--container": {
+      "children": [
+          "flex-layout.row#slider__first-row",
+          "flex-layout.row#slider__second-row",
+          "flex-layout.row#slider__third-row"
+      ]
+  },
+
+  "flex-layout.row#slider__first-row": {
+      "children": [
+          "image#first__row-image"
+      ]
+  },
+
+  "image#first__row-image": {
+    "props": {
+      "src": "/arquivos/img-sliderone.png"
+      
     }
+  },
+
+  "flex-layout.row#slider__second-row": {
+      "children": [
+          "flex-layout.col#second__row-text",
+          "flex-layout.col#second__row-image"
+          
+      ],
+
+      "props": {
+          "preserveLayoutOnMobile": true
+      }
+  },
+
+  "flex-layout.col#second__row-text": {
+      "children": [
+          "rich-text#second__row-title"
+      ]
+  },
+
+  "rich-text#second__row-title": {
+      "props": {
+          "text": "# Heading\n Builder platform is made by, buildership platform is made by..."
+
+      }
+  },
+
+
+  "flex-layout.col#second__row-image": {
+      "children": [
+          "image#second__row-best-seller"
+      ]
+  },
+
+  "image#second__row-best-seller": {
+    "props": {
+      "src": "/arquivos/bestseller.png"
+      
+    }
+  },
+
+  "flex-layout.row#slider__third-row": {
+      "children": [
+          "rich-text#slider__third-row--button"
+      ]
+  },
+
+  "rich-text#slider__third-row--button": {
+      "props": {
+          "text": "[Ver precio](https:)",
+          "blockClass": "slider_third-row--button"
+      }
   }
+}
