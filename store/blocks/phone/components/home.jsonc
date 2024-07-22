@@ -2,12 +2,12 @@
     "flex-layout.row#phone__home-section": {
         "title": "Phone row with text",
         "children": [
-            "flex-layout.col#phone__banner__image--1",
-            "rich-text#phone__section--1"
+            "flex-layout.col#phone__banner__image--1"
+            /*"rich-text#phone__section--1"*/
         ]
     },
 
-        "rich-text#phone__section--1": {
+        /*"rich-text#phone__section--1": {
             "title": "text Favorites at phone",
                 "props": {
                 "text": "Favoritos en Phone",
@@ -15,7 +15,7 @@
                 "textAlignment": "CENTER",
                 "textPosition": "CENTER"
             }
-        },
+        },*/
     "flex-layout.col#phone__banner__image--1": {
         "title": "Banner phone home",
         "children": [

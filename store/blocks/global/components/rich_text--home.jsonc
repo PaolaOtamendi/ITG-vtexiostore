@@ -1,0 +1,21 @@
+{
+    "flex-layout.row#row_to_title--slider": {
+    "title": "Row container title to slider",
+    "children": [
+        "rich-text#title__toglobal--slider"
+    ],
+    "props": {
+      "blockClass": "container__title--slider"
+    }
+  },
+    "rich-text#title__toglobal--slider": {
+    "title": "Title to global slider",
+    "props": {
+        "text": "An amazing product.",
+        "font": "t-body",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass": "title__slider--global"
+    }
+  }
+}

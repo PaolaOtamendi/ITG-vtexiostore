@@ -3,8 +3,8 @@
     "blocks": [
       "responsive-layout.desktop#home__section--1",
       "responsive-layout.phone#home__section--1",
-      "responsive-layout.tablet#tablet__home__section--1",
-      "responsive-layout.mobile#mobile__home__section--1"
+      "responsive-layout.tablet#tablet__home__section--1"
+      /*"responsive-layout.mobile#mobile__home__section--1"*/
       /*"flex-layout.row#text__one--home"
       /*"list-context.image-list#demo",*/
       /*"slider-layout#info-card-slider"*/
