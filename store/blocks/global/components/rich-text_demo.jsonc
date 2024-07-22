@@ -1,15 +1,15 @@
 {
-  "flex-layout.row#text__one--home": {
-    "title": "Text ro one home",
+  "flex-layout.row#global__banner__one--home": {
+    "title": "Text row one home",
     "children": [
-      "flex-layout.col#text__one--home"
+      /*"flex-layout.col#text__one--home"*/
     ],
     "props": {
       "width": "100%"
     }
-  },
+  }
 
-  "flex-layout.col#text__one--home":{
+  /*"flex-layout.col#text__one--home":{
     "title": "Text col one home",
     "children": [
       "image#imagebanner-destkop"
@@ -20,13 +20,13 @@
         "col__one--text"
       ]
     }
-  },
+  }
 
-    "image#imagebanner-destkop": {
+    /*"image#imagebanner-destkop": {
       "title": "Image smartwatch 1",
       "props": {
         "src": "/arquivos/banner-desktop.png",
         "width": "100%"
       }
-    }
+    }*/
 }

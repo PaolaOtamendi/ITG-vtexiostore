@@ -1,20 +1,32 @@
 {
-    "flex-layout.row#phone_home-section": {
-        "title": "phone row view",
+    "flex-layout.row#phone__home-section": {
+        "title": "Phone row with text",
         "children": [
-            "list-context.image-list#banner_movile"
+            "flex-layout.col#phone__banner__image--1",
+            "rich-text#phone__section--1"
         ]
     },
 
-    "list-context.image-list#banner_movile": {
+        "rich-text#phone__section--1": {
+            "title": "text Favorites at phone",
+                "props": {
+                "text": "Favoritos en Phone",
+                "font": "t-heading-2",
+                "textAlignment": "CENTER",
+                "textPosition": "CENTER"
+            }
+        },
+    "flex-layout.col#phone__banner__image--1": {
+        "title": "Banner phone home",
+        "children": [
+            "image#imagebanner-phone"
+        ]
+    },
+    "image#imagebanner-phone": {
+        "title": "Principal image phone",
         "props": {
-            "images": [
-                {
-                    "image": "/arquivos/banner-mobile.png",
-                    "description": "banner image movile",
-                    "link": {"url": "#"}
-                }
-            ]
+        "src": "/arquivos/banner-mobile.png",
+        "width": "100%"
         }
     }
 }

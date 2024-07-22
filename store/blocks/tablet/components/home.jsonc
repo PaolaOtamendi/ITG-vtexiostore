@@ -1,0 +1,17 @@
+{
+    "flex-layout.row#tablet__home__section--1": {
+        "title": "Tablet row with text",
+        "children": [
+            "rich-text#tablet__home__section--1"
+        ]
+    },
+    "rich-text#tablet__home__section--1": {
+        "title": "Text favorites ad tablet",
+        "props": {
+            "text": "Favoritos en Tablet",
+            "font": "t-heading-2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+}
