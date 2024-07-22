@@ -3,6 +3,7 @@
         "title": "Home section one Destkop",
         "children": [
             "flex-layout.row#home__section--1",
+            "flex-layout.row#row_to_title--slider",
             "flex-layout.row#global_home--slider"
         ]
     }

@@ -1,10 +1,25 @@
-
-.flexCol--col__one--text {
-    background-color: #F0F0F2;
-    font-family: "Lexend";
+.flexRowContent--seccion__principal1 {
+    display: flex;
+    background-color: aqua;
+    /*width: 1092px;
+    height: 340px;*/
+    margin-left: 94px;
+    justify-content: center;
 }
 
-.flexCol--col__two--text {
-    background-color: #F0F0F2;
-    font-family: "Lexend";
+.flexCol--columna__principal2{
+    display: flex;
+    background-color: rgb(208, 255, 0);
+    gap: 10px;
+}
+
+.flexCol--estructura__de__tarjeta--principal4{
+    width: 324px;
+    height: 336px;
+    gap: 10px;
+}
+
+.flexRow--este__contiene__textoicon7{
+    justify-content: space-between;
+    width: 324px;
 }

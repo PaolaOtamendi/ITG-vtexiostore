@@ -1,3 +1,13 @@
+
 .paginationDot--isActive {
-    background-color: blue;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
 }
+
+
+/*.flexRow--row__containe--slider {
+    width: 1092px;
+    height: 340px;
+    left: 94px;
+    gap: 24px;
+}*/

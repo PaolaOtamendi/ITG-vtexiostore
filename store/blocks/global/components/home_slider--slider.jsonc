@@ -3,131 +3,134 @@
     "title": "Global home slider component",
     "children": [
         "flex-layout.col#global_estructure--slider"
-    ]
+    ],
+    "props": {
+      "blockClass": "seccion__principal1"
+    }
   },
 
   "flex-layout.col#global_estructure--slider": {
     "title": "Global estructure to slider",
     "children": [
-        "flex-layout.row#row_to_title--slider",
         "flex-layout.row#row_to_slider"
-    ]
+    ],
+    "props": {
+      "blockClass": "columna__principal2"
+    }
   },
 
   "flex-layout.row#row_to_slider": {
     "title": "Row container to slider",
     "children": [
-        "slider-layout#second__slider"
-    ]
-  },
-
-  "flex-layout.row#row_to_title--slider": {
-    "title": "Row container title to slider",
-    "children": [
-        "rich-text#title__toglobal--slider"
-    ]
-  },
-
-  "rich-text#title__toglobal--slider": {
-    "title": "Title to global slider",
+        "slider-layout#globalfirst__slider--home"
+    ],
     "props": {
-        "text": "An amazin product.",
-        "font": "t-body",
-        "textAlignment": "LEFT",
-        "textPosition": "LEFT"
+      "blockClass": "fila__que__contiene--slider3"
     }
   },
 
-  "slider-layout#second__slider": {
-    "title": "Global slider",
-      "props": {
-          "itemsPerPage": {
-              "desktop": 4,
-              "tablet": 3,
-              "phone": 1.5
-          },
+  "slider-layout#globalfirst__slider--home": {
+    "title": "Home global slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 3.5,
+        "tablet": 3,
+        "phone": 1.5
+      },
       "infinite": true,
+      "showNavigationArrows": "desktopOnly",
+      "blockClass": "custom-slider"
+      /*"infinite": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "always",
-      "blockClass": "custom-slider"
-      },
-      "children": [
-        "flex-layout.col#second__slider--container",
-        "flex-layout.col#second__slider--container",
-        "flex-layout.col#second__slider--container",
-        "flex-layout.col#second__slider--container"
-      ]
+      "blockClass": "custom-slider"*/
+    },
+    "children": [
+        "flex-layout.col#col__infocard--slider",
+        "flex-layout.col#col__infocard--slider",
+        "flex-layout.col#col__infocard--slider",
+        "flex-layout.col#col__infocard--slider"
+    ]
   },
 
-  "flex-layout.col#second__slider--container": {
-      "children": [
-          "flex-layout.row#slider__first-row",
-          "flex-layout.row#slider__second-row",
-          "flex-layout.row#slider__third-row"
-      ]
-  },
-
-  "flex-layout.row#slider__first-row": {
-      "children": [
-          "image#first__row-image"
-      ]
-  },
-
-  "image#first__row-image": {
+  "flex-layout.col#col__infocard--slider": {
+    "title": "Infocard estructure slider",
+    "children": [
+        "flex-layout.row#fisrtrow__infocard--container",
+        "flex-layout.row#secondrow__infocard--container",
+        "flex-layout.row#thirdrow__infocard--container"
+    ],
     "props": {
-      "src": "/arquivos/img-sliderone.png"
-      
+      "blockClass": "estructura__de__tarjeta--principal4"
     }
   },
 
-  "flex-layout.row#slider__second-row": {
-      "children": [
-          "flex-layout.col#second__row-text",
-          "flex-layout.col#second__row-image"
-          
-      ],
-
-      "props": {
-          "preserveLayoutOnMobile": true
-      }
+  "flex-layout.row#fisrtrow__infocard--container": {
+    "title": "Fisrtrow slider infocard",
+    "children": [
+        "image#first__row-image"
+    ],
+    "props": {
+      "blockClass": "este__contiene__imagen5"
+    }
+  },
+  "image#first__row-image": {
+    "title": "Image first slider",
+    "props": {
+      "src": "/arquivos/img-sliderone.png",
+      "blockClass": "esta__es__la--imagen6"
+    }
   },
 
+  "flex-layout.row#secondrow__infocard--container": {
+    "title": "Secondrow slider infocard",
+    "children": [
+        "flex-layout.col#second__row-text",
+        "flex-layout.col#second__row-image"
+    ],
+    "props": {
+        "preserveLayoutOnMobile": true,
+        "blockClass": "este__contiene__textoicon7"
+    }
+  },
   "flex-layout.col#second__row-text": {
-      "children": [
-          "rich-text#second__row-title"
-      ]
+    "title": "Textcontainer to second row",
+    "children": [
+        "rich-text#second__row-title"
+    ]
   },
-
   "rich-text#second__row-title": {
-      "props": {
-          "text": "# Heading\n Builder platform is made by, buildership platform is made by..."
-      }
+    "title": "Richtext to second row",
+    "props": {
+        "text": "# Heading\n Builder platform is made by, buildership platform is made by...",
+        "blockClass": "este__esel__texto8"
+    }
   },
-
 
   "flex-layout.col#second__row-image": {
-      "children": [
-          "image#second__row-best-seller"
-      ]
+    "title": "Imagecontainer to second row",
+    "children": [
+        "image#second__row-best-seller"
+    ]
   },
-
   "image#second__row-best-seller": {
     "props": {
-      "src": "/arquivos/bestseller.png"
-      
+    "src": "/arquivos/bestseller.png",
+    "blockClass": "este__esel__icon9"
     }
   },
 
-  "flex-layout.row#slider__third-row": {
-      "children": [
-          "rich-text#slider__third-row--button"
-      ]
+  "flex-layout.row#thirdrow__infocard--container": {
+    "title": "Thirdrow slider infocard",
+    "children": [
+        "rich-text#slider__third-row--button"
+    ]
   },
-
   "rich-text#slider__third-row--button": {
-      "props": {
-          "text": "[Ver precio](https:)",
-          "blockClass": "slider_third-row--button"
-      }
+    "title": "Button price to inforcard",
+    "props": {
+        "text": "[Ver precio](https:)",
+        "blockClass": "slider_third-row--button"
+    }
   }
 }

@@ -1,3 +1,27 @@
-.paragraph--ejemplo1 {
-    font-family: Lexend;
+.paragraph--title__slider--global {
+    font-family: Lexend, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16.8px;
+    color: #1D2734;
+    width: 165px;
+    height: 17px;
+    top: 630px;
+    left: 72px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.heading--este__esel__texto8 {
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24.88px;
+    color: #1D2734;
+    margin-left: 72px;
+}
+
+.container--este__esel__texto8 {
+    width: 247.97px;
+    text-align: left;
 }
