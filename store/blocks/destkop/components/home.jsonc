@@ -1,0 +1,31 @@
+{
+    "flex-layout.row#home__section--1": {
+        "title": "Destkop row with text",
+        "children": [
+            "flex-layout.col#destkop__banner__image--1",
+            "rich-text#section--1"
+        ]
+    },
+    "rich-text#section--1": {
+        "title": "Text favorites ad destkop",
+        "props": {
+            "text": "Favoritos en Destkop",
+            "font": "t-heading-2",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "flex-layout.col#destkop__banner__image--1": {
+        "title": "Banner destkop home",
+        "children": [
+            "image#imagebanner-destkop"
+        ]
+    },
+    "image#imagebanner-destkop": {
+        "title": "Principal image destkop",
+        "props": {
+        "src": "/arquivos/banner-desktop.png",
+        "width": "100%"
+        }
+    }
+}

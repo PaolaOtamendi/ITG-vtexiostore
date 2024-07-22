@@ -1,11 +1,45 @@
 {
   "flex-layout.row#global_home--slider": {
-      "children": [
-          "slider-layout#second__slider"
-      ]
+    "title": "Global home slider component",
+    "children": [
+        "flex-layout.col#global_estructure--slider"
+    ]
+  },
+
+  "flex-layout.col#global_estructure--slider": {
+    "title": "Global estructure to slider",
+    "children": [
+        "flex-layout.row#row_to_title--slider",
+        "flex-layout.row#row_to_slider"
+    ]
+  },
+
+  "flex-layout.row#row_to_slider": {
+    "title": "Row container to slider",
+    "children": [
+        "slider-layout#second__slider"
+    ]
+  },
+
+  "flex-layout.row#row_to_title--slider": {
+    "title": "Row container title to slider",
+    "children": [
+        "rich-text#title__toglobal--slider"
+    ]
+  },
+
+  "rich-text#title__toglobal--slider": {
+    "title": "Title to global slider",
+    "props": {
+        "text": "An amazin product.",
+        "font": "t-body",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT"
+    }
   },
 
   "slider-layout#second__slider": {
+    "title": "Global slider",
       "props": {
           "itemsPerPage": {
               "desktop": 4,
@@ -18,10 +52,10 @@
       "blockClass": "custom-slider"
       },
       "children": [
-          "flex-layout.col#second__slider--container",
-          "flex-layout.col#second__slider--container",
-          "flex-layout.col#second__slider--container",
-          "flex-layout.col#second__slider--container"
+        "flex-layout.col#second__slider--container",
+        "flex-layout.col#second__slider--container",
+        "flex-layout.col#second__slider--container",
+        "flex-layout.col#second__slider--container"
       ]
   },
 
@@ -67,7 +101,6 @@
   "rich-text#second__row-title": {
       "props": {
           "text": "# Heading\n Builder platform is made by, buildership platform is made by..."
-
       }
   },
 
