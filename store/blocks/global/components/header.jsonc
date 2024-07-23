@@ -1,12 +1,4 @@
 {
-    /*"header-layout.desktop": {
-    "children": [
-      "sticky-layout#desktop"
-    ]
-  },
-  "header-layout.mobile": {
-    "children": ["sticky-layout#mobile"]
-  }*/
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
