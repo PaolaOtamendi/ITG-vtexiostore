@@ -1,22 +1,32 @@
 .flexRowContent--seccion__principal1 {
     display: flex;
-    background-color: aqua;
-    /*width: 1092px;
-    height: 340px;*/
-    margin-left: 94px;
     justify-content: center;
+    /*background-color: rgb(208, 255, 0);*/
 }
 
-.flexCol--columna__principal2{
+/*.flexCol--columna__principal2{
     display: flex;
     background-color: rgb(208, 255, 0);
-    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    /*width: 1092px !important;
+    height: 340px;
 }
 
+.flexRow--fila__que__contiene--slider3 {
+    background-color: aqua;
+    display: flex;
+    width: 1092px !important;
+    height: 340px;
+    gap: 24px;
+}*/
+
 .flexCol--estructura__de__tarjeta--principal4{
+    /*background-color: aqua;*/
     width: 324px;
     height: 336px;
-    gap: 10px;
+    border-radius: 12px;
+    gap: 5px;
 }
 
 .flexRow--este__contiene__textoicon7{

@@ -1,5 +1,5 @@
 {
-  "header": {
+  /*"header": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
   },
   "header.full": {
@@ -10,13 +10,16 @@
       "sticky-layout#desktop"
     ]
   },
-  "sticky-layout#desktop": {
+  "header-layout.mobile": {
+    "children": ["sticky-layout#mobile"]
+  },*/ //Agregue el de abajo y me lleve estos tres
+  /*"sticky-layout#desktop": {
     "props": {
       "blockClass": "sticky-header"
     },
     "children": ["flex-layout.row#desktop"]
-  },
-  "flex-layout.row#desktop": {
+  },*/ //desktop
+  /*"flex-layout.row#desktop": {
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
@@ -32,31 +35,31 @@
       "login",
       "minicart.v2"
     ]
-  },
-  "flex-layout.col#spacer": {
+  },*/ //desktop
+  /*"flex-layout.col#spacer": {
     "props": {
       "width": "grow"
     }
-  },
-  "flex-layout.col#logo-desktop": {
+  },*/ //Globalcomponents
+  /*"flex-layout.col#logo-desktop": {
     "props": {
       "verticalAlign": "middle"
     },
     "children": ["logo"]
-  },
-  "logo": {
+  },*/ //desktop
+  /*"logo": {
     "props": {
       "title": "Logo",
-      /*"href": "/",*/
-      "src": "/assets/img/icon_Black.png",
-      /*"url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",*/
+      "href": "/",
+      /*"src": "/assets/img/icon_Black.png",
+      "url": "https://brand.vtex.com/static/media/VTEX_pink_RGB.751a9fb5.svg",
       "width": "80"
     }
-  },
-  "header-layout.mobile": {
+  },*/ //compomente global
+  /*"header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
-  },
-  "sticky-layout#mobile": {
+  },*/ //No lo llevamos a movile
+  /*"sticky-layout#mobile": {
     "children": ["flex-layout.row#mobile"]
   },
   "flex-layout.row#mobile": {
@@ -76,5 +79,5 @@
   },
   "drawer": {
     "children": []
-  }
+  }*/ // movile components
 }
