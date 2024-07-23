@@ -2,50 +2,53 @@
   "flex-layout.row#global_home--slider": {
     "title": "Global home slider component",
     "children": [
-        "flex-layout.col#global_estructure--slider"
+        /*"flex-layout.col#global_estructure--slider"*/
+        "slider-layout#globalfirst__slider--home"
     ],
     "props": {
       "blockClass": "seccion__principal1"
     }
   },
 
-  "flex-layout.col#global_estructure--slider": {
-    "title": "Global estructure to slider",
+  /*"flex-layout.col#global_estructure--slider": {
+    "title": "Container all slider",
     "children": [
         "flex-layout.row#row_to_slider"
     ],
     "props": {
-      "blockClass": "columna__principal2"
+      "blockClass": "columna__principal2"//ok
     }
   },
 
   "flex-layout.row#row_to_slider": {
-    "title": "Row container to slider",
+    "title": "Container custom slider",
     "children": [
         "slider-layout#globalfirst__slider--home"
     ],
     "props": {
       "blockClass": "fila__que__contiene--slider3"
     }
-  },
+  },*/
 
   "slider-layout#globalfirst__slider--home": {
     "title": "Home global slider",
     "props": {
       "itemsPerPage": {
-        "desktop": 3.5,
+        "desktop": 3,
         "tablet": 3,
         "phone": 1.5
       },
       "infinite": true,
-      "showNavigationArrows": "desktopOnly",
-      "blockClass": "custom-slider"
-      /*"infinite": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "always",
-      "blockClass": "custom-slider"*/
+      "blockClass": "custom_slider1"
     },
     "children": [
+        "flex-layout.col#col__infocard--slider",
+        "flex-layout.col#col__infocard--slider",
+        "flex-layout.col#col__infocard--slider",
+        "flex-layout.col#col__infocard--slider",
+        "flex-layout.col#col__infocard--slider",
         "flex-layout.col#col__infocard--slider",
         "flex-layout.col#col__infocard--slider",
         "flex-layout.col#col__infocard--slider",
@@ -54,7 +57,7 @@
   },
 
   "flex-layout.col#col__infocard--slider": {
-    "title": "Infocard estructure slider",
+    "title": "Container image and text",
     "children": [
         "flex-layout.row#fisrtrow__infocard--container",
         "flex-layout.row#secondrow__infocard--container",
@@ -66,7 +69,7 @@
   },
 
   "flex-layout.row#fisrtrow__infocard--container": {
-    "title": "Fisrtrow slider infocard",
+    "title": "Container image of products",
     "children": [
         "image#first__row-image"
     ],
@@ -75,7 +78,7 @@
     }
   },
   "image#first__row-image": {
-    "title": "Image first slider",
+    "title": "Product image",
     "props": {
       "src": "/arquivos/img-sliderone.png",
       "blockClass": "esta__es__la--imagen6"
@@ -83,7 +86,7 @@
   },
 
   "flex-layout.row#secondrow__infocard--container": {
-    "title": "Secondrow slider infocard",
+    "title": "Container text of products and price",
     "children": [
         "flex-layout.col#second__row-text",
         "flex-layout.col#second__row-image"
@@ -94,13 +97,17 @@
     }
   },
   "flex-layout.col#second__row-text": {
-    "title": "Textcontainer to second row",
+    "title": "Container title text of product",
     "children": [
         "rich-text#second__row-title"
-    ]
+    ],
+    //Este es nuevo yo no lo tenia
+    "props": {
+      "width": "70%"
+    }
   },
   "rich-text#second__row-title": {
-    "title": "Richtext to second row",
+    "title": "Richtext to product",
     "props": {
         "text": "# Heading\n Builder platform is made by, buildership platform is made by...",
         "blockClass": "este__esel__texto8"
@@ -108,20 +115,23 @@
   },
 
   "flex-layout.col#second__row-image": {
-    "title": "Imagecontainer to second row",
+    "title": "Container img ecommer award",
     "children": [
         "image#second__row-best-seller"
-    ]
+    ],
+    "props": {
+      "blockClass": "contiene__el_icon7"
+  }
   },
   "image#second__row-best-seller": {
     "props": {
     "src": "/arquivos/bestseller.png",
-    "blockClass": "este__esel__icon9"
+    "blockClass": "este__esel__icon7"
     }
   },
 
   "flex-layout.row#thirdrow__infocard--container": {
-    "title": "Thirdrow slider infocard",
+    "title": "Container button to product",
     "children": [
         "rich-text#slider__third-row--button"
     ]
