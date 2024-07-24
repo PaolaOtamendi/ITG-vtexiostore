@@ -2,33 +2,12 @@
   "flex-layout.row#global_home--slider": {
     "title": "Global home slider component",
     "children": [
-        /*"flex-layout.col#global_estructure--slider"*/
         "slider-layout#globalfirst__slider--home"
     ],
     "props": {
       "blockClass": "seccion__principal1"
     }
   },
-
-  /*"flex-layout.col#global_estructure--slider": {
-    "title": "Container all slider",
-    "children": [
-        "flex-layout.row#row_to_slider"
-    ],
-    "props": {
-      "blockClass": "columna__principal2"//ok
-    }
-  },
-
-  "flex-layout.row#row_to_slider": {
-    "title": "Container custom slider",
-    "children": [
-        "slider-layout#globalfirst__slider--home"
-    ],
-    "props": {
-      "blockClass": "fila__que__contiene--slider3"
-    }
-  },*/
 
   "slider-layout#globalfirst__slider--home": {
     "title": "Home global slider",
@@ -44,9 +23,6 @@
       "blockClass": "custom_slider1"
     },
     "children": [
-        "flex-layout.col#col__infocard--slider",
-        "flex-layout.col#col__infocard--slider",
-        "flex-layout.col#col__infocard--slider",
         "flex-layout.col#col__infocard--slider",
         "flex-layout.col#col__infocard--slider",
         "flex-layout.col#col__infocard--slider",
