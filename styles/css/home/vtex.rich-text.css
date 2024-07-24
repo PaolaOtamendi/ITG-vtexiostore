@@ -12,6 +12,20 @@
     margin-bottom: 20px;
 }
 
+/*.wrapper--title__slider--global{
+    font-family: Lexend, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16.8px;
+    color: #1D2734;
+    width: 165px !important;
+    height: 17px !important;
+    top: 630px;
+    left: 72px;
+    text-align: left;
+    margin-bottom: 20px;
+}*/
+
 .container--este__esel__texto8 {
     display: flex;
     width: 324px;

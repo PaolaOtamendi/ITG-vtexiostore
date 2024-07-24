@@ -1,8 +1,15 @@
+.paginationDot--custom_slider1 {
+    background-color: #1D2734;
+    border-radius: 0%;
+    width: 10px !important;
+    height: 10px !important;
+    transition: border-radius 0.3s, transform 0.3s;
+}
 
 .paginationDot--isActive {
-    background-color: rgb(0, 0, 0);
-    transform: scale(1.5); 
-    border-radius: 50% !important;
+    transform: scale(1.5);
+    background-color: aqua;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .sliderLayoutContainer--custom_slider1 {
@@ -16,29 +23,27 @@
     gap: 24px;
 }
 
-.sliderLeftArrow--custom-slider{
+.caretIcon--custom_slider1{
+    /*background-color: aqua;*/
+    width: 20px !important;
+    height: 14px !important;
+    border-radius: 4px;
+    margin-bottom: 94px;
+    overflow: visible;
+}
+
+.sliderLeftArrow {
+    left: -20px;
+}
+
+.sliderRightArrow {
+    right: -20px;
+}
+
+.sliderLeftArrow--custom-slider .sliderRightArrow--custom-slider{
     width: 24px;
     height: 24px;
     margin-top: 816px;
-    margin-left: 86px !important;
-    border-radius: 4px;
-    margin-bottom: 94px;
-}
-
-.sliderRightArrow--custom-slider{
-    width: 24px;
-    height: 24px;
-    margin-top: 816px;
-    margin-left: 1191px !important;
-    border-radius: 4px;
-    margin-bottom: 94px;
-}
-
-.caretIcon--custom_slider1 {
-    width: 24px;
-    height: 24px;
-    /*margin-top: 816px;*/
-    /*margin-left: 86px !important;*/
     border-radius: 4px;
     margin-bottom: 94px;
 }
