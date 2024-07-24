@@ -21,7 +21,7 @@
             "image#imagebanner-destkop"
         ],
         "props": {
-            "blockClass": "fixed-top"
+            "blockClass": "image__to__banner"
         }
     },
     "image#imagebanner-destkop": {

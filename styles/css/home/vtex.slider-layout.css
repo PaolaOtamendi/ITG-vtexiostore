@@ -47,3 +47,30 @@
     border-radius: 4px;
     margin-bottom: 94px;
 }
+
+.paginationDotsContainer--custom_slider1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*width: 231.82px !important;
+    /*height: 50.89px !important;*/
+    /*top: 1011px;
+    left: 524px;*/
+    margin-top: 15px;
+}
+
+/*--------------- Second slider css------------------------------------*/
+
+.sliderLayoutContainer--custom_product__slider1{
+    display: flex;
+    flex-direction: column;
+    width: 1092px !important;
+    height: 378px;
+}
+
+.slide--custom_product__slider1{
+    display: flex;
+    flex-direction: column;
+    width: 212px !important;
+    height: 378px !important;
+}
