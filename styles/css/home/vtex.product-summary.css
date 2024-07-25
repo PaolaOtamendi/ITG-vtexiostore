@@ -1,0 +1,33 @@
+.image--custom_image__slider2 {
+    width: 178px !important;
+    height: 140px !important;
+}
+
+.nameContainer--custom_text__slider2 {
+    width: 212px;
+    /*height: 51px;*/
+    background-color: aqua;
+    font-family: Lexend, sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+    line-height: 16.8px;
+    color: #1D2734;
+    text-align: left;
+}
+
+.price_listPriceContainer {
+    text-align: left;
+}
+
+.price_sellingPriceContainer {
+    text-align: left;
+    font-weight: 600;
+}
+
+.price_sellingPrice {
+    font-weight: 600;
+}
+
+.buyButton--custom_button__slider3 {
+    background-color: #fff;
+}

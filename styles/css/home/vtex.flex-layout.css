@@ -1,25 +1,14 @@
+.flexColChild--image__to__banner{
+    width: 100%;
+    /*top: 168px !important;
+    position: relative; /* Modificar las distancia en segundo plano*/
+}
+
 .flexRowContent--seccion__principal1 {
     display: flex;
     justify-content: center;
     /*background-color: rgb(208, 255, 0);*/
 }
-
-/*.flexCol--columna__principal2{
-    display: flex;
-    background-color: rgb(208, 255, 0);
-    align-items: center;
-    justify-content: center;
-    /*width: 1092px !important;
-    height: 340px;
-}
-
-.flexRow--fila__que__contiene--slider3 {
-    background-color: aqua;
-    display: flex;
-    width: 1092px !important;
-    height: 340px;
-    gap: 24px;
-}*/
 
 .flexCol--estructura__de__tarjeta--principal4{
     /*background-color: aqua;*/
@@ -29,7 +18,31 @@
     gap: 5px;
 }
 
-.flexRow--este__contiene__textoicon7{
+.flexColChild--contiene__el_icon7 {
+    height: 100%;
+    display: flex;
+    align-items: initial;
+    justify-content: center;
+    margin-top: 13.82px;
+}
+
+.flexRow--este__contiene__textoicon7 {
+    margin-bottom: 13.82px;
+}
+
+/*.flexRow--este__contiene__textoicon7{
     justify-content: space-between;
     width: 324px;
+}*/
+
+/*--------------- Second slider css------------------------------------*/
+
+.flexRow--product__summary_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.image--custom_image__slider2 {
+    width: 178px !important;
+    height: 140px !important;
 }

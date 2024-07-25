@@ -1,0 +1,108 @@
+{
+    "flex-layout.row#global__product--list": {
+        "title": "Container summary to products",
+        "props": {
+            "blockClass": "product__summary_1"
+        },
+        "children": [
+            "list-context.product-list#demo1"
+        ]
+    },
+    "product-summary.shelf#demo1": {
+        "children": [
+            /*"stack-layout#prodsum",*/
+            /*"rich-text#text_percent--off",
+            "rich-text#icon_like--product",*/
+            "flex-layout.col#first__col--officon",
+            "product-summary-image",
+            "product-summary-name",
+            /*"product-rating-inline",*/
+            /*"product-summary-space",*/
+            "product-summary-price",
+            "product-summary-buy-button"
+        ]
+    },
+
+    "list-context.product-list#demo1": {
+        "title": "List to products",
+        "blocks": [
+            "product-summary.shelf#demo1"
+        ],
+        "children": [
+            "slider-layout#global__slider--products"
+        ]
+    },
+
+    "slider-layout#global__slider--products": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 5,
+                "tablet": 3,
+                "phone": 2
+            },
+            "blockClass": [
+                "custom_product__slider1"
+            ]
+        }
+    },
+
+    "product-summary-image": {
+        "props": {
+            "showBadge": true,
+            "height": 220,
+            /*"badgeText": "20% OFF",*/
+            "blockClass": [
+                "custom_image__slider2"
+            ]
+        }
+        
+    },
+
+    "flex-layout.col#first__col--officon": {
+        "title": "Container percent off and like",
+        "children": [
+            "flex-layout.row#first__row--officon"
+        ]
+    },
+
+    "flex-layout.row#first__row--officon": {
+        "title": "Container row to percent off and like",
+        "props": {
+            "blockClass": "container__offlike--row3"
+        },
+        "children": [
+            "rich-text#text_percent--off",
+            "image#second__row-like"
+        ]
+    },
+    "rich-text#text_percent--off": {
+        "title": "product percent off",
+        "props": {
+            "text": "20% OFF",
+            "blockClass": "este__esel__off4"
+        }
+    },
+    "image#second__row-like": {
+        "title": "like to product",
+        "props": {
+            "src": "/arquivos/Like.png",
+            "blockClass": "este__esel__like5"
+        }
+    },
+
+    "product-summary-name": {
+        "props": {
+            "blockClass": [
+                "custom_text__slider2"
+            ]
+        }
+    },
+
+    "product-summary-buy-button": {
+        "props": {
+            "blockClass": [
+                "custom_button__slider3"
+            ]
+        }
+    }
+}

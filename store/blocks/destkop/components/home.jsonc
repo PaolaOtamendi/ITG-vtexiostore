@@ -21,14 +21,15 @@
             "image#imagebanner-destkop"
         ],
         "props": {
-            "blockClass": "fixed-top"
+            "blockClass": "image__to__banner"
         }
     },
     "image#imagebanner-destkop": {
         "title": "Principal image destkop",
         "props": {
         "src": "/arquivos/banner-desktop.png",
-        "width": "100%"
+        "width": "100%",
+        "blockClass": "image__to__banner1"
         }
     }
 }

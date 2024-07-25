@@ -6,14 +6,16 @@
     color: #1D2734;
     width: 165px;
     height: 17px;
+    /*position: absolute; /*Nuevo*/
     top: 630px;
     left: 72px;
     text-align: left;
-    margin-bottom: 20px;
+    margin-bottom: 20px !important;
+    margin-top: 20px !important;
 }
 
-/*.wrapper--title__slider--global{
-    font-family: Lexend, sans-serif;
+.wrapper--title__slider--global{
+    /*font-family: Lexend, sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 16.8px;
@@ -22,9 +24,9 @@
     height: 17px !important;
     top: 630px;
     left: 72px;
-    text-align: left;
-    margin-bottom: 20px;
-}*/
+    text-align: left;*/
+    margin-top: 20px !important;
+}
 
 .container--este__esel__texto8 {
     display: flex;
@@ -40,7 +42,7 @@
     font-size: 16px;
     line-height: 24.88px;
     color: #1D2734;
-    padding: 0px, 0px, 13.82px !important;
+    padding: 0px 0px 0px 13.82px !important;
 }
 
 .paragraph--este__esel__texto8{
@@ -51,7 +53,7 @@
     font-size: 12px;
     font-weight: 300;
     line-height: 14.52px;
-    padding: 0px, 0px, 13.82px !important;
+    padding: 0px 0px 0px 13.82px !important;
 }
 
 .container--slider_third-row--button {
@@ -91,4 +93,27 @@
     width: 165px;
     height: 17px;
     color: #1D2734;
+}
+
+/*--------------- Second slider css------------------------------------*/
+
+.wrapper--este__esel__off4 {
+    font-family: Lexend, sans-serif;
+    background-color: #1D2734;
+    border-radius: 4px !important;
+    border: solid 1px !important;
+    width: 84px;
+    height: 32px;
+    padding: 6px 12px 6px 12px;
+    gap: 10px;
+}
+
+.paragraph--este__esel__off4 {
+    margin: 0PX;
+    width: 60px;
+    height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
 }
