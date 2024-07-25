@@ -28,7 +28,8 @@
         "title": "Principal image destkop",
         "props": {
         "src": "/arquivos/banner-desktop.png",
-        "width": "100%"
+        "width": "100%",
+        "blockClass": "image__to__banner1"
         }
     }
 }
