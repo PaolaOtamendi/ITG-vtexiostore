@@ -7,3 +7,13 @@
     height: 48.38px;
     left: 13.82px;
 }
+
+/* Quite el bage de descuento*/
+.discountInsideContainer {
+    display: none;
+}
+
+/* Quite el bage venta x mas productos*/
+.installmentsPrice {
+    display: none;
+}

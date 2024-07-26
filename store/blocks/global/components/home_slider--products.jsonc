@@ -1,14 +1,15 @@
 {
     "flex-layout.row#global__product--list": {
-        "title": "Container summary to products",
+        "title": "Global container summary to products",
         "props": {
-            "blockClass": "product__summary_1"
+            "blockClass": "row__container__summary1"
         },
         "children": [
             "list-context.product-list#demo1"
         ]
     },
     "product-summary.shelf#demo1": {
+        "title": "Estructur to slider products summary",
         "children": [
             /*"stack-layout#prodsum",*/
             /*"rich-text#text_percent--off",
@@ -24,21 +25,25 @@
     },
 
     "list-context.product-list#demo1": {
-        "title": "List to products",
+        "title": "Container list to products",
         "blocks": [
             "product-summary.shelf#demo1"
         ],
         "children": [
             "slider-layout#global__slider--products"
-        ]
+        ],
+        "props": {
+            "blockClass": "list__container__slider2"
+        }
     },
 
     "slider-layout#global__slider--products": {
+        "title": "Estructure slider to products summary",
         "props": {
             "itemsPerPage": {
                 "desktop": 5,
                 "tablet": 3,
-                "phone": 2
+                "phone": 1
             },
             "blockClass": [
                 "custom_product__slider1"
@@ -47,6 +52,7 @@
     },
 
     "product-summary-image": {
+        "title": "Image to product summary",
         "props": {
             "showBadge": true,
             "height": 220,
