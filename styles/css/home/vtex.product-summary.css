@@ -5,14 +5,15 @@
 
 .nameContainer--custom_text__slider2 {
     width: 212px;
-    /*height: 51px;*/
-    background-color: aqua;
+    height: 51px !important;
+    background-color: rgb(209, 255, 255);
     font-family: Lexend, sans-serif !important;
     font-weight: 400 !important;
     font-size: 14px !important;
     line-height: 16.8px;
     color: #1D2734;
     text-align: left;
+    text-overflow: ellipsis;
 }
 
 .price_listPriceContainer {

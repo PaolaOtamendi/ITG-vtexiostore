@@ -16,14 +16,16 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      /*"flex-layout.col#Contain__section--destkop",
-      "flex-layout.row#Contain__section--destkop",*/
-      "rich-text#header__information--bar--one",
+      /*"flex-layout.col#Contain__section--destkop",*/
+      "search-bar#Search__bar--destkop",
+      "flex-layout.row#Contain__section--destkop",
+      "flex-layout.row#Contain__categorys--destkop2",
+      /*"rich-text#header__information--bar--one",
       "rich-text#header__information--bar--two",
       "rich-text#header__information--bar--three",
       "rich-text#header__information--bar--four",
-      "rich-text#header__information--bar--five",
-      "search-bar#Search__bar--destkop",
+      "rich-text#header__information--bar--five",*/
+      /*"search-bar#Search__bar--destkop",*/
       /*"locale-switcher",*/
       "login",
       "minicart.v2"
@@ -46,10 +48,10 @@
   },
 
   "flex-layout.row#Contain__section--destkop": {
-    "title": "Contain all sections",
+    "title": "Contain all bar pages",
     "props": {
       "blockClass": [
-        "Sections__destkop2"
+        "container__barpages__destkop2"
       ]
     },
     "children": [
@@ -94,5 +96,32 @@
         "text": "[Never say never](https:)",
         "blockClass": "menu__header__five"
     }
+  },
+
+  "flex-layout.row#Contain__categorys--destkop2": {
+    "title": "Contain all icons to sections",
+    "props": {
+      "blockClass": [
+        "container__sections__destkop2"
+      ]
+    },
+    "children": [
+
+    ]
+  },
+  "flex-layout.col#colicon__category__food": {
+    "title": "Contain icon bar food",
+    "props": {
+      "blockClass": [
+        "container__iconbar__food1"
+      ]
+    },
+    "children": [
+
+    ]
+  },
+  "rich-text#icon__bar__food": {
+    
+
   }
 }

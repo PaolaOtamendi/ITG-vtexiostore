@@ -2,121 +2,123 @@
   "flex-layout.row#global_home--slider": {
     "title": "Global home slider component",
     "children": [
-        "slider-layout#globalfirst__slider--home"
+      "slider-layout#globalfirst__slider--home"
     ],
     "props": {
-      "blockClass": "seccion__principal1"
+      "blockClass": "row__container__allslider1"
     }
   },
 
   "slider-layout#globalfirst__slider--home": {
-    "title": "Home global slider",
+    "title": "Estructure principal to slider",
     "props": {
+      "fullWidth": false,
       "itemsPerPage": {
-        "desktop": 3,
+        "desktop": 4,
         "tablet": 3,
-        "phone": 1.5
+        "phone": 1
       },
       "infinite": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "always",
-      "blockClass": "custom_slider1"
+      "blockClass": "custom__slider__2"
     },
     "children": [
-        "flex-layout.col#col__infocard--slider",
-        "flex-layout.col#col__infocard--slider",
-        "flex-layout.col#col__infocard--slider",
-        "flex-layout.col#col__infocard--slider",
-        "flex-layout.col#col__infocard--slider",
-        "flex-layout.col#col__infocard--slider"
+      "flex-layout.col#col__infocard--slider",
+      "flex-layout.col#col__infocard--slider",
+      "flex-layout.col#col__infocard--slider",
+      "flex-layout.col#col__infocard--slider",
+      "flex-layout.col#col__infocard--slider",
+      "flex-layout.col#col__infocard--slider"
     ]
   },
 
   "flex-layout.col#col__infocard--slider": {
-    "title": "Container image and text",
+    "title": "Container image and text to infocard",
     "children": [
-        "flex-layout.row#fisrtrow__infocard--container",
-        "flex-layout.row#secondrow__infocard--container",
-        "flex-layout.row#thirdrow__infocard--container"
+      "flex-layout.row#fisrtrow__infocard--container",
+      "flex-layout.row#secondrow__infocard--container",
+      "flex-layout.row#thirdrow__infocard--container"
     ],
     "props": {
-      "blockClass": "estructura__de__tarjeta--principal4"
+      "blockClass": "flexcol__to__infocard3"
     }
   },
 
   "flex-layout.row#fisrtrow__infocard--container": {
-    "title": "Container image of products",
+    "title": "Container image of infocard",
     "children": [
-        "image#first__row-image"
+      "image#first__row-image"
     ],
     "props": {
-      "blockClass": "este__contiene__imagen5"
+      "blockClass": "row__container__toimage4"
     }
   },
   "image#first__row-image": {
     "title": "Product image",
     "props": {
       "src": "/arquivos/img-sliderone.png",
-      "blockClass": "esta__es__la--imagen6"
+      "blockClass": "image__to__infocard5"
     }
   },
 
   "flex-layout.row#secondrow__infocard--container": {
-    "title": "Container text of products and price",
+    "title": "Container text of products & icon bestseller",
     "children": [
-        "flex-layout.col#second__row-text",
-        "flex-layout.col#second__row-image"
+      "flex-layout.col#second__row-text",
+      "flex-layout.col#second__row-image"
     ],
     "props": {
-        "preserveLayoutOnMobile": true,
-        "blockClass": "este__contiene__textoicon7"
+      "preserveLayoutOnMobile": true,
+      "blockClass": "row__container__texticon6"
     }
   },
+
   "flex-layout.col#second__row-text": {
-    "title": "Container title text of product",
+    "title": "Container title & text of product",
     "children": [
-        "rich-text#second__row-title"
+      "rich-text#second__row-title"
     ],
-    //Este es nuevo yo no lo tenia
     "props": {
-      "width": "70%"
+      "width": "70%",
+      "blockClass": "col__container__text7"
     }
   },
   "rich-text#second__row-title": {
-    "title": "Richtext to product",
+    "title": "Richtext description to product",
     "props": {
         "text": "# Heading\n Builder platform is made by, buildership platform is made by...",
-        "blockClass": "este__esel__texto8"
+        "blockClass": "container__description8"
     }
   },
 
   "flex-layout.col#second__row-image": {
-    "title": "Container img ecommer award",
+    "title": "Container img ecommer bestseller",
     "children": [
         "image#second__row-best-seller"
     ],
     "props": {
-      "blockClass": "contiene__el_icon7"
+      "blockClass": "container__icon8"
   }
   },
   "image#second__row-best-seller": {
     "props": {
     "src": "/arquivos/bestseller.png",
-    "blockClass": "este__esel__icon7"
+    "blockClass": "icon__to__product9"
     }
   },
 
   "flex-layout.row#thirdrow__infocard--container": {
-    "title": "Container button to product",
+    "title": "Container button to infocard",
     "children": [
         "rich-text#slider__third-row--button"
     ]
   },
   "rich-text#slider__third-row--button": {
-    "title": "Button price to inforcard",
+    "title": "Button price to product",
     "props": {
         "text": "[Ver precio](https:)",
-        "blockClass": "slider_third-row--button"
+        "blockClass": "button__to__product10"
     }
   }
 }

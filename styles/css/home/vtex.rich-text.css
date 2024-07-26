@@ -1,51 +1,36 @@
 .paragraph--title__slider--global {
     font-family: Lexend, sans-serif;
-    font-weight: 500;
+    font-weight: 500 !important;
     font-size: 16px;
     line-height: 16.8px;
     color: #1D2734;
     width: 165px;
     height: 17px;
-    /*position: absolute; /*Nuevo*/
-    top: 630px;
-    left: 72px;
     text-align: left;
     margin-bottom: 20px !important;
     margin-top: 20px !important;
+    margin-left: 72px;
+    top: 630px;
+    /*left: 72px;*/
+    /*position: absolute; /*Nuevo*/
 }
 
 .wrapper--title__slider--global{
-    /*font-family: Lexend, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16.8px;
-    color: #1D2734;
-    width: 165px !important;
-    height: 17px !important;
-    top: 630px;
-    left: 72px;
-    text-align: left;*/
     margin-top: 20px !important;
 }
 
-.container--este__esel__texto8 {
-    display: flex;
-    width: 324px;
-    height: 79.19px;
-}
-
-.heading--este__esel__texto8 {
+.heading--container__description8 {
     width: 234.14px;
     text-align: left;
     font-family: Lexend, sans-serif;
     font-weight: 600;
     font-size: 16px;
-    line-height: 24.88px;
     color: #1D2734;
+    line-height: 24.88px;
     padding: 0px 0px 0px 13.82px !important;
 }
 
-.paragraph--este__esel__texto8{
+.paragraph--container__description8{
     width: 234.14px;
     height: 30px;
     text-align: left;
@@ -56,13 +41,13 @@
     padding: 0px 0px 0px 13.82px !important;
 }
 
-.container--slider_third-row--button {
+.container--button__to__product10 {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.wrapper--slider_third-row--button {
+.wrapper--button__to__product10 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +60,7 @@
     background-color: #1D2734;
 }
 
-.link--slider_third-row--button{
+.link--button__to__product10 {
     font-family: Lexend, sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -83,19 +68,7 @@
     color: #fff;
 }
 
-
-.paragraph--title__slider--global {
-    font-family: Lexend, sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 16.8px;
-    margin-left: 72px;
-    width: 165px;
-    height: 17px;
-    color: #1D2734;
-}
-
-/*--------------- Second slider css------------------------------------*/
+/*----------------------------- "° slider custom products list ------------------------------------------------*/
 
 .wrapper--este__esel__off4 {
     font-family: Lexend, sans-serif;
