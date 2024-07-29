@@ -90,3 +90,21 @@
     line-height: 20px;
     color: #fff;
 }
+
+/*----------------------------- "Header ------------------------------------------------*/
+
+.paragraph--menu__header__information {
+    font-family: Lexend, sans-serif !important;
+    font-weight: 400 !important;
+    line-height: 15px;
+    text-align: right;
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+/*.pr0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}*/
