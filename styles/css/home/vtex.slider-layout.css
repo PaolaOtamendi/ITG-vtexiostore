@@ -4,14 +4,14 @@
 }
 
 .slide--custom__slider__2{
-    background-color: #c38af9;
+    /*background-color: #c38af9;*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .caretIcon--custom__slider__2 {
-    background-color: rgb(0, 255, 30);
+    /*background-color: rgb(0, 255, 30);*/
     width: 20px !important;
     height: 14px !important;
     border-radius: 4px;
@@ -65,7 +65,7 @@
 }
 
 .paginationDotsContainer--custom__slider__2 {
-    background-color: #5c7cff;
+    /*background-color: #5c7cff;*/
     /*position: absolute;*/
     display: flex;
     align-items: center;
@@ -105,7 +105,7 @@
 }*/
 
 .slide--custom_product__slider1{
-    background-color: #ddbefb;
+    /*background-color: #ddbefb;*/
     display: flex;
     align-items: center;
     justify-content: center;

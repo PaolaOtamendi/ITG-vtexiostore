@@ -1,43 +1,121 @@
 {
-    "sticky-layout#desktop": {
-    "props": {
-      "blockClass": "sticky-header"
-    },
-    "children": ["flex-layout.row#desktop"]
+    /*"sticky-layout#desktop":*/
+  "header-row#global__menu--sections": {
+      "title": "Header menu destkop",
+      "props": {
+        "blockClass": "all_section--header1",
+        "fullWidth": true
+      },
+      "children": [
+        "flex-layout.row#desktop__header__section"
+      ]
   },
-  "flex-layout.row#desktop": {
+  "flex-layout.row#desktop__header__section": {
+    "title": "Container two sections to header destkop",
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "container__sections_first_two2"
     },
     "children": [
-      "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
+      /*"flex-layout.col#logo-desktop",*/
+      /*"flex-layout.row#Firts__section__logo-desktop",*/
+      "flex-layout.col#First__section__menu",
+      /*"flex-layout.col#spacer",*/
       /*"flex-layout.col#Contain__section--destkop",*/
-      "search-bar#Search__bar--destkop",
-      "flex-layout.row#Contain__section--destkop",
-      "flex-layout.row#Contain__categorys--destkop2",
-      /*"rich-text#header__information--bar--one",
-      "rich-text#header__information--bar--two",
-      "rich-text#header__information--bar--three",
-      "rich-text#header__information--bar--four",
-      "rich-text#header__information--bar--five",*/
+      /*"search-bar#Search__bar--destkop",*/
+      /*"flex-layout.col#Second__section__header",*/
+      "flex-layout.col#Second__section__menu"
+      /*"flex-layout.col#Third__section__loginminicart"*/
+      /*"flex-layout.row#Contain__section--destkop",*/
+      /*"flex-layout.row#Contain__categorys--destkop2",*/
       /*"search-bar#Search__bar--destkop",*/
       /*"locale-switcher",*/
-      "login",
-      "minicart.v2"
+      /*"login",
+      "minicart.v2"*/
     ]
   },
-  "flex-layout.col#logo-desktop": {
+
+
+  "flex-layout.col#First__section__menu": {
+    "title": "Container sections logo and search bar",
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": [
+        "container__logo_and_search3"
+      ]
+    },
+    "children": [
+      "flex-layout.row#Firts__section__logo-desktop"
+    ]
+  },
+  "flex-layout.row#Firts__section__logo-desktop": {
+    "title": "Logo and search bar",
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "row__container__logo__search4"
+    },
+    "children": [
+      /*"logo",*/
+      /*"logo#desktop",
+      "search-bar#Search__bar--destkop"*/
+      "flex-layout.col#container_logo",
+      "flex-layout.col#container_search"
+    ]
+  },
+  "flex-layout.col#container_logo": {
+    "title": "Container logo",
+    "props": {
+      "verticalAlign": "middle"
+      /*"blockClass": "row__container__logo"
+      "blockClass": "col__container__logo5"*/
+    },
+    "children": [
+      "logo#desktop"
+    ]
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/img/icon_Black.png",
+      "width": "32px",
+      "blockClass": [
+        "logo__img__custom6"
+      ]
+    }
+  },
+  "flex-layout.col#container_search": {
+    "title": "Container logo",
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "col__container__search7"
+    },
+    "children": [
+      "search-bar#Search__bar--destkop"
+    ]
+  },
+  "search-bar#Search__bar--destkop": {
+    "props": {
+      "placeholder": "Search products...",
+      "blockClass":[
+        "search__bar8"
+      ]
+    }
+  },
+
+  /*"flex-layout.col#Second__section__header": {
+    "title": "Container search bar",
     "props": {
       "verticalAlign": "middle"
     },
-    "children": ["logo"]
+    "children": [
+      "search-bar#Search__bar--destkop"
+    ]
   },
-
   "search-bar#Search__bar--destkop": {
     "props": {
       "placeholder": "Search products...",
@@ -45,13 +123,30 @@
         "search__bar1"
       ]
     }
-  },
+  },*/
 
+  "flex-layout.col#Second__section__menu": {
+    "title": "Container sections bar",
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": [
+        "col__container__sections_login9"
+      ]
+    },
+    "children": [
+      "flex-layout.row#Contain__section--destkop"
+    ]
+  },
   "flex-layout.row#Contain__section--destkop": {
     "title": "Contain all bar pages",
     "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
       "blockClass": [
-        "container__barpages__destkop2"
+        "container__barpages__destkop10"
       ]
     },
     "children": [
@@ -59,69 +154,72 @@
       "rich-text#header__information--bar--two",
       "rich-text#header__information--bar--three",
       "rich-text#header__information--bar--four",
-      "rich-text#header__information--bar--five"
+      "rich-text#header__information--bar--five",
+      "flex-layout.row#contain_login_and_minicart"
     ]
   },
   "rich-text#header__information--bar--one": {
     "title": "Menu header search one",
     "props": {
         "text": "[Tendencias de ITGlobers](https:)",
-        "blockClass": "menu__header__one"
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "font": "t-heading-10",
+        "blockClass": "menu__header__information"
     }
   },
   "rich-text#header__information--bar--two": {
     "title": "Menu header search two",
     "props": {
         "text": "[Colección del mes](https:)",
-        "blockClass": "menu__header__two"
+        "blockClass": "menu__header__information"
     }
   },
   "rich-text#header__information--bar--three": {
     "title": "Menu header search three",
     "props": {
         "text": "[Ofertas enero](https:)",
-        "blockClass": "menu__header__three"
+        "blockClass": "menu__header__information"
     }
   },
   "rich-text#header__information--bar--four": {
     "title": "Menu header search four",
     "props": {
         "text": "[Cyber Monday](https:)",
-        "blockClass": "menu__header__four"
+        "blockClass": "menu__header__information"
     }
   },
   "rich-text#header__information--bar--five": {
     "title": "Menu header search five",
     "props": {
         "text": "[Never say never](https:)",
-        "blockClass": "menu__header__five"
+        "blockClass": "menu__header__information"
     }
   },
 
-  "flex-layout.row#Contain__categorys--destkop2": {
-    "title": "Contain all icons to sections",
+  /*"flex-layout.col#Third__section__loginminicart": {
+    "title": "Container login and minicart",
     "props": {
+      "verticalAlign": "middle",
       "blockClass": [
-        "container__sections__destkop2"
+        "col_container_loginandminicart7"
       ]
     },
     "children": [
-
+      /*"login",
+      "minicart.v2"
+      "flex-layout.row#contain_login_and_minicart"
     ]
-  },
-  "flex-layout.col#colicon__category__food": {
-    "title": "Contain icon bar food",
+  },*/
+  "flex-layout.row#contain_login_and_minicart": {
+    "title": "Container login and minicart",
     "props": {
-      "blockClass": [
-        "container__iconbar__food1"
-      ]
+      "verticalAlign": "middle",
+      "blockClass": "container__login__minicart11"
     },
     "children": [
-
+      "login",
+      "minicart.v2"
     ]
-  },
-  "rich-text#icon__bar__food": {
-    
-
   }
 }
