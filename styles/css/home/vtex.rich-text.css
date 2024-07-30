@@ -108,3 +108,35 @@
     align-items: center;
     justify-content: center;
 }*/
+
+.container--texto_header_icon_4 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: Lexend, sans-serif !important;
+    display: flex !important;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph--texto_header_icon_4 {
+    margin: 2px !important;
+}
+
+.container--texto_header_icon_fitness6 {
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: Lexend, sans-serif !important;
+    display: flex !important;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph--texto_header_icon_fitness6 {
+    margin: 2px !important;
+}
