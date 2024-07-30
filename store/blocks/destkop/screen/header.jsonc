@@ -2,7 +2,9 @@
     "header-layout.desktop": {
     "children": [
       /*"sticky-layout#desktop"*/
-      "header-row#global__menu--sections",
+      "header-row#header__menu__destkop",
+      /*"header-row#global__menu--sections",*/
+      /*"vtex.menu@2.x:menu#websites2"*/
       "header-row#global__menu--icon"
     ]
   }

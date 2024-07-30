@@ -1,10 +1,22 @@
-.headerRowContainer--all_section--header1 {
-    /*background-color: aqua;*/
-    /*display: flex;*/
+/*.headerRowContainer--all_section--header1 {
+    background-color: aqua;
+    width: Fixed (1, 136px) px;
+    height: Hug (47px) px;
+    top: 9px;
+    left: 72px;
+    gap: 0px;
+    opacity: 0px;
+    display: flex;
     align-items: center;
     justify-content: center;
-}
-
-/*.headerRowContentContainer--all_section--header1 {
-    background-color: aqua;
 }*/
+
+.headerRowContainer--all_section--header_1 {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    padding: 8px 48px 8px 48px;
+    /*gap: 48px;*/
+}

@@ -1,0 +1,31 @@
+{
+    "vtex.menu@2.x:menu#websites2": {
+      "props": {
+        "blockClass": ["menu_header_destkop1"],
+        "items": [
+          {
+            "id": "menu-item-food",
+            "type": "custom",
+            "highlight": false,
+            "itemProps": {
+              "type": "internal",
+              "href": "/food",
+              "noFollow": false,
+              "tagTitle": "food",
+              "text": "Food",
+              "iconProps": {
+                "id": "food",
+                "size": 20
+              }
+            }
+          }
+        ]
+      }
+    },
+    "icon#menu__foo": {
+      "props": {
+        "id": "food",
+        "size": 20
+      }
+    }
+  }
