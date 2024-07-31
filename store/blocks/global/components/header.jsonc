@@ -27,41 +27,58 @@
       ]
     },
     "children": [
-      "flex-layout.col#categorie_food",
-      "flex-layout.col#categorie_fitness",
-      "flex-layout.col#categorie_artic",
-      "flex-layout.col#categorie_poolday",
-      "flex-layout.col#categorie_hotel",
-      "flex-layout.col#categorie_house",
-      "flex-layout.col#categorie_hotel",
-      "flex-layout.col#categorie_nature",
-      "flex-layout.col#categorie_closet",
-      "flex-layout.col#categorie_beach",
-      "flex-layout.col#categorie_hike",
-      "flex-layout.col#categorie_delivery",
-      "flex-layout.col#categorie_beer"
+      /*flex-layout.col#categorie_food",*/
+      "flex-layout.col#categorie__icon--food",
+      /*"flex-layout.col#categorie_fitness",*/
+      "flex-layout.col#categorie__icon--fitness",
+      /*"flex-layout.col#categorie_artic",*/
+      "flex-layout.col#categorie__icon--artic",
+      /*"flex-layout.col#categorie_poolday",*/
+      "flex-layout.col#categorie__icon--poolday",
+      /*"flex-layout.col#categorie_hotel",*/
+      "flex-layout.col#categorie__icon--hotel",
+      /*"flex-layout.col#categorie_house",*/
+      "flex-layout.col#categorie__icon--house",
+      /*"flex-layout.col#categorie_hotel",*/
+      "flex-layout.col#categorie__icon--hotel",
+      /*"flex-layout.col#categorie_nature",*/
+      "flex-layout.col#categorie__icon--nature",
+      /*"flex-layout.col#categorie_closet",*/
+      "flex-layout.col#categorie__icon--closet",
+      /*"flex-layout.col#categorie_beach",*/
+      "flex-layout.col#categorie__icon--beach",
+      /*"flex-layout.col#categorie_hike",*/
+      "flex-layout.col#categorie__icon--hike",
+      /*"flex-layout.col#categorie_delivery",*/
+      "flex-layout.col#categorie__icon--delivery",
+      /*"flex-layout.col#categorie_beer",*/
+      "flex-layout.col#categorie__icon--beer"
     ]
   },
 
-  "flex-layout.col#categorie_food": {
-    "title": "container menu food",
+  "flex-layout.col#categorie__icon--food": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        /*"col__container__icon_3"*/
+        "categorie__icon--food",
+        "categorie__icon--global"
       ]
     },
     "children": [
-      "icon#menu__foo",
+      "icon#menu__food",
       "rich-text#text_menu_header--food"
     ]
   },
-  "icon#menu__foo": {
+  "icon#menu__food": {
     "props": {
       "id": "food",
       "width": 20,
       "height": 20,
-      "size": 20
+      "size": 20,
+      "overflow": "visible",
+      "blockclass": "icon_menu__food"
     }
   },
   "rich-text#text_menu_header--food": {
@@ -72,17 +89,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--food",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_fitness": {
-    "title": "container menu fitness",
+  "flex-layout.col#categorie__icon--fitness": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--fitness",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -106,17 +125,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--fitness",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_artic": {
-    "title": "container menu in the artic",
+  "flex-layout.col#categorie__icon--artic": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--artic",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -129,7 +150,8 @@
       "id": "ice",
       "width": 20,
       "height": 20,
-      "size": 20
+      "size": 20,
+      "overflow": "visible"
     }
   },
   "rich-text#text_menu_header--artic": {
@@ -140,17 +162,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--artic",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_poolday": {
-    "title": "container menu in the poolday",
+  "flex-layout.col#categorie__icon--poolday": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--poolday",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -174,17 +198,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--pool",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_hotel": {
-    "title": "container menu in the hotel",
+  "flex-layout.col#categorie__icon--hotel": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--hotel",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -208,17 +234,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--hotel",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_house": {
-    "title": "container menu in the hotel",
+  "flex-layout.col#categorie__icon--house": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--house",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -242,17 +270,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--house",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_nature": {
-    "title": "container menu in the nature",
+  "flex-layout.col#categorie__icon--nature": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--nature",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -276,17 +306,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--nature",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_closet": {
-    "title": "container menu in the closet",
+  "flex-layout.col#categorie__icon--closet": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--closet",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -310,17 +342,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--closet",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_beach": {
-    "title": "container menu in the beach",
+  "flex-layout.col#categorie__icon--beach": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--beach",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -344,17 +378,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--beach",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_hike": {
-    "title": "container menu in the hike",
+  "flex-layout.col#categorie__icon--hike": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--hike",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -378,17 +414,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--hike",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_delivery": {
-    "title": "container menu in the delivery",
+  "flex-layout.col#categorie__icon--delivery": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--delivery",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -412,17 +450,19 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--delivery",
+        "text_menu_header--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie_beer": {
-    "title": "container menu in the berr",
+  "flex-layout.col#categorie__icon--beer": {
+    "title": "container menu icond and text",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "col__container__icon_3"
+        "categorie__icon--beer",
+        "categorie__icon--global"
       ]
     },
     "children": [
@@ -435,7 +475,8 @@
       "id": "beer",
       "width": 20,
       "height": 20,
-      "size": 20
+      "size": 20,
+      "overflow": "visible"
     }
   },
   "rich-text#text_menu_header--beer": {
@@ -446,7 +487,8 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "texto_header_icon_4"
+        "text_menu_header--beer",
+        "text_menu_header--global"
       ]
     }
   }

@@ -1,12 +1,106 @@
 {
-    "sticky-layout#mobile": {
+  "header-row#header__menu--mobile":{
+    "title": "Header menu phone and tablet",
+    "props": {
+      "blockClass": "header__menu--mobile",
+        "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#header__first--section--mobile",
+      "flex-layout.row#contain_login_and_minicart--mobile"
+    ]
+  },
+
+  "flex-layout.row#header__first--section--mobile": {
+    "title": "Container menu logo icon search and login",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "header__first--section--mobile"
+    },
+    "children": [
+      "flex-layout.col#drawer__header--mobile",
+      "flex-layout.col#logo__header--mobile",
+      "flex-layout.col#searchbar__header--mobile"
+    ]
+  },
+
+  "flex-layout.col#drawer__header--mobile": {
+    "title": "Container drawer mobile",
+    "props": {
+      "blockClass": "drawer__header--mobile"
+    },
+    "children": [
+      "drawer"
+    ]
+  },
+
+  "flex-layout.col#logo__header--mobile": {
+    "title": "Container logo mobile",
+    "props": {
+      "blockClass": "logo__header--mobile"
+    },
+    "children": [
+      "logo#logo__mobile--custom"
+    ]
+  },
+  "logo#logo__mobile--custom": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/img/icon_Black.png",
+      "width": "32px",
+      "blockClass": [
+        "logo__mobile--custom"
+      ]
+    }
+  },
+
+  "flex-layout.col#searchbar__header--mobile": {
+    "title": "Container Search Bar mobile",
+    "props": {
+      "blockClass": "searchbar__header--mobile"
+    },
+    "children": [
+      "search-bar#search__bar--mobile"
+    ]
+  },
+  "search-bar#search__bar--mobile": {
+    "props": {
+      "placeholder":"",
+      "blockClass":[
+        "search__bar--mobile"
+      ]
+    }
+  },
+
+  "flex-layout.row#contain_login_and_minicart--mobile": {
+    "title": "Container login and minicart mobile",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "contain_login_and_minicart--mobile"
+    },
+    "children": [
+      "minicart.v2",
+      "login"
+    ]
+  }
+
+  /*  "sticky-layout#mobile": {
     "children": ["flex-layout.row#mobile"]
   },
   "flex-layout.row#mobile": {
     "children": [
       "drawer",
       "logo",
-      /*"flex-layout.col#spacer",*/
+      "flex-layout.col#spacer",
       "header-row#global__menu--icon",
       "login",
       "minicart.v2"
@@ -20,5 +114,5 @@
   },
   "drawer": {
     "children": []
-  }
+  }*/
 }

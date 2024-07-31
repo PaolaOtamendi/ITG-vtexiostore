@@ -1,0 +1,17 @@
+/*----------------------------- "Header ------------------------------------------------*/
+.logoContainer--logo__img__custom_5 {
+    padding-left: 0.5rem;
+    padding-right: 1.5rem;
+}
+
+.autoCompleteOuterContainer--search__bar_7 :global(.vtex-input-prefix__group){
+    border-radius: 40px;
+    width: 280px;
+    height: 40px;
+    gap: 16px;
+    background-color: #F5F4F6;
+}
+
+.autoCompleteOuterContainer--search__bar_7 :global(.vtex-input__suffix){
+    background-color: #F5F4F6;
+}
