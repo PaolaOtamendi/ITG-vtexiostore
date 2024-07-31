@@ -1,7 +1,9 @@
 {
   "header-layout.mobile": {
     "children": [
-      "sticky-layout#mobile"
+      /*"sticky-layout#mobile"*/
+      "header-row#header__menu--mobile",
+      "header-row#global__menu--icon"
     ]
   }
 }

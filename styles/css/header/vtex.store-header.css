@@ -11,8 +11,17 @@
     justify-content: center;
 }*/
 
+.headerRowContainer--row_container_all_menu1 {
+    /*background-color: #71ff5e;*/
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 56px;
+}
+
 .headerRowContainer--all_section--header_1 {
-    background-color: aqua;
+    /*background-color: aqua;*/
     display: flex;
     align-items: center;
     justify-content: center;
