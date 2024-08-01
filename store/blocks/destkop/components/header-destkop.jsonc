@@ -94,67 +94,32 @@
     },
     "children": [
       "minicart.v2",
-      "login"
+      /*"login",*/
+      "login#header_destkop"
     ]
   },
-
-  // En caso de no poder usarse el menu seria colocar esta flex.row
-  "flex-layout.row#header__second__section": {
-    "title": "Contain all bar pages",
+  "minicart.v2": {
     "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true,
-      "blockClass": [
-        "container__barpages__destkop_9"
-      ]
-    },
-    "children": [
-      "rich-text#header__information--bar--one",
-      "rich-text#header__information--bar--two",
-      "rich-text#header__information--bar--three",
-      "rich-text#header__information--bar--four",
-      "rich-text#header__information--bar--five"
-    ]
-  },
-  "rich-text#header__information--bar--one": {
-    "title": "Menu header search one",
-    "props": {
-        "text": "[Tendencias de ITGlobers](https:)",
-        "textAlignment": "LEFT",
-        "textPosition": "LEFT",
-        "font": "t-heading-10",
-        "blockClass": "menu__header__information_10"
+      "MinicartIcon": "icon-cart#minicart-icon"
     }
   },
-  "rich-text#header__information--bar--two": {
-    "title": "Menu header search two",
+  "icon-cart#minicart-icon": {
     "props": {
-        "text": "[Colección del mes](https:)",
-        "blockClass": "menu__header__information_10"
+      "width": 20,
+      "height": 20,
+      "size": 20,
+      "viewBox": "0 0 20 20"
     }
   },
-  "rich-text#header__information--bar--three": {
-    "title": "Menu header search three",
-    "props": {
-        "text": "[Ofertas enero](https:)",
-        "blockClass": "menu__header__information_10"
-    }
-  },
-  "rich-text#header__information--bar--four": {
-    "title": "Menu header search four",
-    "props": {
-        "text": "[Cyber Monday](https:)",
-        "blockClass": "menu__header__information_10"
-    }
-  },
-  "rich-text#header__information--bar--five": {
-    "title": "Menu header search five",
-    "props": {
-        "text": "[Never say never](https:)",
-        "blockClass": "menu__header__information_10"
+  "login#header_destkop": {
+  "props": {
+    "emailAndPasswordTitle": "LOG-IN",
+    "accessCodeTitle": "Acess Code LOG-IN",
+    "emailPlaceholder": "e-mail",
+    "passwordPlaceholder": "password",
+    "showPasswordVerificationIntoTooltip": true,
+    "iconLabel": "Login",
+    "blockClass": "icon-login"
     }
   }
 }

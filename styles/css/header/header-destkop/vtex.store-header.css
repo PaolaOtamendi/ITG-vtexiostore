@@ -1,0 +1,61 @@
+/*----------------------------- "Header ------------------------------------------------*/
+
+.headerStickyRow--row_container_all_menu1 {
+    overflow: hidden;
+}
+
+/* Nuevo prueba para ajuste*/
+.headerRowContainer--row_container_all_menu1 {
+    background-color: #71ff5e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 56px;
+    padding: 8px 48px 8px 48px;
+}
+
+/* Nuevo prueba 2 para ajuste agregamos queries vistas en mobile y phone*/
+@media (max-width: 767px) {
+    .headerRowContainer--row_container_all_menu1 {
+        background-color: #71ff5e;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 56px;
+        padding: 0px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .headerRowContainer--row_container_all_menu1 {
+        background-color: #71ff5e;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        height: 56px;
+        padding: 0px; 
+    }
+}
+
+/* Anteriormente prueba de ajuste*/
+/*.headerRowContainer--row_container_all_menu1 {
+    background-color: #71ff5e;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    height: 56px;
+}*/
+
+.headerRowContainer--all_section--header_1 {
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 56px;
+    padding: 8px 48px 8px 48px;
+    /*gap: 48px;*/
+}
