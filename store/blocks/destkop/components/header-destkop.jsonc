@@ -9,7 +9,6 @@
       "children": [
         "flex-layout.row#header__first__section",
         "vtex.menu@2.x:menu#websites",
-        /*"flex-layout.row#header__second__section",*/
         "flex-layout.row#contain_login_and_minicart"
       ]
   },
@@ -22,9 +21,7 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true,
-      "blockClass": [
-        "header__container_drawer_logo_searchbar_2"
-      ]
+      "blockClass": "header__container_drawer_logo_searchbar_2"
     },
     "children": [
       "flex-layout.col#drawer__header_destkop",
@@ -94,7 +91,6 @@
     },
     "children": [
       "minicart.v2",
-      /*"login",*/
       "login#header_destkop"
     ]
   },
