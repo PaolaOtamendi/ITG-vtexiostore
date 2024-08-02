@@ -1,0 +1,26 @@
+.flexRow--header__first--section--mobile {
+    display: contents;
+}
+
+.flexRowContent--header__first--section--mobile {
+    /*background-color: rgb(198, 174, 220);*/
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /*padding: 10px;*/
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+
+.stretchChildrenWidth {
+    width: auto;
+}
+
+.flexCol--logo__header--mobile {
+    /*background-color: beige;*/
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

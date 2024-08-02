@@ -1,14 +1,14 @@
 /*----------------------------- "Header ------------------------------------------------*/
 
 .flexColChild--Container_drawer_3 {
-    background-color: #e6ff46;
+    /*background-color: #e6ff46;*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 .flexColChild--Container_logo_4 {
-    background-color: #9862cb;
+    /*background-color: #9862cb;*/
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
 
 /* Nuevo prueba para ajuste 2*/
 .flexRowContent--row_container_categories_menu2 {
-    background-color: #b042ff;
+    /*background-color: #b042ff;*/
     display: flex;
     /*justify-content: center;  /*Cambio*/
     justify-content: left; 
@@ -48,7 +48,7 @@
 /* Nuevo prueba 2 para ajuste agregamos queries vistas en mobile y phone*/
 @media (max-width: 767px) {
     .flexRowContent--row_container_categories_menu2 {
-        background-color: #b042ff;
+        /*background-color: #b042ff;*/
         display: flex;
         justify-content: left; /* Cambio*/
         align-items: center;
@@ -63,7 +63,7 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .flexRowContent--row_container_categories_menu2 {
-        background-color: #b042ff;
+        /*background-color: #b042ff;*/
         display: flex;
         justify-content: left; /* Cambio*/
         align-items: center;
@@ -77,7 +77,7 @@
 
 /* A partir de aqui va la categorioa general prueba 1*/
 .flexCol--categorie__icon--global {
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     display: flex;
     justify-content: center;
     align-items: center;
