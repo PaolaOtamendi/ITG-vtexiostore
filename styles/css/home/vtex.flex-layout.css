@@ -1,14 +1,9 @@
-.flexColChild--image__to__banner{
-    width: 100%;
-    /*top: 168px !important;
-    position: relative; /* Modificar las distancia en segundo plano*/
+/*----------------------------- Global slider products ------------------------------------------------*/
+.flexRow--global_home--slider {
+    background-color: rgb(143, 255, 115);
 }
 
-.flexRow--row__container__allslider1 {
-    /*background-color: rgb(143, 255, 115);*/
-}
-
-.flexRowContent--row__container__allslider1 {
+.flexRowContent--global_home--slider {
     /*background-color: aqua;*/
     display: flex;
     align-items: center;
@@ -17,65 +12,49 @@
     height: 340px;
 }
 
-.flexCol--flexcol__to__infocard3 {
-    /*background-color: beige;*/
+.flexCol--global__infocard--slider{
+    background-color: rgb(255, 255, 58);
     max-width: 324px;
     height: 336.46px;
     border-radius: 12px;
     align-items: center;
 }
 
+.flexColChild--global__infocard--slider {
+    width: 100%;
+}
 
-.flexColChild--container__icon8 {
+.flexColChild--second__row--bestseller {
+    display: flex;
+    background-color: chartreuse;
     height: 100%;
-    width: 76.03px;
+    /*width: 76.03px;*/
     display: flex;
     align-items: start;
     justify-content: center;
+    /*margin-top: 13.82px;*/
+}
+
+.flexCol--second__row--bestseller{
+    display: flex;
+    background-color: aqua;
+    width: 76.03px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.flexRowContent--second__row-infocard--container {
+    display: flex;
+    background-color: rgb(110, 100, 255);
     margin-top: 13.82px;
 }
 
-.flexRow--row__container__texticon {
-    margin-bottom: 13.82px;
-}
-
-/*----------------------------- "° slider custom products list ------------------------------------------------*/
-/*.flexRow--container__title--slider {
-    position: relative;
-    top: 50px;
+/*.container--second__row-title--infocard {
+    width: 247.97px !important;
 }*/
 
-.flexRow--row__container__summary1 {
-    /*background-color: rgb(143, 255, 115);*/
-    position: relative;
-    top: 50px; /* Mejorar las distancis */
-}
-
-.flexRowContent--row__container__summary1 {
-    /*background-color: aqua;*/
-    display: flex;
-    align-items: center;
-    justify-items: center;
-    justify-content: center;
-    height: 378px;
-}
-
-.flexRow--product__summary_1 {
-    display: flex;
-    justify-content: center;
-}
-
-.image--custom_image__slider2 {
-    width: 178px !important;
-    height: 140px !important;
-}
-
-.flexRow--container__offlike--row3 {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.stretchChildrenWidth {
-    justify-content: right;
+.flexRow--second__row-infocard--container {
+    width: 100%;
+    max-width: 324px;
 }

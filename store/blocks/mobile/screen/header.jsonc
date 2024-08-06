@@ -3,7 +3,7 @@
     "children": [
       /*"sticky-layout#mobile"*/
       "header-row#header__menu--mobile",
-      "header-row#global__menu--icon"
+      "header-row#global__header--menu-icons"
     ]
   }
 }

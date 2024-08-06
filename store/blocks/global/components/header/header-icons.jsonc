@@ -1,9 +1,8 @@
 {
-  "header-row#global__menu--icon":{
-    "title": "Container general menu categories icons",
+  "header-row#global__header--menu-icons":{
+    "title": "Global header menu icons",
     "children": [
-      /*"flex-layout.col#spacer",*/
-      "flex-layout.row#container_categories_menu"
+      "flex-layout.row#header__menu--categories"
     ],
     "props": {
       "horizontalAlign": "center",
@@ -12,18 +11,18 @@
       "preventVerticalStretch": true,
       "fullWidth": true,
       "blockClass": [
-        "row_container_all_menu1"
+        "global__header--menu-icons"
       ]
     }
   },
 
-  "flex-layout.row#container_categories_menu": {
-    "title": "menu header categories icons",
+  "flex-layout.row#header__menu--categories": {
+    "title": "Header menu categories icons",
     "props": {
       "preserveLayoutOnMobile": true,
       "topMenuIcons": true,
       "blockClass": [
-        "row_container_categories_menu2"
+        "header__menu--categories"
       ]
     },
     "children": [
@@ -44,7 +43,7 @@
   },
 
   "flex-layout.col#categorie__icon--food": {
-    "title": "container menu icond and text",
+    "title": "container categories and richtext",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
