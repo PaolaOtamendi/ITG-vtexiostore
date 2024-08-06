@@ -1,0 +1,40 @@
+/*----------------------------- "° slider custom products list ------------------------------------------------*/
+/*.flexRow--container__title--slider {
+    position: relative;
+    top: 50px;
+}*/
+
+.flexRow--row__container__summary1 {
+    /*background-color: rgb(143, 255, 115);*/
+    position: relative;
+    top: 50px; /* Mejorar las distancis */
+}
+
+.flexRowContent--row__container__summary1 {
+    /*background-color: aqua;*/
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+    height: 378px;
+}
+
+.flexRow--product__summary_1 {
+    display: flex;
+    justify-content: center;
+}
+
+.image--custom_image__slider2 {
+    width: 178px !important;
+    height: 140px !important;
+}
+
+.flexRow--container__offlike--row3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stretchChildrenWidth {
+    justify-content: right;
+}

@@ -1,17 +1,4 @@
-/*----------------------------- "Header ------------------------------------------------*/
-
-.paragraph--menu__header__information {
-    font-family: Lexend, sans-serif !important;
-    font-weight: 400 !important;
-    line-height: 15px;
-    text-align: right;
-    font-size: 12px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-/* A partir de aqui va la clase global para cada contenedor*/
-
+/*----------------------------- Header destkop section icons ---------------------------------------*/
 .container--text_menu_header--global {
     font-weight: 300;
     font-size: 12px;

@@ -1,21 +1,31 @@
-/*----------------------------- "Header ------------------------------------------------*/
+/*----------------------------- Banner destkop ------------------------------------------------*/
+:global(.vtex-store-components-3-x-imageElementLink) {
+    width: 100%;
+}
 
-.flexColChild--Container_drawer_3 {
+/*----------------------------- Header destkop section menu ---------------------------------------*/
+.flexRowContent--header__second--section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flexColChild--drawer__header--desktop {
     /*background-color: #e6ff46;*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.flexColChild--Container_logo_4 {
+.flexColChild--logo__header--desktop {
     /*background-color: #9862cb;*/
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-/* Nuevo prueba para ajuste 2*/
-.flexRowContent--row_container_categories_menu2 {
+/*----------------------------- Header destkop section icons ---------------------------------------*/
+.flexRowContent--header__menu--categories {
     /*background-color: #b042ff;*/
     display: flex;
     /*justify-content: center;  /*Cambio*/
@@ -28,26 +38,18 @@
     position: relative;
 }
 
-
-/* Nuevo prueba para ajuste*/
-/*.flexRowContent--row_container_categories_menu2 {
-    background-color: #b042ff;
+.flexCol--categorie__icon--global {
+    /*background-color: aquamarine;*/
     display: flex;
-    /*justify-content: left;  Cambio
     justify-content: center;
     align-items: center;
-    width: 1136px;
-    height: auto;
-    min-height: 47px;
-    /*position: absolute;
-    top: 9px; */
-    /*left: 72px;
-}*/
+    width: auto;
+    height: 47px;
+}
 
-
-/* Nuevo prueba 2 para ajuste agregamos queries vistas en mobile y phone*/
+/*----------------------------- MediaQueires header section icons ---------------------------------------*/
 @media (max-width: 767px) {
-    .flexRowContent--row_container_categories_menu2 {
+    .flexRowContent--header__menu--categories {
         /*background-color: #b042ff;*/
         display: flex;
         justify-content: left; /* Cambio*/
@@ -62,7 +64,7 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .flexRowContent--row_container_categories_menu2 {
+    .flexRowContent--header__menu--categories {
         /*background-color: #b042ff;*/
         display: flex;
         justify-content: left; /* Cambio*/
@@ -73,26 +75,4 @@
         left: 0px; /* Cambio*/
         position: relative;
     }
-}
-
-/* A partir de aqui va la categorioa general prueba 1*/
-.flexCol--categorie__icon--global {
-    /*background-color: aquamarine;*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 47px;
-}
-
-/*.flexColChild--categorie__icon--food {
-    background-color: rgb(255, 171, 252);
-    /*width: 20px;
-    height: 20px;*
-}*/
-
-.flexRowContent--container__login__minicart_8 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }

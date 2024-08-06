@@ -3,7 +3,7 @@
         "title": "Home section one Tablet",
         "children": [
             "flex-layout.row#tablet__home__section--1",
-            "flex-layout.row#row_to_title--slider",
+            "flex-layout.row#one__title--slider",
             "flex-layout.row#global_home--slider"
         ]
     }

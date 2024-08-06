@@ -1,3 +1,4 @@
+/*----------------------------- Global slider products ------------------------------------------------*/
 .paragraph--title__slider--global {
     font-family: Lexend, sans-serif;
     font-weight: 500 !important;
@@ -19,7 +20,7 @@
     margin-top: 20px !important;
 }
 
-.heading--container__description8 {
+.heading--second__row-title--infocard {
     width: 234.14px;
     text-align: left;
     font-family: Lexend, sans-serif;
@@ -30,7 +31,7 @@
     padding: 0px 0px 0px 13.82px !important;
 }
 
-.paragraph--container__description8{
+.paragraph--second__row-title--infocard {
     width: 234.14px;
     height: 30px;
     text-align: left;
@@ -41,13 +42,13 @@
     padding: 0px 0px 0px 13.82px !important;
 }
 
-.container--button__to__product10 {
+.container--third__row--button {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.wrapper--button__to__product10 {
+.wrapper--third__row--button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -60,33 +61,11 @@
     background-color: #1D2734;
 }
 
-.link--button__to__product10 {
+.link--third__row--button {
     font-family: Lexend, sans-serif;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
     color: #fff;
-}
-
-/*----------------------------- "° slider custom products list ------------------------------------------------*/
-
-.wrapper--este__esel__off4 {
-    font-family: Lexend, sans-serif;
-    background-color: #1D2734;
-    border-radius: 4px !important;
-    border: solid 1px !important;
-    width: 84px;
-    height: 32px;
-    padding: 6px 12px 6px 12px;
-    gap: 10px;
-}
-
-.paragraph--este__esel__off4 {
-    margin: 0PX;
-    width: 60px;
-    height: 20px;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 20px;
-    color: #fff;
+    text-decoration: none;
 }
