@@ -1,0 +1,11 @@
+{
+    "flex-layout.row#tablet__home--slider": {
+        "title": "Container tablet home slider",
+        "children": [
+            "flex-layout.row#global_home--slider"
+        ],
+        "props": {
+            "blockClass": "tablet__home--slider"
+        }
+    }
+}

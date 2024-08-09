@@ -1,0 +1,19 @@
+{
+    "flex-layout.row#title--phone": {
+      "title": "Row container title one to slider",
+      "children": ["rich-text#title__device--phone"],
+      "props": {
+        "blockClass": "container__title--slider"
+      }
+    },
+    "rich-text#title__device--phone": {
+      "title": "Title to global slider",
+      "props": {
+        "text": "Phone",
+        "font": "t-heading-10",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass": "title__slider--global"
+      }
+    }
+  }

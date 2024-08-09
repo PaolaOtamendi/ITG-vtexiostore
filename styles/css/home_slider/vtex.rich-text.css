@@ -1,7 +1,7 @@
 /*----------------------------- Global slider products ------------------------------------------------*/
 .paragraph--title__slider--global {
     font-family: Lexend, sans-serif;
-    font-weight: 500 !important;
+    font-weight: bold !important;
     font-size: 16px;
     line-height: 16.8px;
     color: #1D2734;
@@ -68,4 +68,59 @@
     line-height: 15px;
     color: #fff;
     text-decoration: none;
+}
+
+.container--second__row-title--infocard {
+    display: flex;
+    align-items: center;
+    height: 79.19px;
+}
+
+.container--third__row--button {
+    margin-bottom: 13.82px;
+}
+
+@media (max-width: 767px) {
+    .paragraph--second__row-title--infocard {
+        width: 185.21px;
+        height: 11px;
+        padding: 0px 0px 0px 10.33px;
+        white-space: nowrap;
+        overflow: hidden;           
+        text-overflow: ellipsis;
+    }
+
+    .container--third__row--button {
+        width: 100%;
+        height: 32px;
+    }
+
+    .wrapper--third__row--button {
+        height: 32px;
+        width: auto;
+    }
+
+    .container--second__row-title--infocard {
+        height: auto;
+    }
+
+    .heading--second__row-title--infocard {
+        margin: 0px 0px 10.33px 0px;
+    }
+
+    .paragraph--second__row-title--infocard {
+        margin-top: 0px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .paragraph--second__row-title--infocard {
+        width: 185.21px;
+        height: 11px;
+        padding: 0px 0px 0px 10.33px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }

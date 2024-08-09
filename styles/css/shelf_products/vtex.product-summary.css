@@ -1,4 +1,4 @@
-.image--custom_image__slider2 {
+.image--custom_image__shelf {
     width: 178px !important;
     height: 140px !important;
 }
@@ -31,4 +31,47 @@
 
 .buyButton--custom_button__slider3 {
     background-color: #fff;
+}
+
+.container--container__all--products {
+    /*width: 212px;*/
+    margin: 2px;
+}
+
+/*.container--container__all--products :global(.vtex-product-summary-2-x-container) {
+    background-color: #fff;
+    border: solid 1px #200033;
+    padding-top: 0%; /* Validar
+    padding-bottom: 0%;
+    width: 378px;
+}*/
+
+.imageWrapper--custom_image__shelf {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.description {
+    display: flex;
+    font-family: Lexend, sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    text-align: left;
+    line-height: 16.8px;
+    /*display: -webkit-box;*/
+    color: #1d273499;
+}
+
+.priceContainer {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.price_className {
+    position: relative;
+    /*right: 55px;*/
+    margin-right: 130px;
+    color: #1D2734;
 }

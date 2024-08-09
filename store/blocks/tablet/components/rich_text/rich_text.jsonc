@@ -1,0 +1,19 @@
+{
+    "flex-layout.row#title--tablet": {
+      "title": "Row container title one to slider",
+      "children": ["rich-text#title__device--tablet"],
+      "props": {
+        "blockClass": "container__title--slider"
+      }
+    },
+    "rich-text#title__device--tablet": {
+      "title": "Title to global slider",
+      "props": {
+        "text": "Tablet",
+        "font": "t-heading-10",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass": "title__slider--global"
+      }
+    }
+  }

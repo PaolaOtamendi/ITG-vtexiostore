@@ -1,0 +1,11 @@
+{
+    "flex-layout.row#phone__home--shelf-products": {
+        "title": "Container phone shelf products",
+        "children": [
+            "flex-layout.row#global__shelf--products"
+        ],
+        "props": {
+            "blockClass": "phone__home--shelf-products"
+        }
+    }
+}
