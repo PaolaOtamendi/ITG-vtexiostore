@@ -3,10 +3,11 @@
         "title": "Home section sliders Destkop",
         "children": [
             "flex-layout.row#desktop__main-slider",
+            "flex-layout.row#title--device",
             "flex-layout.row#one__title--slider",
-            "flex-layout.row#global_home--slider",
+            "flex-layout.row#destkop__home--slider",
             "flex-layout.row#two__title--slider",
-            "flex-layout.row#global__product--list",
+            "flex-layout.row#destkop__home--shelf-products",
             "flex-layout.row#three__title--slider"
         ]
     }

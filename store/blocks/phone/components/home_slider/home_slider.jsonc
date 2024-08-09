@@ -1,0 +1,11 @@
+{
+    "flex-layout.row#phone__home--slider": {
+        "title": "Container phone home slider",
+        "children": [
+            "flex-layout.row#global_home--slider"
+        ],
+        "props": {
+            "blockClass": "phone__home--slider"
+        }
+    }
+}

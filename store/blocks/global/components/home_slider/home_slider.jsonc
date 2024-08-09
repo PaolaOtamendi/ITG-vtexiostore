@@ -2,17 +2,18 @@
   "flex-layout.row#global_home--slider": {
     "title": "Global home slider component",
     "children": [
-      "slider-layout#global__slider--home"
+      "slider-layout#slider__container--home"
     ],
     "props": {
+      "fullWidth": false,
       "blockClass": "global_home--slider"
     }
   },
 
-  "slider-layout#global__slider--home": {
+  "slider-layout#slider__container--home": {
     "title": "Global slider home",
     "props": {
-      "fullWidth": false,
+      /*"fullWidth": false,*/
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,
@@ -21,9 +22,17 @@
       "infinite": true,
       "showNavigationArrows": "always",
       "showPaginationDots": "always",
-      "blockClass": "global__slider--home"
+      "blockClass": "slider__container--home"
     },
     "children": [
+      "flex-layout.col#global__infocard--slider",
+      "flex-layout.col#global__infocard--slider",
+      "flex-layout.col#global__infocard--slider",
+      "flex-layout.col#global__infocard--slider",
+      "flex-layout.col#global__infocard--slider",
+      "flex-layout.col#global__infocard--slider",
+      "flex-layout.col#global__infocard--slider",
+      "flex-layout.col#global__infocard--slider", // A partir de aqui agregamos
       "flex-layout.col#global__infocard--slider",
       "flex-layout.col#global__infocard--slider",
       "flex-layout.col#global__infocard--slider",

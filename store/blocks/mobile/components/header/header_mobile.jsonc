@@ -18,7 +18,6 @@
       "topMenuIcons": true,
       "preventVerticalStretch": true,
       "preventHorizontalStretch": false,
-      /*"preserveLayoutOnMobile": true,*/
       "fullWidth": true,
       "blockClass": "header__first--section--mobile"
     },
@@ -26,14 +25,9 @@
       "drawer",
       "flex-layout.col#logo__header--mobile",
       "flex-layout.col#mobile_spacer",
-      /*"flex-layout.col#mobile_spacer",*/
       "overlay-trigger#header__overlay--mobile",
       "minicart.v2#minicart_mobile",
       "login#header_mobile"
-      /*"flex-layout.col#drawer__header--mobile",*/
-      /*"flex-layout.col#logo__header--mobile",*/
-      /*"overlay-trigger#header__overlay--mobile"*/
-      /*"flex-layout.col#searchbar__header--mobile"*/
     ]
   },
   
@@ -64,13 +58,6 @@
       ]
     }
   },
-
-  /*"flex-layout.col#mobile_spacer": {
-    "title": "spacer",
-    "props": {
-      "blockClass": "mobile_spacer"
-    }
-  },*/
 
   "flex-layout.col#mobile_spacer": {
     "title": "spacer",
@@ -108,71 +95,4 @@
     "blockClass": "icon-login"
     }
   }
-
-  /*"flex-layout.col#searchbar__header--mobile": {
-    "title": "Container Search Bar mobile",
-    "props": {
-      "blockClass": "searchbar__header--mobile"
-    },
-    "children": [
-      "search-bar#search__bar--mobile"
-    ]
-  },
-  "search-bar#search__bar--mobile": {
-    "props": {
-      "placeholder":"",
-      "blockClass":[
-        "search__bar--mobile"
-      ]
-    }
-  },*/
-
-  /*"flex-layout.row#contain_login_and_minicart--mobile": {
-    "title": "Container login and minicart mobile",
-    "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "preventHorizontalStretch": true,
-      "preventVerticalStretch": true,
-      "fullWidth": true,
-      "blockClass": "contain_login_and_minicart--mobile"
-    },
-    "children": [
-      "minicart.v2",
-      "login"
-    ]
-  },*/
-
-  /*"flex-layout.col#drawer__header--mobile": {
-    "title": "Container drawer mobile",
-    "props": {
-      "blockClass": "drawer__header--mobile"
-    },
-    "children": [
-      "drawer"
-    ]
-  }*/
-
-  /*  "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
-  },
-  "flex-layout.row#mobile": {
-    "children": [
-      "drawer",
-      "logo",
-      "flex-layout.col#spacer",
-      "header-row#global__menu--icon",
-      "login",
-      "minicart.v2"
-    ],
-    "props": {
-      "blockClass": "main-header-mobile",
-      "preventHorizontalStretch": true,
-      "preserveLayoutOnMobile": true,
-      "fullWidth": true
-    }
-  },
-  "drawer": {
-    "children": []
-  }*/
 }

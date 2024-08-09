@@ -1,0 +1,20 @@
+.wishlistIconContainer--btn__favorite {
+    display: flex;
+    justify-content: right !important;
+}
+
+.wishlistIconContainer--btn__favorite :global(.vtex-button){
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 32px !important;
+    border: solid 1px #1D2734;
+    padding: 6px 12px 6px 12px;
+}
+
+:global(.vtex-wish-list-1-x-iconSize) {
+    width: 20px;
+    height: 20px;
+}

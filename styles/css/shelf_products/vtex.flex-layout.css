@@ -1,16 +1,16 @@
-/*----------------------------- "° slider custom products list ------------------------------------------------*/
+/*----------------------------- "° slider custom shelf products list ------------------------------------------------*/
 /*.flexRow--container__title--slider {
     position: relative;
     top: 50px;
 }*/
 
-.flexRow--row__container__summary1 {
+.flexRow--global__shelf--products {
     /*background-color: rgb(143, 255, 115);*/
     position: relative;
     top: 50px; /* Mejorar las distancis */
 }
 
-.flexRowContent--row__container__summary1 {
+.flexRowContent--global__shelf--products {
     /*background-color: aqua;*/
     display: flex;
     align-items: center;
@@ -38,3 +38,32 @@
 .stretchChildrenWidth {
     justify-content: right;
 }
+
+.flexRowContent--container_price_iconfavorite {
+    background-color: aquamarine;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 32px;
+}
+
+/* Cambios */
+.flexRow--destkop__home--shelf-products {
+    background-color: aquamarine;
+    display: flex;
+    width: auto;
+    height: auto;
+}
+
+.flexRow--global__shelf--products {
+    position: relative;
+    top: 0px
+}
+
+.flexRowContent--destkop__home--shelf-products {
+    background-color: aliceblue;
+}
+
+/*.flexColChild {
+    display: flex;
+}*/

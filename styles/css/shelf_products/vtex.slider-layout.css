@@ -34,7 +34,7 @@
     /*gap: 12px;*/
 }
 
-.image--custom_image__slider2 {
+.image--custom_image__shelf {
     width: 178px !important;
     height: 140px !important;
 }
@@ -61,4 +61,12 @@
 
 .caretIcon--custom_product__slider1 {
     overflow: visible;
+}
+
+.sliderLayoutContainer--custom__slider--shelf {
+    background-color: #ecd8ff;
+    border: solid 1px;
+    height: 378px;
+    padding-left: 80px;
+    padding-right: 80px;
 }

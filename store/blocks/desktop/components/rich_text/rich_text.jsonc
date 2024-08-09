@@ -1,0 +1,19 @@
+{
+    "flex-layout.row#title--device": {
+      "title": "Row container title one to slider",
+      "children": ["rich-text#title__device--section"],
+      "props": {
+        "blockClass": "container__title--slider"
+      }
+    },
+    "rich-text#title__device--section": {
+      "title": "Title to global slider",
+      "props": {
+        "text": "Destkop",
+        "font": "t-heading-10",
+        "textAlignment": "LEFT",
+        "textPosition": "LEFT",
+        "blockClass": "title__slider--global"
+      }
+    }
+  }
