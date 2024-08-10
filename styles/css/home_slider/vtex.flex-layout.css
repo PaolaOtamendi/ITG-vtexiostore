@@ -1,17 +1,18 @@
 /*----------------------------- Global slider products ------------------------------------------------*/
 .flexRow--global_home--slider {
-    background-color: #c2ff26;
-    /*display: flex;
-    align-items: center;
-    justify-content: center;*/
+    /*background-color: #c2ff26;*/
+    /*display       : flex;
+    align-items     : center;
+    justify-content : center;*/
 }
 
 .flexCol--global__infocard--slider {
     background-color: #fff;
-    width: 324px;
-    height: 336.46px; /* Nose ajusta*/
-    /* height: 320.46px; */
-    margin: 10px;
+    width           : 324px;
+    height          : 336.46px;
+    /* Nose ajusta*/
+    /* height       : 320.46px; */
+    margin          : 10px;
 }
 
 @media (max-width: 767px) {
@@ -20,14 +21,14 @@
     }*/
 
     .flexCol--global__infocard--slider {
-        width: 224px;
+        width : 224px;
         height: 240px;
         margin: 10px;
-        flex: 0 1 auto;
+        flex  : 0 1 auto;
     }
 
     .flexRowContent--global_home--slider {
-        padding-left: 0 !important;
+        padding-left : 0 !important;
         padding-right: 0 !important;
     }
 
@@ -43,28 +44,28 @@
     }*/
 
     .flexCol--global__infocard--slider {
-        width: 224px;
+        width : 224px;
         height: 240px;
         margin: 10px;
-        flex: 0 1 auto;
+        flex  : 0 1 auto;
     }
 
     .flexRowContent--global_home--slider {
-        padding-left: 0 !important;
+        padding-left : 0 !important;
         padding-right: 0 !important;
     }
 }
 
 .flexRowContent--global_home--slider {
-    background-color: antiquewhite;
-    display: flex;
-    padding-left: 80px;
-    padding-right: 80px;
+    /*background-color: antiquewhite;*/
+    display         : flex;
+    padding-left    : 80px;
+    padding-right   : 80px;
 }
 
 .flexRowContent--second__row-infocard--container {
-    background-color: rgb(205, 151, 255);
-    margin-top: 13.80px;
+    /*background-color: rgb(205, 151, 255);*/
+    margin-top      : 13.80px;
 }
 
 /*.flexColChild--global__infocard--slider {
@@ -73,8 +74,8 @@
 }*/
 
 .flexColChild--second__row--bestseller {
-    height: 100%;
-    display: flex;
-    align-items: start;
+    height         : 100%;
+    display        : flex;
+    align-items    : start;
     justify-content: center;
 }
