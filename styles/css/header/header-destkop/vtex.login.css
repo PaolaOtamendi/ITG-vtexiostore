@@ -1,25 +1,25 @@
 .container {
-    width: 80px;
-    display: flex;
-    align-items: center;
+    width          : 80px;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    height: 40px;
-    background: #1d2734;
-    border-radius: 40px;
-    border: solid 1px #1D2734;
+    height         : 40px;
+    background     : #1d2734;
+    border-radius  : 40px;
+    border         : solid 1px #1D2734;
 }
 
 .label {
-    font-family: Lexend, sans-serif;
-    font-size: 14px;
-    /*line-height: 17.5;*/
-    align-items: center;
-    display: flex;
+    font-family    : Lexend, sans-serif;
+    font-size      : 14px;
+    /*line-height  : 17.5;*/
+    align-items    : center;
+    display        : flex;
     justify-content: center;
-    text-align: center;
-    color: white;
-    display: block;
-    text-transform: lowercase;
+    text-align     : center;
+    color          : white;
+    display        : block;
+    text-transform : lowercase;
 }
 
 .label::first-letter {

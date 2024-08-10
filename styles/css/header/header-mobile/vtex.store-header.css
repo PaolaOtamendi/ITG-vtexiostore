@@ -1,7 +1,7 @@
 .headerRowContainer--header__menu--mobile {
     /*background-color: #b0fff7;*/
-    display: flex;
+    display        : flex;
     justify-content: space-around;
-    width: 100%;
-    height: auto;
+    width          : 100%;
+    height         : auto;
 }

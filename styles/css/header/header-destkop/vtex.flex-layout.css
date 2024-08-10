@@ -5,74 +5,77 @@
 
 /*----------------------------- Header destkop section menu ---------------------------------------*/
 .flexRowContent--header__second--section {
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
+    align-items    : center;
 }
 
 .flexColChild--drawer__header--desktop {
     /*background-color: #e6ff46;*/
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
 }
 
 .flexColChild--logo__header--desktop {
     /*background-color: #9862cb;*/
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: center;
 }
 
 /*----------------------------- Header destkop section icons ---------------------------------------*/
 .flexRowContent--header__menu--categories {
     /*background-color: #b042ff;*/
-    display: flex;
+    display          : flex;
     /*justify-content: center;  /*Cambio*/
-    justify-content: left; 
-    align-items: center;
-    width: 1136px;
-    height: auto;
-    min-height: 47px;
-    left: 72px;
-    position: relative;
+    justify-content  : left;
+    align-items      : center;
+    width            : 1136px;
+    height           : auto;
+    min-height       : 47px;
+    left             : 72px;
+    position         : relative;
 }
 
 .flexCol--categorie__icon--global {
     /*background-color: aquamarine;*/
-    display: flex;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    width: auto;
-    height: 47px;
+    align-items    : center;
+    width          : auto;
+    height         : 47px;
 }
 
 /*----------------------------- MediaQueires header section icons ---------------------------------------*/
 @media (max-width: 767px) {
     .flexRowContent--header__menu--categories {
         /*background-color: #b042ff;*/
-        display: flex;
-        justify-content: left; /* Cambio*/
-        align-items: center;
-        width: 1136px;
-        height: auto;
-        min-height: 47px;
-        left: 0px; /* Cambio*/
-        position: relative;
+        display        : flex;
+        justify-content: left;
+        /* Cambio*/
+        align-items    : center;
+        width          : 1136px;
+        height         : auto;
+        min-height     : 47px;
+        left           : 0px;
+        /* Cambio*/
+        position       : relative;
     }
-    
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .flexRowContent--header__menu--categories {
         /*background-color: #b042ff;*/
-        display: flex;
-        justify-content: left; /* Cambio*/
-        align-items: center;
-        width: 1136px;
-        height: auto;
-        min-height: 47px;
-        left: 0px; /* Cambio*/
-        position: relative;
+        display        : flex;
+        justify-content: left;
+        /* Cambio*/
+        align-items    : center;
+        width          : 1136px;
+        height         : auto;
+        min-height     : 47px;
+        left           : 0px;
+        /* Cambio*/
+        position       : relative;
     }
 }

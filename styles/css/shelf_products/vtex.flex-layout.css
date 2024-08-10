@@ -1,4 +1,4 @@
-/*----------------------------- "° slider custom shelf products list ------------------------------------------------*/
+/*----------------------------- "slider custom shelf products list ------------------------------------------------*/
 /*.flexRow--container__title--slider {
     position: relative;
     top: 50px;
@@ -7,31 +7,32 @@
 .flexRow--global__shelf--products {
     /*background-color: rgb(143, 255, 115);*/
     position: relative;
-    top: 50px; /* Mejorar las distancis */
+    top     : 50px;
+    /* Mejorar las distancis */
 }
 
 .flexRowContent--global__shelf--products {
     /*background-color: aqua;*/
-    display: flex;
-    align-items: center;
-    justify-items: center;
+    display        : flex;
+    align-items    : center;
+    justify-items  : center;
     justify-content: center;
-    height: 378px;
+    height         : 378px;
 }
 
 .flexRow--product__summary_1 {
-    display: flex;
+    display        : flex;
     justify-content: center;
 }
 
 .image--custom_image__slider2 {
-    width: 178px !important;
+    width : 178px !important;
     height: 140px !important;
 }
 
 .flexRow--container__offlike--row3 {
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
     justify-content: space-between;
 }
 
@@ -40,30 +41,54 @@
 }
 
 .flexRowContent--container_price_iconfavorite {
-    background-color: aquamarine;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 32px;
+    /*background-color: aquamarine;*/
+    display         : flex;
+    align-items     : center;
+    justify-content : space-around;
+    height          : 32px;
 }
 
 /* Cambios */
 .flexRow--destkop__home--shelf-products {
-    background-color: aquamarine;
-    display: flex;
-    width: auto;
-    height: auto;
+    /*background-color: aquamarine;*/
+    /*display         : flex;*/
+    width           : auto;
+    /*height          : auto;*/
+    height: 450px;
+    align-items: center;
+    /*align-items: start;*/
+    display: contents;
 }
 
 .flexRow--global__shelf--products {
     position: relative;
-    top: 0px
+    top     : 0px
 }
 
+/* Este es el contenedor padre */
 .flexRowContent--destkop__home--shelf-products {
-    background-color: aliceblue;
+    /*background-color: aliceblue;*/
 }
+
+/*.flexRowContent--container_price_iconfavorite {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.savings--price__off {
+    margin-right: auto;
+}*/
 
 /*.flexColChild {
     display: flex;
 }*/
+
+.flexRow--container__button--buy :global(.vtex-button ) {
+    height: 48px !important;
+    background-color: transparent !important;
+    border-radius: 8px;
+    border: solid 1px #1D2734 !important;
+    padding: 10px;
+    gap: 10px;
+}
