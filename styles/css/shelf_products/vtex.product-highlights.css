@@ -1,0 +1,14 @@
+.productHighlightWrapper {
+    background-color: aquamarine;
+    display         : flex;
+    width           : 94px;
+    height          : 17px;
+    font-family     : Lexend, sans-serif;
+    font-size       : 14px;
+    font-weight     : 400;
+    line-height     : 16.8px;
+    color           : #FA2080;
+    margin-bottom   : 10px;
+    align-items     : center;
+    justify-content : space-around;
+}

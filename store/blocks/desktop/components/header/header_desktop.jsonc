@@ -7,7 +7,8 @@
     },
     "children": [
       "flex-layout.row#header__first--section",
-      "vtex.menu@2.x:menu#header__pages--desktop",
+      /*"vtex.menu@2.x:menu#header__pages--desktop",*/
+      "vtex.menu@2.x:menu#websites",
       "flex-layout.row#header__second--section"
     ]
   },

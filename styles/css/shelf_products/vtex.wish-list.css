@@ -5,7 +5,7 @@
 }
 
 .wishlistIconContainer--btn__favorite :global(.vtex-button) {
-    /*background-color: aquamarine;*/
+    background-color: aquamarine;
     display         : flex;
     align-items     : center;
     justify-content : center;

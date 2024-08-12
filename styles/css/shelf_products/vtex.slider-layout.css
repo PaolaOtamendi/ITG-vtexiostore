@@ -1,13 +1,13 @@
 /*----------------------------- "slider custom shelf list ------------------------------------------------*/
 .sliderLayoutContainer--custom__slider--shelf {
-    /*background-color: #ecd8ff;*/
+   /*background-color  : #ecd8ff;*/
     /*border          : solid 1px;*/
-    /*height        : 378px;*/
-    padding-left    : 80px;
-    padding-right   : 80px;
+    /*height          : 378px;*/
+    padding-left      : 80px;
+    padding-right     : 80px;
     /* Nuevos colodados para acomodar los dots */
-    /*padding-bottom  : 50px;*/
-    /*position        : relative;*/
+    /*padding-bottom  : 50px;
+    position          : relative;*/
 }
 
 .caretIcon--custom__slider--shelf {
@@ -40,27 +40,39 @@
     height          : 50.89px;
     width           : 100%;
     /* Nuevos colocados para ajustar los dots*/
-    /*position: absolute;
-    bottom: -50px;
-    left: 0;
-    justify-content: center;
-    /*z-index: 10;*/
+    /*position      : absolute;
+    bottom          : -50px;
+    left            : 0;
+    justify-content : center;
+    /*z-index       : 10;*/
+    position        : absolute;
+    bottom          : -50px;
+    /* Ajusta según la necesidad */
+    left            : 0;
+    z-index         : 1;
 }
 
 .paginationDot--custom__slider--shelf {
-    width           : 44px !important;
-    height          : 40px !important;
-    border-radius   : 0;
-    background-color: transparent;
-    position        : relative;
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
-    margin          : 0 2px;
+    width             : 44px !important;
+    height            : 40px !important;
+    border-radius     : 0;
+    background-color  : transparent;
+    /*position        : relative;*/
+    /*Este aqui lo quitamos */
+    display           : flex;
+    align-items       : center;
+    justify-content   : center;
+    margin            : 0 2px;
+    z-index           : 2;
 }
 
+/*------------Phone---------------*/
 @media (max-width: 767px) {
     .sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-sliderLeftArrow) {
+        display: none;
+    }
+
+    .sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-sliderRightArrow) {
         display: none;
     }
 
@@ -69,14 +81,33 @@
         margin: 0 auto;
     }
 
-    .paginationDot::after {
-        width: 40px;
+    .paginationDot--custom__slider--shelf {
+        width: 25px !important;
+    }
+
+    .sliderLayoutContainer--custom__slider--shelf {
+        padding-left : 0% !important;
+        padding-right: 0% !important;
+    }
+
+    .sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-paginationDot)::after {
+        width: 25px;
     }
 }
 
-
+/*------------Tablet---------------*/
 @media (min-width: 768px) and (max-width: 1024px) {
     .sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-sliderLeftArrow) {
         display: none;
     }
+
+    .sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-sliderRightArrow) {
+        display: none;
+    }
+
+    .sliderLayoutContainer--custom__slider--shelf {
+        padding-left : 0% !important;
+        padding-right: 0% !important;
+    }
+
 }

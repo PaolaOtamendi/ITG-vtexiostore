@@ -45,5 +45,20 @@
       "textPosition": "LEFT",
       "blockClass": "title__slider--global"
     }
+  },
+
+  "flex-layout.row#four__title--slider": {
+    "title": "Row container title three to slider",
+    "children": ["rich-text#title__section-three--slider"]
+  },
+  "rich-text#title__section-four--slider": {
+    "title": "Title to global slider",
+    "props": {
+      "text": "An amazing product.",
+      "font": "t-heading-10",
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "title__slider--global"
+    }
   }
 }

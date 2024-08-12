@@ -104,6 +104,10 @@
         display: none;
     }
 
+    .sliderLeftArrow--slider__container--home {
+        display: none;
+    }
+
     .paginationDotsContainer--slider__container--home {
         width : 231px;
         margin: 0 auto;
@@ -121,6 +125,10 @@
     }*/
 
     .sliderRightArrow--slider__container--home {
+        display: none;
+    }
+
+    .sliderLeftArrow--slider__container--home {
         display: none;
     }
 }
