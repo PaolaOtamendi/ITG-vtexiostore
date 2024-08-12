@@ -1,6 +1,6 @@
 {
-  "vtex.menu@2.x:menu#header__pages--desktop": {
-    "title": "Header pages desktop",
+  "vtex.menu@2.x:menu#websites": {
+    "title": "Header menu pages desktop",
     "props": {
       "blockClass": [
         "header__pages--desktop"

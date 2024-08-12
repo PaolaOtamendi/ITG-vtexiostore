@@ -7,6 +7,10 @@
             "flex-layout.row#one__title--slider",
             "flex-layout.row#tablet__home--slider",
             "flex-layout.row#two__title--slider",
+            "flex-layout.row#tablet__home--shelf-products",
+            "flex-layout.row#three__title--slider",
+            "flex-layout.row#tablet__home--slider",
+            "flex-layout.row#four__title--slider",
             "flex-layout.row#tablet__home--shelf-products"
         ]
     }

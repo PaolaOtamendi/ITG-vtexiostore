@@ -31,21 +31,12 @@
   "product-summary.shelf#global__product--summary": {
     "title": "Global products summary",
     "children": [
-      /*"stack-layout#prodsum",*/
-      /*"rich-text#text_percent--off",
-      "rich-text#icon_like--product",*/
       "flex-layout.row#container_price_iconfavorite",
-      /*"flex-layout.col#first__col--officon",*/
       "flex-layout.col#shelf-image",
       "flex-layout.col#shelf__description",
-      /*"product-summary-image",*/ /*Cambios aqui*/
-      /*"product-summary-name",*/
       "flex-layout.col#shelf__price",
-      /*"product-rating-inline",*/
-      /*"product-summary-space",*/
-      /*"product-summary-price",*/
+      "vtex.product-highlights@2.x:product-highlights",
       "flex-layout.row#shelf_buy--button"
-      /*"product-summary-buy-button"*/
     ],
     "props": {
         "width": 378,
