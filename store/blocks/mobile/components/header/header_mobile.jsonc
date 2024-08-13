@@ -31,12 +31,12 @@
     ]
   },
   
-  "drawer": {
+  /*"drawer": {
     "props": {
       "verticalAlign": "middle",
       "blockClass": "drawer__menu--phone"
     }
-  },
+  },*/
 
   "flex-layout.col#logo__header--mobile": {
     "title": "Container logo mobile",
