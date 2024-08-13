@@ -4,16 +4,16 @@
 }
 
 .nameContainer--custom_text__slider2 {
-    width           : 212px;
-    height          : 51px !important;
+    width             : 212px;
+    height            : 51px !important;
     /*background-color: #d1ffff;*/
-    font-family     : Lexend, sans-serif !important;
-    font-weight     : 400 !important;
-    font-size       : 14px !important;
-    line-height     : 16.8px;
-    color           : #1D2734;
-    text-align      : left;
-    text-overflow   : ellipsis;
+    font-family       : Lexend, sans-serif !important;
+    font-weight       : 400 !important;
+    font-size         : 14px !important;
+    line-height       : 16.8px;
+    color             : #1D2734;
+    text-align        : left;
+    text-overflow     : ellipsis;
 }
 
 .price_listPriceContainer {
@@ -101,4 +101,8 @@
 .element--container__all--products {
     padding-bottom: 0%;
     padding-top   : 0%;
+}
+
+.imageContainer--custom_image__shelf {
+    margin-top: 1px;
 }

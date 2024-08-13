@@ -1,0 +1,57 @@
+.menuContainerNav--components__mega--menu {
+    /*width: 220px !important;*/
+    /*width: 300px !important;*/
+    width: auto !important;
+    /*height: 647px;*/
+    border-radius: 0px 0px 0px 16px;
+}
+
+.menuContainer {
+    /*max-height: 647px;*/
+    max-height: max-content;
+    /*width: 300px !important;*/
+    width: 250px !important;
+    overflow: visible !important;
+    background-color: #fff !important;
+    border-radius: 0px 0px 0px 16px;
+}
+
+.submenuContainer {
+    /*max-height: 647px;*/
+    max-height: max-content;
+    overflow: visible !important;
+    background-color: #FFE6D3 !important;
+    /*width: 175px !important;*/
+    width: 400px !important;
+    border-radius: 0px 0px 16px 0px;
+}
+
+
+.styledLinkContainer--components__mega--menu {
+    font-weight: 300 !important;
+    font-size: 12px !important;
+    line-height: 15px !important;
+    color: #1D2734;
+    width: 220px !important;
+}
+
+.styledLink--components__mega--menu {
+    font-size: 12px !important;
+}
+
+.styledLinkContent--components__mega--menu{
+    font-size: 12px !important;
+    width: 220px !important;
+}
+
+.styledLinkText--components__mega--menu {
+    font-size: 12px !important;
+}
+
+.seeAllLinkContainer--components__mega--menu {
+    width: 148px !important;
+}
+
+.submenuContainerTitle--components__mega--menu {
+width: 500px;
+}

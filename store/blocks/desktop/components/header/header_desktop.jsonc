@@ -6,8 +6,8 @@
       "fullWidth": true
     },
     "children": [
+      "sticky-layout#desktop__mega-menu",
       "flex-layout.row#header__first--section",
-      /*"vtex.menu@2.x:menu#header__pages--desktop",*/
       "vtex.menu@2.x:menu#websites",
       "flex-layout.row#header__second--section"
     ]
@@ -24,19 +24,27 @@
       "blockClass": "header__first--section"
     },
     "children": [
-      "flex-layout.col#drawer__header--desktop",
+      /*"flex-layout.col#drawer__header--desktop",*/
+      /*"sticky-layout#desktop__mega-menu",*/
       "flex-layout.col#logo__header--desktop",
       "flex-layout.col#searchbar__header--desktop"
     ]
   },
 
-  "flex-layout.col#drawer__header--desktop": {
+  /*"flex-layout.col#drawer__header--desktop": {
     "title": "Container drawer desktop",
     "props": {
       "blockClass": "drawer__header--desktop"
     },
     "children": ["drawer"]
-  },
+  },*/
+ /*"flex-layout.col#drawer__header--desktop": {
+    "title": "Container drawer desktop",
+    "props": {
+      "blockClass": "drawer__header--desktop"
+    },
+    "children": ["sticky-layout#desktop__mega-menu"]
+  },*/
 
   "flex-layout.col#logo__header--desktop": {
     "title": "Container logo desktop",
