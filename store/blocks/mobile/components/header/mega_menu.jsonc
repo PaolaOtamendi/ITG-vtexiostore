@@ -23,7 +23,8 @@
       "children": [
         "flex-layout.col#mega-menu-go-back-btn",
         "flex-layout.col#spacer",
-        "flex-layout.col#drawer-close-button"
+        "flex-layout.col#drawer-close-button",
+        "flex-layout.col#mega-menu-logo"
       ],
       "props": {
         "blockClass": "drawer-header",
@@ -50,5 +51,22 @@
     },
     "flex-layout.col#spacer": {
         "title": "Spacer col"
+    },
+    "flex-layout.col#mega-menu-logo": {
+        "children": ["logo#drawer"],
+        "props": {
+          "verticalAlign": "middle",
+          "horizontalAlign": "left",
+          "paddingLeft": 4
+        }
+      },
+    "logo#drawer": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/img/icon_Black.png",
+      "width": "32px",
+      "blockClass": ["logo__img--custom"]
     }
+  }
   }
