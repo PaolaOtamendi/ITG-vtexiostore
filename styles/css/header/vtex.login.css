@@ -20,6 +20,7 @@
     color          : white;
     display        : block;
     text-transform : lowercase;
+    padding-left: 0px;
 }
 
 .label::first-letter {

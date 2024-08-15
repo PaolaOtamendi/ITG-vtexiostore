@@ -22,7 +22,8 @@
       "blockClass": "header__first--section--mobile"
     },
     "children": [
-      "drawer",
+      "flex-layout.row#container__mega-menu--mobile",
+      /*"drawer",*/
       "flex-layout.col#logo__header--mobile",
       "flex-layout.col#mobile_spacer",
       "overlay-trigger#header__overlay--mobile",

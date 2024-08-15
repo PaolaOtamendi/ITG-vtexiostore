@@ -1,4 +1,4 @@
-/*----------------------------- "Header ------------------------------------------------*/
+/*----------------------------- Header desktop section menu ---------------------------------------*/
 .logoContainer--logo__img--custom {
     padding-left : 0.5rem;
     padding-right: 1.5rem;
@@ -14,4 +14,11 @@
 
 .autoCompleteOuterContainer--search__bar--desktop :global(.vtex-input__suffix) {
     background-color: #F5F4F6;
+}
+
+/*----------------------------- Header mobile section menu ---------------------------------------*/
+.logoContainer--logo__mobile--custom {
+    display        : flex;
+    justify-content: left;
+    align-items    : center;
 }

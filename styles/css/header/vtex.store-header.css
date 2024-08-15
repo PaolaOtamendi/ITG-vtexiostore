@@ -1,4 +1,4 @@
-/*----------------------------- "Header ------------------------------------------------*/
+/*----------------------------- "Header desktop------------------------------------------------*/
 .headerRowContainer--header__menu--desktop {
     /*background-color: aqua;*/
     display        : flex;
@@ -10,7 +10,7 @@
     background-color: #fff;
 }
 
-/*----------------------------- Header destkop section icons ---------------------------------------*/
+/*----------------------------- Header desktop section icons ---------------------------------------*/
 .headerStickyRow--global__header--menu-icons {
     overflow: hidden;
 }
@@ -27,7 +27,7 @@
     background-color: #fff;
 }
 
-/*----------------------------- MediaQueires header section icons ---------------------------------------*/
+/*----------------------------- MediaQueires header section icons phone y tablet ---------------------------------------*/
 @media (max-width: 767px) {
     .headerRowContainer--global__header--menu-icons {
         /*background-color: #71ff5e;*/
@@ -50,4 +50,13 @@
         height         : 56px;
         padding        : 0px;
     }
+}
+
+/*----------------------------- "Header mobile------------------------------------------------*/
+.headerRowContainer--header__menu--mobile {
+    /*background-color: #b0fff7;*/
+    display        : flex;
+    justify-content: space-around;
+    width          : 100%;
+    height         : auto;
 }

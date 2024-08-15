@@ -1,66 +1,83 @@
 {
-    "flex-layout.row#1-mobile": {
-      "children": [
-        "flex-layout.col#trigger-mega-menu"
-      ]
+  "flex-layout.row#container__mega-menu--mobile": {
+    "title": "Container mega-menu mobile",
+    "props": {
+      "blockClass": "container__mega-menu--mobile"
     },
-  
-    "drawer": {
-      "children": ["mega-menu#mobile"],
-      "blocks": ["drawer-header#my-drawer"]
-    },
-    "mega-menu#mobile": {
-      "props": {
-        "defaultDepartmentActive": "...",
-        "orientation": "vertical",
-        "openOnly": "vertical"
-      }
-    },
-    "drawer-header#my-drawer": {
-      "children": ["flex-layout.row#drawer-header"]
-    },
-    "flex-layout.row#drawer-header": {
-      "children": [
-        "flex-layout.col#mega-menu-go-back-btn",
-        "flex-layout.col#spacer",
-        "flex-layout.col#drawer-close-button",
-        "flex-layout.col#mega-menu-logo"
-      ],
-      "props": {
-        "blockClass": "drawer-header",
-        "preventHorizontalStretch": true,
-        "preventVerticalStretch": true,
-        "preserveLayoutOnMobile": true,
-        "fullWidth": true
-      }
-    },
-    "flex-layout.col#drawer-close-button": {
-      "children": ["drawer-close-button"],
-      "props": {
-        "verticalAlign": "middle",
-        "horizontalAlign": "right"
-      }
-    },
-    "flex-layout.col#mega-menu-go-back-btn": {
-      "children": ["mega-menu-go-back-btn"],
-      "props": {
-        "verticalAlign": "middle",
-        "horizontalAlign": "left",
-        "paddingLeft": 4
-      }
-    },
-    "flex-layout.col#spacer": {
-        "title": "Spacer col"
-    },
-    "flex-layout.col#mega-menu-logo": {
-        "children": ["logo#drawer"],
-        "props": {
-          "verticalAlign": "middle",
-          "horizontalAlign": "left",
-          "paddingLeft": 4
-        }
-      },
-    "logo#drawer": {
+    "children": ["flex-layout.col#trigger-mega-menu"]
+  },
+
+  "drawer": {
+    "title": "Drawer mega-menu",
+    "children": ["mega-menu#mega__menu--mobile"],
+    "blocks": ["drawer-header#mega__menu--drawer"]
+  },
+
+  "mega-menu#mega__menu--mobile": {
+    "props": {
+      "defaultDepartmentActive": "...",
+      "orientation": "vertical",
+      "openOnly": "vertical"
+    }
+  },
+
+  "drawer-header#mega__menu--drawer": {
+    "title": "Mega menu drawer",
+    "children": ["flex-layout.row#mega__menu-drawer--header"]
+  },
+
+  "flex-layout.row#mega__menu-drawer--header": {
+    "title": "Mega menu drawer menu header",
+    "children": [
+      "flex-layout.col#drawer__header-go-back-btn",
+      "flex-layout.col#drawer__header--spacer",
+      "flex-layout.col#drawer__header-close--btn",
+      "flex-layout.col#drawer__header--logo"
+    ],
+    "props": {
+      "blockClass": "mega__menu-drawer--header",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#drawer__header-go-back-btn": {
+    "title": "Drawer header go-back button",
+    "children": ["mega-menu-go-back-btn"],
+    "props": {
+      "blockClass": "drawer__header-go-back-btn",
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "paddingLeft": 4
+    }
+  },
+  "flex-layout.col#drawer__header--spacer": {
+    "title": "Drawer header spacer col",
+    "props": {
+      "blockClass": "drawer__header-spacer"
+    }
+  },
+  "flex-layout.col#drawer__header-close--btn": {
+    "title": "Drawer header close button",
+    "children": ["drawer-close-button"],
+    "props": {
+      "blockClass": "drawer__header-close--btn",
+      "verticalAlign": "middle",
+      "horizontalAlign": "right"
+    }
+  },
+  "flex-layout.col#drawer__header--logo": {
+    "title": "Drawer header logo",
+    "children": ["logo#drawer__logo"],
+    "props": {
+      "blockClass": "drawer__header--logo",
+      "verticalAlign": "middle",
+      "horizontalAlign": "left",
+      "paddingLeft": 4
+    }
+  },
+  "logo#drawer__logo": {
     "props": {
       "title": "Logo",
       "href": "/",
@@ -69,4 +86,4 @@
       "blockClass": ["logo__img--custom"]
     }
   }
-  }
+}
