@@ -1,3 +1,4 @@
+/*----------------------------- Header mobile section menu ---------------------------------------*/
 .flexRow--header__first--section--mobile {
     display: contents;
 }
@@ -11,6 +12,7 @@
     padding-left   : 10px;
     padding-right  : 10px;
     padding-top    : 10px;
+    background-color: #fff;
 }
 
 .stretchChildrenWidth {
