@@ -1,47 +1,61 @@
 .menuContainerNav--components__mega--menu {
     /*width: 220px !important;*/
     /*width: 300px !important;*/
-    width: auto !important;
-    /*height: 647px;*/
-    border-radius: 0px 0px 0px 16px;
+    width        : auto !important;
+    /*height     : 647px;*/
+    border-radius: 0px 0px 16px 16px;
 }
 
 .menuContainer {
     /*max-height: 647px;*/
-    max-height: max-content;
-    /*width: 300px !important;*/
-    width: 250px !important;
-    overflow: visible !important;
+    max-height      : max-content;
+    /*width         : 300px !important;*/
+    width           : 250px !important;
+    overflow        : visible !important;
     background-color: #fff !important;
-    border-radius: 0px 0px 0px 16px;
+    border-radius   : 0px 0px 16px 16px;
 }
 
 .submenuContainer {
     /*max-height: 647px;*/
-    max-height: max-content;
-    overflow: visible !important;
+    display         : flex;
+    /*Agregamos estos*/
+    flex-direction  : column;
+    /*Agregamos estos*/
+    max-height      : max-content;
+    overflow        : visible !important;
     background-color: #FFE6D3 !important;
-    /*width: 175px !important;*/
-    width: 400px !important;
-    border-radius: 0px 0px 16px 0px;
+    /*width         : 175px !important;*/
+    width           : 500px !important;
+    border-radius   : 0px 0px 16px 0px;
 }
 
 
 .styledLinkContainer--components__mega--menu {
-    font-weight: 300 !important;
-    font-size: 12px !important;
-    line-height: 15px !important;
-    color: #1D2734;
-    width: 220px !important;
+    margin-left   : 0px;
+    margin-right  : 0px;
+    width         : 100%;
+    font-weight   : 300 !important;
+    font-size     : 12px !important;
+    line-height   : 15px !important;
+    color         : #1D2734;
+    /*width       : 220px !important;*/
+    padding-left  : 10px;
+    /*Nuevo*/
+    /*padding-top : 0px;
+    padding-bottom: 0px;
+    height        : 35px;
+    display       : flex;
+    align-items   : center;*/
 }
 
 .styledLink--components__mega--menu {
     font-size: 12px !important;
 }
 
-.styledLinkContent--components__mega--menu{
+.styledLinkContent--components__mega--menu {
     font-size: 12px !important;
-    width: 220px !important;
+    width    : 220px !important;
 }
 
 .styledLinkText--components__mega--menu {
@@ -49,9 +63,50 @@
 }
 
 .seeAllLinkContainer--components__mega--menu {
-    width: 148px !important;
+    font-size  : 14px;
+    font-weight: bold;
+    line-height: 17.5px;
+    width      : 148px !important;
+    margin-left: 0px;
 }
 
 .submenuContainerTitle--components__mega--menu {
-width: 500px;
+    display              : grid;
+    grid-template-columns: 1fr 1fr;
+    /*font-size          : 14px;
+    line-height          : 17.5px;*/
+    justify-content      : space-around;
+    align-items          : center;
+    gap                  : 50px;
+    /*width              : 500px;*/
+    /*Quitamos este*/
+}
+
+.menuItem--components__mega--menu {
+    background-color  : #fff;
+    /*background-color: aquamarine;*/
+}
+
+.menuItem--components__mega--menu :hover {
+    background-color: rgba(255, 131, 36, 0.2);
+    border-left     : solid 10px #FF8324;
+}
+
+.styledLinkContent--components__mega--menu :hover {
+    background-color: transparent;
+    border-left     : transparent;
+}
+
+.styledLinkContainer--components__mega--menu :hover {
+    background-color: transparent;
+    border-left     : transparent;
+}
+
+.styledLinkText--components__mega--menu :hover {
+    background-color: transparent;
+    border-left     : transparent;
+}
+
+.accordionIconContainer--components__mega--menu {
+    display: none;
 }
