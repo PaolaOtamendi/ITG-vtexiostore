@@ -97,6 +97,7 @@
   "icon-cart#minicart-icon": {
     "title": "icon minicart in desktop view",
     "props": {
+      "id": "minicart",
       "width": 20,
       "height": 20,
       "size": 20,

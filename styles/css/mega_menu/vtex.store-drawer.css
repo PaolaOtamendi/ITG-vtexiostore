@@ -1,0 +1,13 @@
+/*----------------------------- Mega menu mobile ------------------------------------------------*/
+.drawer {
+    width: 80% !important;
+    background-color: #fff;
+}
+
+.drawerContent{
+    background-color: #fff;
+}
+
+.drawerHeader {
+    background-color: #fff !important;
+}

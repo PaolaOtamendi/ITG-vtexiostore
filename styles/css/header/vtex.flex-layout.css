@@ -28,7 +28,6 @@
 .flexRowContent--header__menu--categories {
     /*background-color: #b042ff;*/
     display          : flex;
-    /*justify-content: center;  /*Cambio*/
     justify-content  : left;
     align-items      : center;
     width            : 1136px;
@@ -47,19 +46,17 @@
     height         : 47px;
 }
 
-/*----------------------------- MediaQueires header section icons ---------------------------------------*/
+/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
 @media (max-width: 767px) {
     .flexRowContent--header__menu--categories {
         /*background-color: #b042ff;*/
         display        : flex;
         justify-content: left;
-        /* Cambio*/
         align-items    : center;
         width          : 1136px;
         height         : auto;
         min-height     : 47px;
         left           : 0px;
-        /* Cambio*/
         position       : relative;
     }
 }
@@ -69,13 +66,40 @@
         /*background-color: #b042ff;*/
         display        : flex;
         justify-content: left;
-        /* Cambio*/
         align-items    : center;
         width          : 1136px;
         height         : auto;
         min-height     : 47px;
         left           : 0px;
-        /* Cambio*/
         position       : relative;
     }
+}
+
+/*----------------------------- Header mobile section menu ---------------------------------------*/
+.flexRow--header__first--section--mobile {
+    display: contents;
+}
+
+.flexRowContent--header__first--section--mobile {
+    /*background-color: rgb(198, 174, 220);*/
+    display        : flex;
+    align-items    : center;
+    justify-content: space-around;
+    /*padding      : 10px;*/
+    padding-left   : 10px;
+    padding-right  : 10px;
+    padding-top    : 10px;
+    background-color: #fff;
+}
+
+.stretchChildrenWidth {
+    width: auto;
+}
+
+.flexCol--logo__header--mobile {
+    /*background-color: beige;*/
+    width          : auto;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
 }

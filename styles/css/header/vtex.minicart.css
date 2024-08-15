@@ -1,0 +1,11 @@
+/*----------------------------- Minicart desktop section menu ---------------------------------------*/
+.minicartIconContainer {
+    width : 20px;
+    height: 20px;
+    color : #1D2734;
+}
+
+/*----------------------------- Minicart phone y tablet section menu ---------------------------------------*/
+:global(.vtex-minicart-2-x-openIconContainer) {
+    padding: 0% !important;
+}
