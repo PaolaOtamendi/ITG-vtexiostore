@@ -3,7 +3,8 @@
     font-weight    : 300;
     font-size      : 12px;
     line-height    : 15px;
-    font-family    : Lexend, sans-serif !important;
+    font-family    : lexend, sans-serif !important;
+    /*font-family    : lexend;*/
     display        : flex !important;
     width          : auto;
     height         : auto;

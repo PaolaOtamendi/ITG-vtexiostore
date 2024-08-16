@@ -1,0 +1,16 @@
+{
+  "login#global__login--header": {
+    "props": {
+      "optionsTitle": "LOG-IN",
+      "providerPasswordButtonLabel": "Continue with an e-mail and password",
+      "emailAndPasswordTitle": "LOG-IN",
+      "accessCodeTitle": "Codigo para la formacion",
+      "emailPlaceholder": "e-mail",
+      "passwordPlaceholder": "password",
+      "showPasswordVerificationIntoTooltip": true
+    }
+  },
+  "login-content": {
+    "props": {}
+  }
+}

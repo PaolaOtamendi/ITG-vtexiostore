@@ -87,7 +87,11 @@
       "fullWidth": true,
       "blockClass": "header__second--section"
     },
-    "children": ["minicart.v2", "login#login__desktop"]
+    "children": [
+      "minicart.v2", 
+      "login#global__login--header"
+      /*"login#login__desktop"*/
+    ]
   },
   "minicart.v2": {
     "props": {
