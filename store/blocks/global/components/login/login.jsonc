@@ -4,13 +4,16 @@
       "optionsTitle": "LOG-IN",
       "providerPasswordButtonLabel": "Continue with an e-mail and password",
       "emailAndPasswordTitle": "LOG-IN",
-      "accessCodeTitle": "Codigo para la formacion",
-      "emailPlaceholder": "e-mail",
-      "passwordPlaceholder": "password",
-      "showPasswordVerificationIntoTooltip": true
+      "accessCodeTitle": "VERIFY YOUR E-MAIL",
+      "emailPlaceholder": "Enter your e-mail",
+      "passwordPlaceholder": "Enter your password",
+      "accessCodePlaceholder": "Enter your access code",
+      "showPasswordVerificationIntoTooltip": true,
+      "iconLabel": "Login",
+      "blockClass": "login__desktop"
     }
-  },
-  "login-content": {
-    "props": {}
   }
+  /*"login-content": {
+    "props": {}
+  }*/
 }

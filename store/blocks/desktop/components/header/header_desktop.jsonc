@@ -89,7 +89,7 @@
     },
     "children": [
       "minicart.v2", 
-      "login#global__login--header"
+      "login#global__login--header" // Nueva feature login
       /*"login#login__desktop"*/
     ]
   },
@@ -107,8 +107,8 @@
       "size": 20,
       "viewBox": "0 0 20 20"
     }
-  },
-  "login#login__desktop": {
+  }
+  /*"login#login__desktop": {
     "props": {
       "emailAndPasswordTitle": "LOG-IN",
       "accessCodeTitle": "Acess Code LOG-IN",
@@ -118,5 +118,5 @@
       "iconLabel": "Login",
       "blockClass": "login__desktop"
     }
-  }
+  }*/
 }
