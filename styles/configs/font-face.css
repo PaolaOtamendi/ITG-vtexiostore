@@ -4,16 +4,15 @@
     font-weight: bold;
   }*/
 
-@font-face {
-  font-family: 'MyHelvetica';
-  src: url("assets/fonts/Lexend-VariableFont_wght.woff"), url("assets/fonts/Lexend-VariableFont_wght.ttf");
-  font-weight: 100 900;
-  font-weight: bold;
-}
+  @font-face {
+    font-family: 'lexend';
+    src: url("assets/fonts/Lexend-VariableFont_wght.woff"), url("assets/fonts/Lexend-VariableFont_wght.ttf");
+  }
 
 
 /*@font-face {
-    font-family: 'Lexend';
-    src: url('/assets/fonts/Lexend-VariableFont_wght.woff') format('woff');
-    font-weight: bold;
+  font-family: 'lexend';
+  src: url("assets/fonts/Lexend-VariableFont_wght.woff"), url("assets/fonts/Lexend-VariableFont_wght.ttf");
+  font-weight: 100 900;
+  font-weight: bold;
 }*/
