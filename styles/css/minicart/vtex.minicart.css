@@ -1,0 +1,33 @@
+.drawerContent--minicart_container {
+    /*top: 68px;*/
+    padding-top: 68px;
+    background-color: #fff;
+}
+
+.drawerContent {
+    max-height: 100vh;
+  }
+
+/*.closeIconContainer {
+    position       : absolute;
+    right          : 18px;
+    width          : 18.67px;
+    height         : 18.67px;
+    margin-right   : 20px;
+}*/
+
+.closeIconContainer--minicart_container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #F5F4F6;
+    border-radius: 50%;
+    left: 300px;
+}
+
+.closeIconButton--minicart_container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}

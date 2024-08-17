@@ -1,10 +1,47 @@
 {
     "minicart.v2": {
+        "title": "Minicart",
       "props": {
-        "MinicartIcon": "icon-cart#minicart-icon"
+        "MinicartIcon": "icon-cart#minicart-icon",
+        "blockClass": "minicart_container"
       },
-      "children": ["minicart-base-content"]
+      "children": [
+        "flex-layout.row#minicart__logo-header",
+        "flex-layout.row#minicart__title-header",
+        "minicart-base-content"
+    ]
     },
+
+    "flex-layout.row#minicart__logo-header": {
+        "title": "minicart icon header",
+        "props": {
+            "blockClass": "minicart__logo-header"
+        },
+        "children": [
+            "flex-layout.col#logo__header--desktop"
+        ]
+    },
+
+    "flex-layout.row#minicart__title-header": {
+        "title": "minicart title header",
+        "props": {
+            "blockClass": "minicart__title-header"
+        },
+        "children": [
+            "rich-text#minicart__title"
+        ]
+    },
+    "rich-text#minicart__title": {
+        "title": "minicart title",
+        "props": {
+            "text": "Resumen de tu compra",
+            "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "font": "t-heading-10",
+      "blockClass": "minicart__title"
+        }
+    },
+
     "icon-cart#minicart-icon": {
       "props": {
         "id": "minicart",
