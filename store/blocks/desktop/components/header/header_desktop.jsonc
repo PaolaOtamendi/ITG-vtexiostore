@@ -24,27 +24,10 @@
       "blockClass": "header__first--section"
     },
     "children": [
-      /*"flex-layout.col#drawer__header--desktop",*/
-      /*"sticky-layout#desktop__mega-menu",*/
       "flex-layout.col#logo__header--desktop",
       "flex-layout.col#searchbar__header--desktop"
     ]
   },
-
-  /*"flex-layout.col#drawer__header--desktop": {
-    "title": "Container drawer desktop",
-    "props": {
-      "blockClass": "drawer__header--desktop"
-    },
-    "children": ["drawer"]
-  },*/
- /*"flex-layout.col#drawer__header--desktop": {
-    "title": "Container drawer desktop",
-    "props": {
-      "blockClass": "drawer__header--desktop"
-    },
-    "children": ["sticky-layout#desktop__mega-menu"]
-  },*/
 
   "flex-layout.col#logo__header--desktop": {
     "title": "Container logo desktop",
@@ -90,7 +73,6 @@
     "children": [
       "minicart.v2", 
       "login#global__login--header" // Nueva feature login
-      /*"login#login__desktop"*/
     ]
   },
   "minicart.v2": {
@@ -108,15 +90,4 @@
       "viewBox": "0 0 20 20"
     }
   }
-  /*"login#login__desktop": {
-    "props": {
-      "emailAndPasswordTitle": "LOG-IN",
-      "accessCodeTitle": "Acess Code LOG-IN",
-      "emailPlaceholder": "e-mail",
-      "passwordPlaceholder": "password",
-      "showPasswordVerificationIntoTooltip": true,
-      "iconLabel": "Login",
-      "blockClass": "login__desktop"
-    }
-  }*/
 }
