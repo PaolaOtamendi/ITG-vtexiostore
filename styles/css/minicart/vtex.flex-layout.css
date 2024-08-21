@@ -1,0 +1,89 @@
+/* Nueva prueba*/
+
+.flexRow--minicart__logo-header {
+    padding-top     : 20px;
+    /*background-color: aquamarine;*/
+}
+
+.flexRow--minicart__container-title-header {
+    padding-top     : 20px;
+    /*background-color: beige;*/
+}
+
+.flexColChild--minicart-empty-state-column {
+    padding-bottom: 0px;
+}
+
+.flexRow--minicart__produt-list {
+    overflow-y: auto;
+    max-height: 400px;
+    position  : relative;
+}
+
+.flexColChild--minicart__footer-content {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+/* Nuevo */
+.flexRowContent--product_list-content-mobile {
+    display         : flex;
+    align-items     : center;
+    width           : 328px;
+    /*height        : 120px;*/
+    /*background-color: aquamarine;*/
+    padding-top     : 0px;
+    padding-bottom  : 15px;
+}
+
+.flexRowContent--price_mobile {
+    margin-top: 0px;
+}
+
+.flexRow--price_mobile {
+    width           : 85px;
+    height          : 35px;
+    /*background-color: azure;*/
+}
+
+.flexRowContent--quanitity_selector-mobile {
+    margin-top: 5px;
+}
+
+/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
+@media (max-width: 767px) {
+    .flexCol--minicart__base-container {
+        justify-content: center;
+    }
+
+    .flexRow--minicart__produt-list {
+        max-height: 600px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .drawerContent--minicart_container {
+        overflow-y: none;
+        display: contents;
+    }
+
+    .flexRow--minicart__logo-header {
+        padding-top: 50px;
+    }
+
+    .flexCol--minicart__base-container {
+        justify-content: center;
+    }
+
+    .flexColChild--minicart__base-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flexRow--minicart__produt-list {
+        max-height: 700px;
+        margin-top: 50px;
+    }
+}

@@ -1,0 +1,78 @@
+.drawerContent--minicart_container {
+    /*background-color: coral;*/
+    overflow-y: none;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.closeIconContainer--minicart_container {
+    display: flex;
+    align-content: center;
+    justify-content: right;
+    width: 100%;
+    padding-right: 25px;
+    /*background-color: blue;*/
+    top: 20px;
+    position: relative;
+}
+
+.closeIconButton--minicart_container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    background-color: #F5F4F6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px !important;
+    /*position: absolute;*/ /* lo quitamos para hacer prueba*/
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* Segunda opcion*/
+.childrenContainer--minicart_container {
+    position: relative;
+    bottom: 30px;
+    z-index: 1;
+}
+
+.minicartTitle {
+    display: none;
+}
+
+.minicartSummary--minicart-summary {
+    height: 126px;
+    width: 368px;
+    border-radius: 4px;
+    border: solid 1px #E7E7E7;
+    padding: 24px;
+    gap: 12px;
+    background-color: #ffff;
+}
+
+.minicartCheckoutButton--minicart-checkout-button {
+    display: flex;
+    align-items: center;
+    width: 368px;
+    height: 48px;
+    padding: 0px;
+}
+
+.minicartCheckoutButton--minicart-checkout-button :global(.vtex-button) {
+    border-radius: 40px;
+    border: solid 1px #1D2734;
+    gap: 10px;
+    background-color: #1D2734;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .drawerContent--minicart_container {
+        /*overflow-y: none;*/
+        display: contents;
+    }
+
+    .closeIconContainer--minicart_container {
+        top: 50px;
+    }
+}

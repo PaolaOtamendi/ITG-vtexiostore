@@ -27,7 +27,8 @@
       "flex-layout.col#logo__header--mobile",
       "flex-layout.col#mobile_spacer",
       "overlay-trigger#header__overlay--mobile",
-      "minicart.v2#minicart_mobile",
+      "minicart.v2",
+      /*"minicart.v2#minicart_mobile",*/
       "login#header_mobile"
     ]
   },
@@ -68,11 +69,11 @@
     }
   },
 
-  "minicart.v2#minicart_mobile": {
+  /*"minicart.v2#minicart_mobile": {
     "props": {
       "MinicartIcon": "icon-cart#minicart_icon--mobile"
     }
-  },
+  },*/
   "icon-cart#minicart_icon--mobile": {
     "props": {
       "id": "minicart",
