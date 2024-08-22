@@ -68,6 +68,18 @@
     line-height    : 15px;
     color          : #fff;
     text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.link--third__row--button::after {
+    content    : url("/arquivos/nav-arrow-right.svg");
+    /*width      : 10.76px;
+    height     : 7.53px;
+    padding-top: 10px;
+    padding    : 5px;*/
+    padding-left: 5px;
 }
 
 .container--second__row-title--infocard {
@@ -110,17 +122,30 @@
 
     .paragraph--second__row-title--infocard {
         margin-top: 0px;
+        height: auto;
     }
 }
 
 
 @media (min-width: 768px) and (max-width: 1024px) {
+    .heading--second__row-title--infocard {
+        margin-top: 0px;
+    }
+
     .paragraph--second__row-title--infocard {
         width        : 185.21px;
-        height       : 11px;
+        height       : auto;
         padding      : 0px 0px 0px 10.33px;
         white-space  : nowrap;
         overflow     : hidden;
         text-overflow: ellipsis;
+    }
+
+    .container--second__row-title--infocard {
+        height: 100%;
+    }
+
+    .wrapper--third__row--button {
+        height: 30px;
     }
 }

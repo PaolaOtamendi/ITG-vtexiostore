@@ -1,12 +1,11 @@
-/* Nueva prueba*/
+/*----------------------------- Minicart custom ------------------------------------------------*/
 
 .flexRow--minicart__logo-header {
-    padding-top     : 20px;
-    /*background-color: aquamarine;*/
+    padding-top       : 20px;
 }
 
 .flexRow--minicart__container-title-header {
-    padding-top     : 20px;
+    padding-top       : 20px;
     /*background-color: beige;*/
 }
 
@@ -28,13 +27,13 @@
 
 /* Nuevo */
 .flexRowContent--product_list-content-mobile {
-    display         : flex;
-    align-items     : center;
-    width           : 328px;
-    /*height        : 120px;*/
+    display           : flex;
+    align-items       : center;
+    width             : 328px;
+    /*height          : 120px;*/
     /*background-color: aquamarine;*/
-    padding-top     : 0px;
-    padding-bottom  : 15px;
+    padding-top       : 0px;
+    padding-bottom    : 15px;
 }
 
 .flexRowContent--price_mobile {
@@ -42,8 +41,8 @@
 }
 
 .flexRow--price_mobile {
-    width           : 85px;
-    height          : 35px;
+    width             : 85px;
+    height            : 35px;
     /*background-color: azure;*/
 }
 
@@ -51,7 +50,7 @@
     margin-top: 5px;
 }
 
-/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
+/*----------------------------- MediaQueires header minicart tablet y phone ---------------------------------------*/
 @media (max-width: 767px) {
     .flexCol--minicart__base-container {
         justify-content: center;
@@ -65,7 +64,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .drawerContent--minicart_container {
         overflow-y: none;
-        display: contents;
+        display   : contents;
     }
 
     .flexRow--minicart__logo-header {
@@ -77,9 +76,9 @@
     }
 
     .flexColChild--minicart__base-container {
-        display: flex;
+        display        : flex;
         justify-content: center;
-        align-items: center;
+        align-items    : center;
     }
 
     .flexRow--minicart__produt-list {

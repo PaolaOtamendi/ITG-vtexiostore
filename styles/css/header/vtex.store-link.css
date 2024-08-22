@@ -1,0 +1,10 @@
+.childrenContainer--link__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.link--link__icon {
+    text-decoration: none;
+}

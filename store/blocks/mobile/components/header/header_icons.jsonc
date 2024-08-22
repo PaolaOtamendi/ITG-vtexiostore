@@ -1,0 +1,11 @@
+{
+    "flex-layout.row#mobile__header-icons": {
+        "title": "container menu header icons mobile",
+        "children": [
+            "header-row#global__header--menu-icons"
+        ],
+        "props": {
+            "blockClass": "mobile__header-icons"
+        }
+    }
+}

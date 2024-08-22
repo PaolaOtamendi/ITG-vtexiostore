@@ -2,7 +2,6 @@
   "sticky-layout#desktop__mega-menu": {
     "title": "Mega menu desktop",
     "children": [
-      /*"flex-layout.row#4-desktop",*/
       "flex-layout.row#row__trigger--desktop",
       "flex-layout.row#mega-menu"
     ]
@@ -24,7 +23,8 @@
     "title": "Components mega menu desktop",
     "props": {
       "openOnly": "horizontal",
-      "blockClass": "components__mega--menu"
+      "blockClass": "components__mega--menu",
+      "title": "Prueba nuevo title" // prueba colocar nuevo title
     }
   },
   "flex-layout.col#trigger-mega-menu": {
