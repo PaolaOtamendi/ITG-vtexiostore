@@ -32,7 +32,7 @@
       "flex-layout.col#global__infocard--slider",
       "flex-layout.col#global__infocard--slider",
       "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider", // A partir de aqui agregamos
+      "flex-layout.col#global__infocard--slider",
       "flex-layout.col#global__infocard--slider",
       "flex-layout.col#global__infocard--slider",
       "flex-layout.col#global__infocard--slider",
@@ -105,17 +105,17 @@
   "flex-layout.col#second__row--bestseller": {
     "title": "Container img ecommer bestseller",
     "children": [
-        "image#second__row-best-seller"
+        "image#image__best-seller"
     ],
     "props": {
       "width": "20%",
       "blockClass": "second__row--bestseller"
   }
   },
-  "image#second__row-best-seller": {
+  "image#image__best-seller": {
     "props": {
     "src": "/arquivos/bestseller.png",
-    "blockClass": "icon__to__product9"
+    "blockClass": "image__best-seller"
     }
   },
 
@@ -128,8 +128,14 @@
   "rich-text#third__row--button": {
     "title": "Button price to product",
     "props": {
-        "text": "[Ver precio](https:)",
-        "blockClass": "third__row--button"
+        "text": "[Ver precio]()",
+        "blockClass": "third__row--button",
+        "link": {
+          "props": {
+            "label": "",
+            "href": "#"
+          }
+        }
     }
   }
 }

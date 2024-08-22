@@ -1,3 +1,4 @@
+/*----------------------------- Minicart custom ------------------------------------------------*/
 .drawerContent--minicart_container {
     /*background-color: coral;*/
     overflow-y: none;
@@ -66,6 +67,7 @@
     background-color: #1D2734;
 }
 
+/*----------------------------- MediaQueires header minicart tablet y phone ---------------------------------------*/
 @media (min-width: 769px) and (max-width: 1024px) {
     .drawerContent--minicart_container {
         /*overflow-y: none;*/

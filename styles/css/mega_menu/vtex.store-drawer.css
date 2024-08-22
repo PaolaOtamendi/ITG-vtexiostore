@@ -11,3 +11,9 @@
 .drawerHeader {
     background-color: #fff !important;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .drawer {
+        max-width: 300px !important;
+    }
+}

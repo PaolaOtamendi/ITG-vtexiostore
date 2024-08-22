@@ -3,6 +3,7 @@
     width        : auto !important;
     /*height     : 647px;*/
     border-radius: 0px 0px 16px 16px;
+    top          : 40px;
 }
 
 .menuContainer {
@@ -112,8 +113,8 @@
 }
 
 .styledLinkContainer {
-    padding-bottom: 0.8rem;
-    padding-top   : 0.8rem;
+    /*padding-bottom: 0.8rem;*/
+    padding-top: 0.8rem;
 }
 
 .submenuContainerVertical {

@@ -49,7 +49,7 @@
 
   "flex-layout.row#four__title--slider": {
     "title": "Row container title three to slider",
-    "children": ["rich-text#title__section-three--slider"]
+    "children": ["rich-text#title__section-four--slider"]
   },
   "rich-text#title__section-four--slider": {
     "title": "Title to global slider",
