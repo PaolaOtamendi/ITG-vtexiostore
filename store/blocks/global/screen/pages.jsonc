@@ -1,0 +1,14 @@
+{
+    "store.custom#trends": {
+        "title": "global page static tendencias",
+      "children": [
+        "flex-layout.row#page_trends"
+      ]
+    },
+    "store.custom#collections": {
+        "title": "global page static tendencias",
+      "children": [
+        "flex-layout.row#page_collections"
+      ]
+    }
+}

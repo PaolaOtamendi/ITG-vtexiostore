@@ -1,0 +1,8 @@
+{
+    "store.custom#trends": {
+      "path": "/Tendencias-it-globers"
+    },
+    "store.custom#collections": {
+      "path": "/Colecciones-del-mes"
+    }
+}

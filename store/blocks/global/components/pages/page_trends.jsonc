@@ -1,0 +1,26 @@
+{
+    "flex-layout.row#page_trends": {
+        "title": "Row page trends",
+        "children": [
+            "flex-layout.col#page_trends"
+        ]
+    },
+    "flex-layout.col#page_trends": {
+        "title": "Col page trends",
+        "children": [
+            "flex-layout.row#page_trends-text"
+        ]
+    },
+    "flex-layout.row#page_trends-text": {
+        "title": "Row page trends text",
+        "children": [
+            "rich-text#page_trends"
+        ]
+    },
+    "rich-text#page_trends": {
+        "title": "text page trends",
+        "props": {
+            "text": "Estoy en la pagina de tendencias"
+        }
+    }
+}

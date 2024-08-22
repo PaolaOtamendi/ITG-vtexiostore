@@ -12,7 +12,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/tendencias",
+            "href": "/Tendencias-it-globers",
             "noFollow": false,
             "tagTitle": "Tendencias",
             "text": "Tendencias de ITGlobers"
@@ -24,7 +24,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/colecciones",
+            "href": "/Colecciones-del-mes",
             "noFollow": false,
             "tagTitle": "Colecciones",
             "text": "Colecciones del mes"
