@@ -24,7 +24,8 @@
     "props": {
       "openOnly": "horizontal",
       "blockClass": "components__mega--menu",
-      "title": "Prueba nuevo title" // prueba colocar nuevo title
+      "title": "All categories",
+      "titleClass": "custom-title-class" // prueba colocar nuevo title
     }
   },
   "flex-layout.col#trigger-mega-menu": {
