@@ -1,0 +1,17 @@
+{
+    "store.custom#trends": {
+      "path": "/trends-it-globers"
+    },
+    "store.custom#collections": {
+      "path": "/collections-month"
+    },
+    "store.custom#offers": {
+      "path": "/offers-month"
+    },
+    "store.custom#cyber_monday": {
+      "path": "/cyber_monday"
+    },
+    "store.custom#promotions": {
+      "path": "/promotions"
+    }
+}

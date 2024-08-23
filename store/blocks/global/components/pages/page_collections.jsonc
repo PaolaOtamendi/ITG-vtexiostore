@@ -1,0 +1,26 @@
+{
+    "flex-layout.row#page_collections": {
+        "title": "Row page collections",
+        "children": [
+            "flex-layout.col#page_collections"
+        ]
+    },
+    "flex-layout.col#page_collections": {
+        "title": "Col page collections",
+        "children": [
+            "flex-layout.row#page_collections-text"
+        ]
+    },
+    "flex-layout.row#page_collections-text": {
+        "title": "Row page collections text",
+        "children": [
+            "rich-text#page_collections"
+        ]
+    },
+    "rich-text#page_collections": {
+        "title": "text page collections",
+        "props": {
+            "text": "Estoy en la pagina de colecciones"
+        }
+    }
+}

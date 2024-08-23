@@ -1,7 +1,7 @@
 /*----------------------------- Global slider products ------------------------------------------------*/
 .paragraph--title__slider--global {
-    font-family  : Lexend, sans-serif;
-    font-weight  : bold !important;
+    font-family  : 'Lexend-Bold', sans-serif;
+    font-weight  : 500;
     font-size    : 16px;
     line-height  : 16.8px;
     color        : #1D2734;

@@ -1,0 +1,9 @@
+{
+    "search-content": {
+        "title": "Search content",
+        "blocks": [
+            "gallery",
+            "not-found"
+        ]
+    }
+}
