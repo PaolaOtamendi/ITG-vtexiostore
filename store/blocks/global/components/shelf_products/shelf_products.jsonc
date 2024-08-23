@@ -91,14 +91,20 @@
     "title": "container description shelf product",
     "children": [
         "product-summary-description"
-    ]
+    ],
+    "props": {
+      "blockClass": "shelf__description"
+    }
   },
 
   "flex-layout.col#shelf__price": {
     "title": "container price shelf product",
     "children": [
         "product-summary-price"
-    ]
+    ],
+    "props": {
+      "blockClass": "shelf__price"
+    }
   },
 
   "flex-layout.row#shelf_buy--button": {

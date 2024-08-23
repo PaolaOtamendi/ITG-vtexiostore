@@ -1,0 +1,89 @@
+{
+    "flex-layout.row#page_offers": {
+        "title": "Row page offers",
+        "children": [
+            "flex-layout.col#page_offers"
+        ]
+    },
+    "flex-layout.col#page_offers": {
+        "title": "Col page offers",
+        "children": [
+            "flex-layout.row#page_offers-text",
+            "flex-layout.row#page_offers-products"
+        ]
+    },
+
+    "flex-layout.row#page_offers-text": {
+        "title": "Row page offers text",
+        "children": [
+            "rich-text#page_offers"
+        ]
+    },
+    "rich-text#page_offers": {
+        "title": "text page offers",
+        "props": {
+            "text": "Estoy en la pagina de ofertas"
+        }
+    },
+
+    "flex-layout.row#page_offers-products": {
+        "title": "Row products",
+        "children": [
+            "search-result-layout.customQuery#page_offers-results"
+        ]
+    },
+    "search-result-layout.customQuery#page_offers-results": {
+        "title": "Search query page offers",
+        "props": {
+            "querySchema": {
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip"
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#page_offers-results",
+            "search-result-layout.mobile#page_offers-results",
+            "search-not-found-layout"
+        ]
+    },
+    "search-result-layout.desktop#page_offers-results": {
+        "title": "search result desktop page offers results",
+        "children": [
+            "flex-layout.row#page_offers-results"
+        ]
+
+    },
+    "search-result-layout.mobile#page_offers-results": {
+        "title": "search result mobile page offers results",
+        "children": [
+            "flex-layout.row#page_offers-results"
+        ]
+    },
+    "flex-layout.row#page_offers-results": {
+        "title": "Row offers results page static",
+        "children": [
+            "flex-layout.col#page_offers-results"
+        ],
+        "props": {}
+    },
+    "flex-layout.col#page_offers-results": {
+        "title": "Col offers results page static",
+        "children": [
+            "search-content#page_offers-results"
+        ],
+        "props": {}
+    },
+    "search-content#page_offers-results": {
+        "title": "Search content page offers result",
+        "blocks": [
+            "gallery#page_offers-results",
+            "not-found"
+        ]
+    },
+    "gallery#page_offers-results": {
+        "title": "Gallery page offers results",
+        "blocks": [
+            "product-summary.shelf"
+        ]
+    }
+}

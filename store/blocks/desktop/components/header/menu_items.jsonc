@@ -12,7 +12,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/Tendencias-it-globers",
+            "href": "/trends-it-globers",
             "noFollow": false,
             "tagTitle": "Tendencias",
             "text": "Tendencias de ITGlobers"
@@ -24,7 +24,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/Colecciones-del-mes",
+            "href": "/collections-month",
             "noFollow": false,
             "tagTitle": "Colecciones",
             "text": "Colecciones del mes"
@@ -36,7 +36,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/ofertas-enero",
+            "href": "/offers-month",
             "noFollow": false,
             "tagTitle": "Ofertas",
             "text": "Ofertas de Enero"
@@ -48,7 +48,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/cyber-monday",
+            "href": "/cyber_monday",
             "noFollow": false,
             "tagTitle": "Cyber Monday",
             "text": "Cyber Monday"
@@ -60,7 +60,7 @@
           "highlight": false,
           "itemProps": {
             "type": "internal",
-            "href": "/never-say-never",
+            "href": "/promotions",
             "noFollow": false,
             "tagTitle": "Never Say Never",
             "text": "Never Say Never"

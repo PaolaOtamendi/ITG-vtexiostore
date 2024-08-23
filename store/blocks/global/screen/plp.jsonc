@@ -1,0 +1,70 @@
+{
+    "store.search": {
+        "title": "Global search",
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+    "store.search#department": {
+        "title": "Global search departament",
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+    "store.search#category": {
+        "title": "Global search category",
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+    "store.search#subcategory": {
+        "title": "Global search subcategory",
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+    "store.search#brand": {
+        "title": "Global search brand",
+        "blocks": [
+            "search-result-layout"
+        ],
+        "props": {
+            "context": {
+                "skusFilter": "FIRST_AVAILABLE",
+                "simulationBehavior": "default"
+            }
+        }
+    },
+    "search-result-layout": {
+        "title": "Global search layout",
+        "blocks": [
+            "search-result-layout.desktop",
+            "search-result-layout.mobile",
+            "search-not-found-layout"
+        ]
+    }
+}

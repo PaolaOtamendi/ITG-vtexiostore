@@ -101,6 +101,7 @@
 .element--container__all--products {
     padding-bottom: 0%;
     padding-top   : 0%;
+    /*max-height: 378px;*/
 }
 
 .imageContainer--custom_image__shelf {

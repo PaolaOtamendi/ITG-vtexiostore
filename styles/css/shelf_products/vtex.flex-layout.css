@@ -11,6 +11,7 @@
     /*align-items     : start;*/
     /*display         : contents;*/
     padding-bottom    : 50px;
+    padding-top       : 30px; /* Nuevo validar dimendiones 23/08*/
 }
 
 /* Cambios Esto contiene todo*/
@@ -43,17 +44,17 @@
 
 .flexRow--global__shelf--products {
     /*background-color: #8fff73;*/
-    position        : relative;
-    top             : 50px;
+    position: relative;
+    top     : 50px;
 }
 
 .flexRowContent--global__shelf--products {
     /*background-color: #9500ff;*/
-    display         : flex;
-    align-items     : center;
-    justify-items   : center;
-    justify-content : center;
-    height          : 378px;
+    display        : flex;
+    align-items    : center;
+    justify-items  : center;
+    justify-content: center;
+    height         : 378px;
 }
 
 .flexRow--product__summary_1 {
@@ -78,11 +79,11 @@
 
 .flexRowContent--container_price_iconfavorite {
     /*background-color: aquamarine;*/
-    display         : flex;
-    /*display: -webkit-box;*/
-    align-items     : center;
-    justify-content : space-around;
-    height          : 32px;
+    display        : flex;
+    /*display      : -webkit-box;*/
+    align-items    : center;
+    justify-content: space-around;
+    height         : 32px;
 }
 
 .flexRow--global__shelf--products {
@@ -106,4 +107,11 @@
 
 .flexRowContent--container_price_iconfavorite :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     display: block;
+}
+
+/* Nuevo */
+.flexCol--shelf__description {
+    height: 51px;
+    /*height: 85%;*/
+    background-color: aquamarine;
 }

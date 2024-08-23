@@ -1,0 +1,26 @@
+{
+    "flex-layout.row#page_cyber-monday": {
+        "title": "Row page cyber-monday",
+        "children": [
+            "flex-layout.col#page_cyber-monday"
+        ]
+    },
+    "flex-layout.col#page_cyber-monday": {
+        "title": "Col page cyber-monday",
+        "children": [
+            "flex-layout.row#page_cyber-monday-text"
+        ]
+    },
+    "flex-layout.row#page_cyber-monday-text": {
+        "title": "Row page cyber-monday text",
+        "children": [
+            "rich-text#page_cyber-monday"
+        ]
+    },
+    "rich-text#page_cyber-monday": {
+        "title": "text page cyber-monday",
+        "props": {
+            "text": "Estoy en la pagina de cyber monday"
+        }
+    }
+}

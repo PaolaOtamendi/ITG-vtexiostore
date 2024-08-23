@@ -12,3 +12,9 @@
     align-items     : center;
     justify-content : space-around;
 }
+
+.productHighlightWrapper[data-highlight-name="Best Seller"],
+.productHighlightWrapper[data-highlight-name="20% Off"] {
+    display: none;
+}
+

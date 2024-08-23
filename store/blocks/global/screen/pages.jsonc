@@ -5,10 +5,32 @@
         "flex-layout.row#page_trends"
       ]
     },
+
     "store.custom#collections": {
-        "title": "global page static tendencias",
+        "title": "global page static collections",
       "children": [
         "flex-layout.row#page_collections"
+      ]
+    },
+
+    "store.custom#offers": {
+        "title": "global page static offers",
+      "children": [
+        "flex-layout.row#page_offers"
+      ]
+    },
+
+    "store.custom#cyber_monday": {
+        "title": "global page static cyber monday",
+      "children": [
+        "flex-layout.row#page_cyber-monday"
+      ]
+    },
+
+    "store.custom#promotions": {
+        "title": "global page static never sey never",
+      "children": [
+        "flex-layout.row#page_promotions"
       ]
     }
 }
