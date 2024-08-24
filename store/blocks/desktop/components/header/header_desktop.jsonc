@@ -74,8 +74,8 @@
       "minicart.v2", 
       "login#global__login--header" // Nueva feature login
     ]
-  },
-  "minicart.v2": {
+  }
+  /*"minicart.v2": {
     "props": {
       "MinicartIcon": "icon-cart#minicart-icon"
     }
@@ -89,5 +89,5 @@
       "size": 20,
       "viewBox": "0 0 20 20"
     }
-  }
+  }*/
 }

@@ -1,9 +1,32 @@
 {
-    "search-content": {
+    "search-content#global__search--layout": {
         "title": "Search content",
         "blocks": [
-            "gallery",
+            "gallery#global__search",
             "not-found"
         ]
+    },
+
+    "flex-layout.row#container__result-order-filter": {
+        "title": "Container result filter and order",
+        "children": [
+            "order-by.v2",
+            "filter-navigator.v3"
+        ],
+        "props": {}
+    },
+
+    "order-by.v2": {
+        "title": "Order by result layout",
+        "props": {
+            "blockClass": ["plp__order-by-filter"]
+        }
+    },
+
+    "filter-navigator.v3": {
+        "title": "PLP Filter result layout",
+        "props": {
+            "blockClass": ["plp__filter-navigator"]
+        }
     }
 }
