@@ -78,7 +78,7 @@
     border-right : 10px solid transparent;
     border-radius: 4px;
     margin-bottom: 94px;
-    overflow     : visible;
+    overflow     : visible !important;
     fill         : none;
 }
 

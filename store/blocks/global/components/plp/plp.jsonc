@@ -16,6 +16,7 @@
         "props": {}
     },
 
+    /* Validar este donde debemos colocarlo*/
     "order-by.v2": {
         "title": "Order by result layout",
         "props": {

@@ -6,7 +6,11 @@
                 {
                     "name": "whole",
                     "component": "OneOrTwoLineSummary",
-                    "itemsPerRow": 1
+                    /*"itemsPerRow": 1*/
+                    "itemsPerRow": {
+                        "desktop": 3,
+                        "mobile": 1
+                    }
                 },
                 {
                     "name": "two",
@@ -16,26 +20,31 @@
                 {
                     "name": "many",
                     "component": "ManyByLineSummary",
-                    "itemsPerRow": {
+                    /*"itemsPerRow": {
                         "desktop": 5,
+                        "mobile": 1
+                    }*/
+                    "itemsPerRow": {
+                        "desktop": 3,
                         "mobile": 1
                     }
                 }
             ],
-            "OneOrTwoLineSummary": "product-summary.shelf",
-            "ManyByLineSummary": "product-summary.shelf"
+            "OneOrTwoLineSummary": "product-summary.shelf#global__gallery--summary",
+            "ManyByLineSummary": "product-summary.shelf#global__gallery--summary"
         }
     },
-
+    
+    // switch views on gellery
     "gallery-layout-switcher": {
         "children": [
-            //It follows the same whole -> two -> many order
             "gallery-layout-option#whole",
             "gallery-layout-option#two",
             "gallery-layout-option#many"
         ]
     },
     "gallery-layout-option#whole": {
+        "title": "View only one item layout option",
         "props": {
             "name": "whole"
         },
@@ -44,6 +53,7 @@
         ]
     },
     "gallery-layout-option#two": {
+        "title": "View two items layout option",
         "props": {
             "name": "two"
         },
@@ -52,6 +62,7 @@
         ]
     },
     "gallery-layout-option#many": {
+        "title": "View multiple items layout option",
         "props": {
             "name": "many"
         },

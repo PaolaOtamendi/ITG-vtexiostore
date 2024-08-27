@@ -1,0 +1,31 @@
+.flexRowContent--product__gallery--plp {
+    display: flex;
+    flex-direction: column;
+}
+
+.flexRowContent--product__gallery--plp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+}
+
+.flexCol--breadcrumb__search {
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    left: 72px;
+    position: relative;
+    font-size: 14px;
+}
+
+.flexColChild--sort__options {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 50px;
+}
+
+.flexRow--filter__options--plp {
+    width: 184px !important;
+    /*max-width: 184px;*/
+    background-color: aquamarine;
+    margin-left: 72px;
+}

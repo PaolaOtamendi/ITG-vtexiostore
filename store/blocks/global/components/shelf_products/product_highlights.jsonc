@@ -1,24 +1,32 @@
 {
-  "vtex.product-highlights@2.x:product-highlights": {
-    "title": "free shipping",
+  "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider": {
+    "title": "Product hignlights identifications",
     "children": ["product-highlight-wrapper"],
     "props": {
-      "blockClass": "custom_highlights"
+      "blockClass": "custom_highlights",
+      "filter": {
+        "type": "show",
+        "highlightNames": [
+          "Envío Gratis"
+        ]
+      }
     }
   },
   "product-highlight-wrapper": {
+    "title": "Container text and icon product highlights",
     "children": [
       "product-highlight-text#text__free-shipping",
       "icon#icon__free-shipping"
     ]
   },
   "product-highlight-text#text__free-shipping": {
+    "title": "Text to product highlight",
     "props": {
       "message": "Envio gratis"
     }
   },
   "icon#icon__free-shipping": {
-    "title": "icon free shipping",
+    "title": "icon highlight free shipping",
     "props": {
       "id": "flash",
       "width": 15,

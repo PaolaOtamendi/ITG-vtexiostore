@@ -1,0 +1,30 @@
+.container--layout {
+    background-color: #fff;
+}
+
+.totalProducts--layout {
+    padding-left: 0px;
+    font-family : lexend, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #1D2734;
+    line-height: 17.5px;
+}
+
+.galleryTitle--layout {
+    font-family : lexend, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1D2734;
+    line-height: 25px;
+}
+
+.flexCol--sort__options {
+    position: relative !important;
+    right: 50px !important;
+}
+
+.orderByButton--plp__order-by-filter {
+    border-radius: 40px;
+    background-color: #E7E7E7;
+}
