@@ -28,8 +28,9 @@
       "flex-layout.col#mobile_spacer",
       "overlay-trigger#header__overlay--mobile",
       "minicart.v2",
+      "login#global__login--header"
       /*"minicart.v2#minicart_mobile",*/
-      "login#header_mobile"
+      /*"login#header_mobile"*/
     ]
   },
   
@@ -67,13 +68,13 @@
       "blockClass": "mobile_spacer",
       "flexGrow": 1
     }
-  },
+  }
 
   /*"minicart.v2#minicart_mobile": {
     "props": {
       "MinicartIcon": "icon-cart#minicart_icon--mobile"
     }
-  },*/
+  },
   "icon-cart#minicart_icon--mobile": {
     "props": {
       "id": "minicart",
@@ -84,9 +85,9 @@
       "overflow": "visible",
       "blockclass": "minicart_icon--mobile"
     }
-  },
+  },*/
 
-  "login#header_mobile": {
+  /*"login#header_mobile": {
   "props": {
     "emailAndPasswordTitle": "LOG-IN",
     "accessCodeTitle": "Acess Code LOG-IN",
@@ -96,5 +97,5 @@
     "iconLabel": "Login",
     "blockClass": "icon-login"
     }
-  }
+  }*/
 }

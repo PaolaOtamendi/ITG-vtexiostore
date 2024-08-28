@@ -7,6 +7,7 @@
     border-radius   : 12px 12px 0px 0px;
 }
 
+/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
 @media (max-width: 767px) {
     .flexCol--global__infocard--slider {
         width : 224px;

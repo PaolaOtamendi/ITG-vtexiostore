@@ -111,7 +111,9 @@
 
 /* Nuevo */
 .flexCol--shelf__description {
+    display: flex;
+    align-items: baseline;
     height: 51px;
     /*height: 85%;*/
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
 }
