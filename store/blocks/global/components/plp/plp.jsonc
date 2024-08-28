@@ -1,4 +1,26 @@
 {
+    "flex-layout.row#container__global-plp": {
+        "title": "Container mobile layout PLP",
+        "children": [
+            "flex-layout.col#container__global--plp"
+        ],
+        "props": {
+            "blockClass": "container__global-plp"
+        }
+    },
+    "flex-layout.col#container__global--plp": {
+        "title": "Container column to PLP",
+        "children": [
+            /*"gallery-layout-switcher",*/
+            "flex-layout.row#global__result-order-filter",
+            "search-content#global__search--layout"
+            /*"search-products-count-per-page"*/
+        ],
+        "props": {
+            "blockClass": "container_plp"
+        }
+    },
+
     "search-content#global__search--layout": {
         "title": "Search content",
         "blocks": [
@@ -7,28 +29,71 @@
         ]
     },
 
-    "flex-layout.row#container__result-order-filter": {
+    "flex-layout.row#global__result-order-filter": {
         "title": "Container result filter and order",
+        "children": [
+            "flex-layout.col#head__result-order-filter",
+            "flex-layout.col#body__result-order-filter"
+            /*"breadcrumb.search",
+            "search-title.v2",
+            "order-by.v2",
+            "filter-navigator.v3"*/
+            /*"search-products-count-per-page"*/
+            /*"gallery-layout-switcher",*/
+        ],
+        "props": {
+            "blockClass": "global__result-order-filter"
+        }
+    },
+
+    // Estructure
+    "flex-layout.col#head__result-order-filter": {
+        "title": "Container head result filter and order",
+        "children": [
+            "breadcrumb.search",
+            "search-title.v2"
+        ],
+        "props": {
+            "blockClass": "head__result-order-filter"
+        }
+    },
+    "flex-layout.col#body__result-order-filter": {
+        "title": "Container head result filter and order",
         "children": [
             "order-by.v2",
             "filter-navigator.v3"
+            /*"search-products-count-per-page"*/
         ],
-        "props": {}
+        "props": {
+            "blockClass": "body__result-order-filter"
+        }
     },
 
-    /* Validar este donde debemos colocarlo*/
+    "breadcrumb.search": {
+        "title": "Breadcrumb Search Navigation",
+        "props": {
+            "showOnMobile": true
+        }
+    },
+
     "order-by.v2": {
         "title": "Order by result layout",
         "props": {
-            "blockClass": ["plp__order-by-filter"]
+            "blockClass": "plp__order-by-filter"
         }
     },
 
     "filter-navigator.v3": {
         "title": "PLP Filter result layout",
         "props": {
-            "blockClass": ["plp__filter-navigator"],
-            "appliedFiltersOverview": "hide"
+            "blockClass": "plp__filter-navigator"
+            /*"appliedFiltersOverview": "hide"*/
+        }
+    },
+    
+    "search-products-count-per-page": {
+        "props": {
+            "blocksClass": "search__plp-count-products"
         }
     }
 }

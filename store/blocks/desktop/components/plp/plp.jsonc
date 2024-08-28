@@ -77,25 +77,14 @@
         "title": "Container product gallery plp",
         "children": [
             "gallery-layout-switcher",
-            /*"gallery-layout-switcher",*/
-            /*"search-content#global__search--layout",*/
             "search-content#plp",
             "search-products-count-per-page",
             "search-fetch-more"
-            /*"gallery#global__search"*/
         ],
         "props": {
             "blockClass": "product__gallery--plp"
         }
     },
-    /*"gallery-layout-switcher": {
-        "title": "Gallery layout switcher",
-        "children": [
-            "gallery-layout-option#whole",
-            "gallery-layout-option#two",
-            "gallery-layout-option#many"
-        ]
-    },*/
     "search-content#plp": {
         "title": "Search content and results plp",
         "blocks": ["gallery#global__search", "not-found"]

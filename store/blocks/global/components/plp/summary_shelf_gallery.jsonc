@@ -3,14 +3,6 @@
     "title": "Global product summary shelf to gallery",
     "children": [
         "flex-layout.row#container__shelf-product-gallery"
-      /*"product-summary-image",*/
-      /*"product-summary-add-to-list-button",
-      "product-summary-name",
-      "product-rating-inline",
-      "product-summary-space",
-      "product-summary-price",
-      "product-identifier.summary",
-      "add-to-cart-button"*/
     ],
     "props": {}
   },
@@ -37,10 +29,10 @@
     "title": "Column to product details shelf",
     "children": [
         "product-summary-name",
-        /*"product-summary-description",*/
         "product-list-price",
         "product-selling-price",
-        "vtex.product-highlights@2.x:product-highlights"
+        "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider"
+        /*"vtex.product-highlights@2.x:product-highlights"*/
     ],
     "props": {
         "blockClass": "shelf__details--gallery"
@@ -53,12 +45,6 @@
         "blockClass": "product_summary-name"
     }
   },
-  /*"product-summary-description": {
-    "title": "Product summary description",
-    "props": {
-        "blockClass": "product_summary-description"
-    }
-  },*/
   "product-list-price": {
     "title": "Product summary price",
     "props": {

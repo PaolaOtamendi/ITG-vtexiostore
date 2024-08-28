@@ -1,3 +1,4 @@
+/*----------------------------- PLP custom styles destkop ------------------------------------------------*/
 .flexRowContent--product__gallery--plp {
     display           : flex;
     flex-direction    : column;
@@ -25,10 +26,10 @@
 }
 
 .flexRow--filter__options--plp {
-    width           : 184px !important;
-    /*max-width     : 184px;*/
-    background-color: aliceblue;
-    margin-left     : 72px;
+    width             : 184px !important;
+    /*max-width       : 184px;*/
+    /*background-color: aliceblue;*/
+    margin-left       : 72px;
 }
 
 .flexRowContent--product__gallery--plp .stretchChildrenWidth {
@@ -46,9 +47,9 @@
     height: 107px !important;
 }
 
-.flexRowContent--container__shelf-product-gallery {
-    /*background-color: aqua;*/
-}
+/*.flexRowContent--container__shelf-product-gallery {
+    background-color: aqua;
+}*/
 
 .flexColChild--shelf__details--gallery :global(.vtex-product-summary-2-x-brandName--product_summary-name) {
     font-family: Lexend, sans-serif;
@@ -71,4 +72,29 @@
     font-weight: 600;
     line-height: 21.87px;
     color      : #1D2734;
+}
+
+/*----------------------------- PLP custom styles mobile-phone ------------------------------------------------*/
+.flexRowContent--global__result-order-filter {
+    flex-direction: column;
+}
+
+.flexCol--body__result-order-filter {
+    flex-direction: row;
+    margin-bottom : 15px;
+}
+
+/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
+@media (max-width: 767px) {
+    .flexRowContent--container__shelf-product-gallery {
+        display       : flex;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    /*.flexRowContent--container__shelf-product-gallery {
+        display: flex;
+        flex-direction: row;
+    }*/
 }

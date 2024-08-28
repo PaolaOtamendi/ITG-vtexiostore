@@ -6,27 +6,33 @@
                 {
                     "name": "whole",
                     "component": "OneOrTwoLineSummary",
-                    /*"itemsPerRow": 1*/
                     "itemsPerRow": {
                         "desktop": 3,
-                        "mobile": 1
+                        "tablet": 2,
+                        "phone": 1
+                        /*"mobile": 1*/
                     }
                 },
                 {
                     "name": "two",
                     "component": "OneOrTwoLineSummary",
-                    "itemsPerRow": 2
+                    /*"itemsPerRow": 2*/
+                    "itemsPerRow": {
+                        "desktop": 2,
+                        "tablet": 2,
+                        "phone": 1
+                        /*"mobile": 1*/
+                    }
+                    
                 },
                 {
                     "name": "many",
                     "component": "ManyByLineSummary",
-                    /*"itemsPerRow": {
-                        "desktop": 5,
-                        "mobile": 1
-                    }*/
                     "itemsPerRow": {
                         "desktop": 3,
-                        "mobile": 1
+                        "tablet": 2,
+                        "phone": 1
+                        /*"mobile": 1*/
                     }
                 }
             ],

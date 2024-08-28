@@ -29,27 +29,15 @@
     display: none;
 }
 
-.filterSelected--plp__filter-navigator {
-    /*display: none;*/
-}
-
-/*.filter__container--brand {
+/*.filterSelected--plp__filter-navigator {
     display: none;
 }*/
 
-/*.filter__container--color {
-    display: none;
-}*/
-
-/*.filter__container--talla {
-    display: none;
-}*/
 
 .filterTitle--plp__filter-navigator {
     width           : 184px;
     height          : 36px;
     background-color: #1D27341A;
-    /*border        : solid 1px #1D2734;*/
     border-radius   : 40px;
     padding         : 8px 16px 8px 16px;
 }
@@ -115,11 +103,6 @@
     content: url("/arquivos/span-icon-filter.svg");
 }
 
-/*.filterTemplateOverflow--plp__filter-navigator {
-    height    : 176px;
-    max-height: 176px;
-}*/
-
 .filter {
     padding-top   : 0px;
     padding-bottom: 0px;
@@ -138,23 +121,16 @@
     color      : #1D2734;
 }
 
-/*.checkbox__label {
-    font-family : lexend, sans-serif;
-    font-weight: 300;
-    font-size: 12px;
-    line-height: 15px;
-}*/
-
 .filter__container--priceRange .filterTemplateOverflow--plp__filter-navigator {
-    height          : 56px;
-    display         : flex;
-    justify-content : center;
-    background-color: aquamarine;
-    font-family     : lexend, sans-serif;
-    font-size       : 14px;
-    font-weight     : 300;
-    line-height     : 20px;
-    color           : #1D2734;
+    height            : 56px;
+    display           : flex;
+    justify-content   : center;
+    /*background-color: aquamarine;*/
+    font-family       : lexend, sans-serif;
+    font-size         : 14px;
+    font-weight       : 300;
+    line-height       : 20px;
+    color             : #1D2734;
 }
 
 /* Head custom styles */
@@ -197,7 +173,6 @@
     margin-right: 5px;
 }
 
-
 .orderByText--plp__order-by-filter {
     text-transform: lowercase;
     display       : flex;
@@ -207,6 +182,14 @@
     font-weight   : 400;
     line-height   : 17.5px;
     color         : #1D2734;
+}
+
+.orderByOptionItem--plp__order-by-filter {
+    font-family: Lexend, sans-serif;
+    font-size  : 14px;
+    font-weight: 400;
+    line-height: 17.5px;
+    color      : #1D2734;
 }
 
 .filterPopupArrowIcon--plp__order-by-filter .caretIcon--plp__order-by-filter {
@@ -219,26 +202,16 @@
 
 /* Product shefl results custom styles */
 .galleryLayoutSwitcher {
-    /*display: contents;*/
     display        : flex;
     justify-content: end;
     padding-bottom : 20px;
     padding-right  : 50px;
 }
 
-.gallery {
-    /*padding-left: 0px;*/
-    /*background-color: rgb(214, 255, 255);*/
+/*.gallery {
     border  : solid 1px;
-    /* Validar */
-    /*width : 95% !important;
-    position: relative;
-    right   : 20px;*/
-}
-
-/*.gallery--whole {
-    padding-left: 0px;
 }*/
+
 
 .flexColChild--shelf__details--gallery :global(.vtex-product-summary-2-x-productBrand--product_summary-name) {
     font-size: 12px;
@@ -277,4 +250,145 @@
 .buttonShowMore--button__see-more-gallery :global(.vtex-button__label)::after {
     content    : url("/arquivos/button-plus-line.svg");
     margin-left: 5px;
+}
+
+/* Slider custom styles */
+.filterTemplateOverflow--plp__filter-navigator :global(.vtex-slider__base-internal) {
+    background-color: #1D2734;
+}
+
+.filterTemplateOverflow--plp__filter-navigator :global(.vtex-slider__selector) {
+    background-color: #1D2734;
+}
+
+/*----------------------------- PLP custom styles mobile-phone ------------------------------------------------*/
+.filterPopupButton {
+    width           : 110px;
+    height          : 40px;
+    background-color: #E7E7E7;
+    border-radius   : 40px;
+    justify-content : space-between;
+    padding         : 14px 12px 14px 12px;
+    margin-left     : 5px;
+    margin-top      : 2px;
+}
+
+.filterPopupTitle--plp__filter-navigator {
+    text-transform: lowercase;
+    font-family   : Lexend, sans-serif;
+    font-size     : 12px;
+    font-weight   : 400;
+    line-height   : 15px;
+    color         : #1D2734;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.filterPopupTitle--plp__filter-navigator::before {
+    content: url("/arquivos/view_quilt.svg");
+}
+
+.filterPopupArrowIcon--plp__filter-navigator :global(.vtex-search-result-3-x-filterIcon--plp__filter-navigator) {
+    display: none;
+}
+
+/*.filterIcon--plp__filter-navigator {
+    display: none;
+}*/
+
+.filterPopupArrowIcon--plp__filter-navigator::before {
+    content: url("/arquivos/arrow_drop_down.png");
+}
+
+/* Filter by custom styles */
+.accordionFilter {
+    font-family   : Lexend, sans-serif;
+    font-size: 12px;
+    color: #1D2734;
+}
+
+.filterBreadcrumbsText--plp__filter-navigator {
+    font-size: 12px;
+    color: #1D2734;
+}
+
+.filterBreadcrumbsItemName--plp__filter-navigator {
+    font-size: 12px;
+    color: #1D2734;
+}
+
+.accordionFilterItemTitle--plp__filter-navigator {
+    font-size: 12px;
+    color: #1D2734;
+}
+
+.filterClearButtonWrapper--plp__filter-navigator :global(.vtex-button) {
+    font-size: 12px;
+}
+
+.filterApplyButtonWrapper--plp__filter-navigator :global(.vtex-button) {
+    font-size: 12px;
+}
+
+/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
+@media (max-width: 767px) {
+    .galleryLayoutSwitcher {
+        display: none;
+    }
+
+    .galleryTitle--layout {
+        font-size: 14px;
+    }
+
+    .flexCol--head__result-order-filter :global(.vtex-breadcrumb-1-x-link) {
+        font-size: 12px !important;
+    }
+
+    .orderByButton--plp__order-by-filter {
+        width : 147px;
+        height: 40px;
+        border: solid #1D2734 1px;
+    }
+
+    .orderByText--plp__order-by-filter {
+        font-size: 12px;
+        width    : 72px;
+    }
+
+    .filterPopupArrowIcon--plp__order-by-filter {
+        padding-left : 0px !important;
+        padding-right: 0px !important;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .galleryLayoutSwitcher {
+        padding-top: 10px;
+    }
+
+    .galleryTitle--layout {
+        font-size: 14px;
+    }
+
+    .flexCol--head__result-order-filter :global(.vtex-breadcrumb-1-x-link) {
+        font-size: 12px !important;
+    }
+
+    .orderByButton--plp__order-by-filter {
+        width : 147px;
+        height: 40px;
+        border: solid #1D2734 1px;
+    }
+
+    .orderByText--plp__order-by-filter {
+        font-size: 12px;
+        width    : 72px;
+    }
+
+    .filterPopupArrowIcon--plp__order-by-filter {
+        padding-left : 0px !important;
+        padding-right: 0px !important;
+    }
 }
