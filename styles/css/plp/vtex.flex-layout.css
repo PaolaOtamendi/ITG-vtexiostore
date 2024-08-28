@@ -1,6 +1,7 @@
 .flexRowContent--product__gallery--plp {
-    display: flex;
-    flex-direction: column;
+    display           : flex;
+    flex-direction    : column;
+    /*background-color:#dbfeff;*/
 }
 
 .flexRowContent--product__gallery--plp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
@@ -8,24 +9,66 @@
 }
 
 .flexCol--breadcrumb__search {
-    display: flex;
-    align-items: baseline;
+    display        : flex;
+    align-items    : baseline;
     justify-content: left;
-    left: 72px;
-    position: relative;
-    font-size: 14px;
+    left           : 72px;
+    position       : relative;
+    font-size      : 14px;
 }
 
 .flexColChild--sort__options {
-    display: flex;
+    display    : flex;
     align-items: center;
-    position: relative;
-    right: 50px;
+    position   : relative;
+    right      : 50px;
 }
 
 .flexRow--filter__options--plp {
-    width: 184px !important;
-    /*max-width: 184px;*/
-    background-color: aquamarine;
-    margin-left: 72px;
+    width           : 184px !important;
+    /*max-width     : 184px;*/
+    background-color: aliceblue;
+    margin-left     : 72px;
+}
+
+.flexRowContent--product__gallery--plp .stretchChildrenWidth {
+    justify-content: left;
+}
+
+.flexCol--shelf__details--gallery {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: left;
+}
+
+.flexCol--shelf__image--gallery :global(.vtex-product-summary-2-x-image--custom_image__shelf) {
+    width : 136px !important;
+    height: 107px !important;
+}
+
+.flexRowContent--container__shelf-product-gallery {
+    /*background-color: aqua;*/
+}
+
+.flexColChild--shelf__details--gallery :global(.vtex-product-summary-2-x-brandName--product_summary-name) {
+    font-family: Lexend, sans-serif;
+    font-size  : 12px !important;
+    line-height: 12.76px;
+    color      : rgba(29, 39, 52, 0.6);
+}
+
+.flexColChild--shelf__details--gallery :global(.vtex-product-price-1-x-listPriceValue--product_summary-price) {
+    font-family: Lexend, sans-serif;
+    font-size  : 12px !important;
+    font-weight: 400;
+    line-height: 12.76px;
+    color      : rgba(29, 39, 52, 0.4);
+}
+
+.flexColChild--shelf__details--gallery :global(.vtex-product-price-1-x-sellingPriceValue--product_summary-selling-price) {
+    font-family: Lexend, sans-serif;
+    font-size  : 20px !important;
+    font-weight: 600;
+    line-height: 21.87px;
+    color      : #1D2734;
 }

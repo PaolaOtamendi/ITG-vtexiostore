@@ -5,26 +5,276 @@
 .totalProducts--layout {
     padding-left: 0px;
     font-family : lexend, sans-serif;
-    font-size: 14px;
-    font-weight: 300;
-    color: #1D2734;
-    line-height: 17.5px;
+    font-size   : 14px;
+    font-weight : 300;
+    color       : #1D2734;
+    line-height : 17.5px;
 }
 
 .galleryTitle--layout {
-    font-family : lexend, sans-serif;
-    font-size: 20px;
+    font-family: lexend, sans-serif;
+    font-size  : 20px;
     font-weight: 600;
-    color: #1D2734;
+    color      : #1D2734;
     line-height: 25px;
 }
 
 .flexCol--sort__options {
     position: relative !important;
-    right: 50px !important;
+    right   : 50px !important;
+}
+
+/* Filter custom styles */
+.filterMessage--plp__filter-navigator {
+    display: none;
+}
+
+.filterSelected--plp__filter-navigator {
+    /*display: none;*/
+}
+
+/*.filter__container--brand {
+    display: none;
+}*/
+
+/*.filter__container--color {
+    display: none;
+}*/
+
+/*.filter__container--talla {
+    display: none;
+}*/
+
+.filterTitle--plp__filter-navigator {
+    width           : 184px;
+    height          : 36px;
+    background-color: #1D27341A;
+    /*border        : solid 1px #1D2734;*/
+    border-radius   : 40px;
+    padding         : 8px 16px 8px 16px;
+}
+
+.filter__container--category-2 .filterTitle--plp__filter-navigator {
+    border: solid 1px #1D2734;
+}
+
+.filterTitleSpan--plp__filter-navigator {
+    display    : flex;
+    align-items: center;
+    font-family: lexend, sans-serif;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 20px;
+}
+
+.filter__container--category-2 .filterTitleSpan--plp__filter-navigator {
+    font-size: 0px;
+}
+
+.filter__container--category-2 .filterTitleSpan--plp__filter-navigator::before {
+    content    : "Category";
+    font-family: lexend, sans-serif;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 20px;
+}
+
+.filter__container--category-3 .filterTitleSpan--plp__filter-navigator {
+    font-size: 0px;
+}
+
+.filter__container--category-3 .filterTitleSpan--plp__filter-navigator::before {
+    content    : "Subcategory";
+    font-family: lexend, sans-serif;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 20px;
+}
+
+.filter__container--priceRange .filterTitleSpan--plp__filter-navigator {
+    font-size: 0px;
+}
+
+.filter__container--priceRange .filterTitleSpan--plp__filter-navigator::before {
+    content    : "Price range";
+    font-family: lexend, sans-serif;
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 20px;
+}
+
+.filterIcon--plp__filter-navigator {
+    padding-right: 0px;
+}
+
+.caretIcon--plp__filter-navigator {
+    display: none;
+}
+
+.filterIcon--plp__filter-navigator::after {
+    content: url("/arquivos/span-icon-filter.svg");
+}
+
+/*.filterTemplateOverflow--plp__filter-navigator {
+    height    : 176px;
+    max-height: 176px;
+}*/
+
+.filter {
+    padding-top   : 0px;
+    padding-bottom: 0px;
+}
+
+.filterItem {
+    display    : flex;
+    align-items: center;
+    height     : 44px;
+    padding    : 10px;
+    gap        : 10px;
+    font-family: lexend, sans-serif;
+    font-weight: 300;
+    font-size  : 12px;
+    line-height: 15px;
+    color      : #1D2734;
+}
+
+/*.checkbox__label {
+    font-family : lexend, sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 15px;
+}*/
+
+.filter__container--priceRange .filterTemplateOverflow--plp__filter-navigator {
+    height          : 56px;
+    display         : flex;
+    justify-content : center;
+    background-color: aquamarine;
+    font-family     : lexend, sans-serif;
+    font-size       : 14px;
+    font-weight     : 300;
+    line-height     : 20px;
+    color           : #1D2734;
+}
+
+/* Head custom styles */
+.totalProductsMessage {
+    text-transform: lowercase;
+    font-family   : Lexend, sans-serif;
+    font-size     : 14px;
+    font-weight   : 300;
+    line-height   : 17.5px;
+    color         : #1D2734;
+}
+
+.totalProductsMessage::after {
+    content: " encontrados";
+}
+
+.homeIcon {
+    width : 20px !important;
+    height: 20px !important;
+}
+
+.arrow--2 :global(.vtex-breadcrumb-1-x-link--2) {
+    color: #1D2734;
+}
+
+.filterPopupTitle--plp__order-by-filter {
+    font-size: 0px;
 }
 
 .orderByButton--plp__order-by-filter {
-    border-radius: 40px;
+    border-radius   : 40px;
     background-color: #E7E7E7;
+    padding         : 14px 12px 14px 12px;
+    display         : flex;
+    justify-content : space-between;
+}
+
+.orderByButton--plp__order-by-filter::before {
+    content     : url("/arquivos/mpa-filter-settings.svg");
+    margin-right: 5px;
+}
+
+
+.orderByText--plp__order-by-filter {
+    text-transform: lowercase;
+    display       : flex;
+    align-items   : center;
+    font-family   : Lexend, sans-serif;
+    font-size     : 14px;
+    font-weight   : 400;
+    line-height   : 17.5px;
+    color         : #1D2734;
+}
+
+.filterPopupArrowIcon--plp__order-by-filter .caretIcon--plp__order-by-filter {
+    display: none;
+}
+
+.filterPopupArrowIcon--plp__order-by-filter::after {
+    content: url("/arquivos/span-icon-filter.svg");
+}
+
+/* Product shefl results custom styles */
+.galleryLayoutSwitcher {
+    /*display: contents;*/
+    display        : flex;
+    justify-content: end;
+    padding-bottom : 20px;
+    padding-right  : 50px;
+}
+
+.gallery {
+    /*padding-left: 0px;*/
+    /*background-color: rgb(214, 255, 255);*/
+    border  : solid 1px;
+    /* Validar */
+    /*width : 95% !important;
+    position: relative;
+    right   : 20px;*/
+}
+
+/*.gallery--whole {
+    padding-left: 0px;
+}*/
+
+.flexColChild--shelf__details--gallery :global(.vtex-product-summary-2-x-productBrand--product_summary-name) {
+    font-size: 12px;
+}
+
+/* Button see more custom styles */
+.buttonShowMore--button__see-more-gallery :global(.vtex-button) {
+    width           : 110px;
+    height          : 32px;
+    border-radius   : 40px;
+    border          : solid #1D2734 1px;
+    padding         : 6px 12px 6px 12px;
+    background-color: #1D2734;
+    display         : flex;
+    flex-direction  : row;
+    align-items     : center;
+    justify-content : center;
+    padding-left    : 0px;
+    padding-right   : 0px;
+}
+
+.buttonShowMore--button__see-more-gallery :global(.vtex-button__label) {
+    font-size: 0px;
+}
+
+.buttonShowMore--button__see-more-gallery :global(.vtex-button__label)::before {
+    content       : "Ver mas";
+    text-transform: lowercase;
+    font-family   : Lexend, sans-serif;
+    font-size     : 14px;
+    font-weight   : 400;
+    line-height   : 20px;
+    color         : #fff;
+}
+
+.buttonShowMore--button__see-more-gallery :global(.vtex-button__label)::after {
+    content    : url("/arquivos/button-plus-line.svg");
+    margin-left: 5px;
 }

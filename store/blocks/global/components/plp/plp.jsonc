@@ -27,7 +27,8 @@
     "filter-navigator.v3": {
         "title": "PLP Filter result layout",
         "props": {
-            "blockClass": ["plp__filter-navigator"]
+            "blockClass": ["plp__filter-navigator"],
+            "appliedFiltersOverview": "hide"
         }
     }
 }
