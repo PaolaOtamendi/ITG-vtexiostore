@@ -1,0 +1,88 @@
+{
+  "flex-layout.row#specification__pdp": {
+    "title": "Product specification container",
+    "children": [
+        "product-specification-group"
+    ],
+    "props": {
+      "blockClass": "specification__pdp"
+    }
+  },
+
+  "product-specification-group": {
+    "title": "Group of product specifications",
+    "children": [
+        /*product-specification-text#group", // Name caracteristics
+        "product-specification"*/
+        "flex-layout.row#pdp__product--specification"
+    ],
+    "props": {
+        "blockClass": "pdp__product-specification-group"
+    }
+  },
+
+  "flex-layout.row#pdp__product--specification": {
+    "title": "Product Specifications Row",
+    "children": [
+        "flex-layout.col#pdp_product-specification-name",
+        "flex-layout.col#pdp_product--specification"
+        /*"product-specification-text#group",
+        "product-specification"*/
+    ],
+    "props": {
+        "blockClass": "pdp__product--specification"
+    }
+  },
+
+  "flex-layout.col#pdp_product-specification-name": {
+    "title": "Column for product specification name",
+    "children": [
+        "product-specification-text#group"
+    ],
+    "props": {
+        "blockClass": "pdp_product-specification-name"
+    }
+  },
+  "product-specification-text#group": {
+    "title": "Product specification group Name",
+    "props": {
+      "message": "{groupName}",
+      "blockClass": "product__group--name"
+    }
+  },
+
+  "flex-layout.col#pdp_product--specification": {
+    "title": "Column for product specification description",
+    "children": [
+        "product-specification"
+    ],
+    "props": {
+        "blockClass": "pdp_product--specification"
+    }
+  },
+  "product-specification": {
+    "title": "Detailed product specification",
+    "children": [
+      "product-specification-text#specification",
+      "product-specification-values"
+    ]
+  },
+  "product-specification-text#specification": {
+    "title": "Product specification text",
+    "props": {
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-values": {
+    "title": "Product specification values list",
+    "children": [
+        "product-specification-text#value"
+    ]
+  },
+  "product-specification-text#value": {
+    "title": "Product specification value",
+    "props": {
+      "message": "{specificationValue}"
+    }
+  }
+}

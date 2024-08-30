@@ -1,0 +1,148 @@
+/* Sku selector´s */
+.skuSelectorContainer--sku__selector--pdp {
+    display       : flex;
+    flex-direction: column-reverse;
+}
+
+.skuSelectorTextContainer {
+    margin-top: 5px;
+}
+
+.skuSelectorName {
+    font-family: "Lexend-black", sans-serif;
+    font-size  : 16px;
+    font-weight: 600;
+    line-height: 16.8px;
+    color      : #1D2734;
+}
+
+.skuSelectorOptionsList :global(.vtex-store-components-3-x-skuSelectorItem--sku__size--pdp) {
+    height: 40px;
+    width : 108px;
+}
+
+.skuSelectorItemImage {
+    width : 64px !important;
+    height: 64px !important;
+}
+
+.skuSelectorOptionsList :global(.vtex-store-components-3-x-skuSelectorItem--selected) {
+    border       : solid 1px #1D2734;
+    border-radius: 4px;
+}
+
+.frameAround--sku__selector--pdp {
+    display: none;
+}
+
+.skuSelectorItemTextValue--sku__size--pdp {
+    font-family: "Lexend-black", sans-serif;
+    font-weight: 300;
+    font-size  : 14px;
+    line-height: 20px;
+    color      : #646464;
+}
+
+/*.skuSelectorItem--sku__size--pdp {
+    height: 40px;
+    width: 108px;
+}Este si se queda asi*/
+
+/*.skuSelectorItem--selected {
+    border: solid 1px #1D2734;
+    border-radius: 4px;
+}Este tambien */
+
+
+/* share icons */
+.shareLabel {
+    font-family   : "Lexend-black", sans-serif;
+    font-size     : 16px;
+    font-weight   : 600;
+    line-height   : 16.8px;
+    color         : #1D2734;
+    padding-bottom: 5px;
+}
+
+.shareSocialIcon--facebook {
+    width : 40px;
+    height: 40px;
+}
+
+.shareSocialIcon--twitter {
+    display: none;
+}
+
+.shareSocialIcon--whatsapp {
+    width : 40px;
+    height: 40px;
+}
+
+.shareSocialIcon--pinterest {
+    width : 40px;
+    height: 40px;
+}
+
+/* images y carrousel */
+.productImagesGallerySlide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50px; /* Quitar en mobile querie*/
+}
+
+.carouselGaleryThumbs {
+    left: 200px; /* Validad si quitar de mobile*/
+    z-index: 10; /* Validar */
+
+}
+
+.productImage {
+    width: 515px;
+    height: 650px;
+    border: solid 1px #E7E7E7 !important;
+}
+
+.thumbImg {
+    border: solid 1px #E7E7E7 !important;
+    width: 90px;
+    height: 76px;
+}
+
+.figure {
+    border: solid 1px #E7E7E7 !important;
+    width: 90px;
+    height: 76px;
+}
+
+/*.productImagesThumb {
+    border: solid 1px #E7E7E7 !important;
+}*/
+
+/*.productImagesGallerySlide {
+    border: solid 1px #E7E7E7 !important;
+}*/
+
+/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
+@media (max-width: 767px) {
+    .productImagesGallerySlide {
+        left: 0px;
+    }
+
+    .productImage {
+        width: 328px;
+        height: 419px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .productImagesGallerySlide {
+        left: 0px;
+    }
+
+    .productImage {
+        width: 400px;
+        height: 500px;
+    }
+}

@@ -1,7 +1,9 @@
 {
   "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider": {
     "title": "Product hignlights identifications",
-    "children": ["product-highlight-wrapper"],
+    "children": [
+      "product-highlight-wrapper#shelf__free-shipping-wrapper"
+    ],
     "props": {
       "blockClass": "custom_highlights",
       "filter": {
@@ -12,17 +14,21 @@
       }
     }
   },
-  "product-highlight-wrapper": {
+  "product-highlight-wrapper#shelf__free-shipping-wrapper": {
     "title": "Container text and icon product highlights",
     "children": [
       "product-highlight-text#text__free-shipping",
       "icon#icon__free-shipping"
-    ]
+    ],
+    "props": {
+        "blockClass": "shelf__free-shipping-wrapper"
+    }
   },
   "product-highlight-text#text__free-shipping": {
     "title": "Text to product highlight",
     "props": {
-      "message": "Envio gratis"
+      "message": "Envio gratis",
+      "blockClass": "shelf__free-shipping-text"
     }
   },
   "icon#icon__free-shipping": {

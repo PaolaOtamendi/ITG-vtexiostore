@@ -1,0 +1,127 @@
+.flexRowContent--global__product--main {
+    background-color: #fff;
+}
+
+/* Validar */
+.flexColChild--product__information--pdp {
+    display        : flex;
+    justify-content: left;
+    align-items    : center;
+}
+
+/* highlights */
+.flexRowContent--container__pdp--higlights {
+    display    : flex;
+    align-items: center;
+    gap        : 10px;
+}
+
+/* Name */
+.flexColChild--product__information--pdp :global(.vtex-store-components-3-x-productNameContainer) {
+    margin-top   : 10px;
+    margin-bottom: 10px;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-store-components-3-x-productBrand) {
+    font-family: "Lexend-Bold", sans-serif;
+    font-size  : 16px;
+    font-weight: 300;
+    line-height: 16.8px;
+    color      : #1D2734;
+    height     : 34px;
+}
+
+/* Prices */
+.flexRowContent--pdp__product--price {
+    gap           : 10px;
+    padding-top   : 10px;
+    padding-bottom: 10px;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-product-price-1-x-sellingPrice) {
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    font-size  : 24px;
+    line-height: 16.8px;
+    color      : #1D2734;
+    width      : 194px !important;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-product-price-1-x-listPrice) {
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    font-size  : 14px;
+    line-height: 16.8px;
+    color      : rgb(29, 39, 52, 0.4);
+}
+
+/* add to cart button */
+.flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
+    background-color: #492A77;
+    border          : solid 1px #492A77;
+    width           : 312px;
+    height          : 46px;
+    border-radius   : 4px;
+    padding         : 10px;
+}
+
+.flexCol--pdp__add-to-cart-button {
+    width: max-content !important;
+}
+
+.flexRowContent--container__pdp-quantity--buttons {
+    gap: 10px;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    text-transform: lowercase;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::first-letter {
+    text-transform: capitalize !important;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
+    content      : url("/arquivos/add_shopping_cart-pdp.svg");
+    width        : 20px;
+    height       : 20px;
+    padding-right: 10px !important;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+/* specifications */
+.flexRowContent--pdp__product--specification {
+    flex-direction: column;
+    position: relative;
+    left: 150px; /* Quitar de mobile*/
+}
+
+/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
+@media (max-width: 767px) {
+    .flexRowContent--container__pdp-quantity--buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .flexRowContent--pdp__product--specification {
+        left: 0px; /* Quitar de mobile*/
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .flexRowContent--container__pdp-quantity--buttons {
+        display       : flex;
+        flex-direction: column;
+    }
+
+    .flexRowContent--pdp__product--specification {
+        left: 0px; /* Quitar de mobile*/
+    }
+}

@@ -1,0 +1,72 @@
+{
+  "flex-layout.row#container__pdp--higlights": {
+    "title": "Container pdp higloghts",
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#pdp__flash-deal",
+      "vtex.product-highlights@2.x:product-highlights#pdp__best-seller"
+    ],
+    "props": {
+      "blockClass": "container__pdp--higlights"
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#pdp__flash-deal": {
+    "title": "Product higlight-Best seller",
+    "children": [
+        "product-highlight-wrapper#pdp__flash-deal-wrapper"
+    ],
+    "props": {
+        "filter": {
+            "highlightNames": ["Flash Deal"],
+            "type": "show"
+        },
+        "blockClass": "pdp__flash-deal"
+    }
+  },
+  "product-highlight-wrapper#pdp__flash-deal-wrapper": {
+    "title": "Wrapper for pdp flash deal higlight",
+    "children": [
+      "product-highlight-text#pdp__flash-deal-text"
+    ],
+    "props": {
+        "blockClass": "pdp__flash-deal-wrapper"
+    }
+  },
+  "product-highlight-text#pdp__flash-deal-text": {
+    "title": "Pdp text flash deal higlight",
+    "props": {
+      "message": "Flash Deal",
+      "blockClass": "pdp__flash-deal-text"
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#pdp__best-seller": {
+    "title": "Product higlight-Best seller",
+    "children": [
+        "product-highlight-wrapper#pdp__best-seller-wrapper"
+    ],
+    "props": {
+        "filter": {
+            "highlightNames": ["Best Seller"],
+            "type": "show"
+        },
+        "blockClass": "pdp__best-seller"
+    }
+  },
+  "product-highlight-wrapper#pdp__best-seller-wrapper": {
+    "title": "Wrapper for pdp best seller higlight",
+    "children": [
+      "product-highlight-text#pdp__best-seller-text"
+    ],
+    "props": {
+      "blockClass": "pdp__best-seller-wrapper"
+    }
+  },
+  "product-highlight-text#pdp__best-seller-text": {
+    "title": "Pdp text best seller higlight",
+    "props": {
+      "message": "Best Seller",
+      "blockClass": "pdp__best-seller-text"
+    }
+  }
+}
