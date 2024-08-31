@@ -1,5 +1,7 @@
 .flexRowContent--global__product--main {
     background-color: #fff;
+    margin-top      : 0px;
+    margin-bottom   : 0px;
 }
 
 /* Validar */
@@ -8,6 +10,10 @@
     justify-content: left;
     align-items    : center;
 }
+
+.flexCol--product__image-pdp {
+    height: fit-content;
+} /* Validar */
 
 /* highlights */
 .flexRowContent--container__pdp--higlights {
@@ -36,6 +42,7 @@
     gap           : 10px;
     padding-top   : 10px;
     padding-bottom: 10px;
+    display: flex; /* NUEVO */
 }
 
 .flexColChild--product__information--pdp :global(.vtex-product-price-1-x-sellingPrice) {
@@ -70,7 +77,13 @@
 }
 
 .flexRowContent--container__pdp-quantity--buttons {
-    gap: 10px;
+    display    : flex;
+    align-items: flex-start;
+    gap        : 10px;
+}
+
+.flexRowContent--container__pdp-quantity--buttons .stretchChildrenWidth {
+    width: fit-content !important;
 }
 
 .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
@@ -95,33 +108,75 @@
 }
 
 /* specifications */
-.flexRowContent--pdp__product--specification {
+.flexRowContent--specification__pdp {
+    background-color: #fff;
+}
+
+.flexRowContent--specification__pdp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    display       : flex;
     flex-direction: column;
-    position: relative;
-    left: 150px; /* Quitar de mobile*/
+}
+
+.flexCol--pdp_product--specification :global(.vtex-product-specifications-1-x-specificationValue) {
+    background-color: aquamarine !important;
 }
 
 /*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
+/*---------- Phone ------------*/
 @media (max-width: 767px) {
-    .flexRowContent--container__pdp-quantity--buttons {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
+        width : 160px;
+        height: 48px;
     }
 
-    .flexRowContent--pdp__product--specification {
-        left: 0px; /* Quitar de mobile*/
+    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
+        font-size: 0px;
+    }
+
+    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
+        content  : "Agregar";
+        font-size: 14px;
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
+/*---------- Tablet ------------*/
+@media (min-width: 640px) and (max-width: 1024px) {
     .flexRowContent--container__pdp-quantity--buttons {
-        display       : flex;
+        /*display: flex;*/
         flex-direction: column;
     }
 
-    .flexRowContent--pdp__product--specification {
-        left: 0px; /* Quitar de mobile*/
+    .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
+        width : 160px;
+        height: 48px;
+    }
+
+    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
+        font-size: 0px;
+    }
+
+    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
+        content  : "Agregar";
+        font-size: 14px;
     }
 }
+
+/*@media (min-width: 768px) and (max-width: 1024px) {
+    .flexRowContent--container__pdp-quantity--buttons {
+        flex-direction: column;
+    }
+
+    .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
+        width: 160px;
+        height: 48px;
+    }
+
+    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
+        font-size: 0px;
+    }
+
+    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
+        content: "Agregar";
+        font-size: 14px;
+    }
+}*/

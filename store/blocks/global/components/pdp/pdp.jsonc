@@ -78,7 +78,7 @@
       "flex-layout.row#pdp__product--price",
       "sku-selector",
       "flex-layout.row#container__pdp-quantity--buttons",
-      "flex-layout.row",
+      /*"flex-layout.row",*/
       "product-separator",
       "share"
       /*"product-price#product-details",*/

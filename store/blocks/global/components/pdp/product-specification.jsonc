@@ -12,8 +12,9 @@
   "product-specification-group": {
     "title": "Group of product specifications",
     "children": [
-        /*product-specification-text#group", // Name caracteristics
-        "product-specification"*/
+        /*product-specification-text#group", // Name caracteristics*/
+        /*"product-specification",*/
+        "product-specification-text#group",
         "flex-layout.row#pdp__product--specification"
     ],
     "props": {
@@ -24,17 +25,17 @@
   "flex-layout.row#pdp__product--specification": {
     "title": "Product Specifications Row",
     "children": [
-        "flex-layout.col#pdp_product-specification-name",
-        "flex-layout.col#pdp_product--specification"
-        /*"product-specification-text#group",
-        "product-specification"*/
+        /*"flex-layout.col#pdp_product-specification-name",
+        "flex-layout.col#pdp_product--specification"*/
+        /*"product-specification-text#group",*/
+        "product-specification"
     ],
     "props": {
         "blockClass": "pdp__product--specification"
     }
   },
 
-  "flex-layout.col#pdp_product-specification-name": {
+  /*"flex-layout.col#pdp_product-specification-name": {
     "title": "Column for product specification name",
     "children": [
         "product-specification-text#group"
@@ -42,7 +43,7 @@
     "props": {
         "blockClass": "pdp_product-specification-name"
     }
-  },
+  },*/
   "product-specification-text#group": {
     "title": "Product specification group Name",
     "props": {
@@ -51,7 +52,7 @@
     }
   },
 
-  "flex-layout.col#pdp_product--specification": {
+  /*"flex-layout.col#pdp_product--specification": {
     "title": "Column for product specification description",
     "children": [
         "product-specification"
@@ -59,7 +60,7 @@
     "props": {
         "blockClass": "pdp_product--specification"
     }
-  },
+  },*/
   "product-specification": {
     "title": "Detailed product specification",
     "children": [
