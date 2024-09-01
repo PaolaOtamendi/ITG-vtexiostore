@@ -4,7 +4,7 @@
 }
 
 .quantitySelectorStepper--pdp__quantity :global(.vtex-numeric-stepper__input) {
-    height     : 46px;
+    height     : 48px;
     font-size  : 14px;
     font-weight: 300;
     line-height: 17.5px;
@@ -12,13 +12,13 @@
 }
 
 .quantitySelectorStepper--pdp__quantity :global(.vtex-numeric-stepper__plus-button) {
-    height          : 46px;
+    height          : 48px;
     width           : 40px !important;
     background-color: #1D2734;
 }
 
 .quantitySelectorStepper--pdp__quantity :global(.vtex-numeric-stepper__minus-button) {
-    height          : 46px;
+    height          : 48px;
     width           : 40px !important;
     background-color: #1D2734;
 }

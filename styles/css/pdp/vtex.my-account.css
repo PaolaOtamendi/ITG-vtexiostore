@@ -1,30 +1,26 @@
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) {
-    /*padding-left: 40px;*/
-    /*padding-left: 72px;*/
     padding-left: 0px;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(odd) {
     background-color: #E7E7E7;
-    /*width: 1069px;*/
-    height: 48px;
-    align-items: center;
-    display: flex;
-    padding-left: 24px;
+    height          : 48px;
+    align-items     : center;
+    display         : flex;
+    padding-left    : 24px;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):first-child {
-    border-top-left-radius: 8px;
+    border-top-left-radius : 8px;
     border-top-right-radius: 8px;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(even) {
     background-color: #FFFFFF;
-    /*width: 1069px;*/
-    height: 48px;
-    align-items: center;
-    display: flex;
-    padding-left: 24px;
+    height          : 48px;
+    align-items     : center;
+    display         : flex;
+    padding-left    : 24px;
 }
 
 /*---------- Desktop ------------*/

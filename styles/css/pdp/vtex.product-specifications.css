@@ -1,6 +1,5 @@
 .groupName--product__group--name {
     position   : relative;
-    /*left     : 150px;*/
     font-family: Lexend, sans-serif;
     font-size  : 16px;
     font-weight: 600;
@@ -9,53 +8,21 @@
 
 .specificationName {
     display: none;
-    /* Validar */
 }
 
 .specificationValue {
-    font-size: 14px;
+    font-size  : 14px;
     font-weight: 300;
     line-height: 16.8px;
-    color: #1D2734;
-}
-
-/*.specificationValue li{
-    background-color: aquamarine;
-}*/
-
-/*:global(.vtex-product-specifications-1-x-specificationValue) li {
-    background-color: aquamarine;
-}*/
-
-.specificationValue--first {
-    /*background-color: aquamarine !important;*/
-}
-
-.specificationValue--last {
-    /*background-color: aquamarine !important;*/
+    color      : #1D2734;
 }
 
 /*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
-/*@media (max-width: 767px) {
-    .groupName--product__group--name {
-        left: 0px;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .groupName--product__group--name {
-        left: 0px;
-    }
-}*/
-
-/*---------- Phone ------------*/
-@media (max-width: 767px) {
-
-}
-
 /*---------- Tablet ------------*/
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 640px) and (max-width: 1279px) {
+    .groupName--product__group--name {
+        left: 10px;
+    }
 
 }
 
@@ -63,6 +30,6 @@
 @media (min-width: 1280px) {
     .groupName--product__group--name {
         padding-left: 72px;
-        width: 481px !important;
+        width       : 481px !important;
     }
 }

@@ -4,16 +4,17 @@
     margin-bottom   : 0px;
 }
 
-/* Validar */
+/* Informacion de producto */
 .flexColChild--product__information--pdp {
     display        : flex;
     justify-content: left;
     align-items    : center;
 }
 
+/* Imagenes */
 .flexCol--product__image-pdp {
     height: fit-content;
-} /* Validar */
+}
 
 /* highlights */
 .flexRowContent--container__pdp--higlights {
@@ -26,6 +27,7 @@
 .flexColChild--product__information--pdp :global(.vtex-store-components-3-x-productNameContainer) {
     margin-top   : 10px;
     margin-bottom: 10px;
+    margin-right : 5px;
 }
 
 .flexColChild--product__information--pdp :global(.vtex-store-components-3-x-productBrand) {
@@ -42,7 +44,7 @@
     gap           : 10px;
     padding-top   : 10px;
     padding-bottom: 10px;
-    display: flex; /* NUEVO */
+    display       : flex;
 }
 
 .flexColChild--product__information--pdp :global(.vtex-product-price-1-x-sellingPrice) {
@@ -64,12 +66,10 @@
 
 /* add to cart button */
 .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
-    background-color: #492A77;
-    border          : solid 1px #492A77;
-    width           : 312px;
-    height          : 46px;
-    border-radius   : 4px;
-    padding         : 10px;
+    background-color  : #492A77;
+    border            : solid 1px #492A77;
+    border-radius     : 4px;
+    padding           : 10px;
 }
 
 .flexCol--pdp__add-to-cart-button {
@@ -86,27 +86,6 @@
     width: fit-content !important;
 }
 
-.flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
-    text-transform: lowercase;
-}
-
-.flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::first-letter {
-    text-transform: capitalize !important;
-}
-
-.flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::before {
-    content      : url("/arquivos/add_shopping_cart-pdp.svg");
-    width        : 20px;
-    height       : 20px;
-    padding-right: 10px !important;
-}
-
-.flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-}
-
 /* specifications */
 .flexRowContent--specification__pdp {
     background-color: #fff;
@@ -117,66 +96,58 @@
     flex-direction: column;
 }
 
-.flexCol--pdp_product--specification :global(.vtex-product-specifications-1-x-specificationValue) {
-    background-color: aquamarine !important;
-}
 
 /*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
 /*---------- Phone ------------*/
-@media (max-width: 767px) {
+@media (min-width: 360px) and (max-width: 639px) {
     .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
         width : 160px;
         height: 48px;
     }
 
-    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
-        font-size: 0px;
+    .flexRowContent--global__product--main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        display        : flex;
+        justify-content: center;
     }
 
-    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
-        content  : "Agregar";
-        font-size: 14px;
+    .flexRowContent--specification__pdp {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .flexRowContent--specification__pdp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: 328px !important;
+    }
+
+    .flexRowContent--global__product--main .flexCol--product__image-pdp {
+        width: 328px !important;
+    }
+
+    .flexRowContent--global__product--main .flexCol--product__information--pdp {
+        width: 328px !important;
     }
 }
 
 /*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1024px) {
+@media (min-width: 640px) and (max-width: 1279px) {
     .flexRowContent--container__pdp-quantity--buttons {
         /*display: flex;*/
-        flex-direction: column;
+        flex-direction: column !important;
     }
 
-    .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
-        width : 160px;
-        height: 48px;
-    }
-
-    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
-        font-size: 0px;
-    }
-
-    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
-        content  : "Agregar";
-        font-size: 14px;
+    .flexRowContent--specification__pdp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        margin: 10px;
     }
 }
 
-/*@media (min-width: 768px) and (max-width: 1024px) {
-    .flexRowContent--container__pdp-quantity--buttons {
-        flex-direction: column;
-    }
-
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {
     .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
-        width: 160px;
+        width : 312px;
         height: 48px;
     }
 
-    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText) {
-        font-size: 0px;
+    .flexColChild--product__information--pdp :global(.vtex-store-components-3-x-productNameContainer) {
+        margin-left: 0px;
     }
-
-    .flexColChild--product__information--pdp :global(.vtex-add-to-cart-button-0-x-buttonText)::after {
-        content: "Agregar";
-        font-size: 14px;
-    }
-}*/
+}
