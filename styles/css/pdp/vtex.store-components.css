@@ -1,0 +1,160 @@
+/* Sku selector´s */
+.skuSelectorContainer--sku__selector--pdp {
+    display       : flex;
+    flex-direction: column-reverse;
+}
+
+.skuSelectorTextContainer {
+    margin-top: 5px;
+}
+
+.skuSelectorName {
+    font-family: "Lexend-black", sans-serif;
+    font-size  : 16px;
+    font-weight: 600;
+    line-height: 16.8px;
+    color      : #1D2734;
+}
+
+.skuSelectorOptionsList :global(.vtex-store-components-3-x-skuSelectorItem--sku__size--pdp) {
+    height: 40px;
+    width : 108px;
+}
+
+.skuSelectorItemImage {
+    width : 64px !important;
+    height: 64px !important;
+}
+
+.skuSelectorOptionsList :global(.vtex-store-components-3-x-skuSelectorItem--selected) {
+    border       : solid 1px #1D2734;
+    border-radius: 4px;
+}
+
+.frameAround--sku__selector--pdp {
+    display: none;
+}
+
+.skuSelectorItemTextValue--sku__size--pdp {
+    font-family: "Lexend-black", sans-serif;
+    font-weight: 300;
+    font-size  : 14px;
+    line-height: 20px;
+    color      : #646464;
+}
+
+/* share icons */
+.shareLabel {
+    font-family   : "Lexend-black", sans-serif;
+    font-size     : 16px;
+    font-weight   : 600;
+    line-height   : 16.8px;
+    color         : #1D2734;
+    padding-bottom: 5px;
+}
+
+.shareSocialIcon--facebook {
+    width : 40px;
+    height: 40px;
+}
+
+.shareSocialIcon--twitter {
+    display: none;
+}
+
+.shareSocialIcon--whatsapp {
+    width : 40px;
+    height: 40px;
+}
+
+.shareSocialIcon--pinterest {
+    width : 40px;
+    height: 40px;
+}
+
+/* images y carrousel */
+.carouselGaleryThumbs {
+    padding: 10px;
+}
+
+.productImagesThumb {
+    width : auto !important;
+    height: auto !important;
+}
+
+.productImagesGallerySlide {
+    display           : flex;
+    align-items       : center;
+    justify-content   : center;
+    /*background-color: aquamarine;*/
+}
+
+.productImage {
+    border            : solid 1px #E7E7E7 !important;
+    width             : 328px;
+    height            : 419px;
+    border-radius     : 4px !important;
+    /*background-color: aquamarine;*/
+    /*box-shadow      : 
+        0px 12.52px 10.02px 0px rgba(0, 0, 0, 0.035),
+        0px 100px 80px 0px rgba(0, 0, 0, 0.07);*/
+}
+
+.swiper-wrapper {
+    gap: 5px;
+}
+
+.thumbImg {
+    border: solid 1px #E7E7E7 !important;
+    width : 90px;
+    height: 76px;
+}
+
+.figure {
+    border      : solid 1px #E7E7E7 !important;
+    width       : 90px;
+    height      : 76px;
+    margin-right: 6px;
+}
+
+/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
+/*---------- Phone ------------*/
+@media (max-width: 639px) {
+    .carouselGaleryThumbs {
+        display: contents;
+    }
+}
+
+/*---------- Tablet ------------*/
+@media (min-width: 640px) and (max-width: 1279px) {
+    .carouselGaleryThumbs {
+        padding     : 0px;
+        padding-left: 15px;
+    }
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {
+    .carouselGaleryThumbs {
+        left   : 72px;
+        padding: 0px;
+        z-index: 10;
+        width  : 92px !important;
+        height : 650px;
+        display: flex;
+        gap    : 6px;
+    }
+
+    .productImage {
+        width        : 650px;
+        height       : 650px;
+        border       : solid 1px #E7E7E7 !important;
+        min-width    : 328px;
+        min-height   : 419px;
+        border-radius: 4px !important;
+    }
+
+    .figure {
+        margin-right: 0px;
+    }
+}

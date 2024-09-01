@@ -84,7 +84,7 @@
     margin-bottom : 15px;
 }
 
-/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
+/*----------------------------- MediaQueires PLP tablet y phone ---------------------------------------*/
 @media (max-width: 767px) {
     .flexRowContent--container__shelf-product-gallery {
         display       : flex;

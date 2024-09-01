@@ -24,7 +24,6 @@
     "vtex.styleguide": "9.x",
     "vtex.slider": "0.x",
     "vtex.carousel": "2.x",
-    "vtex.shelf": "1.x",
     "vtex.menu": "2.x",
     "vtex.minicart": "2.x",
     "vtex.product-details": "1.x",
@@ -53,7 +52,9 @@
     "vtex.add-to-cart-button": "0.x",
     "vtex.product-highlights": "2.x",
     "vtex.product-list": "0.x",
-    "vtex.checkout-summary": "0.x"
+    "vtex.checkout-summary": "0.x",
+    "vtex.product-specifications": "1.x",
+    "vtex.shelf": "1.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",

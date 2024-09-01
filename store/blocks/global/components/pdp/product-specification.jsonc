@@ -1,0 +1,66 @@
+{
+  "flex-layout.row#specification__pdp": {
+    "title": "Product specification container",
+    "children": [
+        "product-specification-group"
+    ],
+    "props": {
+      "blockClass": "specification__pdp"
+    }
+  },
+
+  "product-specification-group": {
+    "title": "Group of product specifications",
+    "children": [
+        "product-specification-text#group",
+        "flex-layout.row#pdp__product--specification"
+    ],
+    "props": {
+        "blockClass": "pdp__product-specification-group"
+    }
+  },
+
+  "flex-layout.row#pdp__product--specification": {
+    "title": "Product Specifications Row",
+    "children": [
+        "product-specification"
+    ],
+    "props": {
+        "blockClass": "pdp__product--specification"
+    }
+  },
+
+  "product-specification-text#group": {
+    "title": "Product specification group Name",
+    "props": {
+      "message": "{groupName}",
+      "blockClass": "product__group--name"
+    }
+  },
+
+  "product-specification": {
+    "title": "Detailed product specification",
+    "children": [
+      "product-specification-text#specification",
+      "product-specification-values"
+    ]
+  },
+  "product-specification-text#specification": {
+    "title": "Product specification text",
+    "props": {
+      "message": "{specificationName}"
+    }
+  },
+  "product-specification-values": {
+    "title": "Product specification values list",
+    "children": [
+        "product-specification-text#value"
+    ]
+  },
+  "product-specification-text#value": {
+    "title": "Product specification value",
+    "props": {
+      "message": "{specificationValue}"
+    }
+  }
+}

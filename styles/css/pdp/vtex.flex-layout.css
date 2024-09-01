@@ -1,0 +1,153 @@
+.flexRowContent--global__product--main {
+    background-color: #fff;
+    margin-top      : 0px;
+    margin-bottom   : 0px;
+}
+
+/* Informacion de producto */
+.flexColChild--product__information--pdp {
+    display        : flex;
+    justify-content: left;
+    align-items    : center;
+}
+
+/* Imagenes */
+.flexCol--product__image-pdp {
+    height: fit-content;
+}
+
+/* highlights */
+.flexRowContent--container__pdp--higlights {
+    display    : flex;
+    align-items: center;
+    gap        : 10px;
+}
+
+/* Name */
+.flexColChild--product__information--pdp :global(.vtex-store-components-3-x-productNameContainer) {
+    margin-top   : 10px;
+    margin-bottom: 10px;
+    margin-right : 5px;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-store-components-3-x-productBrand) {
+    font-family: "Lexend-Bold", sans-serif;
+    font-size  : 16px;
+    font-weight: 300;
+    line-height: 16.8px;
+    color      : #1D2734;
+    height     : 34px;
+}
+
+/* Prices */
+.flexRowContent--pdp__product--price {
+    gap           : 10px;
+    padding-top   : 10px;
+    padding-bottom: 10px;
+    display       : flex;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-product-price-1-x-sellingPrice) {
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    font-size  : 24px;
+    line-height: 16.8px;
+    color      : #1D2734;
+    width      : 194px !important;
+}
+
+.flexColChild--product__information--pdp :global(.vtex-product-price-1-x-listPrice) {
+    font-family: Lexend, sans-serif;
+    font-weight: 600;
+    font-size  : 14px;
+    line-height: 16.8px;
+    color      : rgb(29, 39, 52, 0.4);
+}
+
+/* add to cart button */
+.flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
+    background-color  : #492A77;
+    border            : solid 1px #492A77;
+    border-radius     : 4px;
+    padding           : 10px;
+}
+
+.flexCol--pdp__add-to-cart-button {
+    width: max-content !important;
+}
+
+.flexRowContent--container__pdp-quantity--buttons {
+    display    : flex;
+    align-items: flex-start;
+    gap        : 10px;
+}
+
+.flexRowContent--container__pdp-quantity--buttons .stretchChildrenWidth {
+    width: fit-content !important;
+}
+
+/* specifications */
+.flexRowContent--specification__pdp {
+    background-color: #fff;
+}
+
+.flexRowContent--specification__pdp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    display       : flex;
+    flex-direction: column;
+}
+
+
+/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
+/*---------- Phone ------------*/
+@media (min-width: 360px) and (max-width: 639px) {
+    .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
+        width : 160px;
+        height: 48px;
+    }
+
+    .flexRowContent--global__product--main :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .flexRowContent--specification__pdp {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .flexRowContent--specification__pdp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        width: 328px !important;
+    }
+
+    .flexRowContent--global__product--main .flexCol--product__image-pdp {
+        width: 328px !important;
+    }
+
+    .flexRowContent--global__product--main .flexCol--product__information--pdp {
+        width: 328px !important;
+    }
+}
+
+/*---------- Tablet ------------*/
+@media (min-width: 640px) and (max-width: 1279px) {
+    .flexRowContent--container__pdp-quantity--buttons {
+        /*display: flex;*/
+        flex-direction: column !important;
+    }
+
+    .flexRowContent--specification__pdp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        margin: 10px;
+    }
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {
+    .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
+        width : 312px;
+        height: 48px;
+    }
+
+    .flexColChild--product__information--pdp :global(.vtex-store-components-3-x-productNameContainer) {
+        margin-left: 0px;
+    }
+}

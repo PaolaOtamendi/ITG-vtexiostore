@@ -1,0 +1,35 @@
+.groupName--product__group--name {
+    position   : relative;
+    font-family: Lexend, sans-serif;
+    font-size  : 16px;
+    font-weight: 600;
+    line-height: 16.8px;
+}
+
+.specificationName {
+    display: none;
+}
+
+.specificationValue {
+    font-size  : 14px;
+    font-weight: 300;
+    line-height: 16.8px;
+    color      : #1D2734;
+}
+
+/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
+/*---------- Tablet ------------*/
+@media (min-width: 640px) and (max-width: 1279px) {
+    .groupName--product__group--name {
+        left: 10px;
+    }
+
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {
+    .groupName--product__group--name {
+        padding-left: 72px;
+        width       : 481px !important;
+    }
+}

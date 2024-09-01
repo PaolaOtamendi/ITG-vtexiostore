@@ -1,0 +1,46 @@
+/* add to cart button */
+.buttonText--pdp__add-to-cart-button {
+    text-transform: lowercase;
+}
+
+.buttonText--pdp__add-to-cart-button::first-letter {
+    text-transform: capitalize;
+}
+
+.buttonText--pdp__add-to-cart-button::before {
+    content      : url("/arquivos/add_shopping_cart-pdp.svg");
+    width        : 20px;
+    height       : 20px;
+    padding-right: 10px !important;
+}
+
+.buttonText--pdp__add-to-cart-button {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
+/*---------- Phone ------------*/
+@media (max-width: 639px) {
+    .buttonText--pdp__add-to-cart-button {
+        font-size: 0px;
+    }
+
+    .buttonText--pdp__add-to-cart-button::after {
+        content  : "Agregar" !important;
+        font-size: 14px;
+    }
+}
+
+/*---------- Tablet ------------*/
+@media (min-width: 640px) and (max-width: 1279px) {
+    .buttonText--pdp__add-to-cart-button {
+        font-size: 0px;
+    }
+
+    .buttonText--pdp__add-to-cart-button::after {
+        content  : "Agregar" !important;
+        font-size: 14px;
+    }
+}
