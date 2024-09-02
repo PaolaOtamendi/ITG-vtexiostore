@@ -25,20 +25,22 @@
       "openOnly": "horizontal",
       "blockClass": "components__mega--menu",
       "title": "All categories",
-      "titleClass": "custom-title-class" // prueba colocar nuevo title
+      "titleClass": "custom-title-class"
     }
   },
   "flex-layout.col#trigger-mega-menu": {
     "title": "Col mega menu desktop",
     "props": {
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "blockClass": "trigger__mega--menu"
     },
     "children": ["mega-menu-trigger-btn"]
   },
   "mega-menu-trigger-btn": {
     "title": "Trigger mega menu desktop",
     "props": {
-      "Drawer": "drawer"
+      "Drawer": "drawer",
+      "blockClass": "drawer__mega--menu"
     }
   }
 }

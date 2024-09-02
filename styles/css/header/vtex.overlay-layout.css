@@ -4,3 +4,13 @@
     align-items    : center;
     justify-content: right;
 }
+
+.outsideClickHandler--header__overlayout {
+    position: relative;
+}
+
+.container--header__overlayout {
+    width   : 70%;
+    left    : 70px;
+    position: relative;
+}

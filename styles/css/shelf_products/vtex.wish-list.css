@@ -4,8 +4,17 @@
     height         : 32px;
 }
 
+.wishlistIcon--btn__favorite {
+    background-image  : url("/arquivos/favorite_border-icon.svg") !important;
+    width             : 20px;
+    height            : 20px;
+    position          : absolute;
+    /*background-image: #1D2734;*/
+    margin-right      : 0px !important;
+}
+
 .wishlistIconContainer--btn__favorite :global(.vtex-button) {
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     display         : flex;
     align-items     : center;
     justify-content : center;
@@ -16,7 +25,7 @@
     min-height      : 0 !important;
 }
 
-:global(.vtex-wish-list-1-x-iconSize) {
+/*:global(.vtex-wish-list-1-x-iconSize) {
     width : 20px;
     height: 20px;
-}
+}*/

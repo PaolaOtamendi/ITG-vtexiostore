@@ -72,22 +72,7 @@
     },
     "children": [
       "minicart.v2", 
-      "login#global__login--header" // Nueva feature login
+      "login#global__login--header"
     ]
   }
-  /*"minicart.v2": {
-    "props": {
-      "MinicartIcon": "icon-cart#minicart-icon"
-    }
-  },
-  "icon-cart#minicart-icon": {
-    "title": "icon minicart in desktop view",
-    "props": {
-      "id": "minicart",
-      "width": 20,
-      "height": 20,
-      "size": 20,
-      "viewBox": "0 0 20 20"
-    }
-  }*/
 }

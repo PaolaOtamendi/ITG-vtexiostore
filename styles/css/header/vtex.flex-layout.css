@@ -27,14 +27,14 @@
 /*----------------------------- Header destkop section icons ---------------------------------------*/
 .flexRowContent--header__menu--categories {
     /*background-color: #b042ff;*/
-    display          : flex;
-    justify-content  : left;
-    align-items      : center;
-    width            : 1136px;
-    height           : auto;
-    min-height       : 47px;
-    left             : 72px;
-    position         : relative;
+    display        : flex;
+    justify-content: left;
+    align-items    : center;
+    width          : 1136px;
+    height         : auto;
+    min-height     : 47px;
+    left           : 72px;
+    position       : relative;
 }
 
 .flexCol--categorie__icon--global {
@@ -46,8 +46,9 @@
     height         : 47px;
 }
 
-/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
-@media (max-width: 767px) {
+/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
+/*---------- Phone ------------*/
+@media (min-width: 360px) and (max-width: 639px) {
     .flexRowContent--header__menu--categories {
         /*background-color: #b042ff;*/
         display        : flex;
@@ -61,7 +62,8 @@
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/*---------- Tablet ------------*/
+@media (min-width: 640px) and (max-width: 1279px) {
     .flexRowContent--header__menu--categories {
         /*background-color: #b042ff;*/
         display        : flex;
@@ -74,6 +76,9 @@
         position       : relative;
     }
 }
+
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {}
 
 /*----------------------------- Header mobile section menu ---------------------------------------*/
 .flexRow--header__first--section--mobile {
@@ -82,18 +87,21 @@
 
 .flexRowContent--header__first--section--mobile {
     /*background-color: rgb(198, 174, 220);*/
-    display        : flex;
-    align-items    : center;
-    justify-content: space-around;
-    /*padding      : 10px;*/
-    padding-left   : 10px;
-    padding-right  : 10px;
-    padding-top    : 10px;
+    display         : flex;
+    align-items     : center;
+    justify-content : space-between;
+    padding-left    : 10px;
+    padding-right   : 10px;
+    padding-top     : 10px;
     background-color: #fff;
 }
 
-.stretchChildrenWidth {
-    width: auto;
+.flexRowContent--header__first--section--mobile :global(.vtex-minicart-2-x-minicartWrapperContainer--minicart_container) {
+    display: contents !important;
+}
+
+.flexRowContent--header__first--section--mobile :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: auto !important;
 }
 
 .flexCol--logo__header--mobile {
@@ -102,4 +110,16 @@
     display        : flex;
     align-items    : center;
     justify-content: center;
+}
+
+.flexCol--container__menu-and-logo {
+    flex-direction: row;
+    align-items   : center;
+    padding-left  : 16px;
+}
+
+.flexCol--container__search-minicart-login {
+    flex-direction: row;
+    align-items   : center;
+    padding-right : 16px;
 }

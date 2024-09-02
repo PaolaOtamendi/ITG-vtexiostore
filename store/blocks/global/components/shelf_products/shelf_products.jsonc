@@ -36,7 +36,6 @@
       "flex-layout.col#shelf__description",
       "flex-layout.col#shelf__price",
       "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider",
-      /*"vtex.product-highlights@2.x:product-highlights",*/
       "flex-layout.row#shelf_buy--button"
     ],
     "props": {
@@ -46,7 +45,6 @@
     }
   },
 
-  /* Cambios adicionados*/
   "flex-layout.row#container_price_iconfavorite": {
     "title": "container prives and icon favorite shelf",
     "children": [
@@ -83,7 +81,6 @@
     "props": {
       "showBadge": true,
       "height": 220,
-      /*"badgeText": "20% OFF",*/
       "blockClass": "custom_image__shelf"
     }
   },
@@ -92,7 +89,6 @@
     "title": "container description shelf product",
     "children": [
         "product-summary-name"
-        /*"product-summary-description"*/
     ],
     "props": {
       "blockClass": "shelf__description"

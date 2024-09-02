@@ -22,25 +22,38 @@
       "blockClass": "header__first--section--mobile"
     },
     "children": [
+      "flex-layout.col#container__menu-and-logo",
+      "flex-layout.col#container__search-minicart-login"
+      /*"flex-layout.row#container__mega-menu--mobile",
+      "flex-layout.col#logo__header--mobile",*/
+      /*"flex-layout.col#mobile_spacer",*/
+      /*"overlay-trigger#header__overlay--mobile",
+      "minicart.v2",
+      "login#global__login--header"*/
+    ]
+  },
+  "flex-layout.col#container__menu-and-logo": {
+    "title": "Container mega menu and logo",
+    "children": [
       "flex-layout.row#container__mega-menu--mobile",
-      /*"drawer",*/
-      "flex-layout.col#logo__header--mobile",
-      "flex-layout.col#mobile_spacer",
+      "flex-layout.col#logo__header--mobile"
+    ],
+    "props": {
+      "blockClass": "container__menu-and-logo"
+    }
+  },
+  "flex-layout.col#container__search-minicart-login": {
+    "title": "Container searchbar minicart and login",
+    "children": [
       "overlay-trigger#header__overlay--mobile",
       "minicart.v2",
       "login#global__login--header"
-      /*"minicart.v2#minicart_mobile",*/
-      /*"login#header_mobile"*/
-    ]
+    ],
+    "props": {
+      "blockClass": "container__search-minicart-login"
+    }
   },
   
-  /*"drawer": {
-    "props": {
-      "verticalAlign": "middle",
-      "blockClass": "drawer__menu--phone"
-    }
-  },*/
-
   "flex-layout.col#logo__header--mobile": {
     "title": "Container logo mobile",
     "props": {
@@ -69,33 +82,4 @@
       "flexGrow": 1
     }
   }
-
-  /*"minicart.v2#minicart_mobile": {
-    "props": {
-      "MinicartIcon": "icon-cart#minicart_icon--mobile"
-    }
-  },
-  "icon-cart#minicart_icon--mobile": {
-    "props": {
-      "id": "minicart",
-      "width": 20,
-      "height": 20,
-      "size": 20,
-      "viewBox": "0 0 20 20",
-      "overflow": "visible",
-      "blockclass": "minicart_icon--mobile"
-    }
-  },*/
-
-  /*"login#header_mobile": {
-  "props": {
-    "emailAndPasswordTitle": "LOG-IN",
-    "accessCodeTitle": "Acess Code LOG-IN",
-    "emailPlaceholder": "e-mail",
-    "passwordPlaceholder": "password",
-    "showPasswordVerificationIntoTooltip": true,
-    "iconLabel": "Login",
-    "blockClass": "icon-login"
-    }
-  }*/
 }

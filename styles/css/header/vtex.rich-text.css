@@ -1,15 +1,15 @@
 /*----------------------------- Header destkop section icons ---------------------------------------*/
 .container--text_menu_header--global {
-    font-weight    : 300;
-    font-size      : 12px;
-    line-height    : 15px;
-    font-family    : lexend, sans-serif !important;
+    font-weight      : 300;
+    font-size        : 12px;
+    line-height      : 15px;
+    font-family      : lexend, sans-serif !important;
     /*font-family    : lexend;*/
-    display        : flex !important;
-    width          : auto;
-    height         : auto;
-    justify-content: center;
-    align-items    : center;
+    display          : flex !important;
+    width            : auto;
+    height           : auto;
+    justify-content  : center;
+    align-items      : center;
 }
 
 .paragraph--text_menu_header--food {
