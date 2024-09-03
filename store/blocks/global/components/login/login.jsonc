@@ -1,19 +1,39 @@
 {
   "login#global__login--header": {
+    "title": "Global login",
     "props": {
       "optionsTitle": "LOG-IN",
-      "providerPasswordButtonLabel": "Continue with an e-mail and password",
       "emailAndPasswordTitle": "LOG-IN",
+      "providerPasswordButtonLabel": "Continue with an e-mail and password",
       "accessCodeTitle": "VERIFY YOUR E-MAIL",
       "emailPlaceholder": "Enter your e-mail",
       "passwordPlaceholder": "Enter your password",
       "accessCodePlaceholder": "Enter your access code",
       "showPasswordVerificationIntoTooltip": true,
       "iconLabel": "Login",
-      "blockClass": "login__desktop"
+      "blockClass": "login__desktop",
+      "accountOptionLinks": [
+        {
+          "label": "Profile",
+          "path": "/account#/profile"
+        },
+        {
+          "label": "Addresses",
+          "path": "/accoun#/addresses"
+        },
+        {
+          "label": "Orders",
+          "path": "/accoun#/orders"
+        },
+        {
+          "label": "Credit cards",
+          "path": "/accoun#/cards"
+        },
+        {
+          "label": "Authentication",
+          "path": "/accoun#/authentication"
+        }
+      ]
     }
   }
-  /*"login-content": {
-    "props": {}
-  }*/
 }
