@@ -14,15 +14,6 @@
     border-radius     : 0px 0px 8px 8px;
 }
 
-.formTitle {
-    font-family: lexend, sans-serif !important;
-    font-weight: 300;
-    font-size  : 20px;
-    line-height: 22.92px;
-    text-align : center;
-    margin-top : 5px;
-}
-
 .accessCodeOptionBtn :global(.vtex-button) {
     background-color: #FFFFFF;
     width           : 368px;
@@ -33,7 +24,7 @@
 }
 
 .accessCodeOptionBtn :global(.vtex-button__label) {
-    font-family   : lexend, sans-serif !important;
+    font-family   : "Lexend-Regular", sans-serif !important;
     font-weight   : 400;
     font-size     : 14px;
     line-height   : 17.5px;
@@ -74,7 +65,7 @@
 }
 
 .emailPasswordOptionBtn :global(.vtex-button__label) {
-    font-family   : lexend, sans-serif !important;
+    font-family   : "Lexend-Regular", sans-serif !important;
     font-weight   : 400;
     font-size     : 14px;
     line-height   : 17.5px;
@@ -96,7 +87,7 @@
 }
 
 .googleOptionBtn :global(.vtex-login-2-x-oauthLabel) {
-    font-family   : lexend, sans-serif !important;
+    font-family   : "Lexend-Regular", sans-serif !important;
     font-weight   : 400;
     font-size     : 16px;
     line-height   : 20px;
@@ -123,7 +114,7 @@
     color           : #5E636E;
     font-weight     : 400;
     font-size       : 16px;
-    font-family     : lexend, sans-serif !important;
+    font-family     : "Lexend-Regular", sans-serif !important;
     line-height     : 20px;
 }
 
@@ -148,7 +139,7 @@
 }
 
 .facebookOptionBtn :global(.vtex-login-2-x-oauthLabel) {
-    font-family   : lexend, sans-serif !important;
+    font-family   : "Lexend-Regular", sans-serif !important;
     font-weight   : 400;
     font-size     : 16px;
     line-height   : 20px;
@@ -174,7 +165,7 @@
     color           : #fff;
     font-weight     : 400;
     font-size       : 16px;
-    font-family     : lexend, sans-serif !important;
+    font-family     : "Lexend-Regular", sans-serif !important;
     line-height     : 20px;
 }
 
@@ -197,11 +188,49 @@
     position: relative;
 }
 
-.emailAndPasswordForm :global(.vtex-login-2-x-formTitle) {
-    font-family: lexend, sans-serif !important;
+.formTitle {
+    font-family: "Lexend-Regular", sans-serif !important;
     font-weight: 300;
     font-size  : 20px;
     line-height: 22.92px;
+    text-align : center;
+    margin-top : 5px;
+    margin-bottom: 5px;
+    padding-top  : 15px;
+}
+
+/*------ Acces code by email ------ */
+.emailForm :global(.vtex-login-2-x-formTitle) {
+    font-size: 0px;
+}
+
+.emailForm :global(.vtex-login-2-x-formTitle)::before{
+    content   : "RECUPERAR CLAVE";
+    visibility: visible;
+    display   : block;
+    text-align: center;
+    font-size : 20px;
+}
+
+.emailForm :global(.vtex-login-2-x-formTitle)::after {
+    content   : "Receive access code by email";
+    visibility: visible;
+    display   : block;
+    text-align: center;
+    font-size : 14px;
+    line-height: 20px;
+    color: #5E636E;
+    position: relative;
+    top: -10px;
+}
+
+/*------ Email and pasword form ------ */
+.content--emailAndPassword {
+    /*height: 350px;*/
+    height: 375px;
+}
+
+.emailAndPasswordForm :global(.vtex-login-2-x-formTitle) {
     text-align : center;
     color      : #0C2340;
 }
@@ -222,7 +251,7 @@
 }
 
 .forgotPasswordLink {
-    font-family: lexend, sans-serif !important;
+    font-family: "Lexend-Regular", sans-serif !important;
     color      : #0C2340;
     font-size  : 14px;
     font-weight: 300;
@@ -231,14 +260,55 @@
 }
 
 .sendButton :global(.vtex-button) {
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 368px;
+    height          : 48px;
     background-color: #1D2734;
     border-radius   : 40px;
     border          : solid 1px #1D2734;
     padding         : 10px;
 }
 
+.emailAndPasswordForm .sendButton :global(.vtex-button__label)::after {
+    content   : "Login";
+    visibility: visible;
+    display   : block;
+    text-align: center;
+}
+
+.emailAndPasswordForm .sendButton :global(.t-small) {
+    font-size: 0;
+    display  : flex;
+}
+
+.content--beginCreatePass :global(.vtex-login-2-x-formTitle) {
+    font-size: 0;
+}
+
+.content--beginCreatePass :global(.vtex-login-2-x-formTitle)::before {
+    content   : "VERIFY YOUR E-MAIL";
+    visibility: visible;
+    display   : block;
+    text-align: center;
+    font-size : 20px;
+}
+
+.content--beginCreatePass :global(.vtex-login-2-x-formTitle)::after {
+    content   : "Enter the acces code we sent to";
+    visibility: visible;
+    display   : block;
+    text-align: center;
+    font-size : 14px;
+    line-height: 20px;
+    color: #5E636E;
+    position: relative;
+    top: -10px;
+}
+
 .formLinkContainer :global(.vtex-login-2-x-dontHaveAccount) {
-    font-family: lexend, sans-serif !important;
+    font-family: "Lexend-Regular", sans-serif !important;
     font-weight: 400;
     font-size  : 14px;
     line-height: 17.5px;
@@ -247,7 +317,7 @@
 }
 
 .backButton :global(.vtex-button__label) {
-    font-family: lexend, sans-serif !important;
+    font-family: "Lexend-Regular", sans-serif !important;
     font-weight: 400;
     font-size  : 14px;
     line-height: 17.5px;
@@ -255,8 +325,27 @@
     color      : #1D2734;
 }
 
-.content--emailAndPassword {
-    height: 350px;
+.forgotPasswordForm :global(.vtex-login-2-x-formTitle) {
+    font-size: 0px;
+}
+
+.forgotPasswordForm :global(.vtex-login-2-x-formTitle)::before {
+    content: "RESET YOR PASSWORD";
+    font-size: 20px;
+    line-height: 22.92px;
+    color: #0C2340;
+}
+
+.forgotPasswordForm :global(.vtex-login-2-x-formSubtitle) {
+    font-size: 0px;
+}
+
+.forgotPasswordForm :global(.vtex-login-2-x-formSubtitle)::before {
+    content: "Create a new password";
+    font-size: 14px;
+    font-family: "Lexend-Regular", sans-serif !important;
+    line-height: 20px;
+    color: #5E636E;
 }
 
 .forgotPasswordLink {
@@ -271,7 +360,7 @@
 }
 
 .formLinkContainer :global(.vtex-login-2-x-forgotPasswordLink)::before {
-    content         : "Forgot your password? Reset password";
+    content         : "Forgot your password? ";
     visibility      : visible;
     display         : block;
     text-align      : center;
@@ -282,6 +371,22 @@
     z-index         : 1;
     color           : #0C2340;
     /*opacity       : 0.9;*/
+    display         : flex;
+}
+
+.formLinkContainer :global(.vtex-login-2-x-forgotPasswordLink)::after {
+    content         : "Reset password";
+    visibility      : visible;
+    display         : block;
+    text-align      : center;
+    background-color: #000000 25%;
+    position        : absolute;
+    width           : 264px;
+    height          : 20px;
+    z-index         : 1;
+    color           : #E56A54;
+    /*opacity       : 0.9;*/
+    display         : contents;
 }
 
 .backButton {
@@ -297,7 +402,7 @@
     display        : flex;
     align-items    : center;
     justify-content: center;
-    font-family    : lexend, sans-serif !important;
+    font-family    : "Lexend-Regular", sans-serif !important;
     color          : #0C2340;
     font-size      : 14px;
     font-weight    : 300;
@@ -324,29 +429,28 @@
     /*opacity       : 0.9;*/
 }
 
-.sendButton :global(.vtex-button) {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    width          : 368px;
-    height         : 48px;
-}
-
-.formTitle {
-    margin-bottom: 5px;
-    padding-top  : 15px;
-}
-
-.emailVerification :global(.vtex-login-2-x-formTitle) {
-    font-family: lexend, sans-serif !important;
+/*.emailVerification :global(.vtex-login-2-x-formTitle) {
+    font-family: "Lexend-Regular", sans-serif !important;
     font-weight: 300;
     font-size  : 20px;
     line-height: 22.92px;
     text-align : center;
+}*/
+
+.emailAndPasswordForm :global(.vtex-login-2-x-formTitle)::after {
+    content    : "Continue with e-mail and password";
+    display    : block;
+    font-family: "Lexend-Regular", sans-serif !important;
+    font-weight: 300;
+    font-size  : 14px;
+    line-height: 20px;
+    text-align : center;
+    margin-top : 5px;
+    color      : #5E636E;
 }
 
 .emailVerification :global(.vtex-login-2-x-formSubtitle) {
-    font-family: lexend, sans-serif !important;
+    font-family: "Lexend-Regular", sans-serif !important;
     font-weight: 300;
     font-size  : 14px;
     line-height: 20px;
@@ -354,8 +458,13 @@
 }
 
 .inputContainerAccessCode :global(.vtex-styleguide-9-x-input) {
-    font-family: lexend, sans-serif !important;
+    font-family: "Lexend-Regular", sans-serif !important;
 }
+
+/*.inputContainerEmail :global(placeholder) {
+    font-size: 14px;
+    color: #1D2734;
+}*/
 
 @media (max-width: 767px) {
     .content {
