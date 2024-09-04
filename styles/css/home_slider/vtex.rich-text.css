@@ -96,9 +96,9 @@
 
 /*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
 /*---------- Tablet ------------*/
-@media (min-width: 360px) and (max-width: 1279px) {
+@media (min-width: 320px) and (max-width: 1279px) {
     .paragraph--title__slider--global {
-        margin-left: 16px;
+        margin-left: 15px !important;
     }
 
     .heading--second__row-title--infocard {

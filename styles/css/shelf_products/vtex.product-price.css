@@ -14,3 +14,10 @@
     gap             : 10PX;
     color           : #ffff;
 }
+
+/*----------------------------- MediaQueires ---------------------------------------*/
+@media (min-width: 320px) and (max-width: 1279px) {
+    .savings--price__off {
+        width: 70px !important;
+    }
+}

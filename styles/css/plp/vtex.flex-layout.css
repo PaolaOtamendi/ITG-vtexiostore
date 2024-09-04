@@ -2,7 +2,6 @@
 .flexRowContent--product__gallery--plp {
     display           : flex;
     flex-direction    : column;
-    /*background-color:#dbfeff;*/
 }
 
 .flexRowContent--product__gallery--plp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
@@ -47,10 +46,6 @@
     height: 107px !important;
 }
 
-/*.flexRowContent--container__shelf-product-gallery {
-    background-color: aqua;
-}*/
-
 .flexColChild--shelf__details--gallery :global(.vtex-product-summary-2-x-brandName--product_summary-name) {
     font-family: Lexend, sans-serif;
     font-size  : 12px !important;
@@ -84,17 +79,10 @@
     margin-bottom : 15px;
 }
 
-/*----------------------------- MediaQueires PLP tablet y phone ---------------------------------------*/
+/*----------------------------- MediaQueires ---------------------------------------*/
 @media (max-width: 767px) {
     .flexRowContent--container__shelf-product-gallery {
         display       : flex;
         flex-direction: row;
     }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    /*.flexRowContent--container__shelf-product-gallery {
-        display: flex;
-        flex-direction: row;
-    }*/
 }

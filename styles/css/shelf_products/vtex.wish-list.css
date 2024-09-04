@@ -5,27 +5,27 @@
 }
 
 .wishlistIcon--btn__favorite {
-    background-image  : url("/arquivos/favorite_border-icon.svg") !important;
-    width             : 20px;
-    height            : 20px;
-    position          : absolute;
-    /*background-image: #1D2734;*/
-    margin-right      : 0px !important;
+    background-image: url("/arquivos/favorite_border-icon.svg") !important;
+    width           : 20px;
+    height          : 20px;
+    position        : absolute;
+    margin-right    : 0px !important;
 }
 
 .wishlistIconContainer--btn__favorite :global(.vtex-button) {
-    /*background-color: aquamarine;*/
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
-    width           : 44px;
-    height          : 32px !important;
-    border          : solid 1px #1D2734;
-    padding         : 6px 12px 6px 12px;
-    min-height      : 0 !important;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    width          : 44px;
+    height         : 32px !important;
+    border         : solid 1px #1D2734;
+    padding        : 6px 12px 6px 12px;
+    min-height     : 0 !important;
 }
 
-/*:global(.vtex-wish-list-1-x-iconSize) {
-    width : 20px;
-    height: 20px;
-}*/
+/*----------------------------- MediaQueires ---------------------------------------*/
+@media (min-width: 320px) and (max-width: 1279px) {
+    .wishlistIconContainer--btn__favorite :global(.vtex-button) {
+        width: 33px !important;
+    }
+}

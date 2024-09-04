@@ -1,9 +1,9 @@
-/* Quite el bage de descuento*/
+/*----- bage de descuento ----*/
 .discountInsideContainer {
     display: none;
 }
 
-/* Quite el bage venta x mas productos*/
+/*------ bage venta ------*/
 .installmentsPrice {
     display: none;
 }

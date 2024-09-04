@@ -1,4 +1,3 @@
-/*----------------------------- Global slider products ------------------------------------------------*/
 .flexCol--global__infocard--slider {
     background-color: #fff;
     width           : 324px;
@@ -7,11 +6,23 @@
     border-radius   : 12px 12px 0px 0px;
 }
 
-/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
-@media (max-width: 767px) {
+.flexRowContent--global_home--slider {
+    display      : flex;
+    padding-left : 80px;
+    padding-right: 80px;
+}
+
+.flexColChild--second__row--bestseller {
+    height         : 100%;
+    display        : flex;
+    align-items    : start;
+    justify-content: center;
+}
+
+/*----------------------------- MediaQueires ---------------------------------------*/
+@media (min-width: 320px) and (max-width: 1279px) {
     .flexCol--global__infocard--slider {
-        width : 224px;
-        height: 240px;
+        height: 95%;
         margin: 10px;
         flex  : 0 1 auto;
     }
@@ -22,7 +33,7 @@
     }
 
     .flexRowContent--second__row-infocard--container {
-        margin-top: 10.33px !important;
+        margin-top: 13.80px;
     }
 
     .flexCol--second__row--bestseller {
@@ -34,42 +45,12 @@
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
+/*---------- Tablet ------------*/
+@media (min-width: 640px) and (max-width: 1279px) {
     .flexCol--global__infocard--slider {
-        width : 224px;
-        height: 240px;
-        margin: 10px;
-        flex  : 0 1 auto;
-    }
-
-    .flexRowContent--global_home--slider {
-        padding-left : 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .flexCol--second__row--bestseller {
-        max-width: 85% !important;
-    }
-
-    .flexColChild--second__row--bestseller {
-        max-width: 85% !important;
+        width: 95%;
     }
 }
 
-.flexRowContent--global_home--slider {
-    display      : flex;
-    padding-left : 80px;
-    padding-right: 80px;
-}
-
-.flexRowContent--second__row-infocard--container {
-    margin-top: 13.80px;
-}
-
-.flexColChild--second__row--bestseller {
-    height         : 100%;
-    display        : flex;
-    align-items    : start;
-    justify-content: center;
-}
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {}

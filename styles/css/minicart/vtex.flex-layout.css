@@ -1,12 +1,9 @@
-/*----------------------------- Minicart custom ------------------------------------------------*/
-
 .flexRow--minicart__logo-header {
-    padding-top       : 20px;
+    padding-top: 20px;
 }
 
 .flexRow--minicart__container-title-header {
-    padding-top       : 20px;
-    /*background-color: beige;*/
+    padding-top: 20px;
 }
 
 .flexColChild--minicart-empty-state-column {
@@ -15,7 +12,6 @@
 
 .flexRow--minicart__produt-list {
     overflow-y: auto;
-    max-height: 400px;
     position  : relative;
 }
 
@@ -27,13 +23,12 @@
 
 /* Nuevo */
 .flexRowContent--product_list-content-mobile {
-    display           : flex;
-    align-items       : center;
-    width             : 328px;
-    /*height          : 120px;*/
-    /*background-color: aquamarine;*/
-    padding-top       : 0px;
-    padding-bottom    : 15px;
+    display       : flex;
+    align-items   : center;
+    max-width     : 328px;
+    min-width     : 280px;
+    padding-top   : 0px;
+    padding-bottom: 15px;
 }
 
 .flexRowContent--price_mobile {
@@ -41,34 +36,54 @@
 }
 
 .flexRow--price_mobile {
-    width             : 85px;
-    height            : 35px;
-    /*background-color: azure;*/
+    width : 85px;
+    height: 35px;
 }
 
 .flexRowContent--quanitity_selector-mobile {
     margin-top: 5px;
 }
 
-/*----------------------------- MediaQueires header minicart tablet y phone ---------------------------------------*/
-@media (max-width: 767px) {
+.flexCol--remove_button-mobile :global(.vtex-product-list-0-x-deleteIcon) {
+    display: none;
+}
+
+.flexCol--remove_button-mobile :global(.vtex-product-list-0-x-removeButton)::before {
+    content            : url("/arquivos/hpa-delete-icon.svg");
+    display            : inline-block;
+    width              : 22.69px;
+    height             : 22.69px;
+    background-repeat  : no-repeat;
+    background-size    : 100%;
+    background-position: center;
+}
+
+/*----------------------------- MediaQueires ---------------------------------------*/
+@media (max-width: 768px) {
     .flexCol--minicart__base-container {
         justify-content: center;
     }
 
     .flexRow--minicart__produt-list {
-        max-height: 600px;
+        max-height: 350px;
     }
+
+    .flexColChild--minicart__base-container {
+        display         : flex;
+        justify-content : center !important;
+        align-items     : center !important;
+        background-color: #fff;
+    }
+
+    /*.flexRow--minicart__logo-header {
+        padding-top: 50px;
+    }*/
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 769px) and (max-width: 1024px) {
     .drawerContent--minicart_container {
         overflow-y: none;
         display   : contents;
-    }
-
-    .flexRow--minicart__logo-header {
-        padding-top: 50px;
     }
 
     .flexCol--minicart__base-container {
@@ -76,13 +91,25 @@
     }
 
     .flexColChild--minicart__base-container {
-        display        : flex;
-        justify-content: center;
-        align-items    : center;
+        display         : flex;
+        justify-content : center !important;
+        align-items     : center !important;
+        background-color: #fff;
     }
 
     .flexRow--minicart__produt-list {
-        max-height: 700px;
-        margin-top: 50px;
+        max-height  : 500px;
+        /*margin-top: 50px;*/
+    }
+
+    .flexRow--minicart__logo-header {
+        padding-top: 50px;
+    }
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {
+    .flexRow--minicart__produt-list {
+        max-height: 400px;
     }
 }

@@ -97,7 +97,7 @@
 }
 
 
-/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
+/*----------------------------- MediaQueires ---------------------------------------*/
 /*---------- Phone ------------*/
 @media (min-width: 360px) and (max-width: 639px) {
     .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {

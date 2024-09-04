@@ -25,6 +25,10 @@
 }
 
 /*----------------------------- Header destkop section icons ---------------------------------------*/
+.flexRow--desktop__header-icons {
+    background-color: #fff;
+}
+
 .flexRowContent--header__menu--categories {
     /*background-color: #b042ff;*/
     display        : flex;
@@ -81,6 +85,10 @@
 @media (min-width: 1280px) {}
 
 /*----------------------------- Header mobile section menu ---------------------------------------*/
+.flexRow--mobile__header-icons {
+    background-color: #fff;
+}
+
 .flexRow--header__first--section--mobile {
     display: contents;
 }
