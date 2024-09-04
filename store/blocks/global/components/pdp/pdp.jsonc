@@ -2,8 +2,6 @@
   "flex-layout.row#product-main": {
     "title": "Global of main product",
     "props": {
-      //"colGap": 7,
-      //"rowGap": 7,
       "marginTop": 4,
       "marginBottom": 7,
       "paddingTop": 7,
@@ -15,6 +13,7 @@
         "flex-layout.col#product__information"
     ]
   },
+
   // Images of product
   "flex-layout.col#product__image": {
     "title": "Global col product image",
@@ -119,6 +118,7 @@
         "blockClass": "container__pdp-quantity--buttons"
     }
   },
+
   // Button quantity product
   "flex-layout.col#pdp__quantity": {
     "title": "Product pdp quantity",
@@ -137,6 +137,7 @@
         "blockClass": "pdp__quantity"
     }
   },
+  
   // Button add to cart
   "flex-layout.col#pdp__add-to-cart-button": {
     "title": "Product pdp add to cart button",

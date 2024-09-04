@@ -1,0 +1,40 @@
+{
+  "flex-layout.row#tablet__main-slider": {
+    "title": "Tablet row with text",
+    "children": ["flex-layout.col#tablet__main-slider"]
+  },
+  "flex-layout.col#tablet__main-slider": {
+    "title": "Banner tablet home",
+    "children": ["list-context.image-list#banner__tablet-container-images"]
+  },
+  "list-context.image-list#banner__tablet-container-images": {
+    "title": "Container banner phone list images",
+    "children": ["slider-layout#slider__tablet-banner--images"],
+    "props": {
+      "width": "100%",
+      "blockClass": "fixed-top",
+      "images": [
+        {
+          "image": "/arquivos/banner-desktop.png",
+          "description": "main image of the clocks",
+          "width": "100%",
+          "link": {
+            "props": {
+              "label": "",
+              "href": "#",
+              "blockClass": "benner-desktop"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#slider__tablet-banner--images": {
+    "title": "Banner slider home tablet",
+    "props": {
+      "itemsPerPage": {
+        "tablet": 3
+      }
+    }
+  }
+}

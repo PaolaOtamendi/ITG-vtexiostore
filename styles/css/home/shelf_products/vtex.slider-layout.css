@@ -1,0 +1,96 @@
+.sliderLayoutContainer--custom__slider--shelf {
+    padding-left : 80px;
+    padding-right: 80px;
+}
+
+.caretIcon--custom__slider--shelf {
+    width        : 20px !important;
+    height       : 14px !important;
+    border-left  : 10px solid transparent;
+    border-right : 10px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 94px;
+    overflow     : visible;
+    fill         : none;
+}
+
+.sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-sliderLeftArrow) {
+    left     : 15px !important;
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+.sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-sliderRightArrow) {
+    right    : 15px !important;
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+.paginationDotsContainer--custom__slider--shelf {
+    display    : flex;
+    align-items: center;
+    height     : 50.89px;
+    width      : 100%;
+    position   : absolute;
+    bottom     : -50px;
+    left       : 0;
+    z-index    : 1;
+}
+
+.paginationDot--custom__slider--shelf {
+    width           : 44px !important;
+    height          : 40px !important;
+    border-radius   : 0;
+    background-color: transparent;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    margin          : 0 2px;
+    z-index         : 2;
+}
+
+/*----------------------------- MediaQueires ---------------------------------------*/
+@media (min-width: 320px) and (max-width: 1279px) {
+    .sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-sliderLeftArrow) {
+        display: none !important;
+    }
+
+    .sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-sliderRightArrow) {
+        display: none !important;
+    }
+
+    .sliderLayoutContainer--custom__slider--shelf {
+        padding-left : 0% !important;
+        padding-right: 0% !important;
+    }
+}
+
+/*---------- Phone ------------*/
+@media (min-width: 320px) and (max-width: 639px) {
+    .paginationDotsContainer--custom__slider--shelf {
+        width : 231px;
+        margin: 0 auto;
+    }
+
+    .paginationDot--custom__slider--shelf {
+        width: 20px !important;
+    }
+
+    .sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-paginationDot)::after {
+        width: 20px;
+    }
+}
+
+/*---------- Tablet ------------*/
+@media (min-width: 640px) and (max-width: 1279px) {
+    .paginationDot--custom__slider--shelf {
+        width: 15px !important;
+    }
+
+    .sliderLayoutContainer--custom__slider--shelf :global(.vtex-slider-layout-0-x-paginationDot)::after {
+        width: 15px !important;
+    }
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {}

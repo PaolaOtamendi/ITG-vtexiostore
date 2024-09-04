@@ -19,7 +19,6 @@
         }
     },
 
-    // Head custom plp view
     "flex-layout.row#container__head--plp": {
         "title": "Container PLP header row",
         "children": [

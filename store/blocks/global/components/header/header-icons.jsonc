@@ -53,8 +53,6 @@
     },
     "children": [
       "link#link_food"
-      /*"icon#menu__food",
-      "rich-text#text_menu_header--food"*/
     ]
   },
   "link#link_food": {
@@ -103,8 +101,6 @@
     },
     "children": [
       "link#link_fitness"
-      /*"icon#menu__fitness",
-      "rich-text#text_menu_header--fitness"*/
     ]
   },
   "link#link_fitness": {
@@ -153,8 +149,6 @@
     },
     "children": [
       "link#link_ice"
-      /*"icon#menu__ice",
-      "rich-text#text_menu_header--artic"*/
     ]
   },
   "link#link_ice": {
@@ -203,8 +197,6 @@
     },
     "children": [
       "link#link_pool"
-      /*"icon#menu__pool",
-      "rich-text#text_menu_header--pool"*/
     ]
   },
   "link#link_pool": {
@@ -253,8 +245,6 @@
     },
     "children": [
       "link#link_hotel"
-      /*"icon#menu__hotel",
-      "rich-text#text_menu_header--hotel"*/
     ]
   },
   "link#link_hotel": {
@@ -303,8 +293,6 @@
     },
     "children": [
       "link#link_house"
-      /*"icon#menu__house",
-      "rich-text#text_menu_header--house"*/
     ]
   },
   "link#link_house": {
@@ -353,8 +341,6 @@
     },
     "children": [
       "link#link_nature"
-      /*"icon#menu__nature",
-      "rich-text#text_menu_header--nature"*/
     ]
   },
   "link#link_nature": {
@@ -403,8 +389,6 @@
     },
     "children": [
       "link#link_closet"
-      /*"icon#menu__closet",
-      "rich-text#text_menu_header--closet"*/
     ]
   },
   "link#link_closet": {
@@ -453,8 +437,6 @@
     },
     "children": [
       "link#link_beach"
-      /*"icon#menu__beach",
-      "rich-text#text_menu_header--beach"*/
     ]
   },
   "link#link_beach": {
@@ -503,8 +485,6 @@
     },
     "children": [
       "link#link_hike"
-      /*"icon#menu__hike",
-      "rich-text#text_menu_header--hike"*/
     ]
   },
   "link#link_hike": {
@@ -553,8 +533,6 @@
     },
     "children": [
       "link#link_delivery"
-      /*"icon#menu__delivery",
-      "rich-text#text_menu_header--delivery"*/
     ]
   },
   "link#link_delivery": {
@@ -603,8 +581,6 @@
     },
     "children": [
       "link#link_beer"
-      /*"icon#menu__beer",
-      "rich-text#text_menu_header--beer"*/
     ]
   },
   "link#link_beer": {

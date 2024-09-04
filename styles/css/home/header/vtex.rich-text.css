@@ -1,0 +1,60 @@
+/*----------------------------- Header destkop section icons ---------------------------------------*/
+.container--text_menu_header--global {
+    font-weight      : 300;
+    font-size        : 12px;
+    line-height      : 15px;
+    font-family      : lexend, sans-serif !important;
+    display          : flex !important;
+    width            : auto;
+    height           : auto;
+    justify-content  : center;
+    align-items      : center;
+}
+
+.paragraph--text_menu_header--food {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--fitness {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--artic {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--pool {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--hotel {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--house {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--nature {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--closet {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--beach {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--hike {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--delivery {
+    margin: 2px !important;
+}
+
+.paragraph--text_menu_header--beer {
+    margin: 2px !important;
+}

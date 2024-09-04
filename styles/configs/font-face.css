@@ -1,22 +1,3 @@
-/*@font-face {
-    font-family: 'Lexend';
-    src: url(/assets/fonts/Lexend-VariableFont_wght.woff2), url(/assets/fonts/Lexend.ttf);
-    font-weight: bold;
-  }*/
-
- /* @font-face {
-    font-family: 'lexend';
-    src: url(assets/fonts/Lexend-VariableFont_wght.woff), url(assets/fonts/Lexend-VariableFont_wght.ttf);
-  }*/
-
-
-/*@font-face {
-  font-family: 'lexend';
-  src: url("assets/fonts/Lexend-VariableFont_wght.woff"), url("assets/fonts/Lexend-VariableFont_wght.ttf");
-  font-weight: 100 900;
-  font-weight: bold;
-}*/
-
 @font-face{
   font-family: "Lexend-Black";
   src: url(assets/fonts/Lexend-Black.ttf); 

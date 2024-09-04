@@ -24,15 +24,9 @@
     right   : 50px !important;
 }
 
-/* Filter custom styles */
 .filterMessage--plp__filter-navigator {
     display: none;
 }
-
-/*.filterSelected--plp__filter-navigator {
-    display: none;
-}*/
-
 
 .filterTitle--plp__filter-navigator {
     width           : 184px;
@@ -122,18 +116,16 @@
 }
 
 .filter__container--priceRange .filterTemplateOverflow--plp__filter-navigator {
-    height            : 56px;
-    display           : flex;
-    justify-content   : center;
-    /*background-color: aquamarine;*/
-    font-family       : lexend, sans-serif;
-    font-size         : 14px;
-    font-weight       : 300;
-    line-height       : 20px;
-    color             : #1D2734;
+    height         : 56px;
+    display        : flex;
+    justify-content: center;
+    font-family    : lexend, sans-serif;
+    font-size      : 14px;
+    font-weight    : 300;
+    line-height    : 20px;
+    color          : #1D2734;
 }
 
-/* Head custom styles */
 .totalProductsMessage {
     text-transform: lowercase;
     font-family   : Lexend, sans-serif;
@@ -200,7 +192,6 @@
     content: url("/arquivos/span-icon-filter.svg");
 }
 
-/* Product shefl results custom styles */
 .galleryLayoutSwitcher {
     display        : flex;
     justify-content: end;
@@ -208,16 +199,10 @@
     padding-right  : 50px;
 }
 
-/*.gallery {
-    border  : solid 1px;
-}*/
-
-
 .flexColChild--shelf__details--gallery :global(.vtex-product-summary-2-x-productBrand--product_summary-name) {
     font-size: 12px;
 }
 
-/* Button see more custom styles */
 .buttonShowMore--button__see-more-gallery :global(.vtex-button) {
     width           : 110px;
     height          : 32px;
@@ -252,7 +237,6 @@
     margin-left: 5px;
 }
 
-/* Slider custom styles */
 .filterTemplateOverflow--plp__filter-navigator :global(.vtex-slider__base-internal) {
     background-color: #1D2734;
 }
@@ -293,15 +277,10 @@
     display: none;
 }
 
-/*.filterIcon--plp__filter-navigator {
-    display: none;
-}*/
-
 .filterPopupArrowIcon--plp__filter-navigator::before {
     content: url("/arquivos/arrow_drop_down.png");
 }
 
-/* Filter by custom styles */
 .accordionFilter {
     font-family: Lexend, sans-serif;
     font-size  : 12px;
@@ -331,7 +310,7 @@
     font-size: 12px;
 }
 
-/*----------------------------- MediaQueires header section icons tablet y phone ---------------------------------------*/
+/*----------------------------- MediaQueires ---------------------------------------*/
 @media (max-width: 767px) {
     .galleryLayoutSwitcher {
         display: none;

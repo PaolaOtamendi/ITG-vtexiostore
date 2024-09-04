@@ -1,10 +1,8 @@
 {
-    "search-result-layout.mobile": {
-        "children": [
-            "flex-layout.row#container__global-plp"
-        ],
-        "props": {
-            "preventRouteChange": true
-        }
+  "search-result-layout.mobile": {
+    "children": ["flex-layout.row#container__global-plp"],
+    "props": {
+      "preventRouteChange": true
     }
+  }
 }

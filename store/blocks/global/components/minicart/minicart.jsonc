@@ -4,12 +4,12 @@
     "props": {
       "MinicartIcon": "icon-cart#minicart_icon_header",
       "blockClass": "minicart_container",
-      "backdropMode": "visible" //Nuevo
+      "backdropMode": "visible"
     },
     "children": [
-      "flex-layout.row#minicart__logo-header", //logo
-      "flex-layout.row#minicart__container-title-header", //header
-      "minicart-base-content" //base contenido
+      "flex-layout.row#minicart__logo-header",
+      "flex-layout.row#minicart__container-title-header",
+      "minicart-base-content"
     ]
   },
 
@@ -57,7 +57,6 @@
       "blockClass": "minicart__container-title-header"
     },
     "children": [
-        /*"rich-text#minicart__title",*/
         "flex-layout.col#minicart__title-header"
     ]
   },
@@ -84,8 +83,6 @@
     "blocks": ["minicart-empty-state"],
     "children": [
         "flex-layout.col#minicart__base-container"
-        /*"minicart-product-list", 
-        "flex-layout.row#minicart-footer"*/
     ]
   },
   "flex-layout.col#minicart__base-container": {
@@ -110,15 +107,14 @@
   },
   "minicart-product-list": {
     "title": "Minicart product list",
-    "blocks": ["product-list#minicart"]
+    "blocks": ["product-list#minicart_content"]
   },
-  "product-list#minicart": {
+  "product-list#minicart_content": {
     "title": "Minicart product list content",
     "props": {
         "blockClass": "minicart_product-list-content"
     },
     "blocks": [
-        /*"product-list-content-desktop",*/
         "product-list-content-mobile"
     ]
   },
@@ -172,7 +168,6 @@
     "title": "Minicart checkout button",
     "props": {
       "finishShoppingButtonLink": "/checkout/#/orderform",
-      /*"customSummaryText": "Finalizar tu compra",*/
       "blockClass": "minicart-checkout-button"
     }
   },
@@ -201,7 +196,6 @@
     },
     "children": [
         "image#minicart_empty-state-image",
-      /*"icon-cart#minicart-empty-state",*/
       "rich-text#minicart_empty-state-one",
       "rich-text#minicart_empty-state-two"
     ]
@@ -213,12 +207,6 @@
         "maxHeight": "200px"
     }
   },
-  /*"icon-cart#minicart-empty-state": {
-    "props": {
-      "size": 64,
-      "blockClass": "minicart-empty-state"
-    }
-  },*/
   "rich-text#minicart_empty-state-one": {
     "title": "Minicart default empty state one",
     "props": {

@@ -13,7 +13,6 @@
   "slider-layout#slider__container--home": {
     "title": "Global slider home",
     "props": {
-      /*"fullWidth": false,*/
       "itemsPerPage": {
         "desktop": 4,
         "tablet": 3,
@@ -80,7 +79,6 @@
       "flex-layout.col#second__row--bestseller"
     ],
     "props": {
-      /*"width": "100%",*/
       "preserveLayoutOnMobile": true,
       "blockClass": "second__row-infocard--container"
     }

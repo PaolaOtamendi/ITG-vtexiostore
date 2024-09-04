@@ -1,0 +1,78 @@
+{
+  "header-row#header__menu--mobile":{
+    "title": "Header menu phone and tablet",
+    "props": {
+      "blockClass": "header__menu--mobile",
+        "fullWidth": true
+    },
+    "children": [
+      "flex-layout.row#header__first--section--mobile"
+    ]
+  },
+
+  "flex-layout.row#header__first--section--mobile": {
+    "title": "Container menu logo icon search and login",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "topMenuIcons": true,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": false,
+      "fullWidth": true,
+      "blockClass": "header__first--section--mobile"
+    },
+    "children": [
+      "flex-layout.col#container__menu-and-logo",
+      "flex-layout.col#container__search-minicart-login"
+    ]
+  },
+  "flex-layout.col#container__menu-and-logo": {
+    "title": "Container mega menu and logo",
+    "children": [
+      "flex-layout.row#container__mega-menu--mobile",
+      "flex-layout.col#logo__header--mobile"
+    ],
+    "props": {
+      "blockClass": "container__menu-and-logo"
+    }
+  },
+  "flex-layout.col#container__search-minicart-login": {
+    "title": "Container searchbar minicart and login",
+    "children": [
+      "overlay-trigger#header__overlay--mobile",
+      "minicart.v2",
+      "login#global__login--header"
+    ],
+    "props": {
+      "blockClass": "container__search-minicart-login"
+    }
+  },
+  
+  "flex-layout.col#logo__header--mobile": {
+    "title": "Container logo mobile",
+    "props": {
+      "blockClass": "logo__header--mobile"
+    },
+    "children": [
+      "logo#logo__mobile--custom"
+    ]
+  },
+  "logo#logo__mobile--custom": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/img/icon_Black.png",
+      "blockClass": [
+        "logo__mobile--custom"
+      ]
+    }
+  },
+
+  "flex-layout.col#mobile_spacer": {
+    "title": "spacer",
+    "props": {
+      "blockClass": "mobile_spacer",
+      "flexGrow": 1
+    }
+  }
+}

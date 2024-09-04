@@ -1,7 +1,6 @@
 {
   "header-layout.mobile": {
     "children": [
-      /*"flex-layout.row#1-mobile",*/
       "header-row#header__menu--mobile",
       "flex-layout.row#mobile__header-icons"
     ]

@@ -1,7 +1,7 @@
 /*----------------------------- PLP custom styles destkop ------------------------------------------------*/
 .flexRowContent--product__gallery--plp {
-    display           : flex;
-    flex-direction    : column;
+    display       : flex;
+    flex-direction: column;
 }
 
 .flexRowContent--product__gallery--plp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {

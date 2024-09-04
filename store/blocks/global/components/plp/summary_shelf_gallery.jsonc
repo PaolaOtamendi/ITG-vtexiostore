@@ -32,7 +32,6 @@
         "product-list-price",
         "product-selling-price",
         "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider"
-        /*"vtex.product-highlights@2.x:product-highlights"*/
     ],
     "props": {
         "blockClass": "shelf__details--gallery"

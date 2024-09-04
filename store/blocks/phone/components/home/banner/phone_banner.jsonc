@@ -1,0 +1,41 @@
+{
+  "flex-layout.row#phone__main-slider": {
+    "title": "Banner phone",
+    "children": ["flex-layout.col#phone__main-slider"]
+  },
+  "flex-layout.col#phone__main-slider": {
+    "title": "Banner phone home",
+    "children": ["list-context.image-list#banner__phone-container-images"]
+  },
+  "list-context.image-list#banner__phone-container-images": {
+    "title": "Container banner phone list images",
+    "children": ["slider-layout#slider__phone-banner--images"],
+    "props": {
+      "height": 480,
+      "width": "100%",
+      "blockClass": "fixed-top",
+      "images": [
+        {
+          "image": "/arquivos/banner-mobile.png",
+          "description": "main image of the clocks",
+          "width": "100%",
+          "link": {
+            "props": {
+              "label": "",
+              "href": "#",
+              "blockClass": "benner-desktop"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "slider-layout#slider__phone-banner--images": {
+    "title": "Banner slider home mobile",
+    "props": {
+      "itemsPerPage": {
+        "phone": 1
+      }
+    }
+  }
+}

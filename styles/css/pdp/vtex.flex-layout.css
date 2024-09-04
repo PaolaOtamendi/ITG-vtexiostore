@@ -4,26 +4,22 @@
     margin-bottom   : 0px;
 }
 
-/* Informacion de producto */
 .flexColChild--product__information--pdp {
     display        : flex;
     justify-content: left;
     align-items    : center;
 }
 
-/* Imagenes */
 .flexCol--product__image-pdp {
     height: fit-content;
 }
 
-/* highlights */
 .flexRowContent--container__pdp--higlights {
     display    : flex;
     align-items: center;
     gap        : 10px;
 }
 
-/* Name */
 .flexColChild--product__information--pdp :global(.vtex-store-components-3-x-productNameContainer) {
     margin-top   : 10px;
     margin-bottom: 10px;
@@ -39,7 +35,6 @@
     height     : 34px;
 }
 
-/* Prices */
 .flexRowContent--pdp__product--price {
     gap           : 10px;
     padding-top   : 10px;
@@ -64,12 +59,11 @@
     color      : rgb(29, 39, 52, 0.4);
 }
 
-/* add to cart button */
 .flexColChild--pdp__add-to-cart-button :global(.vtex-button) {
-    background-color  : #492A77;
-    border            : solid 1px #492A77;
-    border-radius     : 4px;
-    padding           : 10px;
+    background-color: #492A77;
+    border          : solid 1px #492A77;
+    border-radius   : 4px;
+    padding         : 10px;
 }
 
 .flexCol--pdp__add-to-cart-button {
@@ -86,7 +80,6 @@
     width: fit-content !important;
 }
 
-/* specifications */
 .flexRowContent--specification__pdp {
     background-color: #fff;
 }
@@ -95,7 +88,6 @@
     display       : flex;
     flex-direction: column;
 }
-
 
 /*----------------------------- MediaQueires ---------------------------------------*/
 /*---------- Phone ------------*/

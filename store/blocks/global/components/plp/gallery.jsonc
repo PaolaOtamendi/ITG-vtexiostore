@@ -1,79 +1,68 @@
 {
-    "gallery#global__search": {
-        "title": "Product display gallery configuration",
-        "props": {
-            "layouts": [
-                {
-                    "name": "whole",
-                    "component": "OneOrTwoLineSummary",
-                    "itemsPerRow": {
-                        "desktop": 3,
-                        "tablet": 2,
-                        "phone": 1
-                        /*"mobile": 1*/
-                    }
-                },
-                {
-                    "name": "two",
-                    "component": "OneOrTwoLineSummary",
-                    /*"itemsPerRow": 2*/
-                    "itemsPerRow": {
-                        "desktop": 2,
-                        "tablet": 2,
-                        "phone": 1
-                        /*"mobile": 1*/
-                    }
-                    
-                },
-                {
-                    "name": "many",
-                    "component": "ManyByLineSummary",
-                    "itemsPerRow": {
-                        "desktop": 3,
-                        "tablet": 2,
-                        "phone": 1
-                        /*"mobile": 1*/
-                    }
-                }
-            ],
-            "OneOrTwoLineSummary": "product-summary.shelf#global__gallery--summary",
-            "ManyByLineSummary": "product-summary.shelf#global__gallery--summary"
+  "gallery#global__search": {
+    "title": "Product display gallery configuration",
+    "props": {
+      "layouts": [
+        {
+          "name": "whole",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": {
+            "desktop": 3,
+            "tablet": 2,
+            "phone": 1
+          }
+        },
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": {
+            "desktop": 2,
+            "tablet": 2,
+            "phone": 1
+          }
+        },
+        {
+          "name": "many",
+          "component": "ManyByLineSummary",
+          "itemsPerRow": {
+            "desktop": 3,
+            "tablet": 2,
+            "phone": 1
+          }
         }
-    },
-    
-    // switch views on gellery
-    "gallery-layout-switcher": {
-        "children": [
-            "gallery-layout-option#whole",
-            "gallery-layout-option#two",
-            "gallery-layout-option#many"
-        ]
-    },
-    "gallery-layout-option#whole": {
-        "title": "View only one item layout option",
-        "props": {
-            "name": "whole"
-        },
-        "children": [
-            "icon-single-grid"
-        ]
-    },
-    "gallery-layout-option#two": {
-        "title": "View two items layout option",
-        "props": {
-            "name": "two"
-        },
-        "children": [
-            "icon-inline-grid"
-        ]
-    },
-    "gallery-layout-option#many": {
-        "title": "View multiple items layout option",
-        "props": {
-            "name": "many"
-        },
-        "children": [
-            "icon-menu"
-        ]
+      ],
+      "OneOrTwoLineSummary": "product-summary.shelf#global__gallery--summary",
+      "ManyByLineSummary": "product-summary.shelf#global__gallery--summary"
     }
+  },
+
+  // switch views on gellery
+  "gallery-layout-switcher": {
+    "children": [
+      "gallery-layout-option#whole",
+      "gallery-layout-option#two",
+      "gallery-layout-option#many"
+    ]
+  },
+  "gallery-layout-option#whole": {
+    "title": "View only one item layout option",
+    "props": {
+      "name": "whole"
+    },
+    "children": ["icon-single-grid"]
+  },
+  "gallery-layout-option#two": {
+    "title": "View two items layout option",
+    "props": {
+      "name": "two"
+    },
+    "children": ["icon-inline-grid"]
+  },
+  "gallery-layout-option#many": {
+    "title": "View multiple items layout option",
+    "props": {
+      "name": "many"
+    },
+    "children": ["icon-menu"]
+  }
 }

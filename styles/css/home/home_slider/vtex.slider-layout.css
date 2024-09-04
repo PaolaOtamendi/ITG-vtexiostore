@@ -1,0 +1,123 @@
+/*----------------------------- Global slider products ------------------------------------------------*/
+.paginationDotsContainer--slider__container--home {
+    display    : flex;
+    align-items: center;
+    height     : 50.89px;
+    width      : 100%;
+}
+
+.paginationDot--slider__container--home {
+    border-radius   : 0;
+    background-color: transparent;
+    position        : relative;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    margin          : 0 2px;
+}
+
+.paginationDot--isActive::before {
+    content         : "";
+    position        : absolute;
+    right           : -8px;
+    width           : 16px;
+    height          : 16px;
+    background-color: #1d2734;
+    border-radius   : 50%;
+}
+
+.paginationDot::after {
+    width           : 44px;
+    height          : 2px;
+    content         : "";
+    font-size       : 0;
+    background-color: #1D2734;
+    position        : absolute;
+}
+
+.paginationDot--isActive::before {
+    content         : "";
+    position        : absolute;
+    right           : -8px;
+    width           : 16px;
+    height          : 16px;
+    background-color: #1D2734;
+    border-radius   : 50%;
+}
+
+.paginationDot--isActive .paginationDot::after {
+    width           : 44px;
+    height          : 2px;
+    content         : "";
+    font-size       : 0;
+    background-color: #1d273466;
+    position        : absolute;
+}
+
+.sliderLayoutContainer--slider__container--home {
+    padding-bottom: 60px;
+}
+
+.caretIcon--slider__container--home {
+    width        : 20px !important;
+    height       : 14px !important;
+    border-left  : 10px solid transparent;
+    border-right : 10px solid transparent;
+    border-radius: 4px;
+    margin-bottom: 94px;
+    overflow     : visible !important;
+    fill         : none;
+}
+
+.sliderLeftArrow {
+    left     : -60px;
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+.sliderRightArrow {
+    right    : -60px;
+    top      : 50%;
+    transform: translateY(-50%);
+}
+
+/*----------------------------- MediaQueires ---------------------------------------*/
+@media (min-width: 320px) and (max-width: 1279px) {
+    .sliderRightArrow--slider__container--home {
+        display: none;
+    }
+
+    .sliderLeftArrow--slider__container--home {
+        display: none;
+    }
+}
+
+/*---------- Phone ------------*/
+@media (min-width: 320px) and (max-width: 639px) {
+    .paginationDot--slider__container--home {
+        width: 12px !important;
+    }
+
+    .paginationDot::after {
+        width: 12px !important;
+    }
+}
+
+/*---------- Tablet ------------*/
+@media (min-width: 640px) and (max-width: 1279px) {
+    .paginationDot--slider__container--home {
+        width: 15px !important;
+    }
+
+    .paginationDot::after {
+        width: 15px !important;
+    }
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {
+    .paginationDot--slider__container--home {
+        width : 44px !important;
+        height: 40px !important;
+    }
+}
