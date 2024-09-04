@@ -1,0 +1,8 @@
+{
+    "footer-layout.mobile": {
+        "title": "Mobile footer",
+      "children": [
+        "flex-layout.row#footer-mobile"
+      ]
+    }
+}

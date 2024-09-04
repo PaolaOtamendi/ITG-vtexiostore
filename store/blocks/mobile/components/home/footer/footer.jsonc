@@ -1,0 +1,10 @@
+{
+    "flex-layout.row#footer-mobile": {
+        "title": "Mobile row footer",
+      "children": [
+        "social-networks",
+        "accepted-payment-methods",
+        "powered-by"
+      ]
+    }
+}
