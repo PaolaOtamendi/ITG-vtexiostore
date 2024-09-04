@@ -1,11 +1,11 @@
 {
-    "flex-layout.row#destkop__home--slider": {
-        "title": "Container destkop home slider",
+    "flex-layout.row#desktop__home--slider": {
+        "title": "Container desktop home slider",
         "children": [
             "flex-layout.row#global_home--slider"
         ],
         "props": {
-            "blockClass": "destkop__home--slider"
+            "blockClass": "desktop__home--slider"
         }
     }
 }

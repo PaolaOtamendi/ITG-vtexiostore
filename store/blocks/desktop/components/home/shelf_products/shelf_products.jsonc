@@ -1,11 +1,11 @@
 {
-    "flex-layout.row#destkop__home--shelf-products": {
-        "title": "Container destkop shelf products",
+    "flex-layout.row#desktop__home--shelf-products": {
+        "title": "Container desktop shelf products",
         "children": [
             "flex-layout.row#global__shelf--products"
         ],
         "props": {
-            "blockClass": "destkop__home--shelf-products"
+            "blockClass": "desktop__home--shelf-products"
         }
     }
 }

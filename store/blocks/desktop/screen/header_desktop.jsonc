@@ -1,6 +1,6 @@
 {
   "header-layout.desktop": {
-    "title": "Header home destkop contain menu and icons menu",
+    "title": "Header home desktop contain menu and icons menu",
     "children": [
       "header-row#header__menu--desktop",
       "flex-layout.row#desktop__header-icons"

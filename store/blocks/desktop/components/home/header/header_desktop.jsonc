@@ -49,7 +49,7 @@
   "flex-layout.col#searchbar__header--desktop": {
     "title": "Container Search Bar",
     "props": {
-      "blockClass": "searchbar__header--destkop"
+      "blockClass": "searchbar__header--desktop"
     },
     "children": ["search-bar#search__bar--desktop"]
   },

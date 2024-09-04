@@ -37,7 +37,7 @@
     }
   },
   "slider-layout#slider__banner--images": {
-    "title": "Banner slider home destkop",
+    "title": "Banner slider home desktop",
     "props": {
       "itemsPerPage": {
         "desktop": 1,

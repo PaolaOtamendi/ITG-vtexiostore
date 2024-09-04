@@ -9,7 +9,7 @@
     "rich-text#title__device--section": {
       "title": "Title to global slider",
       "props": {
-        "text": "Destkop",
+        "text": "Dekstop",
         "font": "t-heading-10",
         "textAlignment": "LEFT",
         "textPosition": "LEFT",

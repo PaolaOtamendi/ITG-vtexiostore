@@ -1,4 +1,4 @@
-/*----------------------------- Header destkop section menu ---------------------------------------*/
+/*----------------------------- Header desktop section menu ---------------------------------------*/
 :global(.vtex-store-components-3-x-autoCompleteOuterContainer--search__bar--desktop) :global(.vtex-styleguide-9-x-noAppearance::placeholder) {
     font-family: Lexend, sans-serif !important;
     font-size  : 12px !important;
