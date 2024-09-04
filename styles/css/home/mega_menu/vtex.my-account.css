@@ -7,7 +7,7 @@
 }
 
 :global(.vtex-mega-menu-2-x-menuContainer h3::before) {
-    content     : url("/arquivos/Icon_color-mega-menu.svg");
+    content     : url("/arquivos/icon_color-m-menu.png");
     margin-right: 0.4rem;
     width       : 20px;
     height      : 20px;
