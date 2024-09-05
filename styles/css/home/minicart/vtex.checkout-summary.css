@@ -1,17 +1,19 @@
-.summarySmallDisclaimer--minicart__checkout-summary {
+.summarySmallDisclaimer--minicart__checkout--summary {
     display: none;
 }
 
-.summaryItemContainer--minicart__summary-totalizers {
-    font-family: lexend, sans-serif !important;
-    font-size  : 14px;
-    font-weight: 300;
-    line-height: 16.8px;
-    color      : #000000;
+.summaryItemContainer--minicart__summary--totalizers {
+    font-family   : "Lexend-Regular", sans-serif !important;
+    font-size     : 14px;
+    font-weight   : 300;
+    line-height   : 16.8px;
+    color         : #000000;
+    margin-top    : 0px;
+    padding-bottom: 0px;
 }
 
-.summarySmallContent--minicart__checkout-summary .summaryItemContainer--minicart__summary-totalizers:last-child .summaryItemLabel--minicart__summary-totalizers,
-.summarySmallContent--minicart__checkout-summary .summaryItemContainer--minicart__summary-totalizers:last-child .price--minicart__summary-totalizers {
+.summarySmallContent--minicart__checkout--summary .summaryItemContainer--minicart__summary--totalizers:last-child .summaryItemLabel--minicart__summary--totalizers,
+.summarySmallContent--minicart__checkout--summary .summaryItemContainer--minicart__summary--totalizers:last-child .price--minicart__summary--totalizers {
     color      : red !important;
     font-size  : 16px;
     font-weight: 600;

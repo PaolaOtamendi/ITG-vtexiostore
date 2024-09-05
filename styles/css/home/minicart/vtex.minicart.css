@@ -1,11 +1,11 @@
-.drawerContent--minicart_container {
-    overflow-y      : hidden;
-    justify-content : center;
-    background-color: #fff;
+.drawerContent {
+    max-height: 100vh;
+    height    : 100%;
 }
 
-.minicartSideBarContentWrapper--minicart_container {
+.drawer--minicart_container {
     background-color: #fff;
+    height          : 100% !important;
 }
 
 .closeIconContainer--minicart_container {
@@ -14,7 +14,7 @@
     justify-content: right;
     width          : 100%;
     padding-right  : 25px;
-    top            : 20px;
+    top            : 30px;
     position       : relative;
 }
 
@@ -31,26 +31,16 @@
     cursor          : pointer;
 }
 
-.childrenContainer--minicart_container {
-    position: relative;
-    bottom  : 30px;
-    z-index : 1;
-}
-
 .minicartTitle {
     display: none;
 }
 
-.minicartSummary--minicart-summary {
-    height          : 126px;
-    width           : 368px;
-    border-radius   : 4px;
-    border          : solid 1px #E7E7E7;
-    padding         : 24px;
-    gap             : 12px;
-    background-color: #ffff;
+/*controla el contenido de los productos*/
+.minicartProductListContainer {
+    height          : 430px;
 }
 
+/*Button check*/
 .minicartCheckoutButton--minicart-checkout-button {
     display    : flex;
     align-items: center;
@@ -59,47 +49,30 @@
     padding    : 0px;
 }
 
-.minicartCheckoutButton--minicart-checkout-button :global(.vtex-button) {
+.minicartCheckoutButton--minicart__checkout--button :global(.vtex-button) {
     border-radius   : 40px;
     border          : solid 1px #1D2734;
     gap             : 10px;
     background-color: #1D2734;
 }
 
-.minicartCheckoutButton--minicart-checkout-button :global(.vtex-button__label) {
+.minicartCheckoutButton--minicart__checkout--button :global(.vtex-button__label) {
     font-size: 0px;
 }
 
-.minicartCheckoutButton--minicart-checkout-button :global(.vtex-button__label)::after {
+.minicartCheckoutButton--minicart__checkout--button :global(.vtex-button__label)::after {
     content       : "Finalizar tu compra";
     text-transform: lowercase;
     font-size     : 14px;
     font-family   : "Lexend-Regular", sans-serif;
 }
 
-.minicartCheckoutButton--minicart-checkout-button :global(.vtex-button__label)::after {
+.minicartCheckoutButton--minicart__checkout--button :global(.vtex-button__label)::after {
     text-transform: capitalize;
 }
 
-/*----------------------------- MediaQueires ---------------------------------------*/
 @media (max-width: 768px) {
-    .minicartSummary--minicart-summary {
-        width : 300px;
-        height: 110px;
-    }
-
-    .minicartCheckoutButton--minicart-checkout-button {
-        width : 300px;
-        height: 40px;
-    }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-    .drawerContent--minicart_container {
-        display: contents;
-    }
-
-    .closeIconContainer--minicart_container {
-        top: 50px !important;
+    .drawer--minicart_container {
+        width: 100% !important;
     }
 }

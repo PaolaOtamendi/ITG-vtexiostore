@@ -1,4 +1,3 @@
-/*----------------------------- Minicart custom ------------------------------------------------*/
 .productBrandName {
     display: none;
 }
@@ -60,4 +59,5 @@
     font-size  : 13.23px;
     font-weight: 300;
     line-height: 16.54px;
+    width: 3rem !important;
 }

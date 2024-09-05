@@ -1,13 +1,21 @@
 .paragraph--minicart__title {
     padding-left: 16px;
-    font-family : lexend, sans-serif !important;
+    font-family : "Lexend-Regular", sans-serif !important;
     font-weight : 600;
     font-size   : 14px;
     line-height : 17.5px;
 }
 
+.paragraph--minicart__title--header {
+    margin-bottom: 5px;
+    margin-left: 10px;
+    font-size    : 14px;
+    font-weight  : 600;
+    font-family  : "Lexend-Regular", sans-serif !important;
+}
+
 .paragraph--minicart_empty-state-one {
-    font-family  : lexend, sans-serif !important;
+    font-family  : "Lexend-Regular", sans-serif !important;
     font-weight  : 600;
     font-size    : 14px;
     line-height  : 24px;
@@ -16,7 +24,7 @@
 }
 
 .paragraph--minicart_empty-state-two {
-    font-family  : lexend, sans-serif !important;
+    font-family  : "Lexend-Regular", sans-serif !important;
     font-weight  : 300;
     font-size    : 12px;
     line-height  : 19px;
