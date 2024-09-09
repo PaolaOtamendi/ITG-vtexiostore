@@ -3,6 +3,7 @@
         "title": "Home section sliders Desktop",
         "children": [
             "flex-layout.row#desktop__main-slider",
+            "whatsapp-button",
             "flex-layout.row#one__title--slider",
             "flex-layout.row#desktop__home--slider",
             "flex-layout.row#two__title--slider",
