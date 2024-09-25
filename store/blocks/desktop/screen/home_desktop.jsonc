@@ -13,5 +13,16 @@
             "flex-layout.row#four__title--slider",
             "flex-layout.row#desktop__home--shelf-products"
         ]
+    },
+
+    "whatsapp-button": {
+        "title": "whatsapp",
+        "props": {
+            "logo": "assets/img/logo_whatsapp.png",
+            "phone": "3003001122",
+            "message": "Hola quieres comunicarte desde el store theme",
+            "width": 80,
+            "heigth": 80
+        }
     }
 }
