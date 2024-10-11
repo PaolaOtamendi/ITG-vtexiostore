@@ -41,3 +41,22 @@
     font-weight: 300;
     line-height: 15px;
 }
+
+/* Nuevas clases - fix-styles */
+:global(.vtex-mega-menu-2-x-triggerContainer) {
+    padding: 0% !important;
+}
+
+:global(.vtex-mega-menu-2-x-triggerButtonIcon) {
+    width : 18px !important;
+    height: 12px !important;
+}
+
+:global(.vtex-store-drawer-0-x-menuIcon) {
+    width : 18px !important;
+    height: 12px !important;
+}
+
+:global(.vtex-store-drawer-0-x-openIconContainer) {
+    padding: 0%;
+}

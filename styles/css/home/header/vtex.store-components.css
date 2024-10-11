@@ -16,12 +16,22 @@
     background-color: #F5F4F6;
 }
 
+/* Nuevas clases - fix-styles */
+:global(.vtex-store-components-3-x-container) {
+    padding: 0%;
+}
+
 /*----------------------------- Header mobile section menu ---------------------------------------*/
-.logoContainer--logo__mobile--custom {
+/* Nuevas clases - fix-styles */
+/*.logoContainer--sec1__logo {
     display        : flex;
     justify-content: left;
     align-items    : center;
     padding-left   : 0px;
+}*/
+
+.logoContainer--sec1__logo {
+    padding: 0%;
 }
 
 /*----- overlay search bar custom styles -----*/

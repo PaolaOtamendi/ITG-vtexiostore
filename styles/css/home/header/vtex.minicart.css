@@ -9,3 +9,15 @@
 :global(.vtex-minicart-2-x-openIconContainer) {
     padding: 0% !important;
 }
+
+.minicartContainer--minicart_container :global(.vtex-button__label) {
+    padding: 0% !important;
+}
+
+/* Nuevas clases - fix-styles */
+.minicartContainer--minicart_container :global(.vtex-button) {
+    height    : 24px;
+    width     : 24px;
+    min-height: 24px;
+    border    : 1px solid;
+}

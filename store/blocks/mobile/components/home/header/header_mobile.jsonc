@@ -1,78 +1,100 @@
 {
-  "header-row#header__menu--mobile":{
+  "header-row#mobile__header--menu": {
     "title": "Header menu phone and tablet",
     "props": {
-      "blockClass": "header__menu--mobile",
-        "fullWidth": true
+      "blockClass": "mobile__header--menu",
+      "fullWidth": true
     },
-    "children": [
-      "flex-layout.row#header__first--section--mobile"
-    ]
+    "children": ["flex-layout.row#mobile__header-menu--container"]
   },
 
-  "flex-layout.row#header__first--section--mobile": {
-    "title": "Container menu logo icon search and login",
+  "flex-layout.row#mobile__header-menu--container": {
+    "title": "Container mobile sections 1 and 2",
     "props": {
-      "horizontalAlign": "center",
-      "verticalAlign": "center",
-      "topMenuIcons": true,
-      "preventVerticalStretch": true,
-      "preventHorizontalStretch": false,
+      /*"horizontalAlign": "center",*/
+      /*"verticalAlign": "center",*/
+      /*"topMenuIcons": true,*/
+      /*"preventVerticalStretch": true,*/
+      /*"preventHorizontalStretch": false,*/
       "fullWidth": true,
-      "blockClass": "header__first--section--mobile"
+      "blockClass": "mobile__header-menu--container"
     },
     "children": [
-      "flex-layout.col#container__menu-and-logo",
-      "flex-layout.col#container__search-minicart-login"
+      "flex-layout.col#header_menu-container--sec1",
+      "flex-layout.col#header_menu-container--sec2"
     ]
   },
-  "flex-layout.col#container__menu-and-logo": {
-    "title": "Container mega menu and logo",
+  "flex-layout.col#header_menu-container--sec1": {
+    "title": "Container section 1 - mega menu and logo",
     "children": [
       "flex-layout.row#container__mega-menu--mobile",
-      "flex-layout.col#logo__header--mobile"
+      "flex-layout.row#header_menu-container-sec1--logo"
     ],
     "props": {
-      "blockClass": "container__menu-and-logo"
+      "blockClass": "header_menu-container--sec1"
     }
   },
-  "flex-layout.col#container__search-minicart-login": {
-    "title": "Container searchbar minicart and login",
-    "children": [
-      "overlay-trigger#header__overlay--mobile",
-      "minicart.v2",
-      "login#global__login--header"
-    ],
-    "props": {
-      "blockClass": "container__search-minicart-login"
-    }
-  },
-  
-  "flex-layout.col#logo__header--mobile": {
+  "flex-layout.row#header_menu-container-sec1--logo": {
     "title": "Container logo mobile",
     "props": {
-      "blockClass": "logo__header--mobile"
+      "blockClass": "header_menu-container-sec1--logo"
     },
-    "children": [
-      "logo#logo__mobile--custom"
-    ]
+    "children": ["logo#sec1__logo"]
   },
-  "logo#logo__mobile--custom": {
+  "logo#sec1__logo": {
     "props": {
       "title": "Logo",
       "href": "/",
       "url": "assets/img/icon_Black.png",
-      "blockClass": [
-        "logo__mobile--custom"
-      ]
+      "blockClass": ["sec1__logo"]
     }
   },
 
-  "flex-layout.col#mobile_spacer": {
+  "flex-layout.col#header_menu-container--sec2": {
+    "title": "Container section 2 - searchbar, minicart and login",
+    "children": [
+      /*"overlay-trigger#header__overlay--mobile",
+      "minicart.v2",
+      "login#global__login--header",*/
+      "flex-layout.row#header_menu-container-sec2--overlay",
+      "flex-layout.row#header_menu-container-sec2--minicart",
+      "flex-layout.row#header_menu-container-sec2--login"
+    ],
+    "props": {
+      "blockClass": "header_menu-container--sec2",
+      "preventHorizontalStretch": false
+    }
+  },
+  "flex-layout.row#header_menu-container-sec2--overlay": {
+    "children": [
+      "overlay-trigger#header__overlay--mobile"
+    ],
+    "props": {
+      "blockClass": "header_menu-container-sec2--overlay"
+    }
+  },
+  "flex-layout.row#header_menu-container-sec2--minicart": {
+    "children": [
+      "minicart.v2"
+    ],
+    "props": {
+      "blockClass": "header_menu-container-sec2--minicart"
+    }
+  },
+  "flex-layout.row#header_menu-container-sec2--login": {
+    "children": [
+      "login#global__login--header"
+    ],
+    "props": {
+      "blockClass": "header_menu-container-sec2--login"
+    }
+  }
+  
+  /*"flex-layout.col#mobile_spacer": {
     "title": "spacer",
     "props": {
       "blockClass": "mobile_spacer",
       "flexGrow": 1
     }
-  }
+  }*/
 }
