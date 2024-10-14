@@ -1,4 +1,9 @@
 /*----------------------------- "Header desktop------------------------------------------------*/
+.headerRow--dekstop__header--menu {
+    padding-top: 56px;
+    background-color: #fff;
+}
+
 .headerRowContainer--dekstop__header--menu {
     display         : flex;
     align-items     : center;
@@ -6,6 +11,7 @@
     height          : 56px;
     padding         : 8px 48px 8px 48px;
     background-color: #fff;
+    border: 1px solid;
 }
 
 /*----------------------------- Header desktop section icons ---------------------------------------*/
@@ -47,19 +53,7 @@
 }
 
 /*----------------------------- "Header mobile------------------------------------------------*/
-/*.headerRowContainer--mobile__header--menu {
-    display        : flex;
-    justify-content: space-around;
-    width          : 100%;
-    height         : auto;
-}*/
-
 /* Nuevas clases - fix-styles */
-/*.headerStickyRow--mobile__header--menu {
-    background-color: #fff !important;
-    margin-top: 40px;
-}*/
-
 .headerRow--mobile__header--menu {
     padding-top       : 40px;
     min-width         : 360px;
@@ -79,3 +73,16 @@
 .headerRowBackground--mobile__header--menu {
     background-color: #fff;
 }
+
+/* Eliminar no necesarias*/
+/*.headerRowContainer--mobile__header--menu {
+    display        : flex;
+    justify-content: space-around;
+    width          : 100%;
+    height         : auto;
+}*/
+
+/*.headerStickyRow--mobile__header--menu {
+    background-color: #fff !important;
+    margin-top: 40px;
+}*/

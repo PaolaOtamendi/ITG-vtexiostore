@@ -53,7 +53,7 @@
   "flex-layout.col#header_menu-container--sec2": {
     "title": "Container section 2 - searchbar, minicart and login",
     "children": [
-      /*"overlay-trigger#header__overlay--mobile",
+      /*"overlay-trigger#mobile__header--overlay",
       "minicart.v2",
       "login#global__login--header",*/
       "flex-layout.row#header_menu-container-sec2--overlay",
@@ -67,7 +67,7 @@
   },
   "flex-layout.row#header_menu-container-sec2--overlay": {
     "children": [
-      "overlay-trigger#header__overlay--mobile"
+      "overlay-trigger#mobile__header--overlay"
     ],
     "props": {
       "blockClass": "header_menu-container-sec2--overlay"
@@ -89,7 +89,7 @@
       "blockClass": "header_menu-container-sec2--login"
     }
   }
-  
+
   /*"flex-layout.col#mobile_spacer": {
     "title": "spacer",
     "props": {

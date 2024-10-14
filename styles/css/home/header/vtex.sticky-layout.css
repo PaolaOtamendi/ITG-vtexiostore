@@ -1,3 +1,8 @@
-.container {
+/* Nuevas clases - fix-styles */
+.container--desktop__mega--menu {
     position: relative;
+}
+
+.wrapper--desktop__mega--menu {
+    padding-right: 8px;
 }

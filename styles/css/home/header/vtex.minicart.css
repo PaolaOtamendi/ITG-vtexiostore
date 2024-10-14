@@ -1,23 +1,16 @@
-/*----------------------------- Minicart desktop section menu ---------------------------------------*/
-.minicartIconContainer {
-    width : 20px;
-    height: 20px;
-    color : #1D2734;
-}
-
-/*----------------------------- Minicart phone y tablet section menu ---------------------------------------*/
-:global(.vtex-minicart-2-x-openIconContainer) {
-    padding: 0% !important;
-}
-
+/*----------------------------- Minicart desktop and mobile ---------------------------------------*/
+/* Nuevas clases - fix-styles */
 .minicartContainer--minicart_container :global(.vtex-button__label) {
     padding: 0% !important;
 }
 
-/* Nuevas clases - fix-styles */
+:global(.vtex-minicart-2-x-openIconContainer) {
+    padding: 0% !important;
+}
+
 .minicartContainer--minicart_container :global(.vtex-button) {
     height    : 24px;
     width     : 24px;
     min-height: 24px;
-    border    : 1px solid;
+    /*border    : 1px solid;*/ /* Eliminar*/
 }

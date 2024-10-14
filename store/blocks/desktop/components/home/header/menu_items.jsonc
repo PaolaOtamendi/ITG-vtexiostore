@@ -15,7 +15,8 @@
             "href": "/trends-it-globers",
             "noFollow": false,
             "tagTitle": "Tendencias",
-            "text": "Tendencias de ITGlobers"
+            "text": "Tendencias de ITGlobers",
+            "blockClass": "menu-item-Tendencias"
           }
         },
         {

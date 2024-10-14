@@ -4,33 +4,70 @@
 }
 
 /*----------------------------- Header desktop section menu ---------------------------------------*/
-.flexRowContent--header__second--section {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
-}
-
-.flexColChild--drawer__header--desktop {
-    /*background-color: #e6ff46;*/
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-}
-
-.flexColChild--logo__header--desktop {
-    /*background-color: #9862cb;*/
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-}
-
 /* Nuevas clases - fix-styles */
-.flexCol--trigger__mega--menu {
+.flexCol--mega__menu--trigger {
     height     : 24px;
     width      : 24px !important;
     border     : 1px solid;
     display    : flex;
     align-items: center;
+}
+
+.flexColChild--header__menu-sec1--logo {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+.flexCol--header__menu-sec1--logo :global(.vtex-store-components-3-x-logoImage) {
+    max-width: none;
+}
+
+.flexRowContent--desktop__header-menu--sec1 {
+    gap: 16px;
+}
+
+.flexRowContent--desktop__header-menu--sec2 {
+    gap: 10px;
+}
+
+.flexCol--header__menu-sec1--searchbar :global(.vtex-store-components-3-x-searchBarContainer) {
+    width : 280px;
+    height: 40px;
+}
+
+.flexRow--desktop__header-menu--sec1 {
+    padding-right: 58px;
+}
+
+.flexRow--desktop__header-menu--sec3 {
+    padding-right: 40px;
+}
+
+.flexRowContent--desktop__header-menu--sec2 :global(.vtex-store-icons-0-x-cartIcon--minicart_icon--header) {
+    width : 16.67px;
+    height: 16.67px;
+}
+
+.flexRowContent--desktop__header-menu--sec2 :global(.vtex-login-2-x-container) {
+    width          : 80px !important;
+    height         : 40px;
+    background     : #1d2734;
+    border-radius  : 40px;
+    border         : solid 1px #1D2734;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 10px;
+}
+
+.flexRowContent--desktop__header-menu--sec2 :global(.vtex-button__label) {
+    padding: 0% !important;
+}
+
+.flexRowContent--desktop__header-menu--sec2 :global(.vtex-minicart-2-x-minicartIconContainer) {
+    width : 20px;
+    height: 20px;
 }
 
 /*----------------------------- Header desktop section icons ---------------------------------------*/
@@ -91,33 +128,20 @@
 @media (min-width: 1280px) {}
 
 /*----------------------------- Header mobile section menu ---------------------------------------*/
-.flexRow--mobile__header-icons {
-    background-color: #fff;
-}
-
+/* Nuevas clases - fix-styles */
 .flexRow--mobile__header-menu--container {
     display: contents;
 }
 
 .flexRowContent--mobile__header-menu--container {
-    display           : flex;
-    /*align-items     : center;*/
-    justify-content   : space-between;
-    /*padding-left    : 10px;
-    padding-right     : 10px;
-    padding-top       : 10px;*/
-    /*background-color: #fff;*/
-}
-
-.flexRowContent--mobile__header-menu--container :global(.vtex-minicart-2-x-minicartWrapperContainer--minicart_container) {
-    display: contents !important;
+    display        : flex;
+    justify-content: space-between;
 }
 
 .flexRowContent--mobile__header-menu--container :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     width: auto !important;
 }
 
-/* Nuevas clases - fix-styles */
 .flexCol--header_menu-container--sec1 {
     flex-direction: row;
     align-items   : center;
@@ -172,4 +196,35 @@
 .flexRow--header_menu-container-sec2--login {
     margin-top   : 24px;
     margin-bottom: 8px
+}
+
+/* validar clases de login con coach*/
+.flexRowContent--header_menu-container-sec2--login :global(.vtex-login-2-x-container) {
+    width          : 80px !important;
+    height         : 40px;
+    background     : #1d2734;
+    border-radius  : 40px;
+    border         : solid 1px #1D2734;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 10px;
+}
+
+.flexRowContent--header_menu-container-sec2--login :global(.vtex-button__label) {
+    padding: 0% !important;
+}
+/* Hasta aqui*/
+
+.flexRowContent--header_menu-container-sec2--minicart :global(.vtex-minicart-2-x-minicartIconContainer) {
+    width : 24px;
+    height: 24px;
+}
+
+.flexRowContent--header_menu-container-sec2--overlay {
+    display        : flex;
+    align-items    : start;
+    justify-content: center;
+    width          : 24px;
+    height         : 24px;
 }

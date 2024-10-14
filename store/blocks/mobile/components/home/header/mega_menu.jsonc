@@ -4,7 +4,7 @@
     "props": {
       "blockClass": "container__mega-menu--mobile"
     },
-    "children": ["flex-layout.col#trigger-mega-menu"]
+    "children": ["flex-layout.col#mega__menu--trigger"]
   },
 
   "drawer": {
