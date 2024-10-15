@@ -29,7 +29,11 @@
 
 .styledLinkContainer--menu-item_trends {
     margin-right: 13px;
-    /*border-bottom: 1px solid #1D2734;*/
+}
+
+.styledLinkContent--menu-item_trends {
+    text-decoration-line: underline;
+    color: #1D2734;
 }
 
 .styledLinkContainer--menu-item_collections {
