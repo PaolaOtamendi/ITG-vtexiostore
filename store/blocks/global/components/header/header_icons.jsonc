@@ -26,46 +26,47 @@
       ]
     },
     "children": [
-      "flex-layout.col#categorie__icon--food",
-      "flex-layout.col#categorie__icon--fitness",
-      "flex-layout.col#categorie__icon--artic",
-      "flex-layout.col#categorie__icon--poolday",
-      "flex-layout.col#categorie__icon--hotel",
-      "flex-layout.col#categorie__icon--house",
-      "flex-layout.col#categorie__icon--hotel",
-      "flex-layout.col#categorie__icon--nature",
-      "flex-layout.col#categorie__icon--closet",
-      "flex-layout.col#categorie__icon--beach",
-      "flex-layout.col#categorie__icon--hike",
-      "flex-layout.col#categorie__icon--delivery",
-      "flex-layout.col#categorie__icon--beer"
+      "flex-layout.col#menu__categories--food",
+      "flex-layout.col#menu__categories--fitness",
+      "flex-layout.col#menu__categories--artic",
+      "flex-layout.col#menu__categories--poolday",
+      "flex-layout.col#menu__categories--hotel",
+      "flex-layout.col#menu__categories--house",
+      "flex-layout.col#menu__categories--hotel",
+      "flex-layout.col#menu__categories--nature",
+      "flex-layout.col#menu__categories--closet",
+      "flex-layout.col#menu__categories--beach",
+      "flex-layout.col#menu__categories--hike",
+      "flex-layout.col#menu__categories--delivery",
+      "flex-layout.col#menu__categories--beer"
     ]
   },
 
-  "flex-layout.col#categorie__icon--food": {
+  "flex-layout.col#menu__categories--food": {
     "title": "container categorie food",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--food",
-        "categorie__icon--global"
+        "menu__categories--food",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_food"
+      "link#categories__food--link"
     ]
   },
-  "link#link_food": {
+  "link#categories__food--link": {
+    "title": "Contain icon and text link food",
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__food",
-      "rich-text#text_menu_header--food"
+      "icon#food__link--icon",
+      "rich-text#food__link--text"
     ]
   },
-  "icon#menu__food": {
+  "icon#food__link--icon": {
     "props": {
       "id": "food",
       "width": 20,
@@ -73,10 +74,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__food"
+      "blockclass": "food__link--icon"
     }
   },
-  "rich-text#text_menu_header--food": {
+  "rich-text#food__link--text": {
     "title": "text icon menu food",
     "props": {
       "text": "Food",
@@ -84,36 +85,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--food",
-        "text_menu_header--global"
+        "food__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--fitness": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--fitness": {
+    "title": "container categorie fitness",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--fitness",
-        "categorie__icon--global"
+        "menu__categories--fitness",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_fitness"
+      "link#categories__fitness--link"
     ]
   },
-  "link#link_fitness": {
+  "link#categories__fitness--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__fitness",
-      "rich-text#text_menu_header--fitness"
+      "icon#fitness__link--icon",
+      "rich-text#fitness__link--text"
     ]
   },
-  "icon#menu__fitness": {
+  "icon#fitness__link--icon": {
     "props": {
       "id": "fitness",
       "width": 20,
@@ -121,10 +122,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__fitness"
+      "blockclass": "fitness__link--icon"
     }
   },
-  "rich-text#text_menu_header--fitness": {
+  "rich-text#fitness__link--text": {
     "title": "text icon menu fitness",
     "props": {
       "text": "Fitness",
@@ -132,36 +133,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--fitness",
-        "text_menu_header--global"
+        "fitness__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--artic": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--artic": {
+    "title": "container categorie artic",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--artic",
-        "categorie__icon--global"
+        "menu__categories--artic",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_ice"
+      "link#categories__artic--link"
     ]
   },
-  "link#link_ice": {
+  "link#categories__artic--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__ice",
-      "rich-text#text_menu_header--artic"
+      "icon#artic__link--icon",
+      "rich-text#artic__link--text"
     ]
   },
-  "icon#menu__ice": {
+  "icon#artic__link--icon": {
     "props": {
       "id": "ice",
       "width": 20,
@@ -169,10 +170,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__artic"
+      "blockclass": "artic__link--icon"
     }
   },
-  "rich-text#text_menu_header--artic": {
+  "rich-text#artic__link--text": {
     "title": "text icon menu artic",
     "props": {
       "text": "En el Ártico",
@@ -180,36 +181,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--artic",
-        "text_menu_header--global"
+        "artic__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--poolday": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--poolday": {
+    "title": "container categorie poolday",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--poolday",
-        "categorie__icon--global"
+        "menu__categories--poolday",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_pool"
+      "link#categories__poolday--link"
     ]
   },
-  "link#link_pool": {
+  "link#categories__poolday--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__pool",
-      "rich-text#text_menu_header--pool"
+      "icon#poolday__link--icon",
+      "rich-text#poolday__link--text"
     ]
   },
-  "icon#menu__pool": {
+  "icon#poolday__link--icon": {
     "props": {
       "id": "poolday",
       "width": 20,
@@ -217,10 +218,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__pool"
+      "blockclass": "poolday__link--icon"
     }
   },
-  "rich-text#text_menu_header--pool": {
+  "rich-text#poolday__link--text": {
     "title": "text icon menu pool",
     "props": {
       "text": "Poolday",
@@ -228,36 +229,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--pool",
-        "text_menu_header--global"
+        "poolday__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--hotel": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--hotel": {
+    "title": "container categorie hotel",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--hotel",
-        "categorie__icon--global"
+        "menu__categories--hotel",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_hotel"
+      "link#categories__hotel--link"
     ]
   },
-  "link#link_hotel": {
+  "link#categories__hotel--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__hotel",
-      "rich-text#text_menu_header--hotel"
+      "icon#hotel__link--icon",
+      "rich-text#hotel__link--text"
     ]
   },
-  "icon#menu__hotel": {
+  "icon#hotel__link--icon": {
     "props": {
       "id": "hotel",
       "width": 20,
@@ -265,10 +266,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__hotel"
+      "blockclass": "hotel__link--icon"
     }
   },
-  "rich-text#text_menu_header--hotel": {
+  "rich-text#hotel__link--text": {
     "title": "text icon menu hotel",
     "props": {
       "text": "Hoteles",
@@ -276,36 +277,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--hotel",
-        "text_menu_header--global"
+        "hotel__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--house": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--house": {
+    "title": "container categorie house",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--house",
-        "categorie__icon--global"
+        "menu__categories--house",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_house"
+      "link#categories__house--link"
     ]
   },
-  "link#link_house": {
+  "link#categories__house--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__house",
-      "rich-text#text_menu_header--house"
+      "icon#house__link--icon",
+      "rich-text#house__link--text"
     ]
   },
-  "icon#menu__house": {
+  "icon#house__link--icon": {
     "props": {
       "id": "house",
       "width": 20,
@@ -313,10 +314,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__house"
+      "blockclass": "house__link--icon"
     }
   },
-  "rich-text#text_menu_header--house": {
+  "rich-text#house__link--text": {
     "title": "text icon menu house",
     "props": {
       "text": "Casas",
@@ -324,36 +325,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--house",
-        "text_menu_header--global"
+        "house__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--nature": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--nature": {
+    "title": "container categorie nature",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--nature",
-        "categorie__icon--global"
+        "menu__categories--nature",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_nature"
+      "link#categories__nature--link"
     ]
   },
-  "link#link_nature": {
+  "link#categories__nature--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__nature",
-      "rich-text#text_menu_header--nature"
+      "icon#nature__link--icon",
+      "rich-text#nature__link--text"
     ]
   },
-  "icon#menu__nature": {
+  "icon#nature__link--icon": {
     "props": {
       "id": "nature",
       "width": 20,
@@ -361,10 +362,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__nature"
+      "blockclass": "nature__link--icon"
     }
   },
-  "rich-text#text_menu_header--nature": {
+  "rich-text#nature__link--text": {
     "title": "text icon menu nature",
     "props": {
       "text": "Naturales",
@@ -372,36 +373,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--nature",
-        "text_menu_header--global"
+        "nature__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--closet": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--closet": {
+    "title": "container categorie closet",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--closet",
-        "categorie__icon--global"
+        "menu__categories--closet",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_closet"
+      "link#categories__closet--link"
     ]
   },
-  "link#link_closet": {
+  "link#categories__closet--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__closet",
-      "rich-text#text_menu_header--closet"
+      "icon#closet__link--icon",
+      "rich-text#closet__link--text"
     ]
   },
-  "icon#menu__closet": {
+  "icon#closet__link--icon": {
     "props": {
       "id": "closet",
       "width": 20,
@@ -409,10 +410,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__closet"
+      "blockclass": "closet__link--icon"
     }
   },
-  "rich-text#text_menu_header--closet": {
+  "rich-text#closet__link--text": {
     "title": "text icon menu closet",
     "props": {
       "text": "Closet",
@@ -420,36 +421,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--closet",
-        "text_menu_header--global"
+        "closet__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--beach": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--beach": {
+    "title": "container categorie beach",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--beach",
-        "categorie__icon--global"
+        "menu__categories--beach",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_beach"
+      "link#categories__beach--link"
     ]
   },
-  "link#link_beach": {
+  "link#categories__beach--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__beach",
-      "rich-text#text_menu_header--beach"
+      "icon#beach__link--icon",
+      "rich-text#beach__link--text"
     ]
   },
-  "icon#menu__beach": {
+  "icon#beach__link--icon": {
     "props": {
       "id": "beach",
       "width": 20,
@@ -457,10 +458,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__beach"
+      "blockclass": "beach__link--icon"
     }
   },
-  "rich-text#text_menu_header--beach": {
+  "rich-text#beach__link--text": {
     "title": "text icon menu beach",
     "props": {
       "text": "Playas",
@@ -468,36 +469,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--beach",
-        "text_menu_header--global"
+        "beach__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--hike": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--hike": {
+    "title": "container categorie hike",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--hike",
-        "categorie__icon--global"
+        "menu__categories--hike",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_hike"
+      "link#categories__hike--link"
     ]
   },
-  "link#link_hike": {
+  "link#categories__hike--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__hike",
-      "rich-text#text_menu_header--hike"
+      "icon#hike__link--icon",
+      "rich-text#hike__link--text"
     ]
   },
-  "icon#menu__hike": {
+  "icon#hike__link--icon": {
     "props": {
       "id": "hike",
       "width": 20,
@@ -505,10 +506,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__hike"
+      "blockclass": "hike__link--icon"
     }
   },
-  "rich-text#text_menu_header--hike": {
+  "rich-text#hike__link--text": {
     "title": "text icon menu hike",
     "props": {
       "text": "Alpinismo",
@@ -516,36 +517,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--hike",
-        "text_menu_header--global"
+        "hike__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--delivery": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--delivery": {
+    "title": "container categorie delivery",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--delivery",
-        "categorie__icon--global"
+        "menu__categories--delivery",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_delivery"
+      "link#categories__delivery--link"
     ]
   },
-  "link#link_delivery": {
+  "link#categories__delivery--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__delivery",
-      "rich-text#text_menu_header--delivery"
+      "icon#delivery__link--icon",
+      "rich-text#delivery__link--text"
     ]
   },
-  "icon#menu__delivery": {
+  "icon#delivery__link--icon": {
     "props": {
       "id": "delivery",
       "width": 20,
@@ -553,10 +554,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__delivery"
+      "blockclass": "delivery__link--icon"
     }
   },
-  "rich-text#text_menu_header--delivery": {
+  "rich-text#delivery__link--text": {
     "title": "text icon menu delivery",
     "props": {
       "text": "Delivery",
@@ -564,36 +565,36 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--delivery",
-        "text_menu_header--global"
+        "delivery__link--text",
+        "categorie__link-text--global"
       ]
     }
   },
 
-  "flex-layout.col#categorie__icon--beer": {
-    "title": "container menu icond and text",
+  "flex-layout.col#menu__categories--beer": {
+    "title": "container categorie beer",
     "props": {
       "verticalAlign": "middle",
       "blockClass": [
-        "categorie__icon--beer",
-        "categorie__icon--global"
+        "menu__categories--beer",
+        "menu__categories--global"
       ]
     },
     "children": [
-      "link#link_beer"
+      "link#categories__beer--link"
     ]
   },
-  "link#link_beer": {
+  "link#categories__beer--link": {
     "props": {
       "href": "#",
-      "blockClass": "link__icon"
+      "blockClass": "categories__link--global"
     },
     "children": [
-      "icon#menu__beer",
-      "rich-text#text_menu_header--beer"
+      "icon#beer__link--icon",
+      "rich-text#beer__link--text"
     ]
   },
-  "icon#menu__beer": {
+  "icon#beer__link--icon": {
     "props": {
       "id": "beer",
       "width": 20,
@@ -601,10 +602,10 @@
       "size": 20,
       "viewBox": "0 0 20 20",
       "overflow": "visible",
-      "blockclass": "icon_menu__beer"
+      "blockclass": "beer__link--icon"
     }
   },
-  "rich-text#text_menu_header--beer": {
+  "rich-text#beer__link--text": {
     "title": "text icon menu beer",
     "props": {
       "text": "Cervezas",
@@ -612,8 +613,8 @@
       "textPosition": "LEFT",
       "font": "t-heading-10",
       "blockClass": [
-        "text_menu_header--beer",
-        "text_menu_header--global"
+        "beer__link--text",
+        "categorie__link-text--global"
       ]
     }
   }

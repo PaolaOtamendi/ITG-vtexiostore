@@ -1,46 +1,64 @@
 {
-  "sticky-layout#desktop__mega-menu": {
+  "sticky-layout#desktop__mega--menu": {
     "title": "Mega menu desktop",
     "children": [
-      "flex-layout.row#row__trigger--desktop",
-      "flex-layout.row#mega-menu"
-    ]
-  },
-  "flex-layout.row#row__trigger--desktop": {
-    "title": "Row mega menu desktop",
-    "children": [
-        "flex-layout.col#trigger-mega-menu"
-    ]
+      "flex-layout.row#desktop__mega-menu--trigger",
+      "flex-layout.row#desktop__mega--menu"
+    ],
+    "props": {
+      "blockClass": "desktop__mega--menu"
+    }
   },
 
-  "flex-layout.row#mega-menu": {
-    "title": "Row mega menu desktop",
+  "flex-layout.row#desktop__mega-menu--trigger": {
+    "title": "Contain desktop mega menu trigger",
     "children": [
-        "mega-menu#desktop"
+        "flex-layout.col#mega__menu--trigger"
     ]
   },
-  "mega-menu#desktop": {
+  "flex-layout.col#mega__menu--trigger": {
+    "title": "Col mega menu trigger",
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "mega__menu--trigger"
+    },
+    "children": ["mega-menu-trigger-btn"]
+  },
+  "mega-menu-trigger-btn": {
+    "title": "Mega menu trigger button desktop",
+    "props": {
+      "Drawer": "drawer",
+      "blockClass": "drawer__mega--menu"
+    },
+    "children": [
+      "icon#trigger__btn-icon"
+    ]
+  },
+  "icon#trigger__btn-icon": {
+    "props": {
+      "id": "hpa-hamburguer-menu",
+      /*"width": 18, //Eliminar para depurar codigo
+      "height": 12,
+      "size": 18,*/
+      "viewBox": "0 0 20 20",
+      "overflow": "visible",
+      "blockclass": "trigger__btn-icon"
+    }
+  },
+  
+  "flex-layout.row#desktop__mega--menu": {
+    "title": "Row mega menu desktop",
+    "children": [
+        "mega-menu#mega__menu--components"
+    ]
+  },
+  "mega-menu#mega__menu--components": {
     "title": "Components mega menu desktop",
     "props": {
       "openOnly": "horizontal",
       "blockClass": "components__mega--menu",
       "title": "All categories",
       "titleClass": "custom-title-class"
-    }
-  },
-  "flex-layout.col#trigger-mega-menu": {
-    "title": "Col mega menu desktop",
-    "props": {
-      "verticalAlign": "middle",
-      "blockClass": "trigger__mega--menu"
-    },
-    "children": ["mega-menu-trigger-btn"]
-  },
-  "mega-menu-trigger-btn": {
-    "title": "Trigger mega menu desktop",
-    "props": {
-      "Drawer": "drawer",
-      "blockClass": "drawer__mega--menu"
     }
   }
 }

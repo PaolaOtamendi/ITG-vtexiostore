@@ -1,16 +1,17 @@
 {
-    "overlay-trigger#header__overlay--mobile": {
+    "overlay-trigger#mobile__header--overlay": {
+        "title": "Contain mobile header overlay",
         "children": [
-            "icon#header__search--mobile",
-            "overlay-layout#header__overlayout"
+            "icon#mobile_header-overlay--icon",
+            "overlay-layout#mobile__header-overlay--layout"
         ],
         "props": {
-            "blockClass": "header__overlay--mobile"
+            "blockClass": "mobile__header--overlay"
         }
     },
 
-    "icon#header__search--mobile": {
-        "title": "icon searh header mobile",
+    "icon#mobile_header-overlay--icon": {
+        "title": "Mobile header overlay icon",
         "props": {
             "id": "search",
             "width": 20,
@@ -22,20 +23,22 @@
         }
     },
 
-    "overlay-layout#header__overlayout": {
+    "overlay-layout#mobile__header-overlay--layout": {
+    "title": "Contain mobile header overlay layout",
     "props": {
         "placement": "left",
-            "blockClass": "header__overlayout",
+            "blockClass": "mobile__header-overlay--layout",
             "transitionComponent": "fadeInLeft"
         },
     "children": [
-        "search-bar#header__search--mobile"
+        "search-bar#header__overlay-layout--searchbar"
     ]
     },
-    "search-bar#header__search--mobile": {
+    "search-bar#header__overlay-layout--searchbar": {
+        "title": "Search bar mobile overlay",
         "props": {
-            "placeholder": "Buscar productos...",
-            "blockClass": "header__search--mobile"
+            "placeholder": "Search products...",
+            "blockClass": "header__overlay-layout--searchbar"
         }
     }
 }

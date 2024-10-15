@@ -4,54 +4,103 @@
 }
 
 /*----------------------------- Header desktop section menu ---------------------------------------*/
-.flexRowContent--header__second--section {
-    display        : flex;
-    justify-content: center;
-    align-items    : center;
+/* Nuevas clases - fix-styles */
+.flexCol--mega__menu--trigger {
+    height     : 24px;
+    width      : 24px !important;
+    display    : flex;
+    align-items: center;
+    /*border     : 1px solid;*/
 }
 
-.flexColChild--drawer__header--desktop {
-    /*background-color: #e6ff46;*/
+.flexColChild--header__menu-sec1--logo {
     display        : flex;
     align-items    : center;
     justify-content: center;
 }
 
-.flexColChild--logo__header--desktop {
-    /*background-color: #9862cb;*/
+.flexCol--header__menu-sec1--logo :global(.vtex-store-components-3-x-logoImage) {
+    max-width: none;
+}
+
+.flexRowContent--desktop__header-menu--sec1 {
+    gap: 16px;
+}
+
+.flexRowContent--desktop__header-menu--sec2 {
+    gap: 10px;
+}
+
+.flexCol--header__menu-sec1--searchbar :global(.vtex-store-components-3-x-searchBarContainer) {
+    width : 280px;
+    height: 40px;
+}
+
+.flexRow--desktop__header-menu--sec1 {
+    padding-right: 58px;
+}
+
+.flexRow--desktop__header-menu--sec3 {
+    padding-right: 40px;
+}
+
+.flexRowContent--desktop__header-menu--sec2 :global(.vtex-store-icons-0-x-cartIcon--minicart_icon--header) {
+    width : 16.67px;
+    height: 16.67px;
+}
+
+.flexRowContent--desktop__header-menu--sec2 :global(.vtex-login-2-x-container) {
+    width          : 80px !important;
+    height         : 40px;
+    background     : #1d2734;
+    border-radius  : 40px;
+    border         : solid 1px #1D2734;
     display        : flex;
     align-items    : center;
     justify-content: center;
+    padding        : 10px;
+}
+
+.flexRowContent--desktop__header-menu--sec2 :global(.vtex-button__label) {
+    padding: 0% !important;
+}
+
+.flexRowContent--desktop__header-menu--sec2 :global(.vtex-minicart-2-x-minicartIconContainer) {
+    width : 20px;
+    height: 20px;
 }
 
 /*----------------------------- Header desktop section icons ---------------------------------------*/
-.flexRow--desktop__header-icons {
-    background-color: #fff;
+/* Nuevas clases - fix-styles */
+.flexRow--header__menu--categories {
+    width : 1136px;
+    height: 47px;
 }
 
-.flexRowContent--header__menu--categories {
-    /*background-color: #b042ff;*/
-    display        : flex;
-    justify-content: left;
-    align-items    : center;
-    width          : 1136px;
-    height         : auto;
-    min-height     : 47px;
-    left           : 72px;
-    position       : relative;
+.flexRowContent--header__menu--categories :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: fit-content !important;
 }
 
-.flexCol--categorie__icon--global {
-    /*background-color: aquamarine;*/
+.flexCol--menu__categories--global {
     display        : flex;
-    justify-content: center;
     align-items    : center;
-    width          : auto;
+    justify-content: flex-start;
     height         : 47px;
+    width          : 70px !important;
+    gap            : 4px;
+    /*border         : 1px solid;*/
 }
 
-/*----------------------------- MediaQueires ---------------------------------------*/
-@media (min-width: 360px) and (max-width: 639px) {
+.flexCol--menu__categories--food {
+    border-bottom: 3px solid #1D2734;
+}
+
+/*----------------------------- MediaQueires header section icons ---------------------------------------*/
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {}
+
+/* Eliminar no necesarias */
+/*@media (min-width: 360px) and (max-width: 639px) {
     .flexRowContent--header__menu--categories {
         display        : flex;
         justify-content: left;
@@ -62,10 +111,10 @@
         left           : 0px;
         position       : relative;
     }
-}
+}*/
 
 /*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1279px) {
+/*@media (min-width: 640px) and (max-width: 1279px) {
     .flexRowContent--header__menu--categories {
         display        : flex;
         justify-content: left;
@@ -76,53 +125,106 @@
         left           : 0px;
         position       : relative;
     }
-}
-
-/*---------- Desktop ------------*/
-@media (min-width: 1280px) {}
+}*/
 
 /*----------------------------- Header mobile section menu ---------------------------------------*/
-.flexRow--mobile__header-icons {
-    background-color: #fff;
-}
-
-.flexRow--header__first--section--mobile {
+/* Nuevas clases - fix-styles */
+.flexRow--mobile__header-menu--container {
     display: contents;
 }
 
-.flexRowContent--header__first--section--mobile {
-    display         : flex;
-    align-items     : center;
-    justify-content : space-between;
-    padding-left    : 10px;
-    padding-right   : 10px;
-    padding-top     : 10px;
-    background-color: #fff;
+.flexRowContent--mobile__header-menu--container {
+    display        : flex;
+    justify-content: space-between;
 }
 
-.flexRowContent--header__first--section--mobile :global(.vtex-minicart-2-x-minicartWrapperContainer--minicart_container) {
-    display: contents !important;
-}
-
-.flexRowContent--header__first--section--mobile :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+.flexRowContent--mobile__header-menu--container :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     width: auto !important;
 }
 
-.flexCol--logo__header--mobile {
+.flexCol--header_menu-container--sec1 {
+    flex-direction: row;
+    align-items   : center;
+    padding-left  : 16px;
+    gap           : 3px;
+}
+
+.flexColChild--header_menu-container--sec1 {
+    height: fit-content !important;
+}
+
+.flexRow--container__mega-menu--mobile {
+    margin-top   : 32px;
+    margin-bottom: 16px;
+}
+
+.flexColChild--header_menu-container-sec1--logo {
+    height: fit-content;
+}
+
+.flexRow--header_menu-container-sec1--logo {
     width          : auto;
     display        : flex;
     align-items    : center;
     justify-content: center;
+    margin-top     : 37px;
+    margin-bottom  : 17px;
+    height         : fit-content;
 }
 
-.flexCol--container__menu-and-logo {
-    flex-direction: row;
-    align-items   : center;
-    padding-left  : 16px;
-}
-
-.flexCol--container__search-minicart-login {
+.flexCol--header_menu-container--sec2 {
     flex-direction: row;
     align-items   : center;
     padding-right : 16px;
+    gap           : 8px;
+}
+
+.flexColChild--header_menu-container--sec2 {
+    height: fit-content !important;
+}
+
+.flexRow--header_menu-container-sec2--overlay {
+    margin-top   : 32px;
+    margin-bottom: 16px;
+}
+
+.flexRow--header_menu-container-sec2--minicart {
+    margin-top   : 32px;
+    margin-bottom: 16px;
+}
+
+.flexRow--header_menu-container-sec2--login {
+    margin-top   : 24px;
+    margin-bottom: 8px
+}
+
+/* validar clases de login con coach*/
+.flexRowContent--header_menu-container-sec2--login :global(.vtex-login-2-x-container) {
+    width          : 80px !important;
+    height         : 40px;
+    background     : #1d2734;
+    border-radius  : 40px;
+    border         : solid 1px #1D2734;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding        : 10px;
+}
+
+.flexRowContent--header_menu-container-sec2--login :global(.vtex-button__label) {
+    padding: 0% !important;
+}
+/* Hasta aqui*/
+
+.flexRowContent--header_menu-container-sec2--minicart :global(.vtex-minicart-2-x-minicartIconContainer) {
+    width : 24px;
+    height: 24px;
+}
+
+.flexRowContent--header_menu-container-sec2--overlay {
+    display        : flex;
+    align-items    : start;
+    justify-content: center;
+    width          : 24px;
+    height         : 24px;
 }

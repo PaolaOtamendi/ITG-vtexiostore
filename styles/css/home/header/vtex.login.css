@@ -1,5 +1,22 @@
-.container {
-    width          : 80px;
+/* Nuevas clases - fix-styles */
+.label {
+    display       : block;
+    font-family   : lexend, sans-serif;
+    font-size     : 14px;
+    font-weight   : 300;
+    text-align    : center;
+    color         : white;
+    text-transform: lowercase;
+    padding-left  : 0px;
+}
+
+.label::first-letter {
+    text-transform: capitalize;
+}
+
+/* Eliminar validar con coach antes de eliminar */
+/*.container {
+    width          : 80px !important;
     display        : flex;
     align-items    : center;
     justify-content: center;
@@ -7,21 +24,4 @@
     background     : #1d2734;
     border-radius  : 40px;
     border         : solid 1px #1D2734;
-}
-
-.label {
-    font-family    : Lexend, sans-serif;
-    font-size      : 14px;
-    align-items    : center;
-    display        : flex;
-    justify-content: center;
-    text-align     : center;
-    color          : white;
-    display        : block;
-    text-transform : lowercase;
-    padding-left   : 0px;
-}
-
-.label::first-letter {
-    text-transform: capitalize;
-}
+}*/
