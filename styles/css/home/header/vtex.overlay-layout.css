@@ -34,7 +34,3 @@
 .container--mobile__header-overlay--layout :global(.vtex-input__suffix) {
     padding: 0%;
 }
-
-/*.popper--mobile__header-overlay--layout {
-    padding-right: 16px;
-}*/

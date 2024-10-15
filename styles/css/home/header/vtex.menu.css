@@ -29,6 +29,7 @@
 
 .styledLinkContainer--menu-item_trends {
     margin-right: 13px;
+    /*border-bottom: 1px solid #1D2734;*/
 }
 
 .styledLinkContainer--menu-item_collections {
@@ -42,19 +43,3 @@
 .styledLinkContainer--menu-item_ciber-day {
     margin-right: 12px;
 }
-
-/* Eliminar conjunto con reestructuración codigo menu-website */
-/*.styledLink--header__pages--desktop {
-    font-size       : 12px !important;
-    font-family     : lexend, sans-serif !important;
-    font-weight     : 400 !important;
-    background-color: #F5F4F6;
-}*/
-
-/*.styledLinkContent--header__pages--desktop {
-    display           : -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow          : hidden;
-    white-space       : normal;
-}*/

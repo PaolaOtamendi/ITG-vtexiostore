@@ -8,9 +8,9 @@
 .flexCol--mega__menu--trigger {
     height     : 24px;
     width      : 24px !important;
-    border     : 1px solid;
     display    : flex;
     align-items: center;
+    /*border     : 1px solid;*/
 }
 
 .flexColChild--header__menu-sec1--logo {
@@ -71,33 +71,36 @@
 }
 
 /*----------------------------- Header desktop section icons ---------------------------------------*/
-.flexRow--desktop__header-icons {
-    background-color: #fff;
+/* Nuevas clases - fix-styles */
+.flexRow--header__menu--categories {
+    width : 1136px;
+    height: 47px;
 }
 
-.flexRowContent--header__menu--categories {
-    /*background-color: #b042ff;*/
-    display        : flex;
-    justify-content: left;
-    align-items    : center;
-    width          : 1136px;
-    height         : auto;
-    min-height     : 47px;
-    left           : 72px;
-    position       : relative;
+.flexRowContent--header__menu--categories :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: fit-content !important;
 }
 
-.flexCol--categorie__icon--global {
-    /*background-color: aquamarine;*/
+.flexCol--menu__categories--global {
     display        : flex;
-    justify-content: center;
     align-items    : center;
-    width          : auto;
+    justify-content: flex-start;
     height         : 47px;
+    width          : 70px !important;
+    gap            : 4px;
+    /*border         : 1px solid;*/
 }
 
-/*----------------------------- MediaQueires ---------------------------------------*/
-@media (min-width: 360px) and (max-width: 639px) {
+.flexCol--menu__categories--food {
+    border-bottom: 3px solid #1D2734;
+}
+
+/*----------------------------- MediaQueires header section icons ---------------------------------------*/
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {}
+
+/* Eliminar no necesarias */
+/*@media (min-width: 360px) and (max-width: 639px) {
     .flexRowContent--header__menu--categories {
         display        : flex;
         justify-content: left;
@@ -108,10 +111,10 @@
         left           : 0px;
         position       : relative;
     }
-}
+}*/
 
 /*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1279px) {
+/*@media (min-width: 640px) and (max-width: 1279px) {
     .flexRowContent--header__menu--categories {
         display        : flex;
         justify-content: left;
@@ -122,10 +125,7 @@
         left           : 0px;
         position       : relative;
     }
-}
-
-/*---------- Desktop ------------*/
-@media (min-width: 1280px) {}
+}*/
 
 /*----------------------------- Header mobile section menu ---------------------------------------*/
 /* Nuevas clases - fix-styles */
