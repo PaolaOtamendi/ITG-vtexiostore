@@ -2,66 +2,77 @@
   "flex-layout.row#global_home--slider": {
     "title": "Global home slider component",
     "children": [
-      "slider-layout#slider__container--home"
+      "slider-layout#global__home-slider--layout"
     ],
     "props": {
-      "fullWidth": false,
+      /*"fullWidth": false,*/
       "blockClass": "global_home--slider"
     }
   },
 
-  "slider-layout#slider__container--home": {
-    "title": "Global slider home",
+  //⛳ slider contenedor de todos los slides
+  "slider-layout#global__home-slider--layout": {
+    "title": "Global slider home contain all slides",
     "props": {
       "itemsPerPage": {
-        "desktop": 4,
-        "tablet": 3,
+        "desktop": 3,
+        "tablet": 2,
         "phone": 1
       },
+      /*"centerMode": {
+        "desktop": "disabled",
+        "tablet": "to-the-left",
+        "phone": "disabled"
+        
+      },
+      "centerModeSlidesGap": 10,*/
       "infinite": true,
-      "showNavigationArrows": "always",
+      "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "always",
-      "blockClass": "slider__container--home"
+      "fullWidth": false,
+      "blockClass": "global__home-slider--layout"
+      /*"customBreakpoints": {
+        "tabletHorizontal": {
+          "minWidth": 768,
+          "maxWidth": 1024,
+          "slidesPerPage": 3
+        }
+      }*/
     },
     "children": [
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider",
-      "flex-layout.col#global__infocard--slider"
+      "flex-layout.col#global_home-slider--infocard",
+      "flex-layout.col#global_home-slider--infocard",
+      "flex-layout.col#global_home-slider--infocard",
+      "flex-layout.col#global_home-slider--infocard",
+      "flex-layout.col#global_home-slider--infocard",
+      "flex-layout.col#global_home-slider--infocard",
+      "flex-layout.col#global_home-slider--infocard",
+      "flex-layout.col#global_home-slider--infocard",
+      "flex-layout.col#global_home-slider--infocard"
     ]
   },
 
-  "flex-layout.col#global__infocard--slider": {
+  //⛳ Contiene la estructura de la tarjeta
+  "flex-layout.col#global_home-slider--infocard": {
     "title": "Container global infocard slider",
     "children": [
-      "flex-layout.row#fisrt__row-infocard--container",
-      "flex-layout.row#second__row-infocard--container",
-      "flex-layout.row#third__row-infocard--container"
+      "flex-layout.row#infocard__container-firts--row",
+      "flex-layout.row#infocard__container-second--row",
+      "flex-layout.row#infocard__container-third--row"
     ],
     "props": {
-      "blockClass": "global__infocard--slider"
+      "blockClass": "global_home-slider--infocard"
     }
   },
 
-  "flex-layout.row#fisrt__row-infocard--container": {
+  //⛳ Primera fila de la tarjeta
+  "flex-layout.row#infocard__container-firts--row": {
     "title": "First row container image of infocard",
     "children": [
       "image#first__row--image"
     ],
     "props": {
-      "blockClass": "fisrt__row-infocard--container"
+      "blockClass": "infocard__container-firts--row"
     }
   },
   "image#first__row--image": {
@@ -72,56 +83,63 @@
     }
   },
 
-  "flex-layout.row#second__row-infocard--container": {
+  //⛳ Segunda fila de la tarjeta
+  "flex-layout.row#infocard__container-second--row": {
     "title": "Container text of products & icon bestseller",
     "children": [
-      "flex-layout.col#second__row-infocard--text",
-      "flex-layout.col#second__row--bestseller"
+      "flex-layout.col#second__row--text",
+      "flex-layout.col#second__row--image"
     ],
     "props": {
+      /*"colSizing": "auto",*/
       "preserveLayoutOnMobile": true,
-      "blockClass": "second__row-infocard--container"
+      "blockClass": "infocard__container-second--row"
     }
   },
-  "flex-layout.col#second__row-infocard--text": {
-    "title": "Container title & text of product",
+  "flex-layout.col#second__row--text": {
+    "title": "Container title and description to product",
     "children": [
-      "rich-text#second__row-title--infocard"
+      "rich-text#second__row-text--title"
     ],
     "props": {
       "width": "80%",
-      "blockClass": "second__row-infocard--text"
+      "blockClass": "second__row--text"
     }
   },
-  "rich-text#second__row-title--infocard": {
-    "title": "Richtext description to product",
+  "rich-text#second__row-text--title": {
+    "title": "Text title and description product",
     "props": {
         "text": "# Heading\n Builder platform is made by, buildership platform is made by...",
-        "blockClass": "second__row-title--infocard"
+        "blockClass": "second__row-text--title"
     }
   },
-  "flex-layout.col#second__row--bestseller": {
+  "flex-layout.col#second__row--image": {
     "title": "Container img ecommer bestseller",
     "children": [
-        "image#image__best-seller"
+        "image#second__row-image--bestseller"
     ],
     "props": {
-      "width": "20%",
-      "blockClass": "second__row--bestseller"
+      /*"width": "20%",*/
+      "blockClass": "second__row--image"
   }
   },
-  "image#image__best-seller": {
+  "image#second__row-image--bestseller": {
+    "title": "Image inforcard bestseller",
     "props": {
     "src": "/arquivos/bestseller.png",
-    "blockClass": "image__best-seller"
+    "blockClass": "second__row-image--bestseller"
     }
   },
 
-  "flex-layout.row#third__row-infocard--container": {
+  //⛳ Tercera fila de la tarjeta
+  "flex-layout.row#infocard__container-third--row": {
     "title": "Container button to infocard",
     "children": [
         "rich-text#third__row--button"
-    ]
+    ],
+    "props": {
+      "blockClass": "infocard__container-third--row"
+    }
   },
   "rich-text#third__row--button": {
     "title": "Button price to product",

@@ -1,8 +1,8 @@
 {
-    "footer-layout.mobile": {
+    /*"footer-layout.mobile": {
         "title": "Mobile footer",
       "children": [
         "flex-layout.row#footer-mobile"
       ]
-    }
+    }*/ //mismo cado de desktop
 }

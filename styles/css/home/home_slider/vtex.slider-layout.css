@@ -1,12 +1,152 @@
 /*----------------------------- Global slider products ------------------------------------------------*/
-.paginationDotsContainer--slider__container--home {
+/* Nuevas clases - fix-styles 🧩*/
+.sliderLayoutContainer--global__home-slider--layout {
+    display        : flex;
+    flex-wrap      : wrap;
+    justify-content: center;
+    flex-direction : column;
+    padding        : 0% !important;
+    min-width      : 328px !important;
+    height         : auto;
+    gap            : 1px;
+    border         : 1px solid purple;
+}
+
+.caretIcon--global__home-slider--layout {
+    width: 20px !important;
+    height: 14px !important;
+}
+
+.sliderLeftArrow--global__home-slider--layout {
+    padding: 0%;
+    margin: 0%;
+}
+
+.sliderRightArrow--global__home-slider--layout {
+    padding: 0%;
+    margin: 0%;
+}
+
+.sliderTrackContainer--global__home-slider--layout {
+    width     : 100%;
+    min-width : 328px;
+    max-width : 1092px;
+    height    : auto;
+    max-height: 340px;
+    border    : 2px solid green;
+}
+
+.paginationDotsContainer--global__home-slider--layout {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    height         : 50px;
+    border         : 1px solid orangered;
+    position       : relative;
+}
+
+.sliderTrack--global__home-slider--layout {
+    /*gap: 8px;*/
+    height: 100%;
+}
+
+/* Dots */
+.paginationDot--global__home-slider--layout {
+    border-radius   : 0;
+    width           : 20px !important;
+    height          : 1.41px !important;
+    margin          : 0 2px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    background-color: transparent;
+    position        : relative;
+}
+
+.paginationDot--isActive::before {
+    content         : "";
+    position        : absolute;
+    right           : -8px;
+    width           : 16px;
+    height          : 16px;
+    background-color: hsla(214, 28%, 16%, 0.4);
+    background-color: #1D2734;
+    border-radius   : 50%;
+}
+
+.paginationDot::after {
+    content         : "";
+    width           : 20px;
+    height          : 1.41px;
+    font-size       : 0;
+    background-color: hsla(214, 28%, 16%, 0.4);
+    position        : absolute;
+}
+
+.paginationDot--isActive::after {
+    background-color: #1D2734;
+}
+
+
+/*----------------------------- MediaQueires ---------------------------------------*/
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    .sliderLayoutContainer--global__home-slider--layout {
+        /*padding-left: 33px !important;
+        padding-right: 33px !important;*/
+    }
+}
+
+
+/*.paginationDot--isActive::before {
+    content         : "";
+    position        : absolute;
+    right           : -8px;
+    width           : 16px;
+    height          : 16px;
+    background-color: #1d2734;
+    border-radius   : 50%;
+}
+
+.paginationDot::after {
+    width           : 44px;
+    height          : 2px;
+    content         : "";
+    font-size       : 0;
+    background-color: #1d2734;
+    position        : absolute;
+}*/
+
+/*.sliderLayoutContainer--global__home-slider--layout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: auto;
+    min-width: 328px;
+    height: auto;
+    gap: 1px;
+    border: 1px solid;
+    justify-content: center;
+}*/
+
+/*.paginationDotsContainer--global__home-slider--layout {
+    width: 231px;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    position: relative;
+}*/
+
+
+/*.paginationDotsContainer--global__home-slider--layout {
     display    : flex;
     align-items: center;
     height     : 50.89px;
     width      : 100%;
-}
+}*/
 
-.paginationDot--slider__container--home {
+/*.paginationDot--global__home-slider--layout {
     border-radius   : 0;
     background-color: transparent;
     position        : relative;
@@ -14,9 +154,9 @@
     align-items     : center;
     justify-content : center;
     margin          : 0 2px;
-}
+}*/
 
-.paginationDot--isActive::before {
+/*.paginationDot--isActive::before {
     content         : "";
     position        : absolute;
     right           : -8px;
@@ -52,13 +192,13 @@
     font-size       : 0;
     background-color: #1d273466;
     position        : absolute;
-}
+}*/
 
-.sliderLayoutContainer--slider__container--home {
+/*.sliderLayoutContainer--global__home-slider--layout {
     padding-bottom: 60px;
-}
+}*/
 
-.caretIcon--slider__container--home {
+/*.caretIcon--global__home-slider--layout {
     width        : 20px !important;
     height       : 14px !important;
     border-left  : 10px solid transparent;
@@ -67,9 +207,9 @@
     margin-bottom: 94px;
     overflow     : visible !important;
     fill         : none;
-}
+}*/
 
-.sliderLeftArrow {
+/*.sliderLeftArrow {
     left     : -60px;
     top      : 50%;
     transform: translateY(-50%);
@@ -79,45 +219,44 @@
     right    : -60px;
     top      : 50%;
     transform: translateY(-50%);
-}
+}*/
 
-/*----------------------------- MediaQueires ---------------------------------------*/
-@media (min-width: 320px) and (max-width: 1279px) {
-    .sliderRightArrow--slider__container--home {
+/*@media (min-width: 320px) and (max-width: 1279px) {
+    .sliderRightArrow--global__home-slider--layout {
         display: none;
     }
 
-    .sliderLeftArrow--slider__container--home {
+    .sliderLeftArrow--global__home-slider--layout {
         display: none;
     }
-}
+}*/
 
 /*---------- Phone ------------*/
-@media (min-width: 320px) and (max-width: 639px) {
-    .paginationDot--slider__container--home {
+/*@media (min-width: 320px) and (max-width: 639px) {
+    .paginationDot--global__home-slider--layout {
         width: 12px !important;
     }
 
     .paginationDot::after {
         width: 12px !important;
     }
-}
+}*/
 
 /*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1279px) {
-    .paginationDot--slider__container--home {
+/*@media (min-width: 640px) and (max-width: 1279px) {
+    .paginationDot--global__home-slider--layout {
         width: 15px !important;
     }
 
     .paginationDot::after {
         width: 15px !important;
     }
-}
+}*/
 
 /*---------- Desktop ------------*/
-@media (min-width: 1280px) {
-    .paginationDot--slider__container--home {
+/*@media (min-width: 1280px) {
+    .paginationDot--global__home-slider--layout {
         width : 44px !important;
         height: 40px !important;
     }
-}
+}*/
