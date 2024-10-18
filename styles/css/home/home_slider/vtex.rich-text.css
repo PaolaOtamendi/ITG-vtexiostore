@@ -2,39 +2,38 @@
 /* Nuevas clases - fix-styles 🧩*/
 .paragraph--title__slider--global {
     /*Title inicial de slider*/
+    margin     : 0%;
     font-family: lexend, sans-serif;
     font-weight: 500;
     font-size  : 16px;
     line-height: 16.8px;
-    color      : #1D2734;
     text-align : left;
-    margin     : 0%;
+    color      : #1D2734;
 }
 
 .heading--second__row-text--title {
-    margin          : 0%;
-    font-family     : lexend, sans-serif;
-    font-weight     : 600;
-    font-size       : 16px;
-    line-height     : 18.59px;
-    color           : #1D2734;
-    /*padding-bottom: 7px;*/
-    margin-left     : 10px;
-    margin-bottom   : 7px;
+    margin            : 0%;
+    margin-left       : 10px;
+    margin-bottom     : 7px;
+    font-family       : lexend, sans-serif;
+    font-weight       : 600;
+    font-size         : 16px;
+    line-height       : 18.59px;
+    color             : #1D2734;
     /*border          : 1px solid;*/
 }
 
 .paragraph--second__row-text--title {
-    margin          : 0%;
-    font-family     : lexend, sans-serif;
-    font-weight     : 300;
-    font-size       : 10px;
-    line-height     : 10.84px;
-    color           : #1D2734;
+    margin            : 0%;
+    margin-left       : 10px;
+    margin-bottom     : 10px;
+    font-family       : lexend, sans-serif;
+    font-weight       : 300;
+    font-size         : 10px;
+    line-height       : 10.84px;
+    color             : #1D2734;
     /*border          : 1px solid;*/
-    /*padding-bottom: 10px;*/
-    margin-left     : 10px;
-    margin-bottom   : 10px;
+    /*padding-bottom  : 10px;*/
 }
 
 .container--third__row--button {
@@ -48,10 +47,10 @@
     justify-content : center;
     width           : 100px;
     height          : 32px;
-    border-radius   : 40px;
-    border          : 0.65px solid #1D2734;
     padding         : 6.45px;
     gap             : 6.45px;
+    border-radius   : 40px;
+    border          : 0.65px solid #1D2734;
     background-color: #1D2734;
 }
 
@@ -60,16 +59,16 @@
 }
 
 .link--third__row--button {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    gap            : 6px;
     font-family    : lexend, sans-serif;
     font-weight    : 500;
     font-size      : 12px;
     line-height    : 14.63px;
     color          : #fff;
     text-decoration: none;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    gap            : 6px;
 }
 
 .link--third__row--button::after {
@@ -83,24 +82,20 @@
     padding-top    : 5px;*/
 }
 
-/*.wrapper--title__slider--global {
-    margin-top: 20px !important;
-}*/
-
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) {
     .heading--second__row-text--title {
-        line-height  : 24.88px;
         margin-left  : 13px;
         margin-bottom: 10px;
+        line-height  : 24.88px;
     }
 
     .paragraph--second__row-text--title {
+        margin-left  : 13px;
+        margin-bottom: 13px;
         font-weight  : 300;
         font-size    : 12px;
         line-height  : 14.52px;
-        margin-left  : 13px;
-        margin-bottom: 13px;
     }
 
     .wrapper--third__row--button {
@@ -112,16 +107,17 @@
     }
 
     .link--third__row--button {
+        gap        : 8px;
         font-weight: 400;
         line-height: 15px;
-        gap        : 8px;
     }
 
     .link--third__row--button::after {
-        background-size: 17.28px !important;
         padding-top    : 3px;
+        background-size: 17.28px !important;
     }
 }
+
 /* hasta aqui ⛳*/
 
 /*.heading--second__row-text--title {

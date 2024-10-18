@@ -16,16 +16,16 @@
     "props": {
       "itemsPerPage": {
         "desktop": 3,
-        "tablet": 2,
+        "tablet": 3,
         "phone": 1
       },
       /*"centerMode": {
-        "desktop": "disabled",
+        "desktop": "to-the-left",
         "tablet": "to-the-left",
-        "phone": "disabled"
+        "phone": "to-the-left"
         
       },
-      "centerModeSlidesGap": 10,*/
+      "centerModeSlidesGap": 24,*/
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "always",

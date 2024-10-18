@@ -5,9 +5,9 @@
     flex-wrap      : wrap;
     justify-content: center;
     flex-direction : column;
-    padding        : 0% !important;
     min-width      : 328px !important;
     height         : auto;
+    padding        : 0% !important;
     gap            : 1px;
     border         : 1px solid purple;
 }
@@ -40,9 +40,9 @@
     display        : flex;
     align-items    : center;
     justify-content: center;
+    position       : relative;
     height         : 50px;
     border         : 1px solid orangered;
-    position       : relative;
 }
 
 .sliderTrack--global__home-slider--layout {
@@ -52,15 +52,15 @@
 
 /* Dots */
 .paginationDot--global__home-slider--layout {
-    border-radius   : 0;
-    width           : 20px !important;
-    height          : 1.41px !important;
-    margin          : 0 2px;
     display         : flex;
     align-items     : center;
     justify-content : center;
-    background-color: transparent;
     position        : relative;
+    width           : 20px !important;
+    height          : 1.41px !important;
+    margin          : 0 2px;
+    border-radius   : 0;
+    background-color: transparent;
 }
 
 .paginationDot--isActive::before {
@@ -87,14 +87,49 @@
     background-color: #1D2734;
 }
 
+/* arrows */
+.sliderLeftArrow--global__home-slider--layout {
+    transform: translateX(-10px);
+}
+
+.sliderRightArrow--global__home-slider--layout {
+    transform: translateX(10px);
+}
+
+/*.slideChildrenContainer--global__home-slider--layout {
+    width: 242px;
+}*/
+
+/*.slide--global__home-slider--layout {
+    justify-content: center;
+}
+
+.slideChildrenContainer--global__home-slider--layout {
+    width: 242px;
+}*/
+
+/* Pruebas con slides sin tamaño validar */
+.slideChildrenContainer--global__home-slider--layout {
+    width: auto;
+}
+
+.slide--global__home-slider--layout {
+    justify-content: center;
+}
+
 
 /*----------------------------- MediaQueires ---------------------------------------*/
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) {
     .sliderLayoutContainer--global__home-slider--layout {
-        /*padding-left: 33px !important;
-        padding-right: 33px !important;*/
+        width: 1092px !important;
+        /*width: 1125px !important;*/
     }
+
+    /*.slideChildrenContainer--global__home-slider--layout {
+        width: 100%;
+    }*/
+
 }
 
 
