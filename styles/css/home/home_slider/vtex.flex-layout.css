@@ -1,37 +1,24 @@
-/* Nuevas clases - fix-styles 🧩*/
+/* Nuevas clases - fix-styles */
 .flexRow--container__title--slider {
     margin-top   : 24px;
     margin-left  : 16px;
     margin-bottom: 16px;
 }
 
-/* Slider clases */
-.flexRow--global_home--slider {
-    padding-left : 16px;
-    padding-right: 16px;
-}
-
+/* infocards */
 .flexCol--global_home-slider--infocard {
-    width           : 100%;
-    /*min-width       : 242px;
-    max-width       : 324px;*/
-    height          : 100%;
-    margin-left     : 4px;
-    margin-right    : 4px;
-    border-radius   : 8px;
-    background-color: #fff;
-    border        : 2px solid fuchsia;
+    width             : 100%;
+    height            : 100%;
+    margin-left       : 4px;
+    margin-right      : 4px;
+    border-radius     : 8px;
+    background-color  : #fff;
+    /*border            : 2px solid fuchsia;*/
 }
-
-/*.flexColChild--global_home-slider--infocard {
-    padding-top: 10px;
-    padding-left: 10px;
-    border: 1px solid #31d62c;
-}*/
 
 .flexRow--infocard__container-second--row {
     margin-top: 10px;
-    border  : 1px solid;
+    /*border    : 1px solid;*/
 }
 
 .flexCol--second__row--image {
@@ -47,13 +34,11 @@
     margin-bottom: 10px;
 }
 
-/* Validad prueba con slides sin tamaño*/
 .flexRow--infocard__container-firts--row :global(.vtex-store-components-3-x-imageElement) {
     width: 100%;
 }
 
 /*----------------------------- MediaQueires ---------------------------------------*/
-/* Nuevas clases - fix-styles 🧩*/
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) {
     .flexRow--container__title--slider {
@@ -61,13 +46,7 @@
         margin-left: 72px;
     }
 
-    .flexRow--global_home--slider {
-        padding-left : 94px;
-        padding-right: 94px;
-    }
-
     .flexCol--global_home-slider--infocard {
-        /*width: 324px;*/
         margin-left  : 12px;
         margin-right : 12px;
         border-radius: 12px;
@@ -91,63 +70,3 @@
         justify-content: center;
     }
 }
-
-/*---------- Desktop ------------*/
-/*@media (min-width: 1280px) {
-    .flexCol--global_home-slider--infocard {
-        width: 324px;
-        border-radius: 12px;
-    }
-}*/
-
-
-
-/*.flexCol--global_home-slider--infocard {
-    background-color: #fff;
-    width           : 324px;
-    height          : 336.46px;
-    margin          : 10px;
-    border-radius   : 12px 12px 0px 0px;
-}*/
-
-/*.flexRowContent--global_home--slider {
-    display      : flex;
-    padding-left : 80px;
-    padding-right: 80px;
-}*/
-
-/*----------------------------- MediaQueires ---------------------------------------*/
-@media (min-width: 320px) and (max-width: 1279px) {
-    /*.flexCol--global_home-slider--infocard {
-        height: 95%;
-        margin: 10px;
-        flex  : 0 1 auto;
-    }*/
-
-    /*.flexRowContent--global_home--slider {
-        padding-left : 0 !important;
-        padding-right: 0 !important;
-    }*/
-
-    /*.flexRowContent--infocard__container-second--row {
-        margin-top: 13.80px;
-    }
-
-    .flexCol--second__row--image {
-        max-width: 85% !important;
-    }
-
-    .flexColChild--second__row--image {
-        max-width: 85% !important;
-    }*/
-}
-
-/*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1279px) {
-    /*.flexCol--global_home-slider--infocard {
-        width: 95%;
-    }*/
-}
-
-/*---------- Desktop ------------*/
-/*@media (min-width: 1280px) {}*/
