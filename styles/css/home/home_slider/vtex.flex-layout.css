@@ -1,56 +1,72 @@
-.flexCol--global__infocard--slider {
-    background-color: #fff;
-    width           : 324px;
-    height          : 336.46px;
-    margin          : 10px;
-    border-radius   : 12px 12px 0px 0px;
+/* Nuevas clases - fix-styles */
+.flexRow--container__title--slider {
+    margin-top   : 24px;
+    margin-left  : 16px;
+    margin-bottom: 16px;
 }
 
-.flexRowContent--global_home--slider {
-    display      : flex;
-    padding-left : 80px;
-    padding-right: 80px;
+/* infocards */
+.flexCol--global_home-slider--infocard {
+    width             : 100%;
+    height            : 100%;
+    margin-left       : 4px;
+    margin-right      : 4px;
+    border-radius     : 8px;
+    background-color  : #fff;
+    /*border            : 2px solid fuchsia;*/
 }
 
-.flexColChild--second__row--bestseller {
-    height         : 100%;
-    display        : flex;
-    align-items    : start;
-    justify-content: center;
+.flexRow--infocard__container-second--row {
+    margin-top: 10px;
+    /*border    : 1px solid;*/
+}
+
+.flexCol--second__row--image {
+    align-items: center;
+}
+
+.flexCol--second__row--image :global(.vtex-store-components-3-x-imageElement) {
+    width : 36px !important;
+    height: 36px !important;
+}
+
+.flexRow--infocard__container-third--row {
+    margin-bottom: 10px;
+}
+
+.flexRow--infocard__container-firts--row :global(.vtex-store-components-3-x-imageElement) {
+    width: 100%;
 }
 
 /*----------------------------- MediaQueires ---------------------------------------*/
-@media (min-width: 320px) and (max-width: 1279px) {
-    .flexCol--global__infocard--slider {
-        height: 95%;
-        margin: 10px;
-        flex  : 0 1 auto;
-    }
-
-    .flexRowContent--global_home--slider {
-        padding-left : 0 !important;
-        padding-right: 0 !important;
-    }
-
-    .flexRowContent--second__row-infocard--container {
-        margin-top: 13.80px;
-    }
-
-    .flexCol--second__row--bestseller {
-        max-width: 85% !important;
-    }
-
-    .flexColChild--second__row--bestseller {
-        max-width: 85% !important;
-    }
-}
-
-/*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1279px) {
-    .flexCol--global__infocard--slider {
-        width: 95%;
-    }
-}
-
 /*---------- Desktop ------------*/
-@media (min-width: 1280px) {}
+@media (min-width: 1025px) {
+    .flexRow--container__title--slider {
+        margin-top : 40px;
+        margin-left: 72px;
+    }
+
+    .flexCol--global_home-slider--infocard {
+        margin-left  : 12px;
+        margin-right : 12px;
+        border-radius: 12px;
+    }
+
+    /* info cards */
+    .flexRow--infocard__container-second--row {
+        margin-top: 13px;
+    }
+
+    .flexRow--infocard__container-third--row {
+        margin-bottom: 13px;
+    }
+
+    .flexCol--second__row--image :global(.vtex-store-components-3-x-imageElement) {
+        width : 48px !important;
+        height: 48px !important;
+    }
+
+    .flexRowContent--global_home--slider :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+        justify-content: center;
+    }
+}

@@ -1,12 +1,12 @@
 {
   "flex-layout.row#one__title--slider": {
     "title": "Row container title one to slider",
-    "children": ["rich-text#title__section-one--slider"],
+    "children": ["rich-text#one__title-slider--text"],
     "props": {
       "blockClass": "container__title--slider"
     }
   },
-  "rich-text#title__section-one--slider": {
+  "rich-text#one__title-slider--text": {
     "title": "Title to global slider",
     "props": {
       "text": "An amazing product.",
@@ -19,9 +19,12 @@
 
   "flex-layout.row#two__title--slider": {
     "title": "Row container title two to slider",
-    "children": ["rich-text#title__section-two--slider"]
+    "children": ["rich-text#two__title-slider--text"],
+    "props": {
+      "blockClass": "container__title--slider"
+    }
   },
-  "rich-text#title__section-two--slider": {
+  "rich-text#two__title-slider--text": {
     "title": "Title section two slider",
     "props": {
       "text": "An amazing product.",
@@ -34,9 +37,12 @@
 
   "flex-layout.row#three__title--slider": {
     "title": "Row container title three to slider",
-    "children": ["rich-text#title__section-three--slider"]
+    "children": ["rich-text#three__title-slider--text"],
+    "props": {
+      "blockClass": "container__title--slider"
+    }
   },
-  "rich-text#title__section-three--slider": {
+  "rich-text#three__title-slider--text": {
     "title": "Title to global slider",
     "props": {
       "text": "An amazing product.",
@@ -49,9 +55,12 @@
 
   "flex-layout.row#four__title--slider": {
     "title": "Row container title three to slider",
-    "children": ["rich-text#title__section-four--slider"]
+    "children": ["rich-text#four__title-slider--text"],
+    "props": {
+      "blockClass": "container__title--slider"
+    }
   },
-  "rich-text#title__section-four--slider": {
+  "rich-text#four__title-slider--text": {
     "title": "Title to global slider",
     "props": {
       "text": "An amazing product.",

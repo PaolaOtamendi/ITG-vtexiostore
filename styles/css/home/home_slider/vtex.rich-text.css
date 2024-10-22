@@ -1,135 +1,125 @@
 /*----------------------------- Global text slider´s products ------------------------------------------------*/
+/* Nuevas clases - fix-styles */
 .paragraph--title__slider--global {
-    font-family  : 'Lexend-Bold', sans-serif;
-    font-weight  : 500;
-    font-size    : 16px;
-    line-height  : 16.8px;
-    color        : #1D2734;
-    width        : 165px;
-    height       : 17px;
-    text-align   : left;
-    margin-bottom: 20px !important;
-    margin-top   : 20px !important;
-    margin-left  : 72px;
-    top          : 630px;
-}
-
-.wrapper--title__slider--global {
-    margin-top: 20px !important;
-}
-
-.heading--second__row-title--infocard {
-    width      : 234.14px;
-    text-align : left;
-    font-family: Lexend, sans-serif;
-    font-weight: 600;
+    margin     : 0%;
+    font-family: lexend, sans-serif;
+    font-weight: 500;
     font-size  : 16px;
+    line-height: 16.8px;
+    text-align : left;
     color      : #1D2734;
-    line-height: 24.88px;
-    padding    : 0px 0px 0px 13.82px !important;
 }
 
-.paragraph--second__row-title--infocard {
-    width        : 185.21px;
-    height       : 11px;
-    padding      : 0px 0px 0px 10.33px;
-    white-space  : nowrap;
-    overflow     : hidden;
-    text-overflow: ellipsis;
-    margin-top   : 0px;
-    height       : auto;
-    font-size    : 12px;
-    font-weight  : 300;
-    line-height  : 14.52px;
-    padding      : 0px 0px 0px 13.82px !important;
+.heading--second__row-text--title {
+    margin       : 0%;
+    margin-left  : 10px;
+    margin-bottom: 7px;
+    font-family  : lexend, sans-serif;
+    font-weight  : 600;
+    font-size    : 16px;
+    line-height  : 18.59px;
+    color        : #1D2734;
+    /*border       : 1px solid;*/
+}
+
+.paragraph--second__row-text--title {
+    display           : -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow          : hidden;
+    text-overflow     : ellipsis;
+    margin            : 0%;
+    margin-left       : 10px;
+    margin-bottom     : 10px;
+    font-family       : lexend, sans-serif;
+    font-weight       : 300;
+    font-size         : 10px;
+    line-height       : 10.84px;
+    color             : #1D2734;
+    /*border            : 1px solid;*/
 }
 
 .container--third__row--button {
-    display        : flex;
     align-items    : center;
     justify-content: center;
-    width          : 100%;
-    height         : 32px;
 }
 
 .wrapper--third__row--button {
-    display           : flex;
-    align-items       : center;
-    justify-content   : center;
-    height            : 32px;
-    width             : auto;
-    border-radius     : 40px;
-    border            : solid 0.86px;
-    padding           : 8px;
-    gap               : 8px;
-    background-color  : #1D2734;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    width           : 100px;
+    height          : 32px;
+    padding         : 6.45px;
+    gap             : 6.45px;
+    border-radius   : 40px;
+    border          : 0.65px solid #1D2734;
+    background-color: #1D2734;
+}
+
+.paragraph--third__row--button {
+    margin: 0%;
 }
 
 .link--third__row--button {
-    font-family    : Lexend, sans-serif;
-    font-weight    : 400;
-    font-size      : 12px;
-    line-height    : 15px;
-    color          : #fff;
-    text-decoration: none;
     display        : flex;
     align-items    : center;
     justify-content: center;
+    gap            : 6px;
+    font-family    : lexend, sans-serif;
+    font-weight    : 500;
+    font-size      : 12px;
+    line-height    : 14.63px;
+    color          : #fff;
+    text-decoration: none;
 }
 
 .link--third__row--button::after {
-    content     : url("/arquivos/nav-arrow-right.svg");
-    padding-left: 5px;
-    padding-top : 5px;
-}
-
-.container--second__row-title--infocard {
-    display      : flex;
-    align-items  : center;
-    height       : auto;
-}
-
-/*----------------------------- MediaQueires ---------------------------------------*/
-/*---------- Tablet ------------*/
-@media (min-width: 320px) and (max-width: 1279px) {
-    .paragraph--title__slider--global {
-        margin-left: 15px !important;
-    }
-
-    .heading--second__row-title--infocard {
-        margin: 0px 0px 10.33px 0px;
-    }
+    content        : url("/arquivos/nav-arrow-right.svg");
+    background-size: 12.91px !important;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    padding-top    : 2px;
 }
 
 /*---------- Desktop ------------*/
-@media (min-width: 1280px) {
-    .paragraph--second__row-title--infocard {
-        width        : 234.14px;
-        height       : 30px;
-        text-align   : left;
-        font-family  : Lexend, sans-serif;
-        font-size    : 12px;
-        font-weight  : 300;
-        line-height  : 14.52px;
-        padding      : 0px 0px 0px 13.82px !important;
-        white-space  : wrap;
-        overflow     : none;
-        text-overflow: none;
-        margin-top   : 0px;
-        height       : auto;
+@media (min-width: 1025px) {
+    .heading--second__row-text--title {
+        margin-left  : 13px;
+        margin-bottom: 10px;
+        line-height  : 24.88px;
     }
 
-    .container--third__row--button {
-        height       : auto;
-        margin-bottom: 13.82px;
+    .paragraph--second__row-text--title {
+        display           : -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow          : hidden;
+        text-overflow     : ellipsis;
+        margin-left       : 13px;
+        margin-bottom     : 13px;
+        font-weight       : 300;
+        font-size         : 12px;
+        line-height       : 14.52px;
     }
 
     .wrapper--third__row--button {
-        width : 134px;
-        height: 43px;
+        width  : 134px;
+        height : 43px;
+        border : 0.86px solid #1D2734;
+        padding: 8px;
+        gap    : 8px;
     }
 
-    .container--second__row-title--infocard {
-        height: 79.19px;
+    .link--third__row--button {
+        gap        : 8px;
+        font-weight: 400;
+        line-height: 15px;
+    }
+
+    .link--third__row--button::after {
+        padding-top    : 3px;
+        background-size: 17.28px !important;
     }
 }
