@@ -1,13 +1,21 @@
+/* Nuevas clases - fix-styles 🧩*/
 .productHighlightWrapper--shelf__free-shipping-wrapper {
-    width          : 94px;
-    height         : 17px;
-    font-family    : Lexend, sans-serif;
-    font-size      : 14px;
-    font-weight    : 400;
-    line-height    : 16.8px;
-    color          : #FA2080;
-    margin-bottom  : 10px;
     display        : flex;
     align-items    : center;
     justify-content: space-around;
+    width          : 94px;
+    /* width: 79px; */
+    height         : 17px;
+    /* gap: 3px; */
+    font-family    : lexend, sans-serif;
+    font-size      : 12px;
+    font-weight    : 400;
+    line-height    : 12.76px;
+    color          : #FA2080;
+    /* margin-bottom  : 10px; */
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    
 }

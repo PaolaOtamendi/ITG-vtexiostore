@@ -20,18 +20,12 @@
     padding-bottom: 50px;
 }
 
-.flexRow--global__shelf--products {
+.flexRow--global__home-shelf-slider--one {
     position: relative;
     top     : 50px;
 }
 
-.flexRowContent--global__shelf--products {
-    display        : flex;
-    align-items    : center;
-    justify-items  : center;
-    justify-content: center;
-    height         : 378px;
-}
+
 
 .flexRow--product__summary_1 {
     display        : flex;
@@ -49,23 +43,16 @@
     justify-content: space-between;
 }
 
-.stretchChildrenWidth {
+/*.stretchChildrenWidth {
     justify-content: right;
-}
+}*/
 
-.flexRowContent--container_price_iconfavorite {
-    display        : flex;
-    align-items    : center;
-    justify-content: space-around;
-    height         : 32px;
-}
-
-.flexRow--global__shelf--products {
+.flexRow--global__home-shelf-slider--one {
     position: relative;
     top     : 0px
 }
 
-.flexRow--container__button--buy :global(.vtex-button) {
+.flexRow--shelf__product-summary-add-to-cart :global(.vtex-button) {
     height          : 48px !important;
     background-color: transparent !important;
     border-radius   : 8px;
@@ -74,12 +61,57 @@
     gap             : 10px;
 }
 
-.flexRowContent--container_price_iconfavorite :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+.flexRowContent--shelf__product-summary--bages :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     display: block;
 }
 
-.flexCol--shelf__description {
+/* Nuevas clases - fix-styles 🧩*/
+.flexRowContent--global__home-shelf-slider--one {
+    display        : flex;
+    align-items    : center;
+    justify-items  : center;
+    justify-content: center;
+    /* height         : 378px; */
+}
+
+.flexCol--shelf__product-summary--image {
+    margin-top: 9px;
+}
+
+.flexRow--shelf__product-summary--bages {
+    height: 24px; /* Validar */
+}
+
+.flexRowContent--shelf__product-summary--bages {
+    display        : flex;
+    align-items    : center;
+    /* justify-content: space-around; */
+    justify-content: space-between;
+    /* height         : 32px; */
+    height: 24px;
+}
+
+.flexCol--shelf__product-summary-name {
     display    : flex;
     align-items: baseline;
-    height     : 51px;
+    /* height     : 51px; */
+    /* padding-top: 9px; */
+    height: 38px;
+    margin-top: 9px;
+    border: 1px solid;
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    .flexRow--shelf__product-summary--bages {
+        height: 51px; /* Validar */
+    }
+    
+    .flexRowContent--shelf__product-summary--bages {
+        height: 51px;
+    }
+
+    .flexCol--shelf__product-summary-name {
+        height: 51px;
+    }
 }

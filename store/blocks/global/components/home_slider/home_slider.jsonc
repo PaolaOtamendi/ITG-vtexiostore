@@ -1,12 +1,12 @@
 {
-  "flex-layout.row#global_home--slider": {
+  "flex-layout.row#global__home-slider--one": {
     "title": "Global home slider component",
     "children": [
       "slider-layout#global__home-slider--layout"
     ],
     "props": {
       /*"fullWidth": false,*/
-      "blockClass": "global_home--slider"
+      "blockClass": "global__home-slider--one"
     }
   },
 
@@ -16,16 +16,16 @@
     "props": {
       "itemsPerPage": {
         "desktop": 3,
-        "tablet": 3,
+        "tablet": 2,
         "phone": 1
       },
-      /*"centerMode": {
+      "centerMode": {
         "desktop": "to-the-left",
         "tablet": "to-the-left",
         "phone": "to-the-left"
         
       },
-      "centerModeSlidesGap": 24,*/
+      "centerModeSlidesGap": 4,
       "infinite": true,
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "always",

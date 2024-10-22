@@ -1,23 +1,43 @@
-.savings--price__off {
-    background-color: #1D2734;
+/* Nuevas clases - fix-styles 🧩*/
+.savings--product__summary--savings {
     display         : flex;
     align-items     : center;
     justify-content : center;
-    font-family     : Lexend, sans-serif;
-    font-size       : 14px;
+    /* width: 70px; */
+    /* width           : 84px !important; */
+    border-radius   : 3.04px;
+    border          : 0.76px solid #1D2734;
+    /* padding         : 6px 12px 6px 12px; */
+    padding: 4.56px 9.11px 4.56px 9.11px;
+    /* gap             : 10PX; */
+    gap: 7.59px;
+    background-color: #1D2734;
+    font-family     : lexend, sans-serif;
+    font-size       : 12px;
     font-weight     : 400;
-    line-height     : 20px;
-    width           : 84px !important;
-    border-radius   : 4px;
-    border          : solid 1px #1D2734;
-    padding         : 6px 12px 6px 12px;
-    gap             : 10PX;
+    line-height     : 15.19px;
     color           : #ffff;
+}
+
+/* Nuevas clases - fix-styles 🧩*/
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    .savings--product__summary--savings {
+        width: 84px !important;
+        font-size       : 14px;
+        line-height     : 20px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .savings--product__summary--savings {
+        width: 70px !important;
+    }
 }
 
 /*----------------------------- MediaQueires ---------------------------------------*/
 @media (min-width: 320px) and (max-width: 1279px) {
-    .savings--price__off {
+    /* .savings--product__summary--savings {
         width: 70px !important;
-    }
+    } */
 }

@@ -1,4 +1,4 @@
-.buttonText--custom__button--buy {
+.buttonText--product__summary-btn--add {
     font-family   : Lexend, sans-serif;
     font-weight   : 400;
     font-size     : 14px;
@@ -8,17 +8,17 @@
     text-transform: lowercase;
 }
 
-.buttonText--custom__button--buy::first-letter {
+.buttonText--product__summary-btn--add::first-letter {
     text-transform: capitalize;
 }
 
-.buttonDataContainer--custom__button--buy {
+.buttonDataContainer--product__summary-btn--add {
     display    : flex;
     align-items: center;
     gap        : 5px;
 }
 
-.buttonDataContainer--custom__button--buy::before {
+.buttonDataContainer--product__summary-btn--add::before {
     content: url("/arquivos/button_cart.png");
     width  : 20px;
     height : 20px;

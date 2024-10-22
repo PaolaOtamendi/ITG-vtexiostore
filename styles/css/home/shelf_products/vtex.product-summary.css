@@ -1,31 +1,40 @@
-.container--container__all--products {
-    margin       : 6px;
+/* Nuevas clases - fix-styles 🧩*/
+.container--home__shelf--product--summary {
+    margin       : 3px;
     border-radius: 0px 0px 0px 0px;
 }
 
-.element--container__all--products {
+.element--home__shelf--product--summary {
     padding-bottom: 0%;
     padding-top   : 0%;
 }
 
-.image--custom_image__shelf {
+.image--product__summary--image {
     width : 178px !important;
     height: 140px !important;
 }
 
-.imageWrapper--custom_image__shelf {
+.imageWrapper--product__summary--image {
     display        : flex;
     align-items    : center;
     justify-content: center;
     margin-top     : 1px;
 }
 
-.nameContainer {
+.nameContainer--product_summary-name {
+    display       : flex;
+    padding-bottom: 0px;
+    padding-top   : 0px;
+    /* height        : 51px; */
+    height: 38px;
+}
+
+/* .nameContainer {
     display       : flex;
     padding-bottom: 0px;
     padding-top   : 0px;
     height        : 51px;
-}
+} */
 
 .priceContainer {
     display        : flex;
@@ -44,22 +53,12 @@
     color         : hsla(214, 28%, 16%, 0.4);
 }
 
-.price_listPrice {
-    font-family: Lexend, sans-serif;
-    font-size  : 14px;
-    line-height: 16.8px;
-}
 
 .listPriceLabel {
     display: none;
 }
 
-.price_sellingPrice {
-    font-family: Lexend, sans-serif;
-    font-size  : 24px;
-    line-height: 28.8px;
-    font-weight: 600;
-}
+
 
 .sellingPriceLabel {
     display: none;
@@ -69,8 +68,8 @@
     background-color: #fff;
 }
 
-.productBrand {
-    font-family       : Lexend, sans-serif;
+/* .productBrand {
+    font-family       : lexend, sans-serif;
     font-weight       : 400;
     font-size         : 14px;
     text-align        : left;
@@ -82,37 +81,92 @@
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;
     max-height        : calc(16.8px * 3);
+} */
+
+/* Nuevas clases - fix-styles 🧩*/
+.productBrand--product_summary-name {
+    display           : -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height        : calc(16.8px * 3);
+    text-overflow     : ellipsis;
+    text-align        : left;
+    font-family       : lexend, sans-serif;
+    font-weight       : 400;
+    font-size         : 12px;
+    line-height       : 12.76px;
+    color             : hsla(214, 28%, 16%, 0.6);
 }
 
 .price_sellingPriceContainer {
-    font-family: Lexend, sans-serif;
+    font-family: lexend, sans-serif;
     font-size  : 24px !important;
     line-height: 28.8px;
     color      : #1D2734;
+    padding: 0%;
+    margin: 0%;
+}
+
+.price_listPriceContainer {
+    margin: 0%;
+    padding: 0%;
+}
+
+.price_listPrice {
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    line-height: 12.76px;
+    padding: 0%;
+}
+
+.price_sellingPrice {
+    font-family: lexend, sans-serif;
+    font-size  : 20px;
+    line-height: 21.87px;
+    font-weight: 600;
+    padding: 0%;
+}
+
+
+/* Nuevas clases - fix-styles 🧩*/
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    .container--home__shelf--product--summary {
+        margin: 8px;
+    }
+
+    .nameContainer--product_summary-name {
+        height: 51px;
+    }
+
+    .productBrand--product_summary-name {
+        font-size         : 14px;
+        line-height       : 16.8px;
+    }
 }
 
 /*----------------------------- MediaQueires ---------------------------------------*/
 @media (min-width: 320px) and (max-width: 1279px) {
-    .productBrand {
+    /* .productBrand {
         font-size: 12px;
-    }
+    } */
 
-    .price_listPrice {
+    /* .price_listPrice {
         font-size: 13px;
-    }
+    } */
 
-    .price_sellingPriceContainer {
+    /* .price_sellingPriceContainer {
         font-size: 22px !important;
     }
 
     .price_sellingPrice {
         font-size: 22px;
-    }
+    } */
 }
 
 /*---------- Tablet ------------*/
 @media (min-width: 640px) and (max-width: 1279px) {
-    .container--container__all--products {
+    .container--home__shelf--product--summary {
         display   : flex;
         max-width : 250px !important;
         max-height: 400px

@@ -1,0 +1,133 @@
+{
+  "flex-layout.row#global__home-shelf-slider--one": {
+    "title": "Container global shelf slider products",
+    "props": {
+      "blockClass": "global__home-shelf-slider--one"
+      // "colSizing": "auto" // Nuevo
+    },
+    "children": ["list-context.product-list#global__home-shelf--one"]
+  },
+
+  "list-context.product-list#global__home-shelf--one": {
+    "title": "Global list context sheld slider",
+    "blocks": [
+      "product-summary.shelf#home__shelf--product--summary"
+    ],
+    "children": [
+      "slider-layout#home__shelf--slider"
+    ],
+    "props": {
+      "blockClass": "global__home-shelf--one"
+    }
+  },
+
+  "slider-layout#home__shelf--slider": {
+    "title": "Container home shelf slider",
+    "props": {
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 3,
+        "phone": 2
+      },
+      "blockClass": "home__shelf--slider"
+    }
+  },
+
+  "product-summary.shelf#home__shelf--product--summary": {
+    "title": "Global shelf produc summary",
+    "children": [
+      "flex-layout.row#shelf__product-summary--bages",
+      "flex-layout.col#shelf__product-summary--image",
+      "flex-layout.col#shelf__product-summary-name",
+      "flex-layout.col#shelf__product-summary-prices",
+      "flex-layout.col#shelf__product-summary-highligths",
+      // "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider",
+      "flex-layout.row#shelf__product-summary-add-to-cart"
+    ],
+    "props": {
+        "width": 212,
+        "showDiscountBadge": false,
+        "showSavingPercentage": true,
+        "blockClass": "home__shelf--product--summary"
+    }
+  }
+
+  /*"flex-layout.row#shelf__product-summary--bages": {
+    "title": "Shelf product summary bages",
+    "children": [
+        "product-price-savings",
+        "add-to-list-btn"
+    ],
+    "props": {
+        "blockClass": "shelf__product-summary--bages"
+    }
+  },
+  "add-to-list-btn#product__summary-wish--list": {
+    "title": "Button add to list favorite",
+    "props":{
+        "blockClass": "product__summary-wish--list"
+    }
+  },
+  "product-price-savings#product__summary--savings": {
+    "title": "Badge Product savings",
+    "props": {
+        "message": "{savingsPercentage} OFF",
+        "blockClass": "product__summary--savings"
+    }
+  },*/
+
+  /*"flex-layout.col#shelf__product-summary--image": {
+    "title": "Shelf product summary image",
+    "children": [
+        "product-summary-image"
+    ],
+    "props": {
+        "blockClass": "shelf__product-summary--image"
+    }
+  },
+  "product-summary-image": {
+    "title": "Image to product summary",
+    "props": {
+      "showBadge": false,
+      "height": 140, // Validar
+      "blockClass": "product__summary--image"
+    }
+  },*/
+
+  /*"flex-layout.col#shelf__product-summary-name": {
+    "title": "container description shelf product",
+    "children": [
+        "product-summary-name"
+    ],
+    "props": {
+      "blockClass": "shelf__product-summary-name"
+    }
+  },*/
+
+  /*"flex-layout.col#shelf__product-summary-prices": {
+    "title": "container price shelf product",
+    "children": [
+        "product-summary-price"
+    ],
+    "props": {
+      "blockClass": "shelf__product-summary-prices"
+    }
+  },*/
+
+  /*"flex-layout.row#shelf__product-summary-add-to-cart": {
+    "title": "Container button add to cart shelf",
+    "children": [
+        "add-to-cart-button"
+    ],
+    "props": {
+        "blockClass": "shelf__product-summary-add-to-cart"
+    }
+  },
+  "add-to-cart-button#product__summary-btn--add": {
+    "title": "button add to cart product",
+    "props": {
+        "text": "Comprar",
+        "blockClass": "product__summary-btn--add"
+    }
+  }*/
+}

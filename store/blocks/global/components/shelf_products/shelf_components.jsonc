@@ -1,0 +1,83 @@
+{
+  // Shelf product summary components
+  "flex-layout.row#shelf__product-summary--bages": {
+    "title": "Shelf product summary bages",
+    "children": [
+      "product-price-savings#product__summary--savings",
+      "add-to-list-btn#product__summary-wish--list"
+    ],
+    "props": {
+      "blockClass": "shelf__product-summary--bages"
+    }
+  },
+  "add-to-list-btn#product__summary-wish--list": {
+    "title": "Button add to list favorite",
+    "props": {
+      "blockClass": "product__summary-wish--list"
+    }
+  },
+  "product-price-savings#product__summary--savings": {
+    "title": "Badge Product savings",
+    "props": {
+      "message": "{savingsPercentage} OFF",
+      "blockClass": "product__summary--savings"
+    }
+  },
+
+  "flex-layout.col#shelf__product-summary--image": {
+    "title": "Shelf product summary image",
+    "children": ["product-summary-image"],
+    "props": {
+      "blockClass": "shelf__product-summary--image"
+    }
+  },
+  "product-summary-image": {
+    "title": "Image to product summary",
+    "props": {
+      "showBadge": false,
+      "height": 140, // Validar
+      "blockClass": "product__summary--image"
+    }
+  },
+
+  "flex-layout.col#shelf__product-summary-name": {
+    "title": "container description shelf product",
+    "children": ["product-summary-name"],
+    "props": {
+      "blockClass": "shelf__product-summary-name"
+    }
+  },
+
+  "flex-layout.col#shelf__product-summary-prices": {
+    "title": "container price shelf product",
+    "children": ["product-summary-price"],
+    "props": {
+      "blockClass": "shelf__product-summary-prices"
+    }
+  },
+
+  "flex-layout.col#shelf__product-summary-highligths": {
+    "title": "Container highlights shelf product",
+    "children": [
+      "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider"
+    ],
+    "props": {
+      "blockClass": "shelf__product-summary-highligths"
+    }
+  },
+
+  "flex-layout.row#shelf__product-summary-add-to-cart": {
+    "title": "Container button add to cart shelf",
+    "children": ["add-to-cart-button"],
+    "props": {
+      "blockClass": "shelf__product-summary-add-to-cart"
+    }
+  },
+  "add-to-cart-button#product__summary-btn--add": {
+    "title": "button add to cart product",
+    "props": {
+      "text": "Comprar",
+      "blockClass": "product__summary-btn--add"
+    }
+  }
+}

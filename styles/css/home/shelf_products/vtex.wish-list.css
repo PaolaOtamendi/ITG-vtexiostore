@@ -1,18 +1,65 @@
-.wishlistIconContainer--btn__favorite {
-    display        : flex;
-    justify-content: right !important;
-    height         : 32px;
+.wishlistIconContainer--product__summary-wish--list {
+    /* display        : flex;
+    justify-content: right !important; */
+    /* height         : 32px; */
 }
 
-.wishlistIcon--btn__favorite {
+/* Nuevas clases - fix-styles 🧩*/
+.wishlistIconContainer--product__summary-wish--list :global(.vtex-button) {
+    display        : flex;
+    /* justify-content: end; */
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.wishlistIconContainer--product__summary-wish--list :global(.vtex-button__label) {
+    padding            : 0px !important;
+    width              : 33.41px;
+    height             : 24.3px;
+    min-height         : 0% !important;
+    border-radius      : 3.04px;
+    border             : 0.76px solid #1D2734;
+    padding            : 4.56px 9.11px 4.56px 9.px;
+    gap                : 7.59px;
+    /* background-color: hsla(214, 28%, 16%, 0.1); */
+}
+
+.wishlistIconContainer--product__summary-wish--list {
+    display        : flex;
+    justify-content: flex-end;
+}
+
+.wishlistIcon--product__summary-wish--list {
     background-image: url("/arquivos/favorite_border-icon.svg") !important;
+    width           : 15.19px;
+    height          : 15.19px;
+    position        : absolute;
+    background-size : 15.19px !important;
+}
+
+.wishlistIcon--product__summary-wish--list :global(.vtex-wish-list-1-x-iconSize) {
+    background-size: 15.19px;
+}
+
+/*----------------------------- MediaQueires ---------------------------------------*/
+@media (min-width: 320px) and (max-width: 1279px) {
+    .wishlistIconContainer--product__summary-wish--list :global(.vtex-button) {
+        /* width: 33px !important; */
+    }
+}
+
+/* clases pasadas */
+/* .wishlistIcon--product__summary-wish--list {
+    background-image: url("/arquivos/favorite_border-icon.svg") !important;
+    background      : no-repeat;
+    background-size : 15.19px;
     width           : 20px;
-    height          : 20px;
+    height          : 20px; 
     position        : absolute;
     margin-right    : 0px !important;
 }
 
-.wishlistIconContainer--btn__favorite :global(.vtex-button) {
+.wishlistIconContainer--product__summary-wish--list :global(.vtex-button) {
     display        : flex;
     align-items    : center;
     justify-content: center;
@@ -21,11 +68,4 @@
     border         : solid 1px #1D2734;
     padding        : 6px 12px 6px 12px;
     min-height     : 0 !important;
-}
-
-/*----------------------------- MediaQueires ---------------------------------------*/
-@media (min-width: 320px) and (max-width: 1279px) {
-    .wishlistIconContainer--btn__favorite :global(.vtex-button) {
-        width: 33px !important;
-    }
-}
+} */

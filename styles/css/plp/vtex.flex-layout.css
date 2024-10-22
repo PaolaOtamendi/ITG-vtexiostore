@@ -41,7 +41,7 @@
     justify-content: left;
 }
 
-.flexCol--shelf__image--gallery :global(.vtex-product-summary-2-x-image--custom_image__shelf) {
+.flexCol--shelf__image--gallery :global(.vtex-product-summary-2-x-image--product__summary--image) {
     width : 136px !important;
     height: 107px !important;
 }
