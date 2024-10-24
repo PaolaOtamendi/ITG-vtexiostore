@@ -8,9 +8,9 @@
             "flex-layout.row#two__title--slider",
             "flex-layout.row#phone__home--shelf-products",
             "flex-layout.row#three__title--slider",
-            //"flex-layout.row#phone__home--slider",
-            "flex-layout.row#four__title--slider"
-            //"flex-layout.row#phone__home--shelf-products"
+            "flex-layout.row#phone__home--slider",
+            "flex-layout.row#four__title--slider",
+            "flex-layout.row#phone__home--shelf-products"
         ]
     }
 }
