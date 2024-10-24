@@ -2,7 +2,7 @@
     "flex-layout.row#phone__home--slider": {
         "title": "Container phone home slider",
         "children": [
-            "flex-layout.row#global_home--slider"
+            "flex-layout.row#global__home-slider--one"
         ],
         "props": {
             "blockClass": "phone__home--slider"

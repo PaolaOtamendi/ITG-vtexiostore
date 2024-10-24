@@ -55,7 +55,8 @@
 /* Nuevas clases - fix-styles */
 .headerRow--mobile__header--menu {
     padding-top         : 40px;
-    min-width           : 360px;
+    /* min-width           : 360px; */ 
+    /* Validar */
     background-color    : #fff;
     display             : flex;
     align-items         : end;

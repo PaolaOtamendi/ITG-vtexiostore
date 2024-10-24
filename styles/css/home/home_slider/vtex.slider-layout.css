@@ -21,10 +21,6 @@
     justify-content: center;
 }
 
-/*.sliderTrackContainer--global__home-slider--layout {
-    border: 2px solid green;
-}*/
-
 /* arrows */
 .caretIcon--global__home-slider--layout {
     width   : 20px !important;
@@ -33,15 +29,19 @@
 }
 
 .sliderLeftArrow--global__home-slider--layout {
-    padding: 0%;
-    margin : 0%;
+    padding   : 0%;
+    margin    : 0%;
     left   : 60px;
+    /* Prueba con calc validar */
+    /* left      : calc(10% - 50px); */
 }
 
 .sliderRightArrow--global__home-slider--layout {
-    padding: 0%;
-    margin : 0%;
+    padding   : 0%;
+    margin    : 0%;
     right  : 60px;
+    /* Prueba con calc validar */
+    /* right     : calc(10% - 50px); */
 }
 
 /* Dots */
@@ -66,6 +66,7 @@
     background-color: transparent;
 }
 
+/* Custom dots all sliders */
 .paginationDot--isActive::before {
     content         : "";
     position        : absolute;
@@ -111,6 +112,11 @@
         padding-right: 16px !important;
     }
 }
+
+/* Claces modificadaas borrar en limpieza de codigo*/
+/*.sliderTrackContainer--global__home-slider--layout {
+    border: 2px solid green;
+}*/
 
 /*.paginationDot--isActive::before {
     content         : "";
