@@ -19,10 +19,12 @@
 }
 
 .buttonDataContainer--product__summary-btn--add::before {
-    content        : url("/arquivos/button_cart.png");
-    width          : 20px;
-    height         : 20px;
-    background-size: 15.19px !important;
+    content            : url("/arquivos/button_cart.png");
+    width              : 20px;
+    height             : 20px;
+    background-size    : 15.19px !important;
+    background-position: center; /* Nueov */
+    background-repeat  : no-repeat;
 }
 
 /*---------- Desktop ------------*/

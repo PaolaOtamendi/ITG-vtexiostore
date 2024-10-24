@@ -25,6 +25,8 @@
     height          : 15.19px;
     position        : absolute;
     background-size : 15.19px !important;
+    background-position: center; /* Nuevo*/
+    background-repeat: no-repeat;
 }
 
 .wishlistIcon--product__summary-wish--list :global(.vtex-wish-list-1-x-iconSize) {

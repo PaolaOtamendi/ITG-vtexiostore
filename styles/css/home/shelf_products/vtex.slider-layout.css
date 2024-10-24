@@ -4,7 +4,6 @@
     justify-content       : center;
     flex-direction        : column;
     gap                   : 1px;
-    /* margin-bottom      : 50px; Validar */
 }
 
 .sliderTrackContainer--home__shelf--slider {
@@ -36,11 +35,6 @@
     align-items   : center;
     height        : 50px;
     position      : relative;
-    /* width      : 100%;
-    position      : absolute;
-    bottom        : -50px;
-    left          : 0;
-    z-index       : 1; */
 }
 
 .paginationDot--home__shelf--slider {
@@ -78,6 +72,18 @@
 }
 
 /* Clases pasadas cambiadas */
+/* .paginationDotsContainer--home__shelf--slider {
+    display       : flex;
+    align-items   : center;
+    height        : 50px;
+    position      : relative;
+    width      : 100%;
+    position      : absolute;
+    bottom        : -50px;
+    left          : 0;
+    z-index       : 1;
+} */
+
 /* .sliderLayoutContainer--home__shelf--slider {
     padding-left : 80px;
     padding-right: 80px;
