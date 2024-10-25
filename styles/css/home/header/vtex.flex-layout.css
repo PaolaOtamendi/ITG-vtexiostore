@@ -5,7 +5,7 @@
 
 /*----------------------------- Header desktop section menu ---------------------------------------*/
 /* Nuevas clases - fix-styles */
-.flexCol--mega__menu--trigger {
+.flexCol--global__mega-menu--trigger {
     height     : 24px;
     width      : 24px !important;
     display    : flex;
@@ -153,7 +153,7 @@
     height: fit-content !important;
 }
 
-.flexRow--container__mega-menu--mobile {
+.flexRow--mobile__mega--menu-container {
     margin-top   : 32px;
     margin-bottom: 16px;
 }

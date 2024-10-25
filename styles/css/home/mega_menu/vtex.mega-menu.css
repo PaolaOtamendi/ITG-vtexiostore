@@ -11,7 +11,7 @@
 }
 
 .menuContainer {
-    font-family      : Lexend, sans-serif;
+    font-family      : lexend, sans-serif;
     width            : 250px !important;
     background-color : #fff !important;
     border-radius    : 0px 0px 16px 16px;
@@ -56,14 +56,14 @@
 }
 
 .styledLinkText--components__mega--menu {
-    font-family: Lexend, sans-serif;
+    font-family: lexend, sans-serif;
     font-weight: 300;
     font-size  : 12px !important;
     line-height: 15px;
 }
 
 .submenuContainer {
-    font-family     : Lexend, sans-serif;
+    font-family     : lexend, sans-serif;
     display         : flex;
     flex-direction  : column;
     background-color: #FFE6D3 !important;
@@ -74,7 +74,7 @@
 }
 
 .seeAllLinkContainer--components__mega--menu {
-    font-family: Lexend, sans-serif;
+    font-family: lexend, sans-serif;
     font-size  : 14px;
     font-weight: bold;
     line-height: 17.5px;
@@ -98,28 +98,6 @@
 
 
 /*----------------------------- Mega menu mobile ------------------------------------------------*/
-.menuContainerNavVertical {
-    background-color: #fff;
-}
-
-.departmentsTitle {
-    font-size  : 14px;
-    line-height: 17.5px;
-    font-family: Lexend, sans-serif;
-    color      : #1D2734 !important;
-}
-
-.styledLinkText {
-    font-size  : 12px;
-    font-weight: 300;
-    line-height: 15px;
-    font-family: Lexend, sans-serif !important;
-    color      : #1D2734 !important;
-}
-
-.styledLinkContainer {
-    padding-top: 0.8rem;
-}
 
 .submenuContainerVertical {
     background-color: #fff;
@@ -128,15 +106,81 @@
 .submenuContainerTitle {
     font-size  : 14px;
     line-height: 17.5px;
-    font-family: Lexend, sans-serif;
+    font-family: lexend, sans-serif;
     color      : #1D2734 !important;
 }
 
-.collapsibleHeaderText {
+.seeAllLink {
+    font-size  : 14px;
+    line-height: 17.5px;
+    font-family: lexend, sans-serif;
+    color      : #1D2734 !important;
+}
+
+.accordionIconContainer {
+    display: none;
+}
+
+/* Nuevas clases - fix-styles 🧩*/
+.departmentsTitle--mega__menu-drawer--body {
+    /* font-family: lexend, sans-serif;
+    font-weight: 300;
+    font-size  : 0px;
+    line-height: 0px;
+    color      : #1D2734 !important; */
+    /* padding: 0% !important;
+    margin: 0% !important; */
+    margin-top: 19px !important;
+    margin-bottom: 16px !important;
+    padding-left: 16px !important;
+    padding-right: 0% !important;
+}
+
+.menuContainerNavVertical {
+    background-color: #fff;
+    margin: 0% !important;
+}
+
+.menuContainerVertical--mega__menu-drawer--body {
+    margin: 0% !important;
+}
+
+/* .styledLinkContainer {
+    padding-top: 0.8rem;
+} */
+
+.styledLinkContainer--mega__menu-drawer--body {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 0%;
+}
+
+/* .styledLinkText {
     font-size  : 12px;
     font-weight: 300;
     line-height: 15px;
-    font-family: Lexend, sans-serif !important;
+    font-family: lexend, sans-serif !important;
+    color      : #1D2734 !important;
+} */
+
+.styledLinkText--mega__menu-drawer--body {
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    font-weight: 300;
+    line-height: 15px;
+    color      : #1D2734 !important;
+}
+
+.menuItemVertical--mega__menu-drawer--body {
+    border: none;
+}
+
+.goBackButtonText {
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    font-weight: 300;
+    line-height: 15px;
     color      : #1D2734 !important;
 }
 
@@ -144,13 +188,36 @@
     background-color: #fff;
 }
 
-.seeAllLink {
-    font-size  : 14px;
-    line-height: 17.5px;
-    font-family: Lexend, sans-serif;
-    color      : #1D2734 !important;
+.submenuItemVertical--mega__menu-drawer--body {
+    border: none;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 
-.accordionIconContainer {
-    display: none;
+/* .collapsibleHeaderText {
+    font-size  : 12px;
+    font-weight: 300;
+    line-height: 15px;
+    font-family: lexend, sans-serif !important;
+    color      : #1D2734 !important;
+} */
+
+.collapsibleHeaderText--mega__menu-drawer--body {
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    font-weight: 300;
+    line-height: 15px;
+    color      : #1D2734 !important;
+    margin-top: 19px;
+    margin-bottom: 16px;
+}
+
+/* Nuevas clases - buscar especifidad de desktop 🧩*/
+.departmentsTitle {
+    /* font-size  : 14px;
+    line-height: 17.5px;
+    font-family: lexend, sans-serif;
+    color      : #1D2734 !important; */
+    /* padding: 0% !important;
+    margin: 0% !important; */
 }

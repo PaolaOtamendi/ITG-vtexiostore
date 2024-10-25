@@ -41,7 +41,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/img/icon_Black.png",
+      // "url": "assets/img/icon_Black.png",
+      "url": "/arquivos/logo_itg_icon.svg",
       "width": "32px",
       "blockClass": ["logo__img--custom"]
     }

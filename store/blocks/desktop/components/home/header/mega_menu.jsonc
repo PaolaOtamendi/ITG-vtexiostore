@@ -9,18 +9,18 @@
       "blockClass": "desktop__mega--menu"
     }
   },
-
   "flex-layout.row#desktop__mega-menu--trigger": {
     "title": "Contain desktop mega menu trigger",
     "children": [
-        "flex-layout.col#mega__menu--trigger"
+        "flex-layout.col#global__mega-menu--trigger"
     ]
   },
-  "flex-layout.col#mega__menu--trigger": {
+
+  "flex-layout.col#global__mega-menu--trigger": {
     "title": "Col mega menu trigger",
     "props": {
       "verticalAlign": "middle",
-      "blockClass": "mega__menu--trigger"
+      "blockClass": "global__mega-menu--trigger"
     },
     "children": ["mega-menu-trigger-btn"]
   },

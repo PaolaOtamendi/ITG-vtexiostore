@@ -26,21 +26,17 @@
     top         : 5px;
 }
 
-:global(.vtex-mega-menu-2-x-departmentsContainer h3::after) {
+/* :global(.vtex-mega-menu-2-x-departmentsContainer h3::after) {
     content    : "ITGlober+";
     max-width  : 10px !important;
     max-height : 10px !important;
     font-size  : 12px;
     font-weight: 300;
     line-height: 15px;
-    font-family: "Lexend-Regular", sans-serif !important;
-}
+    font-family: lexend, sans-serif !important;
+} */
 
-:global(.vtex-mega-menu-2-x-menuContainerNavVertical h3) {
-    font-size  : 12px;
-    font-weight: 300;
-    line-height: 15px;
-}
+
 
 /* Nuevas clases - fix-styles */
 :global(.vtex-mega-menu-2-x-triggerContainer) {
@@ -59,4 +55,23 @@
 
 :global(.vtex-store-drawer-0-x-openIconContainer) {
     padding: 0%;
+}
+
+/* Nuevas clases - fix-styles mobile 🧩*/
+:global(.vtex-mega-menu-2-x-departmentsContainer--mega__menu-drawer--body h3::after) {
+    content    : "ITGlober+";
+    /* max-width  : 10px !important;
+    max-height : 10px !important; */
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    font-weight: 300;
+    line-height: 15px;
+}
+
+:global(.vtex-mega-menu-2-x-menuContainerNavVertical h3) {
+    font-size: 0px;
+}
+
+:global(.vtex-mega-menu-2-x-menuContainerVertical) {
+    margin: 0%;
 }

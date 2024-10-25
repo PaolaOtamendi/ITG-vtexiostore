@@ -27,7 +27,7 @@
   "flex-layout.col#header_menu-container--sec1": {
     "title": "Container section 1 - mega menu and logo",
     "children": [
-      "flex-layout.row#container__mega-menu--mobile",
+      "flex-layout.row#mobile__mega--menu-container",
       "flex-layout.row#header_menu-container-sec1--logo"
     ],
     "props": {
@@ -45,7 +45,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/img/icon_Black.png",
+      // "url": "assets/img/icon_Black.png",
+      "url": "/arquivos/logo_itg_icon.svg",
       "blockClass": ["sec1__logo"]
     }
   },

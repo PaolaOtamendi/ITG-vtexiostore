@@ -1,87 +1,103 @@
 {
-  "flex-layout.row#container__mega-menu--mobile": {
+  "flex-layout.row#mobile__mega--menu-container": {
     "title": "Container mega-menu mobile",
+    "children": [
+      "flex-layout.col#mobile__mega-menu--trigger"
+    ],
     "props": {
-      "blockClass": "container__mega-menu--mobile"
-    },
-    "children": ["flex-layout.col#mega__menu--trigger"]
-  },
-
-  "drawer": {
-    "title": "Drawer mega-menu",
-    "children": ["mega-menu#mega__menu--mobile"],
-    "blocks": ["drawer-header#mega__menu--drawer"]
-  },
-
-  "mega-menu#mega__menu--mobile": {
-    "props": {
-      "defaultDepartmentActive": "...",
-      "orientation": "vertical",
-      "openOnly": "vertical"
+      "blockClass": "mobile__mega--menu-container"
     }
   },
 
-  "drawer-header#mega__menu--drawer": {
-    "title": "Mega menu drawer",
-    "children": ["flex-layout.row#mega__menu-drawer--header"]
+  "flex-layout.col#mobile__mega-menu--trigger": {
+    "title": "Mobile mega menu container trigger",
+    "children": ["drawer#mobile__mega-menu--drawer"],
+    "props": {
+      "verticalAlign": "middle",
+      "blockClass": "global__mega-menu--trigger"
+    }
+  },
+  "drawer#mobile__mega-menu--drawer": {
+    "title": "Mobile mega menu drawer",
+    "children": ["mega-menu#mega__menu-drawer--body"],
+    "blocks": ["drawer-header#mega__menu-drawer--header"],
+    "props": {
+      "blockClass": "mobile__mega-menu--drawer"
+    }
   },
 
-  "flex-layout.row#mega__menu-drawer--header": {
+  "mega-menu#mega__menu-drawer--body": {
+    "props": {
+      "defaultDepartmentActive": "...",
+      "orientation": "vertical",
+      "openOnly": "vertical",
+      "blockClass": "mega__menu-drawer--body"
+    }
+  },
+
+  "drawer-header#mega__menu-drawer--header": {
+    "title": "Mega menu drawer",
+    "children": ["flex-layout.row#drawer__header--row"],
+    "props": {
+      "blockClass": "mega__menu-drawer--header"
+    }
+  },
+  "flex-layout.row#drawer__header--row": {
     "title": "Mega menu drawer menu header",
     "children": [
-      "flex-layout.col#drawer__header-go-back-btn",
+      "flex-layout.col#drawer__header-back--btn",
       "flex-layout.col#drawer__header--spacer",
       "flex-layout.col#drawer__header-close--btn",
       "flex-layout.col#drawer__header--logo"
     ],
     "props": {
-      "blockClass": "mega__menu-drawer--header",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "preserveLayoutOnMobile": true,
-      "fullWidth": true
+      "fullWidth": true,
+      "blockClass": "drawer__header--row"
     }
   },
-  "flex-layout.col#drawer__header-go-back-btn": {
+  "flex-layout.col#drawer__header-back--btn": {
     "title": "Drawer header go-back button",
     "children": ["mega-menu-go-back-btn"],
     "props": {
-      "blockClass": "drawer__header-go-back-btn",
       "verticalAlign": "middle",
       "horizontalAlign": "left",
-      "paddingLeft": 4
+      "paddingLeft": 4,
+      "blockClass": "drawer__header-back--btn"
     }
   },
   "flex-layout.col#drawer__header--spacer": {
     "title": "Drawer header spacer col",
     "props": {
-      "blockClass": "drawer__header-spacer"
+      "blockClass": "drawer__header--spacer"
     }
   },
   "flex-layout.col#drawer__header-close--btn": {
     "title": "Drawer header close button",
     "children": ["drawer-close-button"],
     "props": {
-      "blockClass": "drawer__header-close--btn",
       "verticalAlign": "middle",
-      "horizontalAlign": "right"
+      "horizontalAlign": "right",
+      "blockClass": "drawer__header-close--btn"
     }
   },
   "flex-layout.col#drawer__header--logo": {
     "title": "Drawer header logo",
     "children": ["logo#drawer__logo"],
     "props": {
-      "blockClass": "drawer__header--logo",
       "verticalAlign": "middle",
       "horizontalAlign": "left",
-      "paddingLeft": 4
+      "paddingLeft": 4,
+      "blockClass": "drawer__header--logo"
     }
   },
   "logo#drawer__logo": {
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/img/icon_Black.png",
+      "url": "/arquivos/logo_itg_icon.svg",
       "width": "32px",
       "blockClass": ["logo__img--custom"]
     }

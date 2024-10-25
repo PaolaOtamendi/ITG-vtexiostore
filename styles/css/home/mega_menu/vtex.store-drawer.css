@@ -11,6 +11,22 @@
     background-color: #fff !important;
 }
 
+/* Nuevas clases - fix-styles 🧩*/
+.drawer--mobile__mega-menu--drawer {
+    width: 65% !important;
+    min-width: 240px !important;
+}
+
+.drawerHeader--mega__menu-drawer--header {
+    padding-top: 40px;
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    
+}
+
+
 @media (min-width: 768px) and (max-width: 1024px) {
     .drawer {
         max-width: 300px !important;
