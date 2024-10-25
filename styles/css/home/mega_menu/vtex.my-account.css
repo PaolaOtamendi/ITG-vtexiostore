@@ -1,44 +1,5 @@
-:global(.vtex-mega-menu-2-x-menuContainer h3) {
-    font-size  : 14px;
-    font-weight: 600;
-    color      : #1D2734;
-    display    : flex;
-    align-items: center;
-}
-
-:global(.vtex-mega-menu-2-x-menuContainer h3::before) {
-    content     : url("/arquivos/icon_color-m-menu.png");
-    margin-right: 0.4rem;
-    width       : 20px;
-    height      : 20px;
-}
-
-:global(.vtex-mega-menu-2-x-departmentsTitle h3) {
-    font-size: 0px;
-}
-
-:global(.vtex-mega-menu-2-x-departmentsContainer h3::before) {
-    content     : url("/arquivos/icon_color-m-menu.png");
-    max-width   : 10px !important;
-    max-height  : 10px !important;
-    margin-right: 5px;
-    position    : relative;
-    top         : 5px;
-}
-
-/* :global(.vtex-mega-menu-2-x-departmentsContainer h3::after) {
-    content    : "ITGlober+";
-    max-width  : 10px !important;
-    max-height : 10px !important;
-    font-size  : 12px;
-    font-weight: 300;
-    line-height: 15px;
-    font-family: lexend, sans-serif !important;
-} */
-
-
-
-/* Nuevas clases - fix-styles */
+/*----------------------------- Mega menu drawer icon global ------------------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
 :global(.vtex-mega-menu-2-x-triggerContainer) {
     padding: 0% !important;
 }
@@ -57,15 +18,48 @@
     padding: 0%;
 }
 
+/*----------------------------- Mega menu desktop ------------------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
+:global(.vtex-mega-menu-2-x-menuContainer h3) {
+    display    : flex;
+    align-items: center;
+    gap: 5px;
+    font-family: lexend, sans-serif;
+    font-size  : 14px;
+    font-weight: 600;
+    line-height: 17.5px;
+    color      : #1D2734;
+    padding: 16px 14px 14px 14px !important;
+}
+
+:global(.vtex-mega-menu-2-x-menuContainer h3::before) {
+    content     : url("/arquivos/icon_color-m-menu.png");
+    /* margin-right: 0.4rem; */
+    width       : 20px;
+    height      : 20px;
+}
+
+/*----------------------------- Mega menu mobile ------------------------------------------------*/
 /* Nuevas clases - fix-styles mobile 🧩*/
+:global(.vtex-mega-menu-2-x-departmentsContainer h3::before) {
+    content     : url("/arquivos/icon_color-m-menu.png");
+    max-width   : 10px !important;
+    max-height  : 10px !important;
+    margin-right: 5px;
+    position    : relative;
+    top         : 5px;
+}
+
 :global(.vtex-mega-menu-2-x-departmentsContainer--mega__menu-drawer--body h3::after) {
     content    : "ITGlober+";
-    /* max-width  : 10px !important;
-    max-height : 10px !important; */
     font-family: lexend, sans-serif;
     font-size  : 12px;
     font-weight: 300;
     line-height: 15px;
+}
+
+:global(.vtex-mega-menu-2-x-departmentsTitle h3) {
+    font-size: 0px;
 }
 
 :global(.vtex-mega-menu-2-x-menuContainerNavVertical h3) {
@@ -75,3 +69,19 @@
 :global(.vtex-mega-menu-2-x-menuContainerVertical) {
     margin: 0%;
 }
+
+/* Clases no necesarias limpieza de codigo mobile */
+/* :global(.vtex-mega-menu-2-x-departmentsContainer h3::after) {
+    content    : "ITGlober+";
+    max-width  : 10px !important;
+    max-height : 10px !important;
+    font-size  : 12px;
+    font-weight: 300;
+    line-height: 15px;
+    font-family: lexend, sans-serif !important;
+} */
+
+/* :global(.vtex-mega-menu-2-x-departmentsContainer--mega__menu-drawer--body h3::after) {
+    max-width  : 10px !important;
+    max-height    : 10px !important;
+} */

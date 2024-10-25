@@ -47,7 +47,7 @@
     "children": [
       "flex-layout.col#drawer__header-back--btn",
       "flex-layout.col#drawer__header--spacer",
-      "flex-layout.col#drawer__header-close--btn",
+      // "flex-layout.col#drawer__header-close--btn",
       "flex-layout.col#drawer__header--logo"
     ],
     "props": {
@@ -74,15 +74,15 @@
       "blockClass": "drawer__header--spacer"
     }
   },
-  "flex-layout.col#drawer__header-close--btn": {
-    "title": "Drawer header close button",
-    "children": ["drawer-close-button"],
-    "props": {
-      "verticalAlign": "middle",
-      "horizontalAlign": "right",
-      "blockClass": "drawer__header-close--btn"
-    }
-  },
+  // "flex-layout.col#drawer__header-close--btn": {
+  //   "title": "Drawer header close button",
+  //   "children": ["drawer-close-button"],
+  //   "props": {
+  //     "verticalAlign": "middle",
+  //     "horizontalAlign": "right",
+  //     "blockClass": "drawer__header-close--btn"
+  //   }
+  // },
   "flex-layout.col#drawer__header--logo": {
     "title": "Drawer header logo",
     "children": ["logo#drawer__logo"],
