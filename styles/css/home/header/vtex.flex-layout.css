@@ -5,12 +5,11 @@
 
 /*----------------------------- Header desktop section menu ---------------------------------------*/
 /* Nuevas clases - fix-styles */
-.flexCol--mega__menu--trigger {
+.flexRow--desktop__mega-menu--trigger {
     height     : 24px;
     width      : 24px !important;
     display    : flex;
     align-items: center;
-    /*border     : 1px solid;*/
 }
 
 .flexColChild--header__menu-sec1--logo {
@@ -100,6 +99,14 @@
 @media (min-width: 1025px) {}
 
 /* Eliminar no necesarias */
+/* .flexCol--global__mega-menu--trigger {
+    height     : 24px;
+    width      : 24px !important;
+    display    : flex;
+    align-items: center;
+    border     : 1px solid;
+} */
+
 /*@media (min-width: 360px) and (max-width: 639px) {
     .flexRowContent--header__menu--categories {
         display        : flex;
@@ -153,7 +160,7 @@
     height: fit-content !important;
 }
 
-.flexRow--container__mega-menu--mobile {
+.flexRow--mobile__mega--menu-container {
     margin-top   : 32px;
     margin-bottom: 16px;
 }

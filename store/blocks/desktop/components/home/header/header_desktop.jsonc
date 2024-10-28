@@ -6,7 +6,7 @@
       "fullWidth": true
     },
     "children": [
-      "sticky-layout#desktop__mega--menu",
+      "sticky-layout#dekstop__mega--menu-container",
       "flex-layout.row#desktop__header-menu--sec1",
       "flex-layout.row#desktop__header-menu--sec3",
       /*"vtex.menu@2.x:menu#websites",*/
@@ -41,7 +41,8 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/img/icon_Black.png",
+      // "url": "assets/img/icon_Black.png",
+      "url": "/arquivos/logo_itg_icon.svg",
       "width": "32px",
       "blockClass": ["logo__img--custom"]
     }

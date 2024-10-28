@@ -1,0 +1,25 @@
+/*----------------------------- Mega menu mobile ------------------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
+.flexRow--drawer__header--row {
+    display    : flex;
+    align-items: center;
+    width      : 240px;
+    height     : 56px;
+    padding-top: 8px;
+}
+
+.flexCol--drawer__header-close--btn :global(.vtex-store-drawer-0-x-closeIconButton) {
+    padding: 0%;
+}
+
+.flexCol--drawer__header-close--btn :global(.vtex-store-drawer-0-x-closeIconButton) {
+    padding: 0%;
+}
+
+.flexCol--drawer__header-back--btn {
+    padding: 0%;
+}
+
+.flexCol--drawer__header--logo {
+    padding-left: 16px;
+}

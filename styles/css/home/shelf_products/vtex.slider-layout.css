@@ -60,7 +60,7 @@
 
 @media (min-width: 1280px) {
     .sliderTrackContainer--home__shelf--slider {
-        width: 1092px;
+        /* width: 1092px; */ /* Validar*/
     }
 }
 

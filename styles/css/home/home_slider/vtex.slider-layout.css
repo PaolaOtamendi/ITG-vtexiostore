@@ -102,7 +102,7 @@
 
 @media (min-width: 1280px) {
     .sliderTrackContainer--global__home-slider--layout {
-        width: 1092px;
+        /* width: 1092px; */ /* Validar*/
     }
 }
 
