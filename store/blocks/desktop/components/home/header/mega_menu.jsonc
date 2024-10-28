@@ -13,8 +13,8 @@
   "flex-layout.row#desktop__mega-menu--trigger": {
     "title": "Desktop mega menu container trigger",
     "children": [
-        // "flex-layout.col#global__mega-menu--trigger",
-        "mega-menu-trigger-btn#mega__menu-trigger--btn"
+      // "flex-layout.col#global__mega-menu--trigger",
+      "mega-menu-trigger-btn#mega__menu-trigger--btn"
     ],
     "props": {
       "blockClass": "desktop__mega-menu--trigger"
@@ -26,15 +26,13 @@
       "Drawer": "drawer",
       "blockClass": "mega__menu-trigger--btn"
     },
-    "children": [
-      "icon#trigger__btn--icon"
-    ]
+    "children": ["icon#trigger__btn--icon"]
   },
   "icon#trigger__btn--icon": {
     "title": "Trigger button icon",
     "props": {
       "id": "hpa-hamburguer-menu",
-      /*"width": 18, //Eliminar para depurar codigo
+      /*"width": 18,
       "height": 12,
       "size": 18,*/
       "viewBox": "0 0 20 20",
@@ -45,9 +43,7 @@
 
   "flex-layout.row#desktop__mega--menu": {
     "title": "Container desktop mega menu body",
-    "children": [
-        "mega-menu#desktop__mega-menu--body"
-    ],
+    "children": ["mega-menu#desktop__mega-menu--body"],
     "props": {
       "blockClass": "desktop__mega--menu"
     }
@@ -71,5 +67,4 @@
   //   },
   //   "children": ["mega-menu-trigger-btn"]
   // },
-  
 }

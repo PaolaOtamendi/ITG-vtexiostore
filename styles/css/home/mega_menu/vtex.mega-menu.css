@@ -1,4 +1,5 @@
 /*----------------------------- Mega menu desktop ------------------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
 .menuContainerNav {
     background-color: #FFE6D3 !important;
     z-index         : 10;
@@ -19,6 +20,15 @@
     border-left     : solid 10px #FF8324;
 }
 
+.menuContainer {
+    font-family     : lexend, sans-serif;
+    width           : 220px !important;
+    background-color: #fff !important;
+    border-radius   : 0px 0px 16px 16px;
+    max-height      : 647px;
+    overflow        : auto;
+}
+
 .styledLinkContent--desktop__mega-menu--body :hover {
     background-color: transparent;
     border-left     : transparent;
@@ -34,48 +44,27 @@
     border-left     : transparent;
 }
 
-.accordionIconContainer--desktop__mega-menu--body {
-    display: none;
+.styledLinkContainer--desktop__mega-menu--body {
+    width            : 100%;
+    margin-left      : 0px;
+    margin-right     : 0px;
+    padding-left     : 16px;
+    padding-top      : 0%;
+    /* padding-bottom: 16px; */
+    padding-bottom   : 0%;
 }
 
-
+.styledLinkContent--desktop__mega-menu--body {
+    padding-top   : 8px;
+    padding-bottom: 8px;
+}
 
 .styledLinkText--desktop__mega-menu--body {
     font-family: lexend, sans-serif;
     font-weight: 300;
     font-size  : 12px !important;
     line-height: 15px;
-}
-
-
-
-/* Nuevas clases - fix-styles 🧩*/
-/* .menuContainer {
-    font-family     : lexend, sans-serif;
-    width           : 250px !important;
-    background-color: #fff !important;
-    border-radius   : 0px 0px 16px 16px;
-    max-height      : 647px;
-    overflow        : auto;
-} */
-
-.menuContainer {
-    font-family     : lexend, sans-serif;
-    width           : 220px !important;
-    background-color: #fff !important;
-    border-radius   : 0px 0px 16px 16px;
-    max-height      : 647px;
-    overflow        : auto;
-}
-
-.styledLinkContainer--desktop__mega-menu--body {
-    margin-left : 0px;
-    margin-right: 0px;
-    width       : 100%;
-    color       : #1D2734;
-    padding-left: 16px;
-    padding-top: 0%;
-    padding-bottom: 16px;
+    color      : #1D2734 !important;
 }
 
 .submenuContainer {
@@ -87,25 +76,25 @@
     border-radius   : 0px 0px 16px 0px;
     max-height      : 647px;
     overflow        : auto;
-    padding-left: 0%;
+    padding-left    : 0%;
 }
 
 .submenuContainerTitle--desktop__mega-menu--body {
-    display              : grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content      : space-around;
-    align-items          : center;
+    display                 : grid;
+    grid-template-columns   : 1fr 1fr;
+    justify-content         : space-around;
+    align-items             : center;
     /* gap                  : 30px; */
-    gap: 15px;
-    margin-bottom: 14px;
+    gap                     : 15px;
+    margin-bottom           : 14px;
 }
 
 .submenuContainerTitle--desktop__mega-menu--body {
-    font-family: lexend, sans-serif;
-    font-size  : 14px;
-    line-height: 17.5px;
-    color      : #1D2734 !important;
-    /* padding: 0% !important; */
+    font-family : lexend, sans-serif;
+    font-size   : 14px;
+    line-height : 17.5px;
+    color       : #1D2734 !important;
+    /* padding  : 0% !important; */
     padding-left: 16px !important;
 }
 
@@ -114,22 +103,21 @@
 }
 
 .seeAllLinkContainer--desktop__mega-menu--body {
-    /* font-family: lexend, sans-serif;
-    font-size  : 14px;
-    font-weight: bold;
-    font-weight: 600;
-    line-height: 17.5px; */
     width      : 148px !important;
     margin-left: 16px;
 }
 
 .seeAllLink--desktop__mega-menu--body {
-    font-family: lexend, sans-serif;
-    font-size  : 14px;
-    font-weight: bold;
-    font-weight: 600;
-    line-height: 17.5px;
-    color: #1D2734;
+    font-family    : lexend, sans-serif;
+    font-size      : 14px;
+    font-weight    : 600;
+    line-height    : 17.5px;
+    color          : #1D2734;
+    text-decoration: none;
+}
+
+.accordionIconContainer--desktop__mega-menu--body {
+    display: none;
 }
 
 /*----------------------------- Mega menu mobile ------------------------------------------------*/
@@ -183,9 +171,10 @@
 }
 
 .submenuItemVertical--mega__menu-drawer--body {
-    border       : none;
-    padding-left : 16px;
-    padding-right: 16px;
+    border          : none;
+    /* padding-left : 16px; */
+    padding-left    : 0%;
+    padding-right   : 16px;
 }
 
 .submenuContainerTitle--mega__menu-drawer--body {
@@ -193,25 +182,51 @@
 }
 
 .collapsibleHeaderText--mega__menu-drawer--body {
+    margin-top   : 19px;
+    margin-bottom: 16px;
+    padding-left : 16px;
     font-family  : lexend, sans-serif;
     font-size    : 12px;
     font-weight  : 300;
     line-height  : 15px;
     color        : #1D2734 !important;
-    margin-top   : 19px;
-    margin-bottom: 16px;
+}
+
+.seeAllLinkContainer--mega__menu-drawer--body {
+    padding-left: 16px;
 }
 
 .seeAllLink--mega__menu-drawer--body {
-    font-size  : 14px;
-    line-height: 17.5px;
-    font-family: lexend, sans-serif;
-    color      : #1D2734 !important;
+    font-size      : 14px;
+    line-height    : 17.5px;
+    font-family    : lexend, sans-serif;
+    color          : #1D2734 !important;
+    text-decoration: none;
 }
 
 .accordionIconContainer {
     display: none;
 }
+
+/* Clases no necesarias limpieza de codigo desktop */
+/* .menuContainer {
+    font-family     : lexend, sans-serif;
+    width           : 250px !important;
+    background-color: #fff !important;
+    border-radius   : 0px 0px 16px 16px;
+    max-height      : 647px;
+    overflow        : auto;
+} */
+
+/* Nuevas clases - buscar especifidad de desktop*/
+/* .departmentsTitle {
+    font-size  : 14px;
+    line-height: 17.5px;
+    font-family: lexend, sans-serif;
+    color      : #1D2734 !important;
+    padding: 0% !important;
+    margin: 0% !important;
+} */
 
 /* Clases no necesarias limpieza de codigo mobile */
 /* .departmentsTitle--mega__menu-drawer--body {
@@ -266,13 +281,3 @@
     line-height   : 15px;
     color         : #1D2734 !important;
 } */
-
-/* Nuevas clases - buscar especifidad de desktop 🧩*/
-.departmentsTitle {
-    /* font-size  : 14px;
-    line-height: 17.5px;
-    font-family: lexend, sans-serif;
-    color      : #1D2734 !important; */
-    /* padding: 0% !important;
-    margin: 0% !important; */
-}

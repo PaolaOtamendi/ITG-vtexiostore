@@ -1,9 +1,7 @@
 {
   "flex-layout.row#mobile__mega--menu-container": {
     "title": "Container mega-menu mobile",
-    "children": [
-      "flex-layout.col#mobile__mega-menu--trigger"
-    ],
+    "children": ["flex-layout.col#mobile__mega-menu--trigger"],
     "props": {
       "blockClass": "mobile__mega--menu-container"
     }
