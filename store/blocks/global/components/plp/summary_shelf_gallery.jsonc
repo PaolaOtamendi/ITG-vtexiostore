@@ -55,11 +55,11 @@
     "props": {
         "blockClass": "product_summary-selling-price"
     }
-  },
-  "vtex.product-highlights@2.x:product-highlights": {
-    "title": "Product summary highlights",
-    "props": {
-        "blockClass": "product_summary-highlights"
-    }
   }
+  // "vtex.product-highlights@2.x:product-highlights": {
+  //   "title": "Product summary highlights",
+  //   "props": {
+  //       "blockClass": "product_summary-highlights"
+  //   }
+  // }
 }

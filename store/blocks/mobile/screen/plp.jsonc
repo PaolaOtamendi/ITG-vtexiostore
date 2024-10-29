@@ -1,6 +1,9 @@
 {
   "search-result-layout.mobile": {
-    "children": ["flex-layout.row#container__global-plp"],
+    "children": [
+      "flex-layout.row#main__mobile--plp"
+      // "flex-layout.row#container__global-plp",
+    ],
     "props": {
       "preventRouteChange": true
     }
