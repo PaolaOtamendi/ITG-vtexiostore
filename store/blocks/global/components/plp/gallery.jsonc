@@ -31,10 +31,8 @@
           }
         }
       ],
-      // "OneOrTwoLineSummary": "product-summary.shelf",
-      // "ManyByLineSummary": "product-summary.shelf"
-      "OneOrTwoLineSummary": "product-summary.shelf#global__gallery--summary",
-      "ManyByLineSummary": "product-summary.shelf#global__gallery--summary"
+      "OneOrTwoLineSummary": "product-summary.shelf#gallery__product--summary",
+      "ManyByLineSummary": "product-summary.shelf#gallery__product--summary"
     }
   },
 

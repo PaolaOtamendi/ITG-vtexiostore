@@ -35,38 +35,56 @@
     justify-content: left;
 }
 
-.flexCol--shelf__details--gallery {
-    display        : flex;
-    align-items    : flex-start;
-    justify-content: left;
-}
 
-.flexCol--shelf__image--gallery :global(.vtex-product-summary-2-x-image--product__summary--image) {
+
+.flexCol--product__shelf--image :global(.vtex-product-summary-2-x-image--product__summary--image) {
     width : 136px !important;
     height: 107px !important;
 }
 
-.flexColChild--shelf__details--gallery :global(.vtex-product-summary-2-x-brandName--product_summary-name) {
-    font-family: Lexend, sans-serif;
+.flexColChild--product__shelf--details :global(.vtex-product-summary-2-x-brandName--product_summary-name) {
+    font-family: lexend, sans-serif;
     font-size  : 12px !important;
     line-height: 12.76px;
-    color      : rgba(29, 39, 52, 0.6);
+    color      : hsla(214, 28%, 16%, 0.6);
 }
 
-.flexColChild--shelf__details--gallery :global(.vtex-product-price-1-x-listPriceValue--product_summary-price) {
-    font-family: Lexend, sans-serif;
+.flexColChild--product__shelf--details :global(.vtex-product-price-1-x-listPriceValue--product_summary-price) {
+    font-family: lexend, sans-serif;
     font-size  : 12px !important;
     font-weight: 400;
     line-height: 12.76px;
     color      : rgba(29, 39, 52, 0.4);
 }
 
-.flexColChild--shelf__details--gallery :global(.vtex-product-price-1-x-sellingPriceValue--product_summary-selling-price) {
-    font-family: Lexend, sans-serif;
+.flexColChild--product__shelf--details :global(.vtex-product-price-1-x-sellingPriceValue--product_summary-selling-price) {
+    font-family: lexend, sans-serif;
     font-size  : 20px !important;
     font-weight: 600;
     line-height: 21.87px;
     color      : #1D2734;
+}
+
+/* Validar*/ 
+.flexCol--sort__options {
+    position: relative !important;
+    right   : 50px !important;
+}
+
+/* Nuevas clases - fix-styles 🧩*/
+.flexCol--product__shelf--details {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: left;
+    gap            : 6px;
+}
+
+.flexRow--shelf__details--prices :global(.vtex-product-price-1-x-listPrice--product_summary-price) {
+    text-align: left;
+}
+
+.flexRowContent--shelf__details--prices {
+    flex-direction: column;
 }
 
 /*----------------------------- PLP custom styles mobile ------------------------------------------------*/
@@ -84,26 +102,26 @@
 }
 
 .flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-link) {
-    padding: 0%;
+    padding    : 0%;
     font-family: montserrat, lexend, sans-serif;
-    font-size: 12px;
+    font-size  : 12px;
 }
 
 .flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-link--1) {
-    color:#8E8A92;
+    color: #8E8A92;
 }
 
 .flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-link--2) {
-    color:#1D2734;
+    color: #1D2734;
 }
 
 .flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-homeIcon) {
-    width: 16px;
+    width : 16px;
     height: 16px;
 }
 
 .flexCol--mobile__plp-head--filters {
-    gap: 4px;
+    gap         : 4px;
     padding-left: 16px;
 }
 
@@ -112,14 +130,10 @@
 }
 
 .flexRowContent--mobile__plp--searchs {
-    display: flex;
+    display       : flex;
     flex-direction: column;
-    gap: 5px;
+    gap           : 5px;
 }
-
-/* .flexRowContent--mobile__plp--searchs span {
-    font-family: lexend, sans-serif;
-} */
 
 .flexRowContent--mobile__plp--searchs :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
     margin: 0 auto;
@@ -133,6 +147,17 @@
     margin-top: 16px;
 }
 
+.flexRowContent--gallery__product--shelf {
+    display       : flex;
+    flex-direction: row;
+    gap           : 9px;
+}
+
+/* Clases no necesarias eliminar en limpieza*/
+/* .flexRowContent--mobile__plp--searchs span {
+    font-family: lexend, sans-serif;
+} */
+
 /* .flexRowContent--global__result-order-filter {
     flex-direction: column;
 }
@@ -143,9 +168,9 @@
 } */
 
 /*----------------------------- MediaQueires ---------------------------------------*/
-@media (max-width: 767px) {
-    .flexRowContent--container__shelf-product-gallery {
+/* @media (max-width: 767px) {
+    .flexRowContent--gallery__product--shelf {
         display       : flex;
         flex-direction: row;
     }
-}
+} */

@@ -87,11 +87,11 @@
     "search-content#plp": {
         "title": "Search content and results plp",
         "blocks": ["gallery#global__search", "not-found"]
-    },
-    "search-fetch-more": {
-        "props": {
-            "blockClass": "button__see-more-gallery",
-            "text": "Ver mas"
-        }
     }
+    // "search-fetch-more": {
+    //     "props": {
+    //         "blockClass": "button__see-more-gallery",
+    //         "text": "Ver mas"
+    //     }
+    // }
 }

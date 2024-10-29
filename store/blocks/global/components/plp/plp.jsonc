@@ -1,26 +1,4 @@
 {
-    // "flex-layout.row#container__global-plp": {
-    //     "title": "Container mobile layout PLP",
-    //     "children": [
-    //         "flex-layout.col#container__global--plp"
-    //     ],
-    //     "props": {
-    //         "blockClass": "container__global-plp"
-    //     }
-    // },
-    // "flex-layout.col#container__global--plp": {
-    //     "title": "Container column to PLP",
-    //     "children": [
-    //         "flex-layout.row#global__result-order-filter",
-    //         "search-content#global__search--layout",
-    //         "search-products-count-per-page",
-    //         "search-fetch-more"
-    //     ],
-    //     "props": {
-    //         "blockClass": "container_plp"
-    //     }
-    // },
-
     "search-content#global__search--layout": {
         "title": "Search content",
         "blocks": [
@@ -28,38 +6,6 @@
             "not-found"
         ]
     },
-
-    // "flex-layout.row#global__result-order-filter": {
-    //     "title": "Container result filter and order",
-    //     "children": [
-    //         "flex-layout.col#head__result-order-filter",
-    //         "flex-layout.col#body__result-order-filter"
-    //     ],
-    //     "props": {
-    //         "blockClass": "global__result-order-filter"
-    //     }
-    // },
-
-    // "flex-layout.col#head__result-order-filter": {
-    //     "title": "Container head result filter and order",
-    //     "children": [
-    //         "breadcrumb.search",
-    //         "search-title.v2"
-    //     ],
-    //     "props": {
-    //         "blockClass": "head__result-order-filter"
-    //     }
-    // },
-    // "flex-layout.col#body__result-order-filter": {
-    //     "title": "Container head result filter and order",
-    //     "children": [
-    //         "order-by.v2",
-    //         "filter-navigator.v3"
-    //     ],
-    //     "props": {
-    //         "blockClass": "body__result-order-filter"
-    //     }
-    // },
 
     "breadcrumb.search": {
         "title": "Breadcrumb Search Navigation",
@@ -95,4 +41,59 @@
             "blockClass": "button__see-more-gallery"
         }
     }
+
+    // Limpieza de codigo eliminar
+    // "flex-layout.row#container__global-plp": {
+    //     "title": "Container mobile layout PLP",
+    //     "children": [
+    //         "flex-layout.col#container__global--plp"
+    //     ],
+    //     "props": {
+    //         "blockClass": "container__global-plp"
+    //     }
+    // },
+    // "flex-layout.col#container__global--plp": {
+    //     "title": "Container column to PLP",
+    //     "children": [
+    //         "flex-layout.row#global__result-order-filter",
+    //         "search-content#global__search--layout",
+    //         "search-products-count-per-page",
+    //         "search-fetch-more"
+    //     ],
+    //     "props": {
+    //         "blockClass": "container_plp"
+    //     }
+    // },
+
+    // "flex-layout.row#global__result-order-filter": {
+    //     "title": "Container result filter and order",
+    //     "children": [
+    //         "flex-layout.col#head__result-order-filter",
+    //         "flex-layout.col#body__result-order-filter"
+    //     ],
+    //     "props": {
+    //         "blockClass": "global__result-order-filter"
+    //     }
+    // },
+
+    // "flex-layout.col#head__result-order-filter": {
+    //     "title": "Container head result filter and order",
+    //     "children": [
+    //         "breadcrumb.search",
+    //         "search-title.v2"
+    //     ],
+    //     "props": {
+    //         "blockClass": "head__result-order-filter"
+    //     }
+    // },
+    // "flex-layout.col#body__result-order-filter": {
+    //     "title": "Container head result filter and order",
+    //     "children": [
+    //         "order-by.v2",
+    //         "filter-navigator.v3"
+    //     ],
+    //     "props": {
+    //         "blockClass": "body__result-order-filter"
+    //     }
+    // },
 }

@@ -1,47 +1,60 @@
 {
-  "product-summary.shelf#global__gallery--summary": {
-    "title": "Global product summary shelf to gallery",
+  "product-summary.shelf#gallery__product--summary": {
+    "title": "Galley product summary shefl",
     "children": [
-        "flex-layout.row#container__shelf-product-gallery"
-    ],
-    "props": {}
-  },
-  "flex-layout.row#container__shelf-product-gallery": {
-    "title": "Container shelf producto description and image",
-    "children": [
-        "flex-layout.col#shelf__image--gallery",
-        "flex-layout.col#shelf__details--gallery"
+        "flex-layout.row#gallery__product--shelf"
     ],
     "props": {
-        "blockClass": "container__shelf-product-gallery"
+      "blockClass": "gallery__product--summary"
     }
   },
-  "flex-layout.col#shelf__image--gallery": {
-    "title": "Column to product image shelf",
+  "flex-layout.row#gallery__product--shelf": {
+    "title": "Contain product shelf body gallery",
+    "children": [
+        "flex-layout.col#product__shelf--image",
+        "flex-layout.col#product__shelf--details"
+    ],
+    "props": {
+        "blockClass": "gallery__product--shelf"
+    }
+  },
+  "flex-layout.col#product__shelf--image": {
+    "title": "Contain product shelf image gallery",
     "children": [
         "product-summary-image"
     ],
     "props": {
-        "blockClass": "shelf__image--gallery"
+        "blockClass": "product__shelf--image"
     }
   },
-  "flex-layout.col#shelf__details--gallery": {
-    "title": "Column to product details shelf",
+  "flex-layout.col#product__shelf--details": {
+    "title": "Contain product shelf info gallery",
     "children": [
         "product-summary-name",
-        "product-list-price",
-        "product-selling-price",
+        "flex-layout.row#shelf__details--prices",
+        // "product-list-price",
+        // "product-selling-price",
+        // "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider",
         "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider"
     ],
     "props": {
-        "blockClass": "shelf__details--gallery"
+        "blockClass": "product__shelf--details"
     }
   },
-
   "product-summary-name": {
     "title": "Product summary name",
     "props": {
         "blockClass": "product_summary-name"
+    }
+  },
+  "flex-layout.row#shelf__details--prices": {
+    "title": "Contain shelf detail prices",
+    "children": [
+      "product-list-price",
+      "product-selling-price"
+    ],
+    "props": {
+      "blockClass": "shelf__details--prices"
     }
   },
   "product-list-price": {
@@ -56,6 +69,8 @@
         "blockClass": "product_summary-selling-price"
     }
   }
+
+  // Limpieza de codigo no necesario
   // "vtex.product-highlights@2.x:product-highlights": {
   //   "title": "Product summary highlights",
   //   "props": {
