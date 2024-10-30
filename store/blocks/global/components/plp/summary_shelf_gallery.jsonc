@@ -32,9 +32,6 @@
     "children": [
         "product-summary-name",
         "flex-layout.row#shelf__details--prices",
-        // "product-list-price",
-        // "product-selling-price",
-        // "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider",
         "vtex.product-highlights@2.x:product-highlights#shelf__highlights--slider"
     ],
     "props": {

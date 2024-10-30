@@ -9,7 +9,7 @@
         }
     },
     "flex-layout.col#mobile__plp--container": {
-        "title": "Mobile__plp--container",
+        "title": "Mobile plp container",
         "children": [
             "flex-layout.row#mobile__plp--head",
             "flex-layout.row#mobile__plp--body",

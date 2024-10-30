@@ -8,7 +8,7 @@
     width: 100% !important;
 }
 
-.flexCol--breadcrumb__search {
+.flexCol--desktop__plp-head--searchs {
     display        : flex;
     align-items    : baseline;
     justify-content: left;
@@ -17,7 +17,7 @@
     font-size      : 14px;
 }
 
-.flexColChild--sort__options {
+.flexColChild--desktop__plp-head--sortby {
     display    : flex;
     align-items: center;
     position   : relative;
@@ -66,7 +66,7 @@
 }
 
 /* Validar*/ 
-.flexCol--sort__options {
+.flexCol--desktop__plp-head--sortby {
     position: relative !important;
     right   : 50px !important;
 }
@@ -85,6 +85,27 @@
 
 .flexRowContent--shelf__details--prices {
     flex-direction: column;
+}
+
+/* Nuevas clases - fix-styles 🧩*/
+/* Validar */
+/* .flexRowContent--desktop__plp--body {
+    width: 90%;
+    margin-left: 72px;
+} */
+
+.flexRowContent--desktop__plp--body {
+    padding: 20px;
+    padding-left: 72px;
+    padding-right: 70px;
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) and (max-width: 1179px) {
+    .flexRowContent--desktop__plp--body {
+        justify-content: flex-start;
+        gap: 74px;
+    }
 }
 
 /*----------------------------- PLP custom styles mobile ------------------------------------------------*/

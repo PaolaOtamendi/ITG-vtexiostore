@@ -61,7 +61,7 @@
     //         "search-fetch-more"
     //     ],
     //     "props": {
-    //         "blockClass": "container_plp"
+    //         "blockClass": "desktop__plp--container"
     //     }
     // },
 

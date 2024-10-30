@@ -1,7 +1,7 @@
 {
   "search-result-layout.desktop": {
     "children": [
-      "flex-layout.row#container__desktop--plp"
+      "flex-layout.row#main__desktop--plp"
     ],
     "props": {
       "preventRouteChange": true
