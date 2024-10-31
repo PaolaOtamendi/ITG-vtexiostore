@@ -66,12 +66,4 @@
         "blockClass": "product_summary-selling-price"
     }
   }
-
-  // Limpieza de codigo no necesario
-  // "vtex.product-highlights@2.x:product-highlights": {
-  //   "title": "Product summary highlights",
-  //   "props": {
-  //       "blockClass": "product_summary-highlights"
-  //   }
-  // }
 }

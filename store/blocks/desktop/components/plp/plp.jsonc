@@ -66,7 +66,7 @@
         }
     },
 
-    // Prueba nueva
+    // Improve code ok
     "flex-layout.col#desktop__plp-body--sorts": {
         "title": "Contain desktop plp sorts",
         "children": [

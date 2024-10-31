@@ -6,7 +6,6 @@
 }
 
 .container--home__shelf--product--summary {
-    /* margin       : 3px; */
     margin       : 8px;
     border-radius: 0px 0px 0px 0px;
 }
@@ -103,7 +102,6 @@
     }
 
     .container--home__shelf--product--summary {
-        /* margin: 8px; */
         margin: 12px;
     }
 
@@ -130,7 +128,6 @@
     }
 
     .price_sellingPrice {
-        /* font-size  : 24px; */
         font-size  : 23px;
         line-height: 28.8px;
     }

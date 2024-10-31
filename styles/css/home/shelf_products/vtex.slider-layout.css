@@ -1,6 +1,5 @@
 .sliderLayoutContainer--home__shelf--slider {
     display               : flex;
-    /* flex-wrap          : wrap; */
     justify-content       : center;
     flex-direction        : column;
     gap                   : 1px;
@@ -59,9 +58,9 @@
 }
 
 @media (min-width: 1280px) {
-    .sliderTrackContainer--home__shelf--slider {
-        /* width: 1092px; */ /* Validar*/
-    }
+    /* .sliderTrackContainer--home__shelf--slider {
+        width: 1092px;
+    } */
 }
 
 @media (min-width: 320px) and (max-width: 1024px) {
@@ -70,86 +69,3 @@
         padding-right: 16px !important;
     }
 }
-
-/* Clases pasadas cambiadas */
-/* .paginationDotsContainer--home__shelf--slider {
-    display       : flex;
-    align-items   : center;
-    height        : 50px;
-    position      : relative;
-    width      : 100%;
-    position      : absolute;
-    bottom        : -50px;
-    left          : 0;
-    z-index       : 1;
-} */
-
-/* .sliderLayoutContainer--home__shelf--slider {
-    padding-left : 80px;
-    padding-right: 80px;
-} */
-
-/* .caretIcon--home__shelf--slider {
-    width        : 20px !important;
-    height       : 14px !important;
-    border-left  : 10px solid transparent;
-    border-right : 10px solid transparent;
-    border-radius: 4px;
-    margin-bottom: 94px;
-    overflow     : visible;
-    fill         : none;
-} */
-
-/* .paginationDotsContainer--home__shelf--slider {
-    display    : flex;
-    align-items: center;
-    height     : 50.89px;
-    width      : 100%;
-    position   : absolute;
-    bottom     : -50px;
-    left       : 0;
-    z-index    : 1;
-} */
-
-/* .paginationDot--home__shelf--slider {
-    width           : 44px !important;
-    height          : 40px !important;
-    border-radius   : 0;
-    background-color: transparent;
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
-    margin          : 0 2px;
-    z-index         : 2;
-} */
-
-/*----------------------------- MediaQueires ---------------------------------------*/
-/* @media (min-width: 320px) and (max-width: 1279px) {
-} */
-
-/*---------- Phone ------------*/
-/* @media (min-width: 320px) and (max-width: 639px) {
-    .paginationDotsContainer--home__shelf--slider {
-        width : 231px;
-        margin: 0 auto;
-    }
-
-    .paginationDot--home__shelf--slider {
-        width: 20px !important;
-    }
-
-    .sliderLayoutContainer--home__shelf--slider :global(.vtex-slider-layout-0-x-paginationDot)::after {
-        width: 20px;
-    }
-} */
-
-/*---------- Tablet ------------*/
-/* @media (min-width: 640px) and (max-width: 1279px) {
-    .paginationDot--home__shelf--slider {
-        width: 15px !important;
-    }
-
-    .sliderLayoutContainer--home__shelf--slider :global(.vtex-slider-layout-0-x-paginationDot)::after {
-        width: 15px !important;
-    }
-} */

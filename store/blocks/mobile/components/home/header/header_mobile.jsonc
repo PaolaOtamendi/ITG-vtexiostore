@@ -11,11 +11,11 @@
   "flex-layout.row#mobile__header-menu--container": {
     "title": "Container mobile sections 1 and 2",
     "props": {
-      /*"horizontalAlign": "center",*/
-      /*"verticalAlign": "center",*/
-      /*"topMenuIcons": true,*/
-      /*"preventVerticalStretch": true,*/
-      /*"preventHorizontalStretch": false,*/
+      // "horizontalAlign": "center",
+      // "verticalAlign": "center",
+      // "topMenuIcons": true,
+      // "preventVerticalStretch": true,
+      // "preventHorizontalStretch": false,
       "fullWidth": true,
       "blockClass": "mobile__header-menu--container"
     },
@@ -45,7 +45,6 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      // "url": "assets/img/icon_Black.png",
       "url": "/arquivos/logo_itg_icon.svg",
       "blockClass": ["sec1__logo"]
     }
@@ -87,12 +86,4 @@
       "blockClass": "header_menu-container-sec2--login"
     }
   }
-
-  /*"flex-layout.col#mobile_spacer": {
-    "title": "spacer",
-    "props": {
-      "blockClass": "mobile_spacer",
-      "flexGrow": 1
-    }
-  }*/
 }

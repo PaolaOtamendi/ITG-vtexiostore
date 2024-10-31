@@ -222,7 +222,7 @@
     /* Prueba */
 }
 
-/* puebra contener sortby */
+/* sortby container */
 .orderByOptionsContainer {
     position: absolute;
     right   : -30px;
@@ -369,6 +369,11 @@
 
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) {
+    .orderByOptionsContainer {
+        right   : -10px;
+    }
+    
+
     .galleryTitle--layout {
         margin-left: 0px;
         font-size  : 20px;
@@ -413,91 +418,3 @@
         max-width: max-content !important;
     }
 }
-
-/*----------------------------- PLP custom styles mobile-phone ------------------------------------------------*/
-/*claes no necearias eiminar en limpieza*/
-/* .galleryTitle--layout {
-    font-family: lexend, sans-serif;
-    font-size  : 20px;
-    font-weight: 600;
-    color      : #1D2734;
-    line-height: 25px;
-} */
-
-/* .filterPopupArrowIcon--plp__order-by-filter {
-    padding-left : 0px !important;
-    padding-right: 0px !important;
-}
-
-.filterPopupArrowIcon--plp__order-by-filter .caretIcon--plp__order-by-filter {
-    display: none;
-}
-
-.filterPopupArrowIcon--plp__order-by-filter::after {
-    content: url("/arquivos/span-icon-filter.svg");
-} */
-
-/* .filterPopupTitle--plp__filter-navigator::before {
-    content: url("/arquivos/view_quilt.svg");
-} */
-
-/*----------------------------- MediaQueires ---------------------------------------*/
-/* @media (max-width: 767px) {
-    .galleryLayoutSwitcher {
-        display: none;
-    }
-
-    .galleryTitle--layout {
-        font-size: 14px;
-    }
-
-    .flexCol--head__result-order-filter :global(.vtex-breadcrumb-1-x-link) {
-        font-size: 12px !important;
-    }
-
-    .orderByButton--plp__order-by-filter {
-        width : 147px;
-        height: 40px;
-        border: solid #1D2734 1px;
-    }
-
-    .orderByText--plp__order-by-filter {
-        font-size: 12px;
-        width    : 72px;
-    }
-
-    .filterPopupArrowIcon--plp__order-by-filter {
-        padding-left : 0px !important;
-        padding-right: 0px !important;
-    }
-} */
-
-/* @media (min-width: 768px) and (max-width: 1024px) {
-    .galleryLayoutSwitcher {
-        padding-top: 10px;
-    }
-
-    .flexCol--head__result-order-filter :global(.vtex-breadcrumb-1-x-link) {
-        font-size: 12px !important;
-    }
-
-    .galleryTitle--layout {
-    font-size: 14px;
-    }
-
-    .orderByButton--plp__order-by-filter {
-        width : 147px;
-        height: 40px;
-        border: solid #1D2734 1px;
-    }
-
-    .orderByText--plp__order-by-filter {
-        font-size: 12px;
-        width    : 72px;
-    }
-
-    .filterPopupArrowIcon--plp__order-by-filter {
-        padding-left : 0px !important;
-        padding-right: 0px !important;
-    }
-} */
