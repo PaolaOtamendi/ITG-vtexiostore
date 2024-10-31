@@ -1,41 +1,22 @@
-/*----------------------------- PLP custom styles dekstop ------------------------------------------------*/
-.flexRowContent--product__gallery--plp {
-    display       : flex;
+/*----------------------------- PLP shelf custom styles generals ------------------------------------------------*/
+.flexCol--product__shelf--details {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: left;
+    gap            : 6px;
+}
+
+.flexCol--product__shelf--details :global(.vtex-product-summary-2-x-nameContainer--product_summary-name) {
+    height: 38px;
+}
+
+.flexRow--shelf__details--prices :global(.vtex-product-price-1-x-listPrice--product_summary-price) {
+    text-align: left;
+}
+
+.flexRowContent--shelf__details--prices {
     flex-direction: column;
 }
-
-.flexRowContent--product__gallery--plp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-    width: 100% !important;
-}
-
-.flexCol--desktop__plp-head--searchs {
-    display        : flex;
-    align-items    : baseline;
-    justify-content: left;
-    left           : 72px;
-    position       : relative;
-    font-size      : 14px;
-}
-
-.flexColChild--desktop__plp-head--sortby {
-    display    : flex;
-    align-items: center;
-    position   : relative;
-    right      : 50px;
-}
-
-.flexRow--filter__options--plp {
-    width             : 184px !important;
-    /*max-width       : 184px;*/
-    /*background-color: aliceblue;*/
-    margin-left       : 72px;
-}
-
-.flexRowContent--product__gallery--plp .stretchChildrenWidth {
-    justify-content: left;
-}
-
-
 
 .flexCol--product__shelf--image :global(.vtex-product-summary-2-x-image--product__summary--image) {
     width : 136px !important;
@@ -65,53 +46,59 @@
     color      : #1D2734;
 }
 
-/* Validar*/ 
-.flexCol--desktop__plp-head--sortby {
-    position: relative !important;
-    right   : 50px !important;
+.flexCol--product__shelf--details :global(.vtex-product-highlights-2-x-productHighlightWrapper--shelf__free-shipping-wrapper) {
+    font-size: 12px;
 }
 
+/*----------------------------- PLP custom styles dekstop ------------------------------------------------*/
 /* Nuevas clases - fix-styles 🧩*/
-.flexCol--product__shelf--details {
-    display        : flex;
-    align-items    : flex-start;
-    justify-content: left;
-    gap            : 6px;
+.flexCol--desktop__plp--container {
+    margin-top: 40px;
 }
 
-.flexRow--shelf__details--prices :global(.vtex-product-price-1-x-listPrice--product_summary-price) {
-    text-align: left;
+.flexRowContent--desktop__plp--head {
+    padding-left : 72px;
+    padding-right: 72px;
 }
 
-.flexRowContent--shelf__details--prices {
-    flex-direction: column;
+.flexCol--desktop__plp-head--searchs {
+    display    : flex;
+    align-items: flex-start;
+    gap        : 16px;
 }
 
-/* Nuevas clases - fix-styles 🧩*/
-/* Validar */
-/* .flexRowContent--desktop__plp--body {
-    width: 90%;
-    margin-left: 72px;
-} */
+.flexColChild--desktop__plp-head--sortby {
+    display    : flex;
+    align-items: center;
+}
 
 .flexRowContent--desktop__plp--body {
-    padding: 20px;
-    padding-left: 72px;
+    padding      : 20px;
+    padding-top  : 40px;
+    padding-left : 72px;
     padding-right: 70px;
+}
+
+.flexCol--desktop__plp-head--searchs :global(.vtex-breadcrumb-1-x-container--plp__bread_crumb) {
+    padding: 0%;
 }
 
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) and (max-width: 1179px) {
     .flexRowContent--desktop__plp--body {
         justify-content: flex-start;
-        gap: 74px;
+        gap            : 74px;
     }
 }
 
 /*----------------------------- PLP custom styles mobile ------------------------------------------------*/
 /* Nuevas clases - fix-styles 🧩*/
 .flexRowContent--mobile__plp--head {
+    display       : flex;
     flex-direction: column;
+    gap           : 16px;
+    margin        : 16px 16px 16px 16px;
+    width         : auto;
 }
 
 .flexCol--mobile__plp-head--filters {
@@ -119,31 +106,11 @@
 }
 
 .flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-container) {
-    padding: 16px 0px 16px 16px;
-}
-
-.flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-link) {
-    padding    : 0%;
-    font-family: montserrat, lexend, sans-serif;
-    font-size  : 12px;
-}
-
-.flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-link--1) {
-    color: #8E8A92;
-}
-
-.flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-link--2) {
-    color: #1D2734;
-}
-
-.flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-homeIcon) {
-    width : 16px;
-    height: 16px;
+    padding: 0%;
 }
 
 .flexCol--mobile__plp-head--filters {
-    gap         : 4px;
-    padding-left: 16px;
+    gap: 4px;
 }
 
 .flexRow--mobile__plp--body {
@@ -175,6 +142,56 @@
 }
 
 /* Clases no necesarias eliminar en limpieza*/
+/* .flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-link) {
+    padding    : 0%;
+    font-family: montserrat, lexend, sans-serif;
+    font-size  : 12px;
+} */
+
+/* .flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-link--1) {
+    color: #8E8A92;
+}
+
+.flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-link--2) {
+    color: #1D2734;
+} */
+
+/* .flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-homeIcon) {
+    width : 16px;
+    height: 16px;
+} */
+
+/* .flexCol--desktop__plp-head--searchs :global(.vtex-breadcrumb-1-x-link) {
+    padding: 0%;
+} */
+
+/* Validar */
+/* .flexRowContent--desktop__plp--body {
+    width: 90%;
+    margin-left: 72px;
+} */
+
+/* .flexRowContent--product__gallery--plp {
+    display       : flex;
+    flex-direction: column;
+} */
+
+/* .flexRowContent--product__gallery--plp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    width: 100% !important;
+} */
+
+/* .flexRow--filter__options--plp {
+    width             : 184px !important;
+    /*max-width       : 184px;*/
+/*background-color: aliceblue;
+    margin-left       : 72px;
+} */
+
+/* .flexRowContent--product__gallery--plp .stretchChildrenWidth {
+    justify-content: left;
+} */
+
+
 /* .flexRowContent--mobile__plp--searchs span {
     font-family: lexend, sans-serif;
 } */

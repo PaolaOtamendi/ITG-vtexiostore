@@ -56,10 +56,6 @@
     "flex-layout.row#desktop__plp--body": {
         "title": "Desktop plp body",
         "children": [
-            // "flex-layout.row#filter__options--plp",
-            // "flex-layout.row#product__gallery--plp"
-            // "filter-navigator.v3",
-            // "search-content#global__search--layout"
             "flex-layout.col#desktop__plp-body--sorts",
             "flex-layout.col#desktop__plp-body--shelf"
         ],
@@ -78,20 +74,17 @@
         ],
         "props": {
             "fullWidth": false,
-            "blockClass": //"filter__options--plp"
-            "desktop__plp-body--sorts"
+            "blockClass": "desktop__plp-body--sorts"
         }
     },
     "flex-layout.col#desktop__plp-body--shelf": {
         "title": "Contain dekstop plp shelf",
         "children": [
-            // "gallery-layout-switcher",
             "search-content#global__search--layout"
         ],
         "props": {
             "fullWidth": false,
-            "blockClass": //"product__gallery--plp"
-            "desktop__plp-body--shelf"
+            "blockClass": "desktop__plp-body--shelf"
         }
     },
 
@@ -105,37 +98,4 @@
             "blockClass": "mobile__plp--searchs"
         }
     }
-
-    // Anterior
-    // "flex-layout.row#filter__options--plp": {
-    //     "title": "Container plp filter",
-    //     "children": [
-    //         "filter-navigator.v3"
-    //     ],
-    //     "props": {
-    //         "blockClass": "filter__options--plp"
-    //     }
-    // },
-    // "flex-layout.row#product__gallery--plp": {
-    //     "title": "Container product gallery plp",
-    //     "children": [
-    //         "gallery-layout-switcher",
-    //         "search-content#plp",
-    //         "search-products-count-per-page",
-    //         "search-fetch-more"
-    //     ],
-    //     "props": {
-    //         "blockClass": "product__gallery--plp"
-    //     }
-    // },
-    // "search-content#plp": {
-    //     "title": "Search content and results plp",
-    //     "blocks": ["gallery#global__search", "not-found"]
-    // }
-    // "search-fetch-more": {
-    //     "props": {
-    //         "blockClass": "button__see-more-gallery",
-    //         "text": "Ver mas"
-    //     }
-    // }
 }

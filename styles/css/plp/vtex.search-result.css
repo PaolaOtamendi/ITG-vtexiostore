@@ -1,3 +1,4 @@
+/*----------------------------- PLP custom styles generals ------------------------------------------------*/
 .searchResultContainer {
     background-color: #fff;
 }
@@ -8,17 +9,17 @@
 
 /*----------------------------- PLP custom styles desktop ------------------------------------------------*/
 .totalProducts--layout {
-    padding-left: 0px;
-    font-family : lexend, sans-serif;
-    font-size   : 14px;
-    font-weight : 300;
-    color       : #1D2734;
-    line-height : 17.5px;
+    padding    : 0%;
+    font-family: lexend, sans-serif;
+    font-size  : 14px;
+    font-weight: 300;
+    line-height: 17.5px;
+    color      : #1D2734;
 }
 
 .totalProductsMessage {
     text-transform: lowercase;
-    font-family   : Lexend, sans-serif;
+    font-family   : lexend, sans-serif;
     font-size     : 14px;
     font-weight   : 300;
     line-height   : 17.5px;
@@ -46,12 +47,13 @@
 }
 
 .filterTitleSpan--plp__filter-navigator {
-    display    : flex;
-    align-items: center;
-    font-family: lexend, sans-serif;
-    font-weight: 400;
-    font-size  : 14px;
-    line-height: 20px;
+    display       : flex;
+    align-items   : center;
+    font-family   : lexend, sans-serif;
+    font-weight   : 400;
+    font-size     : 14px;
+    line-height   : 20px;
+    text-transform: capitalize;
 }
 
 .filter__container--category-2 .filterTitleSpan--plp__filter-navigator {
@@ -109,27 +111,23 @@
 }
 
 .filterItem {
-    display    : flex;
-    align-items: center;
-    height     : 44px;
-    padding    : 10px;
-    gap        : 10px;
-    font-family: lexend, sans-serif;
-    font-weight: 300;
-    font-size  : 12px;
-    line-height: 15px;
-    color      : #1D2734;
+    display       : flex;
+    align-items   : center;
+    /* height     : 44px; */
+    height        : auto;
+    padding       : 10px;
+    gap           : 10px;
+    font-family   : lexend, sans-serif;
+    font-weight   : 300;
+    font-size     : 12px;
+    line-height   : 15px;
+    color         : #1D2734;
 }
 
 .filter__container--priceRange .filterTemplateOverflow--plp__filter-navigator {
     height         : 56px;
     display        : flex;
     justify-content: center;
-    font-family    : lexend, sans-serif;
-    font-size      : 14px;
-    font-weight    : 300;
-    line-height    : 20px;
-    color          : #1D2734;
 }
 
 .filterTemplateOverflow--plp__filter-navigator :global(.vtex-slider__left-value) {
@@ -148,16 +146,6 @@
     color      : #1D2734;
 }
 
-/* Vaidar */
-.homeIcon {
-    width : 20px !important;
-    height: 20px !important;
-}
-
-.arrow--2 :global(.vtex-breadcrumb-1-x-link--2) {
-    color: #1D2734;
-}
-
 .filterPopupTitle--plp__order-by-filter {
     font-size: 0px;
 }
@@ -169,12 +157,9 @@
     padding-right  : 50px;
 }
 
-.flexColChild--product__shelf--details :global(.vtex-product-summary-2-x-productBrand--product_summary-name) {
-    font-size: 12px;
-}
-
 .buttonShowMore--button__see-more-gallery :global(.vtex-button) {
-    width           : 110px;
+    /* width           : 110px; */
+    width           : auto;
     height          : 32px;
     border-radius   : 40px;
     border          : solid #1D2734 1px;
@@ -184,8 +169,6 @@
     flex-direction  : row;
     align-items     : center;
     justify-content : center;
-    padding-left    : 0px;
-    padding-right   : 0px;
 }
 
 .buttonShowMore--button__see-more-gallery :global(.vtex-button__label) {
@@ -203,8 +186,7 @@
 }
 
 .buttonShowMore--button__see-more-gallery :global(.vtex-button__label)::after {
-    content    : url("/arquivos/button-plus-line.svg");
-    margin-left: 5px;
+    content: url("/arquivos/button-plus-line.svg");
 }
 
 .filterTemplateOverflow--plp__filter-navigator :global(.vtex-slider__base-internal) {
@@ -215,17 +197,11 @@
     background-color: #1D2734;
 }
 
-/* Prueba */
-/* .galleryItem {
-    flex-basis: auto !important;
-} */
-
 /*----------------------------- PLP custom styles mobile ------------------------------------------------*/
 /* Nuevas clases - fix-styles 🧩*/
 .galleryTitle--layout {
     margin-top   : 0%;
-    margin-left  : 16px;
-    margin-bottom: 16px;
+    margin-bottom: 0%;
     font-family  : lexend, sans-serif;
     font-weight  : 600;
     font-size    : 14px;
@@ -253,8 +229,7 @@
 }
 
 .orderByButton--plp__order-by-filter::before {
-    content        : url("/arquivos/mpa-filter-settings.svg");
-    /* margin-right: 5px; */
+    content: url("/arquivos/mpa-filter-settings.svg");
 }
 
 .orderByText--plp__order-by-filter {
@@ -290,15 +265,14 @@
 }
 
 .filterPopupButton {
-    width              : 110px;
-    height             : 40px;
-    display            : flex;
-    justify-content    : space-between;
-    padding            : 14px 12px 14px 12px;
-    margin-top         : 2px;
-    background-color   : #E7E7E7;
-    border-radius      : 40px;
-    /* margin-left     : 5px; */
+    width           : 110px;
+    height          : 40px;
+    display         : flex;
+    justify-content : space-between;
+    padding         : 14px 12px 14px 12px;
+    margin-top      : 2px;
+    background-color: #E7E7E7;
+    border-radius   : 40px;
 }
 
 .filterPopupButton::before {
@@ -336,6 +310,7 @@
 
 .buttonShowMore--button__see-more-gallery :global(.vtex-button__label) {
     padding: 0% !important;
+    gap    : 10px;
 }
 
 .accordionFilter {
@@ -388,9 +363,9 @@
     justify-content: center;
 }
 
-.filterTitleSpan--plp__filter-navigator {
+/* .filterTitleSpan--plp__filter-navigator {
     margin: 0 auto;
-}
+} */
 
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) {
@@ -414,35 +389,27 @@
     }
 
     .gallery {
-        /* display: grid;
-        grid-template-columns: repeat(3, 1fr); */
-        margin: 0%;
+        margin      : 0%;
         padding-left: 50px;
     }
 
     .galleryItem {
         padding: 0%;
     }
-
-    /* .galleryItem {
-        max-width: 0%;
-        width: 100% !important;
-        padding: 0%; 
-    } */
 }
 
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) and (max-width: 1179px) {
     .gallery {
-        display: grid;
+        display              : grid;
         grid-template-columns: repeat(2, 1fr);
-        padding-left: 0%;
-        margin: 0%;
+        padding-left         : 0%;
+        margin               : 0%;
     }
 
     .galleryItem {
-        padding: 0%;
-        width: 100%;
+        padding  : 0%;
+        width    : 100%;
         max-width: max-content !important;
     }
 }

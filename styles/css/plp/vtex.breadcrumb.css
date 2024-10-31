@@ -1,0 +1,31 @@
+:global(.vtex-breadcrumb-1-x-homeIcon) {
+    width        : 16px;
+    height       : 16px;
+    padding-right: 8px;
+}
+
+:global(.vtex-breadcrumb-1-x-link) {
+    padding    : 0%;
+    font-family: montserrat, lexend, sans-serif;
+    font-weight: 400;
+    font-size  : 12px;
+}
+
+:global(.vtex-breadcrumb-1-x-link--1) {
+    color: #8E8A92;
+}
+
+:global(.vtex-breadcrumb-1-x-link--2) {
+    color: #1D2734;
+}
+
+:global(.vtex-breadcrumb-1-x-arrow--plp__bread_crumb) {
+    padding-left: 0%;
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    :global(.vtex-breadcrumb-1-x-link) {
+        font-size: 14px;
+    }
+}
