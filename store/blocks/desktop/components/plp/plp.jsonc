@@ -1,97 +1,101 @@
 {
-    "flex-layout.row#container__desktop--plp": {
-        "title": "Container desktop layout PLP",
+    "flex-layout.row#main__desktop--plp": {
+        "title": "Main desktop plp container",
         "children": [
-            "flex-layout.col#container_plp"
+            "flex-layout.col#desktop__plp--container"
         ],
         "props": {
-            "blockClass": "container__desktop-plp"
+            "blockClass": "main__desktop--plp"
         }
     },
-    "flex-layout.col#container_plp": {
-        "title": "Container column to PLP",
+    "flex-layout.col#desktop__plp--container": {
+        "title": "Mobile plp container",
         "children": [
-            "flex-layout.row#container__head--plp",
-            "flex-layout.row#container__body--plp"
+            "flex-layout.row#desktop__plp--head",
+            "flex-layout.row#desktop__plp--body",
+            "flex-layout.row#desktop__plp--searchs"
         ],
         "props": {
-            "blockClass": "container_plp"
+            "blockClass": "desktop__plp--container"
         }
     },
 
-    "flex-layout.row#container__head--plp": {
-        "title": "Container PLP header row",
+    "flex-layout.row#desktop__plp--head": {
+        "title": "Desktop plp head",
         "children": [
-            "flex-layout.col#breadcrumb__search",
-            "flex-layout.col#sort__options"
+            "flex-layout.col#desktop__plp-head--searchs",
+            "flex-layout.col#desktop__plp-head--sortby"
         ],
         "props": {
-            "blockClass": "container__head--plp",
             "colSizing": "auto",
-            "fullWidth": true
+            "fullWidth": true,
+            "blockClass": "desktop__plp--head"
         }
     },
-    "flex-layout.col#breadcrumb__search": {
-        "title": "breadcrumb__informacion column",
+    "flex-layout.col#desktop__plp-head--searchs": {
+        "title": "Contain search product info",
         "children": [
             "breadcrumb.search",
             "search-title.v2", 
             "total-products.v2"
         ],
         "props": {
-            "blockClass": "breadcrumb__search"
+            "blockClass": "desktop__plp-head--searchs"
         }
     },
-    "flex-layout.col#sort__options": {
-        "title": "Container sort options",
+    "flex-layout.col#desktop__plp-head--sortby": {
+        "title": "Contain sort by products",
         "children": [
             "order-by.v2"
         ],
         "props": {
-            "blockClass": "sort__options"
+            "blockClass": "desktop__plp-head--sortby"
         }
     },
 
-    "flex-layout.row#container__body--plp": {
-        "title": "Container body estructure plp",
+    "flex-layout.row#desktop__plp--body": {
+        "title": "Desktop plp body",
         "children": [
-            "flex-layout.row#filter__options--plp",
-            "flex-layout.row#product__gallery--plp"
+            "flex-layout.col#desktop__plp-body--sorts",
+            "flex-layout.col#desktop__plp-body--shelf"
         ],
         "props": {
-            "blockClass": "container__body--plp",
-            "colSizing": "auto"
+            "colSizing": "auto",
+            // "fullWidth": false,
+            "blockClass": "desktop__plp--body"
         }
     },
-    "flex-layout.row#filter__options--plp": {
-        "title": "Container plp filter",
+
+    // Improve code ok
+    "flex-layout.col#desktop__plp-body--sorts": {
+        "title": "Contain desktop plp sorts",
         "children": [
             "filter-navigator.v3"
         ],
         "props": {
-            "blockClass": "filter__options--plp"
+            "fullWidth": false,
+            "blockClass": "desktop__plp-body--sorts"
         }
     },
-    "flex-layout.row#product__gallery--plp": {
-        "title": "Container product gallery plp",
+    "flex-layout.col#desktop__plp-body--shelf": {
+        "title": "Contain dekstop plp shelf",
         "children": [
-            "gallery-layout-switcher",
-            "search-content#plp",
+            "search-content#global__search--layout"
+        ],
+        "props": {
+            "fullWidth": false,
+            "blockClass": "desktop__plp-body--shelf"
+        }
+    },
+
+    "flex-layout.row#desktop__plp--searchs": {
+        "title": "Desktop plp body searchs",
+        "children": [
             "search-products-count-per-page",
             "search-fetch-more"
         ],
         "props": {
-            "blockClass": "product__gallery--plp"
-        }
-    },
-    "search-content#plp": {
-        "title": "Search content and results plp",
-        "blocks": ["gallery#global__search", "not-found"]
-    },
-    "search-fetch-more": {
-        "props": {
-            "blockClass": "button__see-more-gallery",
-            "text": "Ver mas"
+            "blockClass": "mobile__plp--searchs"
         }
     }
 }

@@ -13,7 +13,6 @@
   "flex-layout.row#desktop__mega-menu--trigger": {
     "title": "Desktop mega menu container trigger",
     "children": [
-      // "flex-layout.col#global__mega-menu--trigger",
       "mega-menu-trigger-btn#mega__menu-trigger--btn"
     ],
     "props": {
@@ -57,14 +56,4 @@
       "blockClass": "desktop__mega-menu--body"
     }
   }
-
-  // No necesario en depuracion de codigo
-  // "flex-layout.col#global__mega-menu--trigger": {
-  //   "title": "Col mega menu trigger",
-  //   "props": {
-  //     "verticalAlign": "middle",
-  //     "blockClass": "global__mega-menu--trigger"
-  //   },
-  //   "children": ["mega-menu-trigger-btn"]
-  // },
 }

@@ -1,5 +1,5 @@
 /*----------------------------- Header desktop section menu ---------------------------------------*/
-/* Nuevas clases - fix-styles */
+/* Nuevas clases - fix-styles 🧩*/
 .styledLinkContainer--header__pages--desktop {
     padding: 0%;
     margin : 0%;
@@ -9,7 +9,6 @@
     padding-left: 13px;
 }
 
-/*prueba con menu en header ok*/
 .styledLinkContainer--menu_item {
     margin: 0%;
 }
@@ -33,7 +32,7 @@
 
 .styledLinkContent--menu-item_trends {
     text-decoration-line: underline;
-    color: #1D2734;
+    color               : #1D2734;
 }
 
 .styledLinkContainer--menu-item_collections {

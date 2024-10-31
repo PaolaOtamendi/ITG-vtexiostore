@@ -1,5 +1,5 @@
 /*----------------------------- Global text slider´s products ------------------------------------------------*/
-/* Nuevas clases - fix-styles */
+/* Nuevas clases - fix-styles 🧩*/
 .paragraph--title__slider--global {
     margin     : 0%;
     font-family: lexend, sans-serif;
@@ -19,7 +19,6 @@
     font-size    : 16px;
     line-height  : 18.59px;
     color        : #1D2734;
-    /*border       : 1px solid;*/
 }
 
 .paragraph--second__row-text--title {
@@ -36,7 +35,6 @@
     font-size         : 10px;
     line-height       : 10.84px;
     color             : #1D2734;
-    /*border            : 1px solid;*/
 }
 
 .container--third__row--button {

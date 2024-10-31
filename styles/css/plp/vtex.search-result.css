@@ -1,3 +1,4 @@
+/*----------------------------- PLP custom styles generals ------------------------------------------------*/
 .searchResultContainer {
     background-color: #fff;
 }
@@ -6,26 +7,27 @@
     background-color: #fff;
 }
 
+/*----------------------------- PLP custom styles desktop ------------------------------------------------*/
 .totalProducts--layout {
-    padding-left: 0px;
-    font-family : lexend, sans-serif;
-    font-size   : 14px;
-    font-weight : 300;
-    color       : #1D2734;
-    line-height : 17.5px;
-}
-
-.galleryTitle--layout {
+    padding    : 0%;
     font-family: lexend, sans-serif;
-    font-size  : 20px;
-    font-weight: 600;
+    font-size  : 14px;
+    font-weight: 300;
+    line-height: 17.5px;
     color      : #1D2734;
-    line-height: 25px;
 }
 
-.flexCol--sort__options {
-    position: relative !important;
-    right   : 50px !important;
+.totalProductsMessage {
+    text-transform: lowercase;
+    font-family   : lexend, sans-serif;
+    font-size     : 14px;
+    font-weight   : 300;
+    line-height   : 17.5px;
+    color         : #1D2734;
+}
+
+.totalProductsMessage::after {
+    content: " encontrados";
 }
 
 .filterMessage--plp__filter-navigator {
@@ -45,12 +47,13 @@
 }
 
 .filterTitleSpan--plp__filter-navigator {
-    display    : flex;
-    align-items: center;
-    font-family: lexend, sans-serif;
-    font-weight: 400;
-    font-size  : 14px;
-    line-height: 20px;
+    display       : flex;
+    align-items   : center;
+    font-family   : lexend, sans-serif;
+    font-weight   : 400;
+    font-size     : 14px;
+    line-height   : 20px;
+    text-transform: capitalize;
 }
 
 .filter__container--category-2 .filterTitleSpan--plp__filter-navigator {
@@ -82,7 +85,7 @@
 }
 
 .filter__container--priceRange .filterTitleSpan--plp__filter-navigator::before {
-    content    : "Price range";
+    content    : "Price ranges";
     font-family: lexend, sans-serif;
     font-weight: 400;
     font-size  : 14px;
@@ -101,99 +104,50 @@
     content: url("/arquivos/span-icon-filter.svg");
 }
 
+/* Validar */
 .filter {
     padding-top   : 0px;
     padding-bottom: 0px;
 }
 
 .filterItem {
-    display    : flex;
-    align-items: center;
-    height     : 44px;
-    padding    : 10px;
-    gap        : 10px;
-    font-family: lexend, sans-serif;
-    font-weight: 300;
-    font-size  : 12px;
-    line-height: 15px;
-    color      : #1D2734;
+    display       : flex;
+    align-items   : center;
+    /* height     : 44px; */
+    height        : auto;
+    padding       : 10px;
+    gap           : 10px;
+    font-family   : lexend, sans-serif;
+    font-weight   : 300;
+    font-size     : 12px;
+    line-height   : 15px;
+    color         : #1D2734;
 }
 
 .filter__container--priceRange .filterTemplateOverflow--plp__filter-navigator {
     height         : 56px;
     display        : flex;
     justify-content: center;
-    font-family    : lexend, sans-serif;
-    font-size      : 14px;
-    font-weight    : 300;
-    line-height    : 20px;
-    color          : #1D2734;
 }
 
-.totalProductsMessage {
-    text-transform: lowercase;
-    font-family   : Lexend, sans-serif;
-    font-size     : 14px;
-    font-weight   : 300;
-    line-height   : 17.5px;
-    color         : #1D2734;
+.filterTemplateOverflow--plp__filter-navigator :global(.vtex-slider__left-value) {
+    font-family: lexend, sans-serif;
+    font-size  : 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color      : #1D2734;
 }
 
-.totalProductsMessage::after {
-    content: " encontrados";
-}
-
-.homeIcon {
-    width : 20px !important;
-    height: 20px !important;
-}
-
-.arrow--2 :global(.vtex-breadcrumb-1-x-link--2) {
-    color: #1D2734;
+.filterTemplateOverflow--plp__filter-navigator :global(.vtex-slider__right-value) {
+    font-family: lexend, sans-serif;
+    font-size  : 14px;
+    font-weight: 300;
+    line-height: 20px;
+    color      : #1D2734;
 }
 
 .filterPopupTitle--plp__order-by-filter {
     font-size: 0px;
-}
-
-.orderByButton--plp__order-by-filter {
-    border-radius   : 40px;
-    background-color: #E7E7E7;
-    padding         : 14px 12px 14px 12px;
-    display         : flex;
-    justify-content : space-between;
-}
-
-.orderByButton--plp__order-by-filter::before {
-    content     : url("/arquivos/mpa-filter-settings.svg");
-    margin-right: 5px;
-}
-
-.orderByText--plp__order-by-filter {
-    text-transform: lowercase;
-    display       : flex;
-    align-items   : center;
-    font-family   : Lexend, sans-serif;
-    font-size     : 14px;
-    font-weight   : 400;
-    line-height   : 17.5px;
-    color         : #1D2734;
-}
-
-.orderByOptionItem--plp__order-by-filter {
-    font-family: Lexend, sans-serif;
-    font-size  : 14px;
-    font-weight: 400;
-    line-height: 17.5px;
-    color      : #1D2734;
-}
-
-.filterPopupArrowIcon--plp__order-by-filter .caretIcon--plp__order-by-filter {
-    display: none;
-}
-
-.filterPopupArrowIcon--plp__order-by-filter::after {
-    content: url("/arquivos/span-icon-filter.svg");
 }
 
 .galleryLayoutSwitcher {
@@ -203,12 +157,9 @@
     padding-right  : 50px;
 }
 
-.flexColChild--shelf__details--gallery :global(.vtex-product-summary-2-x-productBrand--product_summary-name) {
-    font-size: 12px;
-}
-
 .buttonShowMore--button__see-more-gallery :global(.vtex-button) {
-    width           : 110px;
+    /* width           : 110px; */
+    width           : auto;
     height          : 32px;
     border-radius   : 40px;
     border          : solid #1D2734 1px;
@@ -218,8 +169,6 @@
     flex-direction  : row;
     align-items     : center;
     justify-content : center;
-    padding-left    : 0px;
-    padding-right   : 0px;
 }
 
 .buttonShowMore--button__see-more-gallery :global(.vtex-button__label) {
@@ -229,7 +178,7 @@
 .buttonShowMore--button__see-more-gallery :global(.vtex-button__label)::before {
     content       : "Ver mas";
     text-transform: lowercase;
-    font-family   : Lexend, sans-serif;
+    font-family   : lexend, sans-serif;
     font-size     : 14px;
     font-weight   : 400;
     line-height   : 20px;
@@ -237,8 +186,7 @@
 }
 
 .buttonShowMore--button__see-more-gallery :global(.vtex-button__label)::after {
-    content    : url("/arquivos/button-plus-line.svg");
-    margin-left: 5px;
+    content: url("/arquivos/button-plus-line.svg");
 }
 
 .filterTemplateOverflow--plp__filter-navigator :global(.vtex-slider__base-internal) {
@@ -249,32 +197,91 @@
     background-color: #1D2734;
 }
 
-/*----------------------------- PLP custom styles mobile-phone ------------------------------------------------*/
+/*----------------------------- PLP custom styles mobile ------------------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
+.galleryTitle--layout {
+    margin-top   : 0%;
+    margin-bottom: 0%;
+    font-family  : lexend, sans-serif;
+    font-weight  : 600;
+    font-size    : 14px;
+    line-height  : 17.5px;
+    color        : #1D2734;
+}
+
+.orderByButton--plp__order-by-filter {
+    display         : flex;
+    justify-content : space-between;
+    width           : 147px;
+    height          : 40px;
+    padding         : 14px 12px 14px 12px;
+    border-radius   : 40px;
+    background-color: #E7E7E7;
+    border          : solid #1D2734 1px;
+    position        : relative;
+    /* Prueba */
+}
+
+/* sortby container */
+.orderByOptionsContainer {
+    position: absolute;
+    right   : -30px;
+}
+
+.orderByButton--plp__order-by-filter::before {
+    content: url("/arquivos/mpa-filter-settings.svg");
+}
+
+.orderByText--plp__order-by-filter {
+    display       : flex;
+    align-items   : center;
+    text-transform: lowercase;
+    font-family   : lexend, sans-serif;
+    font-size     : 12px;
+    font-weight   : 400;
+    line-height   : 17.5px;
+    color         : #1D2734;
+}
+
+.orderByOptionItem--plp__order-by-filter {
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    font-weight: 400;
+    line-height: 17.5px;
+    color      : #1D2734;
+}
+
+.filterPopupArrowIcon--plp__order-by-filter {
+    padding-left : 0px !important;
+    padding-right: 0px !important;
+}
+
+.filterPopupArrowIcon--plp__order-by-filter :global(.vtex-search-result-3-x-caretIcon--plp__order-by-filter) {
+    display: none;
+}
+
+.filterPopupArrowIcon--plp__order-by-filter::before {
+    content: url("/arquivos/arrow_drop_down.png");
+}
+
 .filterPopupButton {
     width           : 110px;
     height          : 40px;
-    background-color: #E7E7E7;
-    border-radius   : 40px;
+    display         : flex;
     justify-content : space-between;
     padding         : 14px 12px 14px 12px;
-    margin-left     : 5px;
     margin-top      : 2px;
+    background-color: #E7E7E7;
+    border-radius   : 40px;
 }
 
-.filterPopupTitle--plp__filter-navigator {
-    text-transform : lowercase;
-    font-family    : Lexend, sans-serif;
-    font-size      : 12px;
-    font-weight    : 400;
-    line-height    : 15px;
-    color          : #1D2734;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-}
-
-.filterPopupTitle--plp__filter-navigator::before {
+.filterPopupButton::before {
     content: url("/arquivos/view_quilt.svg");
+}
+
+.filterPopupArrowIcon {
+    padding-left: 0%;
+    padding     : 0%;
 }
 
 .filterPopupArrowIcon--plp__filter-navigator :global(.vtex-search-result-3-x-filterIcon--plp__filter-navigator) {
@@ -285,25 +292,49 @@
     content: url("/arquivos/arrow_drop_down.png");
 }
 
+.filterPopupTitle--plp__filter-navigator {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    text-transform : lowercase;
+    font-family    : lexend, sans-serif;
+    font-size      : 12px;
+    font-weight    : 400;
+    line-height    : 15px;
+    color          : #1D2734;
+}
+
+.showingProducts {
+    font-size: 12px;
+}
+
+.buttonShowMore--button__see-more-gallery :global(.vtex-button__label) {
+    padding: 0% !important;
+    gap    : 10px;
+}
+
 .accordionFilter {
-    font-family: Lexend, sans-serif;
+    font-family: lexend, sans-serif;
     font-size  : 12px;
     color      : #1D2734;
 }
 
 .filterBreadcrumbsText--plp__filter-navigator {
-    font-size: 12px;
-    color    : #1D2734;
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    color      : #1D2734;
 }
 
 .filterBreadcrumbsItemName--plp__filter-navigator {
-    font-size: 12px;
-    color    : #1D2734;
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    color      : #1D2734;
 }
 
 .accordionFilterItemTitle--plp__filter-navigator {
-    font-size: 12px;
-    color    : #1D2734;
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    color      : #1D2734;
 }
 
 .filterClearButtonWrapper--plp__filter-navigator :global(.vtex-button) {
@@ -314,64 +345,76 @@
     font-size: 12px;
 }
 
-/*----------------------------- MediaQueires ---------------------------------------*/
-@media (max-width: 767px) {
-    .galleryLayoutSwitcher {
-        display: none;
+.filterAccordionItemBox--informatica :global(.vtex-checkbox__label) {
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    font-weight: 300;
+    line-height: 15px;
+    color      : #1D2734;
+}
+
+.accordionFilterItemOptions {
+    background-color: #fff;
+}
+
+.filter--plp__filter-navigator {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+}
+
+/* .filterTitleSpan--plp__filter-navigator {
+    margin: 0 auto;
+} */
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    .orderByOptionsContainer {
+        right   : -10px;
     }
+    
 
     .galleryTitle--layout {
-        font-size: 14px;
-    }
-
-    .flexCol--head__result-order-filter :global(.vtex-breadcrumb-1-x-link) {
-        font-size: 12px !important;
+        margin-left: 0px;
+        font-size  : 20px;
+        line-height: 25px;
     }
 
     .orderByButton--plp__order-by-filter {
-        width : 147px;
-        height: 40px;
-        border: solid #1D2734 1px;
+        width : 170px;
+        border: none;
     }
 
     .orderByText--plp__order-by-filter {
-        font-size: 12px;
-        width    : 72px;
+        font-size: 14px;
     }
 
-    .filterPopupArrowIcon--plp__order-by-filter {
-        padding-left : 0px !important;
-        padding-right: 0px !important;
+    .orderByOptionItem--plp__order-by-filter {
+        font-size: 14px;
+    }
+
+    .gallery {
+        margin      : 0%;
+        padding-left: 50px;
+    }
+
+    .galleryItem {
+        padding: 0%;
     }
 }
 
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .galleryLayoutSwitcher {
-        padding-top: 10px;
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) and (max-width: 1179px) {
+    .gallery {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-left         : 0%;
+        margin               : 0%;
     }
 
-    .galleryTitle--layout {
-        font-size: 14px;
-    }
-
-    .flexCol--head__result-order-filter :global(.vtex-breadcrumb-1-x-link) {
-        font-size: 12px !important;
-    }
-
-    .orderByButton--plp__order-by-filter {
-        width : 147px;
-        height: 40px;
-        border: solid #1D2734 1px;
-    }
-
-    .orderByText--plp__order-by-filter {
-        font-size: 12px;
-        width    : 72px;
-    }
-
-    .filterPopupArrowIcon--plp__order-by-filter {
-        padding-left : 0px !important;
-        padding-right: 0px !important;
+    .galleryItem {
+        padding  : 0%;
+        width    : 100%;
+        max-width: max-content !important;
     }
 }

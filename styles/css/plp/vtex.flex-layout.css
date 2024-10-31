@@ -1,88 +1,142 @@
-/*----------------------------- PLP custom styles dekstop ------------------------------------------------*/
-.flexRowContent--product__gallery--plp {
-    display       : flex;
-    flex-direction: column;
-}
-
-.flexRowContent--product__gallery--plp :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
-    width: 100% !important;
-}
-
-.flexCol--breadcrumb__search {
-    display        : flex;
-    align-items    : baseline;
-    justify-content: left;
-    left           : 72px;
-    position       : relative;
-    font-size      : 14px;
-}
-
-.flexColChild--sort__options {
-    display    : flex;
-    align-items: center;
-    position   : relative;
-    right      : 50px;
-}
-
-.flexRow--filter__options--plp {
-    width             : 184px !important;
-    /*max-width       : 184px;*/
-    /*background-color: aliceblue;*/
-    margin-left       : 72px;
-}
-
-.flexRowContent--product__gallery--plp .stretchChildrenWidth {
-    justify-content: left;
-}
-
-.flexCol--shelf__details--gallery {
+/*----------------------------- PLP shelf custom styles generals ------------------------------------------------*/
+.flexCol--product__shelf--details {
     display        : flex;
     align-items    : flex-start;
     justify-content: left;
+    gap            : 6px;
 }
 
-.flexCol--shelf__image--gallery :global(.vtex-product-summary-2-x-image--product__summary--image) {
+.flexCol--product__shelf--details :global(.vtex-product-summary-2-x-nameContainer--product_summary-name) {
+    height: 38px;
+}
+
+.flexRow--shelf__details--prices :global(.vtex-product-price-1-x-listPrice--product_summary-price) {
+    text-align: left;
+}
+
+.flexRowContent--shelf__details--prices {
+    flex-direction: column;
+}
+
+.flexCol--product__shelf--image :global(.vtex-product-summary-2-x-image--product__summary--image) {
     width : 136px !important;
     height: 107px !important;
 }
 
-.flexColChild--shelf__details--gallery :global(.vtex-product-summary-2-x-brandName--product_summary-name) {
-    font-family: Lexend, sans-serif;
+.flexColChild--product__shelf--details :global(.vtex-product-summary-2-x-brandName--product_summary-name) {
+    font-family: lexend, sans-serif;
     font-size  : 12px !important;
     line-height: 12.76px;
-    color      : rgba(29, 39, 52, 0.6);
+    color      : hsla(214, 28%, 16%, 0.6);
 }
 
-.flexColChild--shelf__details--gallery :global(.vtex-product-price-1-x-listPriceValue--product_summary-price) {
-    font-family: Lexend, sans-serif;
+.flexColChild--product__shelf--details :global(.vtex-product-price-1-x-listPriceValue--product_summary-price) {
+    font-family: lexend, sans-serif;
     font-size  : 12px !important;
     font-weight: 400;
     line-height: 12.76px;
     color      : rgba(29, 39, 52, 0.4);
 }
 
-.flexColChild--shelf__details--gallery :global(.vtex-product-price-1-x-sellingPriceValue--product_summary-selling-price) {
-    font-family: Lexend, sans-serif;
+.flexColChild--product__shelf--details :global(.vtex-product-price-1-x-sellingPriceValue--product_summary-selling-price) {
+    font-family: lexend, sans-serif;
     font-size  : 20px !important;
     font-weight: 600;
     line-height: 21.87px;
     color      : #1D2734;
 }
 
-/*----------------------------- PLP custom styles mobile-phone ------------------------------------------------*/
-.flexRowContent--global__result-order-filter {
-    flex-direction: column;
+.flexCol--product__shelf--details :global(.vtex-product-highlights-2-x-productHighlightWrapper--shelf__free-shipping-wrapper) {
+    font-size: 12px;
 }
 
-.flexCol--body__result-order-filter {
-    flex-direction: row;
-    margin-bottom : 15px;
+/*----------------------------- PLP custom styles dekstop ------------------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
+.flexCol--desktop__plp--container {
+    margin-top: 40px;
 }
 
-/*----------------------------- MediaQueires ---------------------------------------*/
-@media (max-width: 767px) {
-    .flexRowContent--container__shelf-product-gallery {
-        display       : flex;
-        flex-direction: row;
+.flexRowContent--desktop__plp--head {
+    padding-left : 72px;
+    padding-right: 72px;
+}
+
+.flexCol--desktop__plp-head--searchs {
+    display    : flex;
+    align-items: flex-start;
+    gap        : 16px;
+}
+
+.flexColChild--desktop__plp-head--sortby {
+    display    : flex;
+    align-items: center;
+}
+
+.flexRowContent--desktop__plp--body {
+    padding      : 20px;
+    padding-top  : 40px;
+    padding-left : 72px;
+    padding-right: 70px;
+}
+
+.flexCol--desktop__plp-head--searchs :global(.vtex-breadcrumb-1-x-container--plp__bread_crumb) {
+    padding: 0%;
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) and (max-width: 1179px) {
+    .flexRowContent--desktop__plp--body {
+        justify-content: flex-start;
+        gap            : 74px;
     }
+}
+
+/*----------------------------- PLP custom styles mobile ------------------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
+.flexRowContent--mobile__plp--head {
+    display       : flex;
+    flex-direction: column;
+    gap           : 16px;
+    margin        : 16px 16px 16px 16px;
+    width         : auto;
+}
+
+.flexCol--mobile__plp-head--filters {
+    flex-direction: row;
+}
+
+.flexRowContent--mobile__plp--head :global(.vtex-breadcrumb-1-x-container) {
+    padding: 0%;
+}
+
+.flexCol--mobile__plp-head--filters {
+    gap: 4px;
+}
+
+.flexRow--mobile__plp--body {
+    margin-top: 16px;
+}
+
+.flexRowContent--mobile__plp--searchs {
+    display       : flex;
+    flex-direction: column;
+    gap           : 5px;
+}
+
+.flexRowContent--mobile__plp--searchs :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+    margin: 0 auto;
+}
+
+.flexRowContent {
+    background-color: #fff;
+}
+
+.flexRow--mobile__plp--searchs {
+    margin-top: 16px;
+}
+
+.flexRowContent--gallery__product--shelf {
+    display       : flex;
+    flex-direction: row;
+    gap           : 9px;
 }

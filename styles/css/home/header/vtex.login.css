@@ -1,4 +1,4 @@
-/* Nuevas clases - fix-styles */
+/* Nuevas clases - fix-styles 🧩*/
 .label {
     display       : block;
     font-family   : lexend, sans-serif;
@@ -13,15 +13,3 @@
 .label::first-letter {
     text-transform: capitalize;
 }
-
-/* Eliminar validar con coach antes de eliminar */
-/*.container {
-    width          : 80px !important;
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    height         : 40px;
-    background     : #1d2734;
-    border-radius  : 40px;
-    border         : solid 1px #1D2734;
-}*/
