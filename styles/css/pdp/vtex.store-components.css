@@ -3,9 +3,7 @@
     flex-direction: column-reverse;
 }
 
-.skuSelectorTextContainer {
-    margin-top: 5px;
-}
+
 
 .skuSelectorName {
     font-family: "Lexend-black", sans-serif;
@@ -34,13 +32,7 @@
     display: none;
 }
 
-.skuSelectorItemTextValue--sku__size--pdp {
-    font-family: "Lexend-black", sans-serif;
-    font-weight: 300;
-    font-size  : 14px;
-    line-height: 20px;
-    color      : #646464;
-}
+
 
 .shareLabel {
     font-family   : "Lexend-black", sans-serif;
@@ -102,11 +94,53 @@
     height: 76px;
 }
 
-.figure {
+/* .figure {
     border      : solid 1px #E7E7E7 !important;
     width       : 90px;
     height      : 76px;
     margin-right: 6px;
+} */
+
+/* Nuevas clases - fix-styles 🧩*/
+.productImagesGallerySwiperContainer {
+    padding-bottom: 8px;
+}
+
+.figure {
+    border      : solid 1px #E7E7E7 !important;
+    height      : 76px;
+    border-radius: 4px;
+}
+
+/* .carouselGaleryThumbs .swiper-wrapper {
+    gap: 6px;
+} */
+
+/* Este separaba las imagenes en desktop con bottom */
+.productImagesThumb {
+    margin-bottom: 0%;
+    margin-right: 6px;
+}
+
+.skuSelectorTextContainer {
+    /* margin-top: 5px; */
+    margin-bottom: 8px;
+}
+
+.skuSelectorName {
+    font-family: lexend, sans-serif;
+    font-size  : 16px;
+    font-weight: 600;
+    line-height: 16.8px;
+    color      : #1D2734;
+}
+
+.skuSelectorItemTextValue--sku__size--pdp {
+    font-family: lexend, sans-serif;
+    font-weight: 300;
+    font-size  : 14px;
+    line-height: 20px;
+    color      : #646464;
 }
 
 /*----------------------------- MediaQueires ---------------------------------------*/
