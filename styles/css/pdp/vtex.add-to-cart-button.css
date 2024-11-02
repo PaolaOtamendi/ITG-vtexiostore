@@ -1,19 +1,19 @@
-.buttonText--pdp__add-to-cart-button {
+.buttonText--btn__add-to--cart {
     text-transform: lowercase;
 }
 
-.buttonText--pdp__add-to-cart-button::first-letter {
+.buttonText--btn__add-to--cart::first-letter {
     text-transform: capitalize;
 }
 
-.buttonText--pdp__add-to-cart-button::before {
+.buttonText--btn__add-to--cart::before {
     content      : url("/arquivos/add_shopping_cart-pdp.svg");
     width        : 20px;
     height       : 20px;
     padding-right: 10px !important;
 }
 
-.buttonText--pdp__add-to-cart-button {
+.buttonText--btn__add-to--cart {
     display        : flex;
     align-items    : center;
     justify-content: center;
@@ -22,11 +22,11 @@
 /*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
 /*---------- Phone ------------*/
 @media (max-width: 639px) {
-    .buttonText--pdp__add-to-cart-button {
+    .buttonText--btn__add-to--cart {
         font-size: 0px;
     }
 
-    .buttonText--pdp__add-to-cart-button::after {
+    .buttonText--btn__add-to--cart::after {
         content  : "Agregar" !important;
         font-size: 14px;
     }
@@ -34,11 +34,11 @@
 
 /*---------- Tablet ------------*/
 @media (min-width: 640px) and (max-width: 1279px) {
-    .buttonText--pdp__add-to-cart-button {
+    .buttonText--btn__add-to--cart {
         font-size: 0px;
     }
 
-    .buttonText--pdp__add-to-cart-button::after {
+    .buttonText--btn__add-to--cart::after {
         content  : "Agregar" !important;
         font-size: 14px;
     }

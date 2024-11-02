@@ -1,4 +1,4 @@
-.groupName--product__group--name {
+.groupName--specifications__group--name {
     position   : relative;
     font-family: Lexend, sans-serif;
     font-size  : 16px;
@@ -20,14 +20,14 @@
 /*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
 /*---------- Tablet ------------*/
 @media (min-width: 640px) and (max-width: 1279px) {
-    .groupName--product__group--name {
+    .groupName--specifications__group--name {
         left: 10px;
     }
 }
 
 /*---------- Desktop ------------*/
 @media (min-width: 1280px) {
-    .groupName--product__group--name {
+    .groupName--specifications__group--name {
         padding-left: 72px;
         width       : 481px !important;
     }
