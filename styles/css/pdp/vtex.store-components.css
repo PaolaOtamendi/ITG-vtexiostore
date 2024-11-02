@@ -34,14 +34,7 @@
 
 
 
-.shareLabel {
-    font-family   : lexend, sans-serif;
-    font-size     : 16px;
-    font-weight   : 600;
-    line-height   : 16.8px;
-    color         : #1D2734;
-    padding-bottom: 5px;
-}
+
 
 .shareSocialIcon--facebook {
     width : 40px;
@@ -127,6 +120,7 @@
     margin-bottom: 8px;
 }
 
+/* cambios de prueba rama 📌*/
 .skuSelectorName {
     font-family: lexend, sans-serif;
     font-size  : 16px;
@@ -141,6 +135,16 @@
     font-size  : 14px;
     line-height: 20px;
     color      : #646464;
+}
+
+/* cambios de prueba rama 📌 prueba cambio letra*/
+.shareLabel {
+    font-family   : lexend, sans-serif;
+    font-size     : 16px;
+    font-weight   : 600;
+    line-height   : 16.8px;
+    color         : #1D2734;
+    padding-bottom: 5px;
 }
 
 /*----------------------------- MediaQueires ---------------------------------------*/
