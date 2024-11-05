@@ -4,15 +4,6 @@
 }
 
 
-
-.skuSelectorName {
-    font-family: "Lexend-black", sans-serif;
-    font-size  : 16px;
-    font-weight: 600;
-    line-height: 16.8px;
-    color      : #1D2734;
-}
-
 .skuSelectorOptionsList :global(.vtex-store-components-3-x-skuSelectorItem--sku__size--pdp) {
     height: 40px;
     width : 108px;
@@ -101,7 +92,7 @@
 
 .figure {
     border      : solid 1px #E7E7E7 !important;
-    height      : 76px;
+    /* height      : 76px; */
     border-radius: 4px;
 }
 
@@ -121,13 +112,56 @@
 }
 
 /* cambios de prueba rama 📌*/
-.skuSelectorName {
+.skuSelectorSubcontainer {
+    margin-bottom: 16px;
+}
+
+.skuSelectorSubcontainer--talla .skuSelectorName {
+    font-size: 0px;
+}
+
+.skuSelectorSubcontainer--talla .skuSelectorName::after {
+    content: "Mac Size";
     font-family: lexend, sans-serif;
     font-size  : 16px;
     font-weight: 600;
     line-height: 16.8px;
     color      : #1D2734;
 }
+
+/* .skuSelectorName {
+    font-size: 0px;
+} */
+
+/* .skuSelectorName::after {
+    content: "Mac Size";
+    font-family: "Lexend-black", sans-serif;
+    font-size  : 16px;
+    font-weight: 600;
+    line-height: 16.8px;
+    color      : #1D2734;
+} */
+
+.skuSelectorSubcontainer--color .skuSelectorName {
+    font-size: 0px;
+}
+
+.skuSelectorSubcontainer--color .skuSelectorName::after {
+    content: "Actual Color:";
+    font-family: lexend, sans-serif;
+    font-size  : 16px;
+    font-weight: 600;
+    line-height: 16.8px;
+    color      : #1D2734;
+}
+
+/* .skuSelectorName {
+    font-family: "Lexend-black", sans-serif;
+    font-size  : 16px;
+    font-weight: 600;
+    line-height: 16.8px;
+    color      : #1D2734;
+} */
 
 .skuSelectorItemTextValue--sku__size--pdp {
     font-family: lexend, sans-serif;
@@ -139,17 +173,64 @@
 
 /* cambios de prueba rama 📌 prueba cambio letra*/
 .shareLabel {
+    font-size: 0px;
+    margin: 0%;
+}
+
+.shareLabel::before {
+    content: "Share";
     font-family   : lexend, sans-serif;
     font-size     : 16px;
     font-weight   : 600;
     line-height   : 16.8px;
     color         : #1D2734;
-    padding-bottom: 5px;
+    /* padding-bottom: 5px; */
+    /* margin: 0%; */
+}
+
+/* .shareLabel {
+    font-family   : lexend, sans-serif;
+    font-size     : 16px;
+    font-weight   : 600;
+    line-height   : 16.8px;
+    color         : #1D2734;
+    margin: 0%;
+} */
+
+.shareContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding-top: 16px;
+    border-top: 1px solid #E7E7E7;
+}
+
+.shareSocialButton {
+    margin: 0%;
+}
+
+.shareSocialIcon--facebook {
+    padding-right: 16px;
+}
+
+.shareSocialIcon--whatsapp {
+    padding-right: 16px;
+}
+
+.carouselGaleryThumbs {
+    padding     : 0px;
 }
 
 /*----------------------------- MediaQueires ---------------------------------------*/
 /*---------- Phone ------------*/
-@media (max-width: 639px) {
+/* @media (max-width: 639px) {
+    .carouselGaleryThumbs {
+        display: contents;
+    }
+} */
+
+@media (min-width: 320px) and (max-width: 1024px) {
     .carouselGaleryThumbs {
         display: contents;
     }
@@ -158,8 +239,8 @@
 /*---------- Tablet ------------*/
 @media (min-width: 640px) and (max-width: 1279px) {
     .carouselGaleryThumbs {
-        padding     : 0px;
-        padding-left: 15px;
+        /* padding     : 0px; */
+        /* padding-left: 15px; */
     }
 }
 

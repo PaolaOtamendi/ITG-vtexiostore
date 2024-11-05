@@ -7,3 +7,11 @@
 .installmentsPrice {
     display: none;
 } 
+
+.swiperCaretNext {
+    display: none;
+}
+
+.swiperCaretPrev {
+    display: none;
+}

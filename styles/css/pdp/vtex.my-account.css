@@ -1,13 +1,16 @@
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) {
     padding-left: 0px;
+    margin-top: 16px;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(odd) {
-    background-color: #E7E7E7;
-    height: 48px;
-    align-items: center;
     display: flex;
-    padding-left: 24px;
+    align-items: center;
+    height: 48px;
+    /* padding-left: 24px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #E7E7E7;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):first-child {
@@ -16,11 +19,14 @@
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(even) {
-    background-color: #FFFFFF;
-    height: 48px;
-    align-items: center;
     display: flex;
-    padding-left: 24px;
+    align-items: center;
+    height: 48px;
+    /* padding-left: 24px; */
+    padding-left: 15px;
+    padding-right: 15px;
+    /* border-bottom: 1px solid; */
+    background-color: #FFFFFF;
 }
 
 /*---------- Desktop ------------*/
