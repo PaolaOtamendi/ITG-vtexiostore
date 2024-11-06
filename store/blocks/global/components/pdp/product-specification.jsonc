@@ -1,55 +1,46 @@
 {
-  "flex-layout.row#specification__pdp": {
-    "title": "Product specification container",
+  "flex-layout.row#product__detail--specifications": {
+    "title": "Container product detail specifications",
     "children": [
-        "product-specification-group"
+        "product-specification-group#pdp__specifications--group"
     ],
     "props": {
-      "blockClass": "specification__pdp"
+      "blockClass": "product__detail--specifications"
     }
   },
 
-  "product-specification-group": {
+  "product-specification-group#pdp__specifications--group": {
     "title": "Group of product specifications",
     "children": [
-        "product-specification-text#group",
-        "flex-layout.row#pdp__product--specification"
+        "product-specification-text#specifications__group--name",
+        "flex-layout.row#specifications__group--values"
     ],
     "props": {
-        "blockClass": "pdp__product-specification-group"
+        "blockClass": "pdp__specifications--group"
     }
   },
-
-  "flex-layout.row#pdp__product--specification": {
-    "title": "Product Specifications Row",
+  "product-specification-text#specifications__group--name": {
+    "title": "Product specification group name",
+    "props": {
+      "message": "{groupName}",
+      "blockClass": "specifications__group--name"
+    }
+  },
+  "flex-layout.row#specifications__group--values": {
+    "title": "Product Specifications group values",
     "children": [
         "product-specification"
     ],
     "props": {
-        "blockClass": "pdp__product--specification"
+        "blockClass": "specifications__group--values"
     }
   },
-
-  "product-specification-text#group": {
-    "title": "Product specification group Name",
-    "props": {
-      "message": "{groupName}",
-      "blockClass": "product__group--name"
-    }
-  },
-
   "product-specification": {
-    "title": "Detailed product specification",
+    "title": "Details product specification",
     "children": [
-      "product-specification-text#specification",
+      // "product-specification-text#specification",
       "product-specification-values"
     ]
-  },
-  "product-specification-text#specification": {
-    "title": "Product specification text",
-    "props": {
-      "message": "{specificationName}"
-    }
   },
   "product-specification-values": {
     "title": "Product specification values list",
@@ -63,4 +54,12 @@
       "message": "{specificationValue}"
     }
   }
+
+  // Limpieza de codigo clases no necesarias
+  // "product-specification-text#specification": {
+  //   "title": "Product specification text",
+  //   "props": {
+  //     "message": "{specificationName}"
+  //   }
+  // },
 }

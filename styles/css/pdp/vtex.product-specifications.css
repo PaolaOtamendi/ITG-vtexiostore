@@ -1,9 +1,9 @@
-.groupName--product__group--name {
-    position   : relative;
-    font-family: Lexend, sans-serif;
+.groupName--specifications__group--name {
+    font-family: lexend, sans-serif;
     font-size  : 16px;
     font-weight: 600;
     line-height: 16.8px;
+    color      : #1D2734;
 }
 
 .specificationName {
@@ -11,24 +11,24 @@
 }
 
 .specificationValue {
+    font-family: lexend, sans-serif;
     font-size  : 14px;
     font-weight: 300;
     line-height: 16.8px;
     color      : #1D2734;
 }
 
-/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
-/*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1279px) {
-    .groupName--product__group--name {
-        left: 10px;
+/*---------- Desktop ------------*/
+@media (min-width: 1280px) {
+    .groupName--specifications__group--name {
+        width: 481px !important;
     }
 }
 
-/*---------- Desktop ------------*/
-@media (min-width: 1280px) {
-    .groupName--product__group--name {
-        padding-left: 72px;
-        width       : 481px !important;
+/* Limpieza de codigo no necesarias */
+/*---------- Tablet ------------*/
+/* @media (min-width: 640px) and (max-width: 1279px) {
+    .groupName--specifications__group--name {
+        left: 10px;
     }
-}
+} */

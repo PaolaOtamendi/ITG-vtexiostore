@@ -72,8 +72,9 @@
 /*----------------------------- Header desktop section icons ---------------------------------------*/
 /* Nuevas clases - fix-styles 🧩*/
 .flexRow--header__menu--categories {
-    width : 1136px;
-    height: 47px;
+    width   : 1136px;
+    height  : 47px;
+    overflow: auto;
 }
 
 .flexRowContent--header__menu--categories :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
@@ -95,8 +96,11 @@
 
 /*----------------------------- MediaQueires header section icons ---------------------------------------*/
 /*---------- Desktop ------------*/
-@media (min-width: 1025px) {}
-
+@media (min-width: 1025px) {
+    .flexRow--header__menu--categories {
+        overflow: hidden;
+    }
+}
 
 /*----------------------------- Header mobile section menu ---------------------------------------*/
 /* Nuevas clases - fix-styles 🧩*/

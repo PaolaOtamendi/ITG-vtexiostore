@@ -9,14 +9,14 @@
 }
 
 .autoCompleteOuterContainer--search__bar--desktop :global(.vtex-input-prefix__group) {
-    border-radius     : 40px;
-    gap               : 16px;
-    background-color  : #F5F4F6;
-    padding-left      : 16px;
-    padding-right     : 16px;
-    padding-top       : 11px;
-    padding-bottom    : 11.76px;
-    border            : none;
+    border-radius   : 40px;
+    gap             : 16px;
+    background-color: #F5F4F6;
+    padding-left    : 16px;
+    padding-right   : 16px;
+    padding-top     : 11px;
+    padding-bottom  : 11.76px;
+    border          : none;
 }
 
 .autoCompleteOuterContainer--search__bar--desktop :global(.vtex-input-prefix__group) :global(.vtex-styleguide-9-x-input) {
@@ -40,6 +40,18 @@
     width : 12.19px;
     height: 12.19px;
     color : #1D2734;
+}
+
+/* Prueba sombreado header*/
+.headerRowBackground--global__header--menu-icons::after {
+    content   : '';
+    position  : absolute;
+    left      : 0;
+    right     : 0;
+    bottom    : 0;
+    height    : 10px;
+    /* Altura de la sombra */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 /*----------------------------- Header mobile section menu ---------------------------------------*/
