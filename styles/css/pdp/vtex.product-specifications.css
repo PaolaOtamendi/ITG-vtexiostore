@@ -30,7 +30,7 @@
 /*---------- Desktop ------------*/
 @media (min-width: 1280px) {
     .groupName--specifications__group--name {
-        padding-left: 72px;
+        /* padding-left: 72px; */
         width       : 481px !important;
     }
 }

@@ -1,40 +1,33 @@
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) {
     padding-left: 0px;
-    margin-top: 16px;
+    margin-top  : 16px;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(odd) {
-    display: flex;
-    align-items: center;
-    height: 48px;
-    /* padding-left: 24px; */
-    padding-left: 15px;
-    padding-right: 15px;
+    display         : flex;
+    align-items     : center;
+    height          : 48px;
+    padding-left    : 15px;
+    padding-right   : 15px;
     background-color: #E7E7E7;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):first-child {
-    border-top-left-radius: 8px;
+    border-top-left-radius : 8px;
     border-top-right-radius: 8px;
 }
 
 :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(even) {
-    display: flex;
-    align-items: center;
-    height: 48px;
-    /* padding-left: 24px; */
-    padding-left: 15px;
-    padding-right: 15px;
-    /* border-bottom: 1px solid; */
+    display         : flex;
+    align-items     : center;
+    height          : 48px;
+    padding-left    : 15px;
+    padding-right   : 15px;
     background-color: #FFFFFF;
 }
 
 /*---------- Desktop ------------*/
 @media (min-width: 1280px) {
-    :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) {
-        padding-left: 72px;
-    }
-
     :global(.vtex-product-specifications-1-x-specificationValue--last) :global(ul) :global(li):nth-child(odd) {
         width: 1069px;
     }

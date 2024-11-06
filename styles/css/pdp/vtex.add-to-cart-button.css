@@ -1,5 +1,4 @@
 .buttonText--btn__add-to--cart {
-    /* text-transform: lowercase; */
     text-transform: capitalize;
 }
 
@@ -8,62 +7,62 @@
 }
 
 .buttonText--btn__add-to--cart::after {
-    content  : "Agregar";
+    content    : "Agregar";
     font-family: lexend, sans-serif;
-    font-size: 14px;
+    font-size  : 14px;
 }
-
-/* .buttonText--btn__add-to--cart::first-letter {
-    text-transform: capitalize;
-} */
 
 .buttonText--btn__add-to--cart {
     display        : flex;
     align-items    : center;
     justify-content: center;
-    gap: 10px;
+    gap            : 10px;
 }
 
 .buttonText--btn__add-to--cart::before {
-    content      : url("/arquivos/add_shopping_cart-pdp.svg");
-    width        : 20px;
-    height       : 20px;
-    /* padding-right: 10px !important; */
+    content: url("/arquivos/add_shopping_cart-pdp.svg");
+    width  : 20px;
+    height : 20px;
 }
 
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) {
     .buttonText--btn__add-to--cart {
         font-family: lexend, sans-serif;
-        font-size: 14px;
+        font-size  : 14px;
     }
-    
+
     .buttonText--btn__add-to--cart::after {
         font-size: 0px;
     }
 }
+
+/* Clases no necesarias limpieza */
+/* .buttonText--btn__add-to--cart::first-letter {
+    text-transform: capitalize;
+} */
 
 /*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
 /*---------- Phone ------------*/
-@media (max-width: 639px) {
-    /* .buttonText--btn__add-to--cart {
+/* @media (max-width: 639px) {
+    .buttonText--btn__add-to--cart {
         font-size: 0px;
     }
 
     .buttonText--btn__add-to--cart::after {
         content  : "Agregar" !important;
         font-size: 14px;
-    } */
-}
+    }
+} */
 
 /*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1279px) {
-    /* .buttonText--btn__add-to--cart {
+/* @media (min-width: 640px) and (max-width: 1279px) {
+    .buttonText--btn__add-to--cart {
         font-size: 0px;
     }
 
     .buttonText--btn__add-to--cart::after {
         content  : "Agregar" !important;
         font-size: 14px;
-    } */
-}
+    }
+} */
