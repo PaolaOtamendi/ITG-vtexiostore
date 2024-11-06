@@ -9,7 +9,7 @@
       "blockClass": "global__main-product--details"
     },
     "children": [
-        "flex-layout.col#product__detail--images", 
+        "flex-layout.col#product__detail--images",
         "flex-layout.col#product__detail--info"
     ]
   },
@@ -20,6 +20,7 @@
     "props": {
       "rowGap": 0,
       "width": "60%",
+      "height": "auto",
       "blockClass": "product__detail--images"
     },
     "children": [
@@ -37,6 +38,7 @@
       "blockClass": "product__detail-images--desktop"
     }
   },
+
   "product-images#pdp__images--desktop": {
     "title": "PDP images desktop customs",
     "props": {
@@ -44,9 +46,11 @@
       "displayThumbnailsArrows": true,
       "showPaginationDots": false,
       "showNavigationArrows": false,
-      "thumbnailsOrientation": "vertical"
+      "thumbnailsOrientation": "vertical", // For Desktop
+      "blockClass": "product__images--desktop"
     }
   },
+
   "responsive-layout.mobile#product__detail-images--mobile": {
     "title": "Container pdp images mobile",
     "children": [
@@ -62,7 +66,8 @@
       "displayThumbnailsArrows": false,
       "showPaginationDots": false,
       "showNavigationArrows": false,
-      "thumbnailsOrientation": "horizontal"
+      "thumbnailsOrientation": "horizontal", // For Mobile
+      "blockClass": "product__images--mobile"
     }
   },
 
@@ -148,24 +153,13 @@
   "flex-layout.col#pdp__btn--add-to-cart": {
     "title": "Product pdp add to cart button",
     "children": [
-        "responsive-layout.desktop#btn__add-to-cart--dekstop",
-        "responsive-layout.mobile#btn__add-to-cart--mobile"
+        "add-to-cart-button#btn__add-to--cart"
+        // "responsive-layout.desktop#btn__add-to-cart--dekstop",
+        // "responsive-layout.mobile#btn__add-to-cart--mobile"
     ],
     "props": {
         "blockClass": "pdp__btn--add-to-cart"
     }
-  },
-  "responsive-layout.desktop#btn__add-to-cart--dekstop": {
-    "title": "Contain pdp add to cart button desktop",
-    "children": [
-        "add-to-cart-button#btn__add-to--cart"
-    ]
-  },
-  "responsive-layout.mobile#btn__add-to-cart--mobile": {
-    "title": "Container pdp add to cart button mobile",
-    "children": [
-        "add-to-cart-button#btn__add-to--cart"
-    ]
   },
   "add-to-cart-button#btn__add-to--cart": {
     "title": "Pdp add to cart button",
@@ -174,4 +168,18 @@
         "blockClass": "btn__add-to--cart"
     }
   }
+
+  //Limpieza de codigo no necesario
+  // "responsive-layout.desktop#btn__add-to-cart--dekstop": {
+  //   "title": "Contain pdp add to cart button desktop",
+  //   "children": [
+  //       "add-to-cart-button#btn__add-to--cart"
+  //   ]
+  // },
+  // "responsive-layout.mobile#btn__add-to-cart--mobile": {
+  //   "title": "Container pdp add to cart button mobile",
+  //   "children": [
+  //       "add-to-cart-button#btn__add-to--cart"
+  //   ]
+  // },
 }

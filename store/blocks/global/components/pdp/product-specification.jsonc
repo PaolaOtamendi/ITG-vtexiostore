@@ -42,12 +42,6 @@
       "product-specification-values"
     ]
   },
-  // "product-specification-text#specification": {
-  //   "title": "Product specification text",
-  //   "props": {
-  //     "message": "{specificationName}"
-  //   }
-  // },
   "product-specification-values": {
     "title": "Product specification values list",
     "children": [
@@ -60,4 +54,12 @@
       "message": "{specificationValue}"
     }
   }
+
+  // Limpieza de codigo clases no necesarias
+  // "product-specification-text#specification": {
+  //   "title": "Product specification text",
+  //   "props": {
+  //     "message": "{specificationName}"
+  //   }
+  // },
 }

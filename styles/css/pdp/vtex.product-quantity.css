@@ -20,9 +20,7 @@
 
 .quantitySelectorStepper--btn__quantity :global(.vtex-numeric-stepper__input) {
     height     : 48px;
-    /* height  : 46px; */
     font-family: lexend, sans-serif;
-    ;
     font-size  : 14px;
     font-weight: 300;
     line-height: 17.5px;
@@ -30,16 +28,11 @@
 }
 
 .quantitySelectorStepper--btn__quantity :global(.vtex-numeric-stepper__plus-button) {
-    height             : 48px;
-    /* height          : 46px; */
-    /* width           : 40px !important; */
-    background-color   : #1D2734;
-    /* border-radius   : 0 4px 0 4px; */
+    height          : 48px;
+    background-color: #1D2734;
 }
 
 .quantitySelectorStepper--btn__quantity :global(.vtex-numeric-stepper__minus-button) {
-    height             : 48px;
-    /* height          : 46px; */
-    /* width           : 40px !important; */
-    background-color   : #1D2734;
+    height          : 48px;
+    background-color: #1D2734;
 }

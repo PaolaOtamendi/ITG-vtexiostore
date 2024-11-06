@@ -9,7 +9,6 @@
 }
 
 .skuSelectorTextContainer {
-    /* margin-top: 5px; */
     margin-bottom: 8px;
 }
 
@@ -77,11 +76,11 @@
 }
 
 .productImage {
-    border       : solid 1px #E7E7E7 !important;
-    width        : 328px;
-    height       : 419px;
+    border          : solid 1px #E7E7E7 !important;
+    /* width        : 328px;
+    height          : 419px; */
     /* Validar */
-    border-radius: 4px !important;
+    border-radius   : 4px !important;
 }
 
 .figure {
@@ -111,14 +110,12 @@
 }
 
 .shareLabel::before {
-    content          : "Share";
-    font-family      : lexend, sans-serif;
-    font-size        : 16px;
-    font-weight      : 600;
-    line-height      : 16.8px;
-    color            : #1D2734;
-    /* padding-bottom: 5px; */
-    /* margin        : 0%; */
+    content    : "Share";
+    font-family: lexend, sans-serif;
+    font-size  : 16px;
+    font-weight: 600;
+    line-height: 16.8px;
+    color      : #1D2734;
 }
 
 .shareContainer {
@@ -193,7 +190,6 @@
     }
 }
 
-/*----------------------------- MediaQueires ---------------------------------------*/
 /*---------- Phone ------------*/
 @media (min-width: 320px) and (max-width: 1024px) {
     .carouselGaleryThumbs {
@@ -204,6 +200,18 @@
 
 
 /* Clases no necesarias limpieza */
+/* @media (min-width: 320px) and (max-width: 1024px) {
+    .productImagesContainer--product__images--dekstop {
+        display: none;
+    }
+
+    .productImagesContainer--product__images--mobile {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+} */
+
 /*---------- Desktop ------------*/
 /* @media (min-width: 1280px) {
     .carouselGaleryThumbs {

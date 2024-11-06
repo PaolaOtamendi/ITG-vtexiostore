@@ -16,12 +16,14 @@
 /*----------------------------- Header desktop section icons ---------------------------------------*/
 /* Nuevas clases - fix-styles 🧩*/
 .headerStickyRow--global__header--menu-icons {
-    overflow: hidden;
+    overflow  : hidden;
+    position  : relative;
+    box-shadow: 0px 4px 4px 0px #00000014;
 }
 
-.headerRowContainer--global__header--menu-icons {
+/* .headerRowContainer--global__header--menu-icons {
     overflow: auto;
-}
+} */
 
 .headerRowContainer--global__header--menu-icons {
     width           : 100%;
@@ -43,8 +45,11 @@
     }
 
     .headerRowContainer--global__header--menu-icons {
-        padding-left : 72px;
-        padding-right: 72px;
+        /* padding-left : 72px;
+        padding-right: 72px; */
+        padding-left   : 48px;
+        padding-right  : 48px;
+        justify-content: center;
     }
 }
 

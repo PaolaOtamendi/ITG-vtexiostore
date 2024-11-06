@@ -117,6 +117,10 @@
     margin-top: 16px;
 }
 
+.flexRow--mobile__plp--body :global(.vtex-product-summary-2-x-container) {
+    margin: 0%;
+}
+
 .flexRowContent--mobile__plp--searchs {
     display       : flex;
     flex-direction: column;
