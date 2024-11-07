@@ -43,7 +43,7 @@
     padding-right: 40px;
 }
 
-.flexRowContent--desktop__header-menu--sec2 :global(.vtex-store-icons-0-x-cartIcon--minicart_icon--header) {
+.flexRowContent--desktop__header-menu--sec2 :global(.vtex-store-icons-0-x-cartIcon--global__minicart--icon) {
     width : 16.67px;
     height: 16.67px;
 }

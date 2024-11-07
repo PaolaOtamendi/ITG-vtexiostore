@@ -72,7 +72,7 @@
       "blockClass": "desktop__header-menu--sec2"
     },
     "children": [
-      "minicart.v2", 
+      "minicart.v2#global__minicart--container", 
       "login#global__login--header"
     ]
   },

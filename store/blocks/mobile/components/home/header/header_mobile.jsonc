@@ -72,7 +72,7 @@
   },
   "flex-layout.row#header_menu-container-sec2--minicart": {
     "children": [
-      "minicart.v2"
+      "minicart.v2#global__minicart--container"
     ],
     "props": {
       "blockClass": "header_menu-container-sec2--minicart"
