@@ -1,6 +1,6 @@
 {
   "minicart.v2#global__minicart--container": {
-    "title": "Global minicart to mobile and desktop",
+    "title": "Global minicart for mobile and desktop",
     "props": {
       "MinicartIcon": "icon-cart#global__minicart--icon",
       "backdropMode": "visible",
@@ -8,11 +8,11 @@
     },
     "children": [
       "flex-layout.row#global__minicart--logo",
-      // "flex-layout.row#minicart__container-title--header",
       "flex-layout.col#global__minicart--title",
       "minicart-base-content"
     ]
   },
+
   // icon header minicart
   "icon-cart#global__minicart--icon": {
     "title": "Icon minicart header mobile and dekstop",
@@ -34,21 +34,10 @@
       "veticalAlign": "center",
       "flexCirection": "row",
       "blockClass": "global__minicart--logo"
-      
     },
-    "children": [
-      // "flex-layout.col#minicart__container--logo",
-      "logo#minicart__logo"
-    ]
+    "children": ["logo#minicart--logo"]
   },
-  // "flex-layout.col#minicart__container--logo": {
-  //   "title": "Minicart container logo",
-  //   "props": {
-  //     "blockClass": "minicart__container--logo"
-  //   },
-  //   "children": ["logo#minicart__logo"]
-  // },
-  "logo#minicart__logo": {
+  "logo#minicart--logo": {
     "title": "Minicart logo",
     "props": {
       "title": "Logo",
@@ -56,20 +45,9 @@
       "url": "/arquivos/logo_itg_icon.svg",
       "width": "50",
       "height": "25",
-      "blockClass": ["minicart__logo"]
+      "blockClass": "minicart--logo"
     }
   },
-
-  // Container title Header
-  // "flex-layout.row#minicart__container-title--header": {
-  //   "title": "Minicart container title header",
-  //   "props": {
-  //     "blockClass": "minicart__container-title--header"
-  //   },
-  //   "children": [
-  //     "flex-layout.col#minicart__title--header"
-  //   ]
-  // },
 
   // Container title Header
   "flex-layout.col#global__minicart--title": {
@@ -142,10 +120,7 @@
   },
   "flex-layout.col#footer__content--summary": {
     "title": "Minicart footer content summary",
-    "children": [
-      "minicart-summary" 
-      //"minicart-checkout-button"
-  ],
+    "children": ["minicart-summary"],
     "props": {
       "blockClass": "footer__content--summary"
     }
@@ -158,7 +133,7 @@
     }
   },
   "checkout-summary.compact#minicart": {
-    "title": "Checkout summary compact to minicart",
+    "title": "Checkout summary for minicart",
     "children": ["summary-totalizers#minicart"],
     "props": {
       "totalizersToShow": ["Items", "Discounts"],

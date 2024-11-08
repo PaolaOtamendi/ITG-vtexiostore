@@ -1,14 +1,9 @@
 {
-  // "product-list#minicart": {
-  //   "blocks": ["product-list-content-mobile"]
-  // },
-
   // Desktop
   "product-list-content-desktop": {
     "title": "Product List - Desktop",
     "children": ["flex-layout.row#list-row.desktop"]
   },
-  // Desktop
   "flex-layout.row#list-row.desktop": {
     "title": "list row contain image-desktop and main",
     "children": [
