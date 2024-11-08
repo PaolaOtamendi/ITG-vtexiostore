@@ -24,9 +24,10 @@
 }
 
 .accessCodeOptionBtn :global(.vtex-button__label) {
-    font-family   : "Lexend-Regular", sans-serif;
+    font-family   : lexend, sans-serif;
     font-weight   : 400;
-    font-size     : 14px;
+    /* font-size     : 14px; */
+    font-size: 0px;
     line-height   : 17.5px;
     text-align    : center;
     color         : #1D2734;
@@ -49,6 +50,7 @@
     justify-content : center;
     align-items     : center;
     pointer-events  : none;
+    font-size     : 14px;
 }
 
 .accessCodeOptionBtn :global(.vtex-button__label) ::first-letter {
@@ -65,7 +67,7 @@
 }
 
 .emailPasswordOptionBtn :global(.vtex-button__label) {
-    font-family   : "Lexend-Regular", sans-serif;
+    font-family   : lexend, sans-serif;
     font-weight   : 400;
     font-size     : 14px;
     line-height   : 17.5px;
@@ -82,12 +84,12 @@
     width           : 368px;
     height          : 48px;
     border-radius   : 40px;
-    border          : solid 1px #AEBACE 50%;
+    border: 1px solid #AEBACE80;
     background-color: #FFFFFF;
 }
 
 .googleOptionBtn :global(.vtex-login-2-x-oauthLabel) {
-    font-family   : "Lexend-Regular", sans-serif;
+    font-family   : lexend, sans-serif;
     font-weight   : 400;
     font-size     : 16px;
     line-height   : 20px;
@@ -112,8 +114,12 @@
     color           : #5E636E;
     font-weight     : 400;
     font-size       : 16px;
-    font-family     : "Lexend-Regular", sans-serif;
+    font-family     : lexend, sans-serif;
     line-height     : 20px;
+}
+
+.googleOptionBtn :global(.vtex-button__label) {
+    gap: 36px;
 }
 
 .googleOptionBtn :global(.vtex-button__label) svg {
@@ -128,7 +134,7 @@
 }
 
 .facebookOptionBtn :global(.vtex-login-2-x-oauthLabel) {
-    font-family   : "Lexend-Regular", sans-serif !important;
+    font-family   : lexend, sans-serif;
     font-weight   : 400;
     font-size     : 16px;
     line-height   : 20px;
@@ -153,8 +159,12 @@
     color           : #fff;
     font-weight     : 400;
     font-size       : 16px;
-    font-family     : "Lexend-Regular", sans-serif !important;
+    font-family     : lexend, sans-serif;
     line-height     : 20px;
+}
+
+.facebookOptionBtn :global(.vtex-button__label) {
+    gap: 12px;
 }
 
 .facebookOptionBtn :global(.vtex-button__label) svg {
@@ -168,7 +178,7 @@
 }
 
 .formTitle {
-    font-family  : "Lexend-Regular", sans-serif !important;
+    font-family  : lexend, sans-serif;
     font-weight  : 300;
     font-size    : 20px;
     line-height  : 22.92px;
@@ -241,7 +251,7 @@
     visibility    : visible;
     display       : block;
     text-align    : center;
-    font-family   : "Lexend-Regular", sans-serif !important;
+    font-family   : lexend, sans-serif;
     text-transform: capitalize;
 }
 
@@ -264,7 +274,7 @@
 }
 
 .backButton :global(.vtex-button__label) {
-    font-family: "Lexend-Regular", sans-serif !important;
+    font-family: lexend, sans-serif;
     font-weight: 400;
     font-size  : 14px;
     line-height: 17.5px;
@@ -289,7 +299,7 @@
 
 .accountOptionsSectionTitle::after {
     content    : "MY ACCOUNT";
-    font-family: "Lexend-Regular", sans-serif !important;
+    font-family: lexend, sans-serif;
     font-weight: 300;
     font-size  : 20px;
     line-height: 22.92px;
@@ -316,7 +326,7 @@
     margin-bottom  : 0.5rem;
     display        : flex;
     justify-content: center;
-    font-family    : "Lexend-Regular", sans-serif !important;
+    font-family    : lexend, sans-serif;
     font-size      : 14px;
     font-weight    : 400;
     line-height    : 17.5px;
@@ -334,7 +344,7 @@
 
 .contentForm :global(.vtex-login-2-x-logoutButton)::after {
     content    : "Log out";
-    font-family: "Lexend-Regular", sans-serif !important;
+    font-family: lexend, sans-serif;
     font-size  : 14px;
     font-weight: 400;
     line-height: 17.5px;
@@ -352,12 +362,26 @@
     color     : #0C2340;
 }
 
-.emailAndPasswordForm :global(.vtex-login-2-x-formTitle) ::after {
+/* .emailAndPasswordForm :global(.vtex-login-2-x-formTitle) ::after {
     content: "Continue with e-mail and password";
+} */
+
+.emailAndPasswordForm :global(.vtex-login-2-x-formTitle)::after {
+    content    : "Continue with e-mail and password";
+    display    : block;
+    font-family: lexend, sans-serif;
+    font-weight: 300;
+    font-size  : 14px;
+    line-height: 20px;
+    text-align : center;
+    margin-top : 5px;
+    color      : #5E636E;
 }
 
+/* Nuevas clases - fix-styles 🧩*/
 .inputContainer :global(.vtex-input-prefix__group) {
-    width        : 368px;
+    /* width        : 368px; */
+    width: 100%;
     height       : 48px;
     border-radius: 40px;
     border       : solid 1px #1D2734;
@@ -368,7 +392,7 @@
 }
 
 .forgotPasswordLink {
-    font-family: "Lexend-Regular", sans-serif !important;
+    font-family: lexend, sans-serif;
     color      : #0C2340;
     font-size  : 14px;
     font-weight: 300;
@@ -400,6 +424,7 @@
     display  : flex;
 }
 
+
 .content--beginCreatePass :global(.vtex-login-2-x-formTitle) {
     font-size: 0;
 }
@@ -424,13 +449,43 @@
     top        : -10px;
 }
 
+.dontHaveAccount {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    font-family    : lexend, sans-serif;
+    color          : #0C2340;
+    font-size      : 14px;
+    font-weight    : 300;
+    line-height    : 20px;
+    text-align     : center;
+}
+
 .formLinkContainer :global(.vtex-login-2-x-dontHaveAccount) {
-    font-family: "Lexend-Regular", sans-serif !important;
+    visibility: hidden;
+    position  : relative;
+}
+
+.formLinkContainer :global(.vtex-login-2-x-dontHaveAccount) {
+    font-family: lexend, sans-serif;
     font-weight: 400;
     font-size  : 14px;
     line-height: 17.5px;
     text-align : center;
     color      : #1D2734;
+}
+
+.formLinkContainer :global(.vtex-login-2-x-dontHaveAccount)::before {
+    content         : "Create an account";
+    visibility      : visible;
+    display         : block;
+    text-align      : center;
+    background-color: #000000 25%;
+    position        : absolute;
+    width           : 264px;
+    height          : 20px;
+    z-index         : 1;
+    color           : #0C2340;
 }
 
 .forgotPasswordForm :global(.vtex-login-2-x-formTitle) {
@@ -451,7 +506,7 @@
 .forgotPasswordForm :global(.vtex-login-2-x-formSubtitle)::before {
     content    : "Create a new password";
     font-size  : 14px;
-    font-family: "Lexend-Regular", sans-serif !important;
+    font-family: lexend, sans-serif;
     line-height: 20px;
     color      : #5E636E;
     margin-top : 5px;
@@ -462,14 +517,14 @@
 }
 
 .inputContainerPassword :global(.c-danger) :global(.w-20) :global(.t-small) {
-    font-family: "Lexend-Regular", sans-serif !important;
+    font-family: lexend, sans-serif;
     color      : #0C2340;
     font-size  : 12px;
     line-height: 16px;
 }
 
 .inputContainerPassword :global(.c-danger) :global(.w-80) :global(.t-small) {
-    font-family: "Lexend-Regular", sans-serif !important;
+    font-family: lexend, sans-serif;
     color      : #0C2340;
     font-size  : 12px;
     line-height: 16px;
@@ -504,9 +559,9 @@
 .formLinkContainer :global(.vtex-login-2-x-forgotPasswordLink)::before {
     content         : "Forgot your password? ";
     visibility      : visible;
-    display         : block;
+    /* display         : block; */
     text-align      : center;
-    background-color: #000000 25%;
+    /* background-color: #000000 25%; */
     position        : absolute;
     width           : 264px;
     height          : 20px;
@@ -516,63 +571,25 @@
 }
 
 .formLinkContainer :global(.vtex-login-2-x-forgotPasswordLink)::after {
-    content         : "Reset password";
+    content         : " Reset password";
     visibility      : visible;
-    display         : block;
+    /* display         : block; */
     text-align      : center;
-    background-color: #000000 25%;
+    /* background-color: #000000 25%; */
     position        : absolute;
     width           : 264px;
     height          : 20px;
     z-index         : 1;
     color           : #E56A54;
     display         : contents;
+    /* border-top: 0.5px solid #E56A54; */
+    /* text-decoration: underline; */
 }
 
-.dontHaveAccount {
-    display        : flex;
-    align-items    : center;
-    justify-content: center;
-    font-family    : "Lexend-Regular", sans-serif !important;
-    color          : #0C2340;
-    font-size      : 14px;
-    font-weight    : 300;
-    line-height    : 20px;
-    text-align     : center;
-}
 
-.formLinkContainer :global(.vtex-login-2-x-dontHaveAccount) {
-    visibility: hidden;
-    position  : relative;
-}
-
-.formLinkContainer :global(.vtex-login-2-x-dontHaveAccount)::before {
-    content         : "Create an account";
-    visibility      : visible;
-    display         : block;
-    text-align      : center;
-    background-color: #000000 25%;
-    position        : absolute;
-    width           : 264px;
-    height          : 20px;
-    z-index         : 1;
-    color           : #0C2340;
-}
-
-.emailAndPasswordForm :global(.vtex-login-2-x-formTitle)::after {
-    content    : "Continue with e-mail and password";
-    display    : block;
-    font-family: "Lexend-Regular", sans-serif !important;
-    font-weight: 300;
-    font-size  : 14px;
-    line-height: 20px;
-    text-align : center;
-    margin-top : 5px;
-    color      : #5E636E;
-}
 
 .emailVerification :global(.vtex-login-2-x-formSubtitle) {
-    font-family: "Lexend-Regular", sans-serif !important;
+    font-family: lexend, sans-serif;
     font-weight: 300;
     font-size  : 14px;
     line-height: 20px;
@@ -580,27 +597,236 @@
 }
 
 .inputContainerAccessCode :global(.vtex-styleguide-9-x-input) {
-    font-family: "Lexend-Regular", sans-serif !important;
+    font-family: lexend, sans-serif;
 }
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .content {
         height: auto;
         width : auto;
     }
-}
+} */
 
 /*----------------------------- MediaQueires---------------------------------------*/
 /*---------- Phone ------------*/
-@media (min-width: 360px) and (max-width: 639px) {
+@media (min-width: 320px) and (max-width: 1024px) {
     .content {
         height: auto;
         width : auto;
+        /* background-color: #fff; */
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .contentForm {
+        padding: 0%;
+        /* width: 100%; */
+    }
+
+    .formTitle {
+        /* font-family  : lexend, sans-serif !important;
+        font-weight  : 300;
+        font-size    : 20px;
+        line-height  : 22.92px;
+        text-align   : center; */
+        margin-top   : 16px;
+        margin-bottom: 16px;
+        padding: 0%;
+    }
+
+    .loginOptionsContainer :global(.vtex-login-2-x-formTitle) {
+        font-size: 0px;
+    }
+
+    .loginOptionsContainer :global(.vtex-login-2-x-formTitle)::after {
+        content: "LOG IN";
+        font-family: lexend, sans-serif;
+        font-weight: 300;
+        font-size  : 20px;
+        line-height: 22.92px;
+        text-align : center;
+        color: #0C2340;
     }
 
     .emailAndPasswordForm .inputContainerEmail {
         display        : flex;
         justify-content: center;
+    }
+
+    .emailAndPasswordForm :global(.vtex-login-2-x-formTitle) {
+        font-size: 0px;
+        /* display: flex;
+        flex-direction: column;
+        gap: 8px; */
+    }
+
+    .emailAndPasswordForm :global(.vtex-login-2-x-formTitle)::after {
+        margin-top: 0%;
+    }
+
+    .emailAndPasswordForm :global(.vtex-login-2-x-formTitle)::before {
+        content    : "LOG IN";
+        /* display    : block; */
+        font-family: lexend, sans-serif;
+        font-weight: 300;
+        font-size  : 20px;
+        line-height: 22.92px;
+        text-align : center;
+        margin-top : 5px;
+        /* color      : #5E636E; */
+        color: #0C2340;
+    }
+
+    .inputContainerPassword :global(.relative) {
+        display        : flex !important;
+        justify-content: center !important;
+    }
+
+    .inputContainerEmail :global(.vtex-input) {
+        /* width          : 90%; */
+        display        : flex;
+        justify-content: center;
+    }
+
+    /* .inputContainerEmail :global(.vtex-styleguide-9-x-input)::placeholder {
+        font-family: lexend, sans-serif;
+        font-weight: 400;
+        font-size  : 14px;
+        line-height: 17.5px;
+        color: #1D2734;
+    } */
+
+    .inputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+        font-family: lexend, sans-serif;
+        font-weight: 400;
+        font-size  : 14px;
+        line-height: 17.5px;
+        color: #1D2734;
+    }
+
+    .inputContainerPassword :global(.vtex-input) {
+        /* width          : 90%; */
+        display        : flex;
+        justify-content: center;
+    }
+
+    .formFooter {
+        display        : flex;
+        justify-content: center;
+        padding: 0%;
+        margin-top: 24px;
+    }
+
+    .sendButton {
+        /* width: 90% !important; */
+    }
+
+    .accessCodeOptionBtn {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .accessCodeOptionBtn :global(.vtex-button) {
+        width: 100% !important;
+    }
+
+    .buttonSocial {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .googleOptionBtn :global(.vtex-button) {
+        width: 100% !important;
+    }
+
+    .facebookOptionBtn :global(.vtex-button) {
+        width: 100%;
+    }
+
+    .formLinkContainer {
+        margin-top: 8px;
+    }
+
+    .formLinkContainer :global(.vtex-login-2-x-dontHaveAccount) {
+        width: 100%;
+        height: 48px;
+    }
+
+    .options {
+        min-width: 15rem;
+    }
+
+    .formError {
+        font-family: lexend, sans-serif;
+        font-weight: 400;
+        font-size  : 14px;
+        line-height: 17.5px;
+        color: #1D2734;
+    }
+}
+
+/*---------- Phone ------------*/
+/* @media (min-width: 320px) and (max-width: 639px) {
+    .content {
+        height: auto;
+        width : auto;
+        background-color: #fff;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .contentForm {
+        padding: 0%;
+        width: 100%;
+    }
+
+    .formTitle {
+        margin-top   : 16px;
+        margin-bottom: 16px;
+        padding: 0%;
+    }
+
+    .loginOptionsContainer :global(.vtex-login-2-x-formTitle) {
+        font-size: 0px;
+    }
+
+    .loginOptionsContainer :global(.vtex-login-2-x-formTitle)::after {
+        content: "LOG IN";
+        font-family: lexend, sans-serif;
+        font-weight: 300;
+        font-size  : 20px;
+        line-height: 22.92px;
+        text-align : center;
+        color: #0C2340;
+    }
+
+    .emailAndPasswordForm .inputContainerEmail {
+        display        : flex;
+        justify-content: center;
+    }
+
+    .emailAndPasswordForm :global(.vtex-login-2-x-formTitle) {
+        font-size: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .emailAndPasswordForm :global(.vtex-login-2-x-formTitle)::after {
+        margin-top: 0%;
+    }
+
+    .emailAndPasswordForm :global(.vtex-login-2-x-formTitle)::before {
+        content    : "LOG IN";
+        display    : block;
+        font-family: lexend, sans-serif;
+        font-weight: 300;
+        font-size  : 20px;
+        line-height: 22.92px;
+        text-align : center;
+        margin-top : 5px;
+        color      : #5E636E;
+        color: #0C2340;
     }
 
     .inputContainerPassword :global(.relative) {
@@ -614,6 +840,22 @@
         justify-content: center;
     }
 
+    .inputContainerEmail :global(.vtex-styleguide-9-x-input)::placeholder {
+        font-family: lexend, sans-serif;
+        font-weight: 400;
+        font-size  : 14px;
+        line-height: 17.5px;
+        color: #1D2734;
+    }
+
+    .inputContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+        font-family: lexend, sans-serif;
+        font-weight: 400;
+        font-size  : 14px;
+        line-height: 17.5px;
+        color: #1D2734;
+    }
+
     .inputContainerPassword :global(.vtex-input) {
         width          : 90%;
         display        : flex;
@@ -623,6 +865,8 @@
     .formFooter {
         display        : flex;
         justify-content: center;
+        padding: 0%;
+        margin-top: 24px;
     }
 
     .sendButton {
@@ -650,4 +894,17 @@
     .facebookOptionBtn :global(.vtex-button) {
         width: 100%;
     }
-}
+
+    .formLinkContainer {
+        margin-top: 8px;
+    }
+
+    .formLinkContainer :global(.vtex-login-2-x-dontHaveAccount) {
+        width: 100%;
+        height: 48px;
+    }
+
+    .options {
+        min-width: 15rem;
+    }
+} */
