@@ -1,3 +1,17 @@
-.logoContainer--minicart__logo {
+.logoContainer--minicart--logo {
     padding-left: 16px;
+}
+
+.imageElement--minicart__empty--image {
+    width         : 148px;
+    height        : 148px;
+    padding-bottom: 8px;
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    .imageElement--minicart__empty--image {
+        width : 200px;
+        height: 200px;
+    }
 }
