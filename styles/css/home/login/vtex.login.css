@@ -434,6 +434,10 @@
     visibility: visible;
     display   : block;
     text-align: center;
+    font-family    : lexend, sans-serif;
+    font-weight: 300;
+    line-height: 22.92px;
+    color: #0C2340;
     font-size : 20px;
 }
 
@@ -441,12 +445,13 @@
     content    : "Enter the acces code we sent to";
     visibility : visible;
     display    : block;
+    position   : relative;
+    top        : -10px;
     text-align : center;
+    font-family    : lexend, sans-serif;
     font-size  : 14px;
     line-height: 20px;
     color      : #5E636E;
-    position   : relative;
-    top        : -10px;
 }
 
 .dontHaveAccount {
@@ -568,6 +573,7 @@
     z-index         : 1;
     color           : #0C2340;
     display         : flex;
+    padding-right: 5px; /* Validar */ 
 }
 
 .formLinkContainer :global(.vtex-login-2-x-forgotPasswordLink)::after {
@@ -680,6 +686,7 @@
     .inputContainerPassword :global(.relative) {
         display        : flex !important;
         justify-content: center !important;
+        flex-direction: column; /* Nueva */
     }
 
     .inputContainerEmail :global(.vtex-input) {
@@ -719,6 +726,11 @@
 
     .sendButton {
         /* width: 90% !important; */
+        width: 100%;
+    }
+
+    .sendButton :global(.vtex-button) {
+        width: 100%;
     }
 
     .accessCodeOptionBtn {
@@ -763,6 +775,35 @@
         line-height: 17.5px;
         color: #1D2734;
     }
+
+    .emailPasswordOptionBtn :global(.vtex-button) {
+        /* width           : 368px; */
+        width: 100%;
+    }
+
+    .content--beginCreatePass {
+        gap: 16px;
+    }
+
+    .backButton {
+        position: absolute;
+        top     : -20px;
+        left: -20px;
+    }
+
+    .content--beginCreatePass :global(.vtex-login-2-x-arrowBackIcon) {
+        width: 24px;
+    }
+
+    .content--recoveryPassword :global(.vtex-login-2-x-arrowBackIcon) {
+        width: 24px;
+    }
+
+    .content--emailVerification {
+        gap: 16px;
+    }
+
+    
 }
 
 /*---------- Phone ------------*/
