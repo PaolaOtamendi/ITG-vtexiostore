@@ -162,6 +162,16 @@
     padding: 0px;
 }
 
+/* Prueba pdp */
+/* .productImagesGallerySlide {
+    height: 419px;
+}
+
+.productImageTag {
+    width: 100%;
+    min-width: 328px;
+} */
+
 @media (min-width: 1025px) {
     .productImagesThumb {
         margin-bottom: 6px;
@@ -194,6 +204,13 @@
 @media (min-width: 320px) and (max-width: 1024px) {
     .carouselGaleryThumbs {
         display: contents;
+    }
+}
+
+/*---------- Portatil ------------*/
+@media (min-width: 320px) and (max-width: 768px) {
+    .productImage {
+        width: 328px;
     }
 }
 

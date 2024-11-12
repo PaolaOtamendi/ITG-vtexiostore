@@ -16,9 +16,10 @@
 }
 
 .container--mobile__header-overlay--layout {
-    width   : 70%;
-    left    : 70px;
-    position: relative;
+    width      : 70%;
+    /* left    : 70px; */
+    left       : 100px;
+    position   : relative;
 }
 
 .container--mobile__header-overlay--layout :global(.vtex-styleguide-9-x-input) {
