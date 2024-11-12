@@ -30,7 +30,7 @@
       },
       "showNavigationArrows": "desktopOnly",
       "showPaginationDots": "always",
-      "fullWidth": false, // Validar
+      "fullWidth": false,
       "blockClass": "home__shelf--slider"
     }
   },
@@ -40,9 +40,6 @@
     "children": [
       "flex-layout.row#shelf__product-summary--bages",
       "flex-layout.col#shelf__product-summary--image",
-      // "flex-layout.col#shelf__product-summary-name",
-      // "flex-layout.col#shelf__product-summary-prices",
-      // "flex-layout.col#shelf__product-summary-highligths",
       "flex-layout.col#shelf__product-summary--description",
       "flex-layout.row#shelf__product-summary-add-to-cart"
     ],

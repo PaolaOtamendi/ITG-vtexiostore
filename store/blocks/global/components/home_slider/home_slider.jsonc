@@ -5,7 +5,6 @@
       "slider-layout#global__home-slider--layout"
     ],
     "props": {
-      /*"fullWidth": false,*/
       "blockClass": "global__home-slider--one"
     }
   },

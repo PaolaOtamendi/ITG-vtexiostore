@@ -11,11 +11,6 @@
   "flex-layout.row#mobile__header-menu--container": {
     "title": "Container mobile sections 1 and 2",
     "props": {
-      // "horizontalAlign": "center",
-      // "verticalAlign": "center",
-      // "topMenuIcons": true,
-      // "preventVerticalStretch": true,
-      // "preventHorizontalStretch": false,
       "fullWidth": true,
       "blockClass": "mobile__header-menu--container"
     },

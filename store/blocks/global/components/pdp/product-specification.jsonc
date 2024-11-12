@@ -38,7 +38,6 @@
   "product-specification": {
     "title": "Details product specification",
     "children": [
-      // "product-specification-text#specification",
       "product-specification-values"
     ]
   },
@@ -54,12 +53,4 @@
       "message": "{specificationValue}"
     }
   }
-
-  // Limpieza de codigo clases no necesarias
-  // "product-specification-text#specification": {
-  //   "title": "Product specification text",
-  //   "props": {
-  //     "message": "{specificationName}"
-  //   }
-  // },
 }

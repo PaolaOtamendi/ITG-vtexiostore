@@ -9,7 +9,6 @@
       "sticky-layout#dekstop__mega--menu-container",
       "flex-layout.row#desktop__header-menu--sec1",
       "flex-layout.row#desktop__header-menu--sec3",
-      /*"vtex.menu@2.x:menu#websites",*/
       "flex-layout.row#desktop__header-menu--sec2"
     ]
   },
