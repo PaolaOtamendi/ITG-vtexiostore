@@ -90,6 +90,10 @@
     gap            : 4px;
 }
 
+.flexCol--menu__categories--global:hover {
+    border-bottom: 3px solid #1D2734;
+}
+
 .flexCol--menu__categories--food {
     border-bottom: 3px solid #1D2734;
 }

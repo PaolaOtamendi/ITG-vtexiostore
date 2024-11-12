@@ -26,6 +26,11 @@
     text-align        : center;
 }
 
+.styledLinkContent--menu_item:hover {
+    text-decoration-line: underline;
+    color               : #1D2734;
+}
+
 .styledLinkContainer--menu-item_trends {
     margin-right: 13px;
 }
