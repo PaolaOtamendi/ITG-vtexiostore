@@ -1,10 +1,4 @@
 /* Nuevas clases - fix-styles 🧩*/
-/* .flexRow--container__title--slider {
-    margin-top   : 24px;
-    margin-left  : 16px;
-    margin-bottom: 16px;
-} */
-
 .flexRowContent--container__title--slider {
     padding-top: 24px;
     padding-left: 16px;
@@ -45,11 +39,6 @@
 /*----------------------------- MediaQueires ---------------------------------------*/
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) {
-    /* .flexRow--container__title--slider {
-        margin-top : 40px;
-        margin-left: 72px;
-    } */
-
     .flexRowContent--container__title--slider {
         padding-top: 40px;
         padding-left: 72px;
