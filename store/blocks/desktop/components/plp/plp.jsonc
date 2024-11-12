@@ -61,7 +61,6 @@
         ],
         "props": {
             "colSizing": "auto",
-            // "fullWidth": false,
             "blockClass": "desktop__plp--body"
         }
     },

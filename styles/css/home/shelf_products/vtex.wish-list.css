@@ -2,6 +2,7 @@
 .wishlistIconContainer--product__summary-wish--list :global(.vtex-button) {
     display    : flex;
     align-items: center;
+    min-height : auto !important;
 }
 
 .wishlistIconContainer--product__summary-wish--list :global(.vtex-button__label) {
@@ -20,13 +21,13 @@
 }
 
 .wishlistIcon--product__summary-wish--list {
-    background-image: url("/arquivos/favorite_border-icon.svg") !important;
-    width           : 15.19px;
-    height          : 15.19px;
-    position        : absolute;
-    background-size : 15.19px !important;
+    background-image   : url("/arquivos/favorite_border-icon.svg") !important;
+    width              : 15.19px;
+    height             : 15.19px;
+    position           : absolute;
+    background-size    : 15.19px !important;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat  : no-repeat;
 }
 
 .wishlistIcon--product__summary-wish--list :global(.vtex-wish-list-1-x-iconSize) {

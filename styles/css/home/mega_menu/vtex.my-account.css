@@ -34,7 +34,6 @@
 
 :global(.vtex-mega-menu-2-x-menuContainer h3::before) {
     content        : url("/arquivos/icon_color-m-menu.png");
-    /* margin-right: 0.4rem; */
     width          : 20px;
     height         : 20px;
 }
@@ -69,19 +68,3 @@
 :global(.vtex-mega-menu-2-x-menuContainerVertical) {
     margin: 0%;
 }
-
-/* Clases no necesarias limpieza de codigo mobile */
-/* :global(.vtex-mega-menu-2-x-departmentsContainer h3::after) {
-    content    : "ITGlober+";
-    max-width  : 10px !important;
-    max-height : 10px !important;
-    font-size  : 12px;
-    font-weight: 300;
-    line-height: 15px;
-    font-family: lexend, sans-serif !important;
-} */
-
-/* :global(.vtex-mega-menu-2-x-departmentsContainer--mega__menu-drawer--body h3::after) {
-    max-width  : 10px !important;
-    max-height    : 10px !important;
-} */

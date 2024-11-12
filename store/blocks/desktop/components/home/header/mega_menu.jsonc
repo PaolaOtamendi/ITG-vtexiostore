@@ -31,9 +31,6 @@
     "title": "Trigger button icon",
     "props": {
       "id": "hpa-hamburguer-menu",
-      /*"width": 18,
-      "height": 12,
-      "size": 18,*/
       "viewBox": "0 0 20 20",
       "overflow": "visible",
       "blockclass": "trigger__btn--icon"

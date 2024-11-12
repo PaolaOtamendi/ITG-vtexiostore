@@ -17,18 +17,3 @@
 
 /*---------- Desktop ------------*/
 @media (min-width: 1025px) {}
-
-/* Clases no necesarias limpieza de codigo mobile */
-/* .drawer {
-    background-color: #fff;
-}
-
-.drawerContent {
-    background-color: #fff;
-} */
-
-/* @media (min-width: 768px) and (max-width: 1024px) {
-    .drawer {
-        max-width: 300px !important;
-    }
-} */

@@ -52,7 +52,6 @@
     height: 35px;
 }
 
-/* Prueba */
 .flexCol--image_mobile {
     justify-content: center;
     align-items    : center;
@@ -82,10 +81,3 @@
 .flexColChild--minicart__empty--body .flexRow--minicart__body--footer {
     width: 328px;
 }
-
-/* Limpieza de codigo */
-/* .flexCol--footer__content--summary {
-    width        : 368px !important;
-    margin-left  : 16px;
-    margin-right    : 16px;
-} */

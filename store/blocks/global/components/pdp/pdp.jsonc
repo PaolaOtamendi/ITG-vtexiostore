@@ -154,8 +154,6 @@
     "title": "Product pdp add to cart button",
     "children": [
         "add-to-cart-button#btn__add-to--cart"
-        // "responsive-layout.desktop#btn__add-to-cart--dekstop",
-        // "responsive-layout.mobile#btn__add-to-cart--mobile"
     ],
     "props": {
         "blockClass": "pdp__btn--add-to-cart"
@@ -168,18 +166,4 @@
         "blockClass": "btn__add-to--cart"
     }
   }
-
-  //Limpieza de codigo no necesario
-  // "responsive-layout.desktop#btn__add-to-cart--dekstop": {
-  //   "title": "Contain pdp add to cart button desktop",
-  //   "children": [
-  //       "add-to-cart-button#btn__add-to--cart"
-  //   ]
-  // },
-  // "responsive-layout.mobile#btn__add-to-cart--mobile": {
-  //   "title": "Container pdp add to cart button mobile",
-  //   "children": [
-  //       "add-to-cart-button#btn__add-to--cart"
-  //   ]
-  // },
 }

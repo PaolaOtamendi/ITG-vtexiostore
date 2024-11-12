@@ -17,7 +17,6 @@
 
 .container--mobile__header-overlay--layout {
     width      : 70%;
-    /* left    : 70px; */
     left       : 100px;
     position   : relative;
 }

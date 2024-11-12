@@ -36,33 +36,3 @@
         font-size: 0px;
     }
 }
-
-/* Clases no necesarias limpieza */
-/* .buttonText--btn__add-to--cart::first-letter {
-    text-transform: capitalize;
-} */
-
-/*----------------------------- MediaQueires pdp tablet y phone ---------------------------------------*/
-/*---------- Phone ------------*/
-/* @media (max-width: 639px) {
-    .buttonText--btn__add-to--cart {
-        font-size: 0px;
-    }
-
-    .buttonText--btn__add-to--cart::after {
-        content  : "Agregar" !important;
-        font-size: 14px;
-    }
-} */
-
-/*---------- Tablet ------------*/
-/* @media (min-width: 640px) and (max-width: 1279px) {
-    .buttonText--btn__add-to--cart {
-        font-size: 0px;
-    }
-
-    .buttonText--btn__add-to--cart::after {
-        content  : "Agregar" !important;
-        font-size: 14px;
-    }
-} */
