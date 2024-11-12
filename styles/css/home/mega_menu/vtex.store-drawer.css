@@ -1,18 +1,19 @@
 /*----------------------------- Mega menu mobile ------------------------------------------------*/
-.drawer {
-    background-color: #fff;
-}
-
-.drawerContent {
-    background-color: #fff;
-}
-
+/* Nuevas clases - fix-styles 🧩*/
 .drawerHeader {
     background-color: #fff !important;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
-    .drawer {
-        max-width: 300px !important;
-    }
+.drawer--mobile__mega-menu--drawer {
+    width           : 65% !important;
+    min-width       : 240px !important;
+    max-width       : 300px !important;
+    background-color: #fff;
 }
+
+.drawerHeader--mega__menu-drawer--header {
+    padding-top: 40px;
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {}

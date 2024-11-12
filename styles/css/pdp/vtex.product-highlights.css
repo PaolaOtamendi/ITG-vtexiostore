@@ -1,33 +1,30 @@
+/* Nuevas clases - fix-styles 🧩*/
 .productHighlightWrapper--pdp__flash-deal-wrapper {
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
-    margin-bottom   : 0px;
-    width           : 104px !important;
-    height          : 32px !important;
-    border-radius   : 4px;
-    padding         : 6xp 12px 6px 12px;
-    background-color: rgba(255, 131, 36, 0.2);
-    color           : #FF8324;
-    font-family     : "Lexend-Black", sans-serif;
-    font-weight     : 400;
-    font-size       : 14px;
-    line-height     : 20px;
+    display            : flex;
+    gap                : 10px;
+    width              : 104px !important;
+    height             : 32px !important;
+    border-radius      : 4px;
+    padding            : 6px 12px 6px 12px;
+    background-color   : rgba(255, 131, 36, 0.2);
+    color              : #FF8324;
+    font-family        : lexend, sans-serif;
+    font-weight        : 400;
+    font-size          : 14px;
+    line-height        : 20px;
 }
 
 .productHighlightWrapper--pdp__best-seller-wrapper {
-    display         : flex;
-    align-items     : center;
-    justify-content : center;
-    margin-bottom   : 0px;
-    width           : 104px !important;
-    height          : 32px !important;
-    border-radius   : 4px;
-    padding         : 6xp 12px 6px 12px;
-    background-color: rgba(147, 255, 150, 0.2);
-    color           : #1D2734;
-    font-family     : Lexend, sans-serif;
-    font-weight     : 400;
-    font-size       : 14px;
-    line-height     : 20px;
+    display            : flex;
+    gap                : 10px;
+    width              : 104px !important;
+    height             : 32px !important;
+    border-radius      : 4px;
+    padding            : 6px 12px 6px 12px;
+    background-color   : rgba(147, 255, 150, 0.2);
+    color              : #1D2734;
+    font-family        : lexend, sans-serif;
+    font-weight        : 400;
+    font-size          : 14px;
+    line-height        : 20px;
 }

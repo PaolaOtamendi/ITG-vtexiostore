@@ -40,7 +40,7 @@
       "size": 15,
       "viewBox": "0 0 15 15",
       "overflow": "visible",
-      "blockclass": "icon__free-shipping"
+      "blockClass": "icon__free-shipping"
     }
   }
 }

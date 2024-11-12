@@ -1,120 +1,138 @@
-.container--container__all--products {
-    margin       : 6px;
+/* Nuevas clases - fix-styles 🧩*/
+.element--home__shelf--product--summary {
+    padding-bottom: 0%;
+    padding-top   : 0%;
+    gap           : 9px;
+}
+
+.container--home__shelf--product--summary {
+    margin       : 8px;
     border-radius: 0px 0px 0px 0px;
 }
 
-.element--container__all--products {
-    padding-bottom: 0%;
-    padding-top   : 0%;
-}
-
-.image--custom_image__shelf {
+.image--product__summary--image {
     width : 178px !important;
     height: 140px !important;
 }
 
-.imageWrapper--custom_image__shelf {
+.imageWrapper--product__summary--image {
     display        : flex;
     align-items    : center;
     justify-content: center;
-    margin-top     : 1px;
 }
 
-.nameContainer {
+.nameContainer--product_summary-name {
     display       : flex;
     padding-bottom: 0px;
     padding-top   : 0px;
-    height        : 51px;
+    height        : 38px;
+}
+
+.productBrand--product_summary-name {
+    display           : -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    max-height        : calc(16.8px * 3);
+    text-overflow     : ellipsis;
+    text-align        : left;
+    font-family       : lexend, sans-serif;
+    font-weight       : 400;
+    font-size         : 12px;
+    line-height       : 12.76px;
+    color             : hsla(214, 28%, 16%, 0.6);
 }
 
 .priceContainer {
-    display        : flex;
-    justify-content: left;
-    align-items    : baseline;
-    padding-bottom : 0%;
-    padding-top    : 8px;
+    display    : flex;
+    align-items: baseline;
+    padding    : 0%;
+    height     : 33.39px;
 }
 
 .price_className {
     display       : flex;
     align-items   : flex-start;
     flex-direction: column;
-    font-family   : Lexend, sans-serif;
-    font-family   : 12px;
+    gap           : 2px;
+    font-family   : lexend, sans-serif;
     color         : hsla(214, 28%, 16%, 0.4);
 }
 
+.price_listPriceContainer {
+    margin : 0%;
+    padding: 0%;
+    height : 13px;
+}
+
 .price_listPrice {
-    font-family: Lexend, sans-serif;
-    font-size  : 14px;
-    line-height: 16.8px;
+    padding    : 0%;
+    font-family: lexend, sans-serif;
+    font-size  : 12px;
+    line-height: 12.76px;
+}
+
+.price_sellingPriceContainer {
+    padding: 0%;
+    margin : 0%;
+    height : 22px;
+}
+
+.price_sellingPrice {
+    padding    : 0%;
+    font-family: lexend, sans-serif;
+    font-size  : 20px;
+    line-height: 21.87px;
+    font-weight: 600;
+    color      : #1D2734;
 }
 
 .listPriceLabel {
     display: none;
 }
 
-.price_sellingPrice {
-    font-family: Lexend, sans-serif;
-    font-size  : 24px;
-    line-height: 28.8px;
-    font-weight: 600;
-}
-
 .sellingPriceLabel {
     display: none;
 }
 
-.buyButton--custom_button__slider3 {
-    background-color: #fff;
-}
+/* Nuevas clases - fix-styles 🧩*/
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    .element--home__shelf--product--summary {
+        gap: 12px;
+    }
 
-.productBrand {
-    font-family       : Lexend, sans-serif;
-    font-weight       : 400;
-    font-size         : 14px;
-    text-align        : left;
-    line-height       : 16.8px;
-    color             : hsla(214, 28%, 16%, 0.6);
-    overflow          : hidden;
-    text-overflow     : ellipsis;
-    display           : -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 3;
-    max-height        : calc(16.8px * 3);
-}
+    .container--home__shelf--product--summary {
+        margin: 12px;
+    }
 
-.price_sellingPriceContainer {
-    font-family: Lexend, sans-serif;
-    font-size  : 24px !important;
-    line-height: 28.8px;
-    color      : #1D2734;
-}
+    .nameContainer--product_summary-name {
+        height: 51px;
+    }
 
-/*----------------------------- MediaQueires ---------------------------------------*/
-@media (min-width: 320px) and (max-width: 1279px) {
-    .productBrand {
-        font-size: 12px;
+    .productBrand--product_summary-name {
+        font-size  : 14px;
+        line-height: 16.8px;
+    }
+
+    .price_listPriceContainer {
+        height: 14px;
     }
 
     .price_listPrice {
-        font-size: 13px;
+        font-size  : 14px;
+        line-height: 16.8px;
     }
 
     .price_sellingPriceContainer {
-        font-size: 22px !important;
+        height: 23px;
     }
 
     .price_sellingPrice {
-        font-size: 22px;
+        font-size  : 23px;
+        line-height: 28.8px;
     }
-}
 
-/*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1279px) {
-    .container--container__all--products {
-        display   : flex;
-        max-width : 250px !important;
-        max-height: 400px
+    .priceContainer {
+        height: 38px;
     }
 }

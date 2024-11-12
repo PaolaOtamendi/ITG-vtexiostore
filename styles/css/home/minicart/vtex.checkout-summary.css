@@ -1,22 +1,32 @@
-.summarySmallDisclaimer--minicart__checkout--summary {
+.summarySmallDisclaimer--content__summary--checkout {
     display: none;
 }
 
-.summaryItemContainer--minicart__summary--totalizers {
-    font-family   : "Lexend-Regular", sans-serif !important;
-    font-size     : 14px;
-    font-weight   : 300;
-    line-height   : 16.8px;
-    color         : #000000;
-    margin-top    : 0px;
-    padding-bottom: 0px;
+.summaryItemContainer--content__summary--totalizers {
+    font-family      : lexend, sans-serif !important;
+    font-size        : 14px;
+    font-weight      : 300;
+    line-height      : 16.8px;
+    color            : #1D2734;
+    margin-top       : 0px;
+    padding-bottom   : 0px;
 }
 
-.summarySmallContent--minicart__checkout--summary .summaryItemContainer--minicart__summary--totalizers:last-child .summaryItemLabel--minicart__summary--totalizers,
-.summarySmallContent--minicart__checkout--summary .summaryItemContainer--minicart__summary--totalizers:last-child .price--minicart__summary--totalizers {
-    color      : red !important;
-    font-size  : 16px;
-    font-weight: 600;
-    line-height: 19.2px;
-    margin-top : 12px
+.summaryItemLabel--content__summary--totalizers {
+    font-weight: 300;
+}
+
+.summarySmallContent--content__summary--checkout {
+    display       : flex;
+    flex-direction: column;
+    gap           : 12px;
+}
+
+/* Nuevas clases - fix-styles 🧩*/
+.summarySmallContent--content__summary--checkout .summaryItemContainer--content__summary--totalizers:last-child .summaryItemLabel--content__summary--totalizers,
+.summarySmallContent--content__summary--checkout .summaryItemContainer--content__summary--totalizers:last-child .price--content__summary--totalizers {
+    color         : red !important;
+    font-size     : 16px;
+    font-weight   : 600;
+    line-height   : 19.2px;
 }

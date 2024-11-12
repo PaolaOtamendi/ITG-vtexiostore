@@ -2,7 +2,7 @@
     "flex-layout.row#desktop__home--shelf-products": {
         "title": "Container desktop shelf products",
         "children": [
-            "flex-layout.row#global__shelf--products"
+            "flex-layout.row#global__home-shelf-slider--one"
         ],
         "props": {
             "blockClass": "desktop__home--shelf-products"

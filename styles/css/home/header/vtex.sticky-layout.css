@@ -1,3 +1,9 @@
-.container {
+/*----------------------------- Header desktop drawer mega menu ---------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
+.container--dekstop__mega--menu-container {
     position: relative;
+}
+
+.wrapper--dekstop__mega--menu-container {
+    padding-right: 8px;
 }

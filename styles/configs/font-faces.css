@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'lexend';
+  src: url("assets/fonts/Lexend-VariableFont_wght.ttf"),url("assets/fonts/Lexend-VariableFont_wght_1_.woff");
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url("assets/fonts/Montserrat-VariableFont_wght.ttf"),url("assets/fonts/Montserrat-VariableFont_wght.woff");
+}

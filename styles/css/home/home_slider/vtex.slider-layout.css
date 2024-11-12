@@ -1,123 +1,107 @@
 /*----------------------------- Global slider products ------------------------------------------------*/
-.paginationDotsContainer--slider__container--home {
-    display    : flex;
-    align-items: center;
-    height     : 50.89px;
-    width      : 100%;
+/* Nuevas clases - fix-styles 🧩*/
+.sliderLayoutContainer--global__home-slider--layout {
+    display            : flex;
+    flex-wrap          : wrap;
+    justify-content    : center;
+    flex-direction     : column;
+    gap                : 1px;
 }
 
-.paginationDot--slider__container--home {
-    border-radius   : 0;
-    background-color: transparent;
-    position        : relative;
+.sliderTrack--global__home-slider--layout {
+    height: 100%;
+}
+
+.slideChildrenContainer--global__home-slider--layout {
+    width: auto;
+}
+
+.slide--global__home-slider--layout {
+    justify-content: center;
+}
+
+/* arrows */
+.caretIcon--global__home-slider--layout {
+    width   : 20px !important;
+    height  : 14px !important;
+    overflow: visible !important;
+}
+
+.sliderLeftArrow--global__home-slider--layout {
+    padding      : 0%;
+    margin       : 0%;
+    left         : 60px;
+}
+
+.sliderRightArrow--global__home-slider--layout {
+    padding      : 0%;
+    margin       : 0%;
+    right        : 60px;
+}
+
+/* Dots */
+.paginationDotsContainer--global__home-slider--layout {
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    position       : relative;
+    height         : 50px;
+}
+
+.paginationDot--global__home-slider--layout {
     display         : flex;
     align-items     : center;
     justify-content : center;
+    position        : relative;
+    width           : 20px !important;
+    height          : 1.41px !important;
     margin          : 0 2px;
+    border-radius   : 0;
+    background-color: transparent;
 }
 
+/* Custom dots all sliders */
 .paginationDot--isActive::before {
     content         : "";
     position        : absolute;
     right           : -8px;
     width           : 16px;
     height          : 16px;
-    background-color: #1d2734;
+    background-color: #1D2734;
     border-radius   : 50%;
 }
 
 .paginationDot::after {
-    width           : 44px;
-    height          : 2px;
     content         : "";
+    width           : 20px;
+    height          : 1.41px;
     font-size       : 0;
     background-color: #1D2734;
     position        : absolute;
 }
 
-.paginationDot--isActive::before {
-    content         : "";
-    position        : absolute;
-    right           : -8px;
-    width           : 16px;
-    height          : 16px;
+.paginationDot--isActive::after {
     background-color: #1D2734;
-    border-radius   : 50%;
-}
-
-.paginationDot--isActive .paginationDot::after {
-    width           : 44px;
-    height          : 2px;
-    content         : "";
-    font-size       : 0;
-    background-color: #1d273466;
-    position        : absolute;
-}
-
-.sliderLayoutContainer--slider__container--home {
-    padding-bottom: 60px;
-}
-
-.caretIcon--slider__container--home {
-    width        : 20px !important;
-    height       : 14px !important;
-    border-left  : 10px solid transparent;
-    border-right : 10px solid transparent;
-    border-radius: 4px;
-    margin-bottom: 94px;
-    overflow     : visible !important;
-    fill         : none;
-}
-
-.sliderLeftArrow {
-    left     : -60px;
-    top      : 50%;
-    transform: translateY(-50%);
-}
-
-.sliderRightArrow {
-    right    : -60px;
-    top      : 50%;
-    transform: translateY(-50%);
 }
 
 /*----------------------------- MediaQueires ---------------------------------------*/
-@media (min-width: 320px) and (max-width: 1279px) {
-    .sliderRightArrow--slider__container--home {
-        display: none;
-    }
-
-    .sliderLeftArrow--slider__container--home {
-        display: none;
-    }
-}
-
-/*---------- Phone ------------*/
-@media (min-width: 320px) and (max-width: 639px) {
-    .paginationDot--slider__container--home {
-        width: 12px !important;
-    }
-
-    .paginationDot::after {
-        width: 12px !important;
-    }
-}
-
-/*---------- Tablet ------------*/
-@media (min-width: 640px) and (max-width: 1279px) {
-    .paginationDot--slider__container--home {
-        width: 15px !important;
-    }
-
-    .paginationDot::after {
-        width: 15px !important;
-    }
-}
-
 /*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    .sliderLayoutContainer--global__home-slider--layout {
+        padding-left : 94px !important;
+        padding-right: 94px !important;
+    }
+}
+
 @media (min-width: 1280px) {
-    .paginationDot--slider__container--home {
-        width : 44px !important;
-        height: 40px !important;
+    /* .sliderTrackContainer--global__home-slider--layout {
+        width: 1092px;
+    } */
+}
+
+@media (min-width: 320px) and (max-width: 1024px) {
+    .sliderLayoutContainer--global__home-slider--layout {
+        padding-left : 16px !important;
+        padding-right: 16px !important;
     }
 }

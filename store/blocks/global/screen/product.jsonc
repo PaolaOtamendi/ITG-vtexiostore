@@ -1,8 +1,8 @@
 {
   "store.product": {
     "children": [
-      "flex-layout.row#product-main",
-      "flex-layout.row#specification__pdp"
+      "flex-layout.row#global__main-product--details",
+      "flex-layout.row#product__detail--specifications"
     ]
   }
 }

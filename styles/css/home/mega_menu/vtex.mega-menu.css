@@ -1,69 +1,73 @@
 /*----------------------------- Mega menu desktop ------------------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
 .menuContainerNav {
     background-color: #FFE6D3 !important;
     z-index         : 10;
 }
 
-.menuContainerNav--components__mega--menu {
+.menuContainerNav--desktop__mega-menu--body {
     width        : auto !important;
     border-radius: 0px 0px 16px 16px;
     top          : 40px;
 }
 
-.menuContainer {
-    font-family      : Lexend, sans-serif;
-    width            : 250px !important;
-    background-color : #fff !important;
-    border-radius    : 0px 0px 16px 16px;
-    max-height       : 647px;
-    overflow         : auto;
-}
-
-.menuItem--components__mega--menu {
+.menuItem--desktop__mega-menu--body {
     background-color: #fff;
 }
 
-.menuItem--components__mega--menu :hover {
+.menuItem--desktop__mega-menu--body :hover {
     background-color: rgba(255, 131, 36, 0.2);
     border-left     : solid 10px #FF8324;
 }
 
-.styledLinkContent--components__mega--menu :hover {
+.menuContainer {
+    font-family     : lexend, sans-serif;
+    width           : 220px !important;
+    background-color: #fff !important;
+    border-radius   : 0px 0px 16px 16px;
+    max-height      : 647px;
+    overflow        : auto;
+}
+
+.styledLinkContent--desktop__mega-menu--body :hover {
     background-color: transparent;
     border-left     : transparent;
 }
 
-.styledLinkContainer--components__mega--menu :hover {
+.styledLinkContainer--desktop__mega-menu--body :hover {
     background-color: transparent;
     border-left     : transparent;
 }
 
-.styledLinkText--components__mega--menu :hover {
+.styledLinkText--desktop__mega-menu--body :hover {
     background-color: transparent;
     border-left     : transparent;
 }
 
-.accordionIconContainer--components__mega--menu {
-    display: none;
+.styledLinkContainer--desktop__mega-menu--body {
+    width            : 100%;
+    margin-left      : 0px;
+    margin-right     : 0px;
+    padding-left     : 16px;
+    padding-top      : 0%;
+    padding-bottom   : 0%;
 }
 
-.styledLinkContainer--components__mega--menu {
-    margin-left : 0px;
-    margin-right: 0px;
-    width       : 100%;
-    color       : #1D2734;
-    padding-left: 10px;
+.styledLinkContent--desktop__mega-menu--body {
+    padding-top   : 8px;
+    padding-bottom: 8px;
 }
 
-.styledLinkText--components__mega--menu {
-    font-family: Lexend, sans-serif;
+.styledLinkText--desktop__mega-menu--body {
+    font-family: lexend, sans-serif;
     font-weight: 300;
     font-size  : 12px !important;
     line-height: 15px;
+    color      : #1D2734 !important;
 }
 
 .submenuContainer {
-    font-family     : Lexend, sans-serif;
+    font-family     : lexend, sans-serif;
     display         : flex;
     flex-direction  : column;
     background-color: #FFE6D3 !important;
@@ -71,81 +75,129 @@
     border-radius   : 0px 0px 16px 0px;
     max-height      : 647px;
     overflow        : auto;
+    padding-left    : 0%;
 }
 
-.seeAllLinkContainer--components__mega--menu {
-    font-family: Lexend, sans-serif;
-    font-size  : 14px;
-    font-weight: bold;
-    line-height: 17.5px;
+.submenuContainerTitle--desktop__mega-menu--body {
+    display                 : grid;
+    grid-template-columns   : 1fr 1fr;
+    justify-content         : space-around;
+    align-items             : center;
+    gap                     : 15px;
+    margin-bottom           : 14px;
+}
+
+.submenuContainerTitle--desktop__mega-menu--body {
+    font-family : lexend, sans-serif;
+    font-size   : 14px;
+    line-height : 17.5px;
+    color       : #1D2734 !important;
+    padding-left: 16px !important;
+}
+
+.submenuItem--desktop__mega-menu--body {
+    margin-top: 0%;
+}
+
+.seeAllLinkContainer--desktop__mega-menu--body {
     width      : 148px !important;
-    margin-left: 10px;
+    margin-left: 16px;
 }
 
-.submenuContainerTitle--components__mega--menu {
-    display              : grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content      : space-around;
-    align-items          : center;
-    gap                  : 30px;
+.seeAllLink--desktop__mega-menu--body {
+    font-family    : lexend, sans-serif;
+    font-size      : 14px;
+    font-weight    : 600;
+    line-height    : 17.5px;
+    color          : #1D2734;
+    text-decoration: none;
 }
 
-.submenuItem--components__mega--menu {
-    margin-top: 0.8rem;
+.accordionIconContainer--desktop__mega-menu--body {
+    display: none;
 }
 
 /*----------------------------- Mega menu mobile ------------------------------------------------*/
+/* Nuevas clases - fix-styles 🧩*/
+.departmentsTitle--mega__menu-drawer--body {
+    margin-top   : 19px !important;
+    margin-bottom: 16px !important;
+    padding-left : 16px !important;
+    padding-right: 0% !important;
+}
+
 .menuContainerNavVertical {
     background-color: #fff;
+    margin          : 0% !important;
 }
 
-.departmentsTitle {
-    font-size  : 14px;
-    line-height: 17.5px;
-    font-family: Lexend, sans-serif;
-    color      : #1D2734 !important;
+.menuContainerVertical--mega__menu-drawer--body {
+    margin: 0% !important;
 }
 
-.styledLinkText {
+.styledLinkContainer--mega__menu-drawer--body {
+    padding-top   : 16px;
+    padding-bottom: 16px;
+    margin-left   : 16px;
+    margin-right  : 0%;
+}
+
+.styledLinkText--mega__menu-drawer--body {
+    font-family: lexend, sans-serif;
     font-size  : 12px;
     font-weight: 300;
     line-height: 15px;
-    font-family: Lexend, sans-serif !important;
     color      : #1D2734 !important;
 }
 
-.styledLinkContainer {
-    padding-top: 0.8rem;
+.menuItemVertical--mega__menu-drawer--body {
+    border: none;
 }
 
-.submenuContainerVertical {
-    background-color: #fff;
+.goBackButton {
+    padding-left : 16px;
+    padding-right: 0%;
 }
 
-.submenuContainerTitle {
-    font-size  : 14px;
-    line-height: 17.5px;
-    font-family: Lexend, sans-serif;
-    color      : #1D2734 !important;
-}
-
-.collapsibleHeaderText {
-    font-size  : 12px;
-    font-weight: 300;
-    line-height: 15px;
-    font-family: Lexend, sans-serif !important;
-    color      : #1D2734 !important;
+.goBackButtonText {
+    display: none;
 }
 
 .submenuItemVertical {
     background-color: #fff;
 }
 
-.seeAllLink {
-    font-size  : 14px;
-    line-height: 17.5px;
-    font-family: Lexend, sans-serif;
-    color      : #1D2734 !important;
+.submenuItemVertical--mega__menu-drawer--body {
+    border          : none;
+    padding-left    : 0%;
+    padding-right   : 16px;
+}
+
+.submenuContainerTitle--mega__menu-drawer--body {
+    padding: 0% !important;
+}
+
+.collapsibleHeaderText--mega__menu-drawer--body {
+    margin-top   : 19px;
+    margin-bottom: 16px;
+    padding-left : 16px;
+    font-family  : lexend, sans-serif;
+    font-size    : 12px;
+    font-weight  : 300;
+    line-height  : 15px;
+    color        : #1D2734 !important;
+}
+
+.seeAllLinkContainer--mega__menu-drawer--body {
+    padding-left: 16px;
+}
+
+.seeAllLink--mega__menu-drawer--body {
+    font-size      : 14px;
+    line-height    : 17.5px;
+    font-family    : lexend, sans-serif;
+    color          : #1D2734 !important;
+    text-decoration: none;
 }
 
 .accordionIconContainer {

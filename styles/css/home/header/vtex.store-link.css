@@ -1,10 +1,12 @@
-.childrenContainer--link__icon {
-    display: flex;
-    align-items: center;
+/* Nuevas clases - fix-styles 🧩*/
+.childrenContainer--categories__link--global {
+    display        : flex;
+    align-items    : center;
     justify-content: center;
-    flex-direction: column;
+    flex-direction : column;
+    gap            : 4px;
 }
 
-.link--link__icon {
+.link--categories__link--global {
     text-decoration: none;
 }

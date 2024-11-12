@@ -1,19 +1,19 @@
 {
-  "header-row#header__menu--desktop": {
+  "header-row#dekstop__header--menu": {
     "title": "Header menu desktop",
     "props": {
-      "blockClass": "header__menu--desktop",
+      "blockClass": "dekstop__header--menu",
       "fullWidth": true
     },
     "children": [
-      "sticky-layout#desktop__mega-menu",
-      "flex-layout.row#header__first--section",
-      "vtex.menu@2.x:menu#websites",
-      "flex-layout.row#header__second--section"
+      "sticky-layout#dekstop__mega--menu-container",
+      "flex-layout.row#desktop__header-menu--sec1",
+      "flex-layout.row#desktop__header-menu--sec3",
+      "flex-layout.row#desktop__header-menu--sec2"
     ]
   },
 
-  "flex-layout.row#header__first--section": {
+  "flex-layout.row#desktop__header-menu--sec1": {
     "title": "First section logo and search bar",
     "props": {
       "horizontalAlign": "center",
@@ -21,18 +21,18 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true,
-      "blockClass": "header__first--section"
+      "blockClass": "desktop__header-menu--sec1"
     },
     "children": [
-      "flex-layout.col#logo__header--desktop",
-      "flex-layout.col#searchbar__header--desktop"
+      "flex-layout.col#header__menu-sec1--logo",
+      "flex-layout.col#header__menu-sec1--searchbar"
     ]
   },
 
-  "flex-layout.col#logo__header--desktop": {
+  "flex-layout.col#header__menu-sec1--logo": {
     "title": "Container logo desktop",
     "props": {
-      "blockClass": "logo__header--desktop"
+      "blockClass": "header__menu-sec1--logo"
     },
     "children": ["logo#desktop"]
   },
@@ -40,16 +40,16 @@
     "props": {
       "title": "Logo",
       "href": "/",
-      "url": "assets/img/icon_Black.png",
+      "url": "/arquivos/logo_itg_icon.svg",
       "width": "32px",
       "blockClass": ["logo__img--custom"]
     }
   },
 
-  "flex-layout.col#searchbar__header--desktop": {
-    "title": "Container Search Bar",
+  "flex-layout.col#header__menu-sec1--searchbar": {
+    "title": "Container Search Bar desktop",
     "props": {
-      "blockClass": "searchbar__header--desktop"
+      "blockClass": "header__menu-sec1--searchbar"
     },
     "children": ["search-bar#search__bar--desktop"]
   },
@@ -60,19 +60,123 @@
     }
   },
 
-  "flex-layout.row#header__second--section": {
-    "title": "Second section login and minicart",
+  "flex-layout.row#desktop__header-menu--sec2": {
+    "title": "Second section contain login and minicart",
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "fullWidth": true,
-      "blockClass": "header__second--section"
+      "blockClass": "desktop__header-menu--sec2"
     },
     "children": [
-      "minicart.v2", 
+      "minicart.v2#global__minicart--container", 
       "login#global__login--header"
     ]
+  },
+
+  "flex-layout.row#desktop__header-menu--sec3": {
+    "title": "Third section contain menu website",
+    "props": {
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "blockClass": "desktop__header-menu--sec3"
+    },
+    "children": [
+      "menu-item#trends",
+      "menu-item#collections",
+      "menu-item#offers",
+      "menu-item#cyber-day",
+      "menu-item#never-say-never"
+    ]
+  },
+  "menu-item#trends": {
+    "props": {
+      "id": "trends",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": [
+        "menu_item",
+        "menu-item_trends"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/trends-it-globers",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Tendencias de ITGlobers"
+      }
+    }
+  },
+  "menu-item#collections": {
+    "props": {
+      "id": "colections",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": [
+        "menu_item",
+        "menu-item_collections"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/collection-month",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Colección del mes"
+      }
+    }
+  },
+  "menu-item#offers": {
+    "props": {
+      "id": "offers",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": [
+        "menu_item",
+        "menu-item_offers"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/offer-month",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Ofertas del mes"
+      }
+    }
+  },
+  "menu-item#cyber-day": {
+    "props": {
+      "id": "ciber-day",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": [
+        "menu_item",
+        "menu-item_ciber-day"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/cyber-day",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Cyber Monday"
+      }
+    }
+  },
+  "menu-item#never-say-never": {
+    "props": {
+      "id": "never-say-never",
+      "type": "custom",
+      "highlight": false,
+      "blockClass": [
+        "menu_item",
+        "menu-item_never-say-never"],
+      "itemProps": {
+        "type": "internal",
+        "href": "/promotions",
+        "noFollow": false,
+        "tagTitle": "Shop",
+        "text": "Never say never"
+      }
+    }
   }
 }

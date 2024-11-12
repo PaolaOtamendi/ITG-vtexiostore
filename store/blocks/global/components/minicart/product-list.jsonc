@@ -1,11 +1,9 @@
 {
-  "product-list#minicart": {
-    "blocks": [
-        "product-list-content-mobile"
-    ]
-  },
-
   // Desktop
+  "product-list-content-desktop": {
+    "title": "Product List - Desktop",
+    "children": ["flex-layout.row#list-row.desktop"]
+  },
   "flex-layout.row#list-row.desktop": {
     "title": "list row contain image-desktop and main",
     "children": [
@@ -131,7 +129,10 @@
   // Mobile
   "product-list-content-mobile": {
     "title": "Product list content mobile view",
-    "children": ["flex-layout.row#list-row.mobile"]
+    "children": ["flex-layout.row#list-row.mobile"],
+    "props": {
+      "blockClass": "product__list--mobile"
+    }
   },
   "flex-layout.row#list-row.mobile": {
     "title": "list row contain image-mobile and main",
@@ -141,8 +142,6 @@
     ],
     "props": {
       "fullWidth": true,
-      "paddingBottom": "6",
-      "paddingTop": "5",
       "colSizing": "auto",
       "preserveLayoutOnMobile": "true",
       "blockClass": "product_list-content-mobile"
@@ -183,7 +182,6 @@
   "flex-layout.col#remove-button.mobile": {
     "children": ["remove-button"],
     "props": {
-      "marginLeft": "3",
       "blockClass": "remove_button-mobile"
     }
   },
@@ -192,7 +190,6 @@
     "title": "Container price product mobile",
     "children": ["price#mobile"],
     "props": {
-      "marginTop": "5",
       "preventHorizontalStretch": "true",
       "blockClass": "price_mobile"
     }
@@ -208,7 +205,6 @@
     "title": "Container quantity selector mobile",
     "children": ["quantity-selector"],
     "props": {
-      "marginTop": "5",
       "preventHorizontalStretch": "true",
       "blockClass": "quanitity_selector-mobile"
     }
@@ -220,4 +216,3 @@
     }
   }
 }
-

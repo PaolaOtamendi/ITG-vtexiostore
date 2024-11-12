@@ -1,25 +1,40 @@
-.buttonText--custom__button--buy {
-    font-family   : Lexend, sans-serif;
+.buttonText--product__summary-btn--add {
+    font-family   : lexend, sans-serif;
     font-weight   : 400;
-    font-size     : 14px;
-    line-height   : 17.5px;
+    font-size     : 10.63px;
+    line-height   : 13.29px;
     text-align    : center;
     color         : #1D2734;
     text-transform: lowercase;
 }
 
-.buttonText--custom__button--buy::first-letter {
+.buttonText--product__summary-btn--add::first-letter {
     text-transform: capitalize;
 }
 
-.buttonDataContainer--custom__button--buy {
+.buttonDataContainer--product__summary-btn--add {
     display    : flex;
     align-items: center;
-    gap        : 5px;
+    gap        : 7.59px;
 }
 
-.buttonDataContainer--custom__button--buy::before {
-    content: url("/arquivos/button_cart.png");
-    width  : 20px;
-    height : 20px;
+.buttonDataContainer--product__summary-btn--add::before {
+    content            : url("/arquivos/button_cart.png");
+    width              : 20px;
+    height             : 20px;
+    background-size    : 15.19px !important;
+    background-position: center;
+    background-repeat  : no-repeat;
+}
+
+/*---------- Desktop ------------*/
+@media (min-width: 1025px) {
+    .buttonDataContainer--product__summary-btn--add {
+        gap: 10px;
+    }
+
+    .buttonText--product__summary-btn--add {
+        font-size : 14px;
+        list-style: 17.5px;
+    }
 }

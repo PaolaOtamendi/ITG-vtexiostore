@@ -1,8 +1,8 @@
 {
-    "footer-layout.desktop": {
+    /*"footer-layout.desktop": {
         "title": "Desktop footer",
       "children": [
         "flex-layout.row#footer-desktop"
       ]
-    }
+    }*/ //Arreglar porque se sale de la pagina
 }

@@ -1,0 +1,4 @@
+:global(.vtex-checkbox__inner-container) :global(.bg-action-primary) input:checked {
+    border-color: #1D2734 !important;
+    background-color: #1D2734 !important;
+}
