@@ -55,7 +55,8 @@
     "vtex.product-list": "0.x",
     "vtex.checkout-summary": "0.x",
     "vtex.product-specifications": "1.x",
-    "vtex.shelf": "1.x"
+    "vtex.shelf": "1.x",
+    "itglobers.quick-order": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
