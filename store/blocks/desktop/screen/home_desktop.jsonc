@@ -2,8 +2,9 @@
     "responsive-layout.desktop#home__section--1": {
         "title": "Home section sliders Desktop",
         "children": [
-            "quick-order",
+            // "quick-order",
             "flex-layout.row#desktop__main-slider",
+            "test-schema",
             "flex-layout.row#one__title--slider",
             "flex-layout.row#desktop__home--slider",
             "flex-layout.row#two__title--slider",
